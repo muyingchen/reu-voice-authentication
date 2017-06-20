@@ -1,0 +1,51 @@
+Linux Command Line for Raspberry Pi — REU Voice Authentication Project
+
+1. Installing PocketSphinx and other libraries on Raspberry Pi
+
+a) Updating the Raspbian operating system
+
+sudo apt-get update
+sudo apt-get upgrade
+
+b) Install other dependencies
+
+sudo apt-get install bisonsudo apt-get install libasound2-devsudo apt-get install swigsudo apt-get install python-devsudo apt-get install mplayerc) Download SphinxBase from SourceForge
+wget http://sourceforge.net/projects/cmusphinx/files/sphinxbase/5prealpha/sphinxbase-5prealpha.tar.gz
+
+d) Install SphinxBase 
+tar -zxvf ./sphinxbase-5prealpha.tar.gzcd ./sphinxbase-5prealpha./configure --enable-fixedmake clean allmake checksudo make install
+
+e) Download PocketSphinx from SourceForge
+wget http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pocketsphinx-5prealpha.tar.gz
+
+f) Install PocketSphinx
+tar -zxvf pocketsphinx-5prealpha.tar.gzcd ./pocketsphinx-5prealpha./configuremake clean allmake checksudo make install
+
+Done with installing PocketSphinx!
+More information check https://cmusphinx.github.io/wiki/tutorialpocketsphinx/#unix-like-installation
+
+
+2. Microphone settings
+
+a) Check if the microphone is connected to Pi
+lsusb 
+
+b) Set mic recording volume
+alsamixer 
+Press the up/down arrow keys to set the volume
+Press F6 (all), then select the webcam or mic from the list. 
+Then again use the up arrow key to set the recording volume too high.
+
+c) Check if recording is taking place
+arecord -l
+check if microphone is on the list
+
+d) Test record
+arecord -D plughw:1,0 test.wav
+
+e) Play the test record
+aplay test.wav
+
+
+
+
