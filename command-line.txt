@@ -21,7 +21,7 @@ wget http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/5prealpha/pock
 f) Install PocketSphinx
 tar -zxvf pocketsphinx-5prealpha.tar.gzcd ./pocketsphinx-5prealpha./configuremake clean allmake checksudo make install
 
-Done with installing PocketSphinx!
+Finish installing PocketSphinx!
 More information check https://cmusphinx.github.io/wiki/tutorialpocketsphinx/#unix-like-installation
 
 
@@ -46,6 +46,17 @@ arecord -D plughw:1,0 test.wav
 e) Play the test record
 aplay test.wav
 
+3. Record using Raspberry Pi
+
+a) Change directory to ~ and export stuff
+export LD_LIBRARY_PATH=/usr/local/libexport PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+
+b) Record
+arecord -D plughw:1,0 --channels=1 --format=S16_LE --rate=16000 ~/test.wav
+Press Ctrl+C to stop recording.
+
+c) Process the record
+pocketsphinx_continuous -hmm /usr/local/share/pocketsphinx/model/en-us/en-us -lm ~/8404.lm -dict ~/8404.dic -samprate 16000/8000/48000 -infile ~/test.wav
 
 
-
+— Done — 
