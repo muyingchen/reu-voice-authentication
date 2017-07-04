@@ -1,0 +1,54 @@
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-alpha			0.97		9.700000e-01
+-dither			no		no
+-doublebw		no		no
+-frate			100		100
+-input_endian		little		little
+-lifter			0		0
+-logspec		no		no
+-lowerf			133.33334	1.333333e+02
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		40
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-smoothspec		no		no
+-transform		legacy		legacy
+-unit_area		yes		yes
+-upperf			6855.4976	6.855498e+03
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wlen			0.025625	2.562500e-02
+
+frame_size 410 frame_shift 160
+inptr 1024 nsamp 0 nfr 0
+inptr 1024 nsamp 0 nfr 0
+inptr 1024 nsamp 0 nfr 0
+inptr 1024 nsamp 0 nfr 0
+nfr 0
+nfr 0
+nfr 0
+4: 5.98,5.98 -1.34,-1.34 0.21,0.21 0.05,0.05 -0.25,-0.25 -0.20,-0.20 -0.17,-0.17 -0.28,-0.28 -0.06,-0.06 -0.15,-0.15 -0.10,-0.10 0.07,0.07 -0.10,-0.10 
+inptr 256 nsamp 0 nfr 0
+inptr 512 nsamp 0 nfr 0
+inptr 768 nsamp 0 nfr 0
+inptr 1024 nsamp 0 nfr 0
+nfr 5
+nfr 0
+4: 5.98,5.98 -1.34,-1.34 0.21,0.21 0.05,0.05 -0.25,-0.25 -0.20,-0.20 -0.17,-0.17 -0.28,-0.28 -0.06,-0.06 -0.15,-0.15 -0.10,-0.10 0.07,0.07 -0.10,-0.10 
+i 0 nfr 0
+i 0 nfr 0
+i 0 nfr 0
+i 0 nfr 0
+i 0 nfr 0
+4: 5.98,5.98 -1.34,-1.34 0.21,0.21 0.05,0.05 -0.25,-0.25 -0.20,-0.20 -0.17,-0.17 -0.28,-0.28 -0.06,-0.06 -0.15,-0.15 -0.10,-0.10 0.07,0.07 -0.10,-0.10 

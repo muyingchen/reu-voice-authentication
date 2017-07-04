@@ -1,0 +1,10 @@
+Hash with chaining representation of the hash table
+|key:bar|len:3|val=3405693150|->NULL
+|key:foo|len:3|val=3735928495|->NULL
+|key:baz|len:3|val=4008701679|->NULL
+|key:quux|len:4|val=3132799674|->NULL
+The total number of keys =4
+bar 0xcafec0de
+foo 0xdeadbeaf
+baz 0xeeefeeef
+quux 0xbabababa

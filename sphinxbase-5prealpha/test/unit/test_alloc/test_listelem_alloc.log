@@ -1,0 +1,54 @@
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 0, #freed 0, #freelist 50
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x7f83a3403380 (50 * 16 bytes)
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 60, #freed 0, #freelist 40
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x7f83a3403760 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403380 (50 * 16 bytes)
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 600, #freed 0, #freelist 0
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x7f83a3405740 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3405400 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34050c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3404d80 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3404a40 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3404700 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34043e0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34040c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403da0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403a80 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34036c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403380 (50 * 16 bytes)
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 600, #freed 600, #freelist 600
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x7f83a3405740 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3405400 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34050c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3404d80 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3404a40 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3404700 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34043e0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34040c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403da0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403a80 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34036c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403380 (50 * 16 bytes)
+INFO: listelem_alloc.c(279): Linklist stats:
+INFO: listelem_alloc.c(287): elemsize 16, #alloc 1200, #freed 600, #freelist 0
+INFO: listelem_alloc.c(288): Allocated blocks:
+INFO: listelem_alloc.c(291): 0x7f83a3405740 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3405400 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34050c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3404d80 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3404a40 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3404700 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34043e0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34040c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403da0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403a80 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a34036c0 (50 * 16 bytes)
+INFO: listelem_alloc.c(291): 0x7f83a3403380 (50 * 16 bytes)

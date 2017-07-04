@@ -1,0 +1,317 @@
+ms_gauden.lo: ms_gauden.c /usr/include/assert.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/string.h \
+  /usr/include/_types.h /usr/include/sys/_types.h \
+  /usr/include/machine/_types.h /usr/include/i386/_types.h \
+  /usr/include/sys/_pthread/_pthread_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h /usr/include/sys/_types/_size_t.h \
+  /usr/include/sys/_types/_null.h /usr/include/sys/_types/_rsize_t.h \
+  /usr/include/sys/_types/_errno_t.h /usr/include/sys/_types/_ssize_t.h \
+  /usr/include/strings.h /usr/include/secure/_string.h \
+  /usr/include/secure/_common.h /usr/include/math.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/float.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bio.h \
+  /usr/include/stdio.h /usr/include/sys/_types/_va_list.h \
+  /usr/include/sys/stdio.h /usr/include/sys/_types/_off_t.h \
+  /usr/include/secure/_stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stdarg.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/byteorder.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/err.h \
+  /usr/include/stdlib.h /usr/include/sys/wait.h \
+  /usr/include/sys/_types/_pid_t.h /usr/include/sys/_types/_id_t.h \
+  /usr/include/sys/signal.h /usr/include/sys/appleapiopts.h \
+  /usr/include/machine/signal.h /usr/include/i386/signal.h \
+  /usr/include/machine/_mcontext.h /usr/include/i386/_mcontext.h \
+  /usr/include/mach/i386/_structs.h \
+  /usr/include/sys/_pthread/_pthread_attr_t.h \
+  /usr/include/sys/_types/_sigaltstack.h \
+  /usr/include/sys/_types/_ucontext.h \
+  /usr/include/sys/_types/_sigset_t.h /usr/include/sys/_types/_uid_t.h \
+  /usr/include/sys/resource.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stdint.h \
+  /usr/include/stdint.h /usr/include/sys/_types/_int8_t.h \
+  /usr/include/sys/_types/_int16_t.h /usr/include/sys/_types/_int32_t.h \
+  /usr/include/sys/_types/_int64_t.h /usr/include/_types/_uint8_t.h \
+  /usr/include/_types/_uint16_t.h /usr/include/_types/_uint32_t.h \
+  /usr/include/_types/_uint64_t.h /usr/include/sys/_types/_intptr_t.h \
+  /usr/include/sys/_types/_uintptr_t.h /usr/include/_types/_intmax_t.h \
+  /usr/include/_types/_uintmax_t.h /usr/include/sys/_types/_timeval.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/sys/_types/_ct_rune_t.h /usr/include/sys/_types/_rune_t.h \
+  /usr/include/sys/_types/_wchar_t.h /usr/include/machine/types.h \
+  /usr/include/i386/types.h /usr/include/sys/_types/_dev_t.h \
+  /usr/include/sys/_types/_mode_t.h /usr/include/errno.h \
+  /usr/include/sys/errno.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h \
+  /usr/include/setjmp.h ms_gauden.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/feat.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fe.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/limits.h \
+  /usr/include/limits.h /usr/include/machine/limits.h \
+  /usr/include/i386/limits.h /usr/include/i386/_limits.h \
+  /usr/include/sys/syslimits.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmn.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/agc.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h \
+  vector.h pocketsphinx_internal.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/profile.h \
+  ../../include/pocketsphinx.h ../../include/pocketsphinx_export.h \
+  ../../include/cmdln_macro.h ../../include/ps_lattice.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ngram_model.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h \
+  ../../include/ps_mllr.h ../../include/ps_search.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fsg_model.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h \
+  /Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h \
+  acmod.h bin_mdef.h mdef.h tmat.h hmm.h dict.h s3types.h dict2pid.h
+
+/usr/include/assert.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/sys/_symbol_aliasing.h:
+
+/usr/include/sys/_posix_availability.h:
+
+/usr/include/string.h:
+
+/usr/include/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/sys/_pthread/_pthread_types.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
+
+/usr/include/sys/_types/_size_t.h:
+
+/usr/include/sys/_types/_null.h:
+
+/usr/include/sys/_types/_rsize_t.h:
+
+/usr/include/sys/_types/_errno_t.h:
+
+/usr/include/sys/_types/_ssize_t.h:
+
+/usr/include/strings.h:
+
+/usr/include/secure/_string.h:
+
+/usr/include/secure/_common.h:
+
+/usr/include/math.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/float.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bio.h:
+
+/usr/include/stdio.h:
+
+/usr/include/sys/_types/_va_list.h:
+
+/usr/include/sys/stdio.h:
+
+/usr/include/sys/_types/_off_t.h:
+
+/usr/include/secure/_stdio.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stdarg.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/byteorder.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/err.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/sys/_types/_pid_t.h:
+
+/usr/include/sys/_types/_id_t.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/sys/appleapiopts.h:
+
+/usr/include/machine/signal.h:
+
+/usr/include/i386/signal.h:
+
+/usr/include/machine/_mcontext.h:
+
+/usr/include/i386/_mcontext.h:
+
+/usr/include/mach/i386/_structs.h:
+
+/usr/include/sys/_pthread/_pthread_attr_t.h:
+
+/usr/include/sys/_types/_sigaltstack.h:
+
+/usr/include/sys/_types/_ucontext.h:
+
+/usr/include/sys/_types/_sigset_t.h:
+
+/usr/include/sys/_types/_uid_t.h:
+
+/usr/include/sys/resource.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/sys/_types/_int8_t.h:
+
+/usr/include/sys/_types/_int16_t.h:
+
+/usr/include/sys/_types/_int32_t.h:
+
+/usr/include/sys/_types/_int64_t.h:
+
+/usr/include/_types/_uint8_t.h:
+
+/usr/include/_types/_uint16_t.h:
+
+/usr/include/_types/_uint32_t.h:
+
+/usr/include/_types/_uint64_t.h:
+
+/usr/include/sys/_types/_intptr_t.h:
+
+/usr/include/sys/_types/_uintptr_t.h:
+
+/usr/include/_types/_intmax_t.h:
+
+/usr/include/_types/_uintmax_t.h:
+
+/usr/include/sys/_types/_timeval.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/i386/endian.h:
+
+/usr/include/sys/_endian.h:
+
+/usr/include/libkern/_OSByteOrder.h:
+
+/usr/include/libkern/i386/_OSByteOrder.h:
+
+/usr/include/alloca.h:
+
+/usr/include/sys/_types/_ct_rune_t.h:
+
+/usr/include/sys/_types/_rune_t.h:
+
+/usr/include/sys/_types/_wchar_t.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/i386/types.h:
+
+/usr/include/sys/_types/_dev_t.h:
+
+/usr/include/sys/_types/_mode_t.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/errno.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h:
+
+/usr/include/setjmp.h:
+
+ms_gauden.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/feat.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fe.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/limits.h:
+
+/usr/include/limits.h:
+
+/usr/include/machine/limits.h:
+
+/usr/include/i386/limits.h:
+
+/usr/include/i386/_limits.h:
+
+/usr/include/sys/syslimits.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmn.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/agc.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h:
+
+vector.h:
+
+pocketsphinx_internal.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/profile.h:
+
+../../include/pocketsphinx.h:
+
+../../include/pocketsphinx_export.h:
+
+../../include/cmdln_macro.h:
+
+../../include/ps_lattice.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ngram_model.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h:
+
+../../include/ps_mllr.h:
+
+../../include/ps_search.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fsg_model.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h:
+
+/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h:
+
+acmod.h:
+
+bin_mdef.h:
+
+mdef.h:
+
+tmat.h:
+
+hmm.h:
+
+dict.h:
+
+s3types.h:
+
+dict2pid.h:

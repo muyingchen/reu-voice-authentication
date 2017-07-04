@@ -1,0 +1,5 @@
+INFO: feat.c(715): Initializing feature stream to type: '13', ceplen=13, CMN='none', VARNORM='no', AGC='none'
+INFO: feat.c(715): Initializing feature stream to type: '13:1', ceplen=13, CMN='none', VARNORM='no', AGC='none'
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='none', VARNORM='no', AGC='none'
+feat PASSED
+All sub-tests passed

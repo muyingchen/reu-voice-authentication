@@ -1,0 +1,22 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-c			
+-di			
+-do			
+-ei			
+-eo			
+-flen		0.025	2.500000e-02
+-fshift		0.01	1.000000e-02
+-i			../../test/regression/chan3.raw
+-input_endian		little
+-mswav		no	no
+-nist		no	no
+-nskip		0	0
+-o			test-sphinx_pitch.f0
+-raw		no	yes
+-runlen		-1	-1
+-samprate	0	11025
+-search_range	0.2	2.000000e-01
+-smooth_window	2	2
+-voice_thresh	0.1	1.000000e-01
+

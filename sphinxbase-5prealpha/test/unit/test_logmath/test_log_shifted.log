@@ -1,0 +1,18 @@
+INFO: logmath.c(283): Writing log table file 'tmp.logadd'
+INFO: logmath.c(174): Reading log table file 'tmp.logadd'
+log(1e-150) = -13493
+exp(log(1e-150)) = 9.843575e-151
+log(1e-48) = -4318
+exp(log(1e-48)) = 9.888735e-49
+log(42) = 146
+exp(log(42)) = 41.989229
+log(1e-3 + 5e-3) = -270 l+ -207 = -200
+log(1e-3 + 5e-3) = 9.961084e-04 + 4.996912e-03 = 5.977553e-03
+log(1e-150) = -13493
+exp(log(1e-150)) = 9.843575e-151
+log(1e-48) = -4318
+exp(log(1e-48)) = 9.888735e-49
+log(42) = 146
+exp(log(42)) = 41.989229
+log(1e-3 + 5e-3) = -270 l+ -207 = -200
+log(1e-3 + 5e-3) = 9.961084e-04 + 4.996912e-03 = 5.977553e-03

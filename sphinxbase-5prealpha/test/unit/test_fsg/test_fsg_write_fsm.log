@@ -1,0 +1,41 @@
+INFO: jsgf.c(706): Defined rule: <polite.g00000>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.startPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00002>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.endPolite>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 5 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for ++NOISE++ to FSG
+INFO: fsg_model.c(443): Added 5 silence word transitions
+0 0 ++NOISE++ 1.203940
+0 0 <sil> 1.203940
+0 1 please(2) -0.000000
+0 1 please -0.000000
+0 1 kindly -0.000000
+0 2 oh -0.000000
+0 4 could -0.000000
+0 1 <eps> -0.000000
+1 1 ++NOISE++ 1.203940
+1 1 <sil> 1.203940
+2 2 ++NOISE++ 1.203940
+2 2 <sil> 1.203940
+2 3 mighty -0.000000
+3 1 computer -0.000000
+3 3 ++NOISE++ 1.203940
+3 3 <sil> 1.203940
+4 1 you -0.000000
+4 4 ++NOISE++ 1.203940
+4 4 <sil> 1.203940
+1 0
+<eps> 0
+oh 1
+mighty 2
+computer 3
+could 4
+you 5
+kindly 6
+please 7
+<sil> 8
+++NOISE++ 9
+please(2) 10

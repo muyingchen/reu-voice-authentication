@@ -1,0 +1,15 @@
+INFO: mdef.c(518): Reading model definition: ../../model/en-us/en-us/mdef
+INFO: mdef.c(531): Found byte-order mark BMDF, assuming this is a binary mdef file
+INFO: bin_mdef.c(336): Reading binary model definition: ../../model/en-us/en-us/mdef
+INFO: bin_mdef.c(516): 42 CI-phone, 137053 CD-phone, 3 emitstate/phone, 126 CI-sen, 5126 Sen, 29324 Sen-Seq
+INFO: dict.c(320): Allocating 138824 * 32 bytes (4338 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ../../model/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134723, allocated 1016 KiB for strings, 1679 KiB for phones
+INFO: dict.c(336): 134723 words read
+INFO: dict.c(358): Reading filler dictionary: ../../model/en-us/en-us/noisedict
+INFO: dict.c(213): Dictionary size 134728, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones

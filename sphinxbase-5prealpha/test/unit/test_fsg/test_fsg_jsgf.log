@@ -1,0 +1,48 @@
+INFO: jsgf.c(706): Defined rule: <polite.g00000>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.startPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00002>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.endPolite>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 5 silence word transitions
+INFO: fsg_model.c(423): Adding silence transitions for ++NOISE++ to FSG
+INFO: fsg_model.c(443): Added 5 silence word transitions
+FSG_BEGIN <polite.startPolite>
+NUM_STATES 5
+START_STATE 0
+FINAL_STATE 1
+TRANSITION 0 0 0.300010 ++NOISE++
+TRANSITION 0 0 0.300010 <sil>
+TRANSITION 0 1 1.000000 please(2)
+TRANSITION 0 1 1.000000 please
+TRANSITION 0 1 1.000000 kindly
+TRANSITION 0 2 1.000000 oh
+TRANSITION 0 4 1.000000 could
+TRANSITION 0 1 1.000000 
+TRANSITION 1 1 0.300010 ++NOISE++
+TRANSITION 1 1 0.300010 <sil>
+TRANSITION 2 2 0.300010 ++NOISE++
+TRANSITION 2 2 0.300010 <sil>
+TRANSITION 2 3 1.000000 mighty
+TRANSITION 3 1 1.000000 computer
+TRANSITION 3 3 0.300010 ++NOISE++
+TRANSITION 3 3 0.300010 <sil>
+TRANSITION 4 1 1.000000 you
+TRANSITION 4 4 0.300010 ++NOISE++
+TRANSITION 4 4 0.300010 <sil>
+FSG_END
+INFO: jsgf.c(706): Defined rule: PUBLIC <public.name>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: jsgf.c(706): Defined rule: PUBLIC <public.name>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.choice>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+FSG_BEGIN <test.choice>
+NUM_STATES 2
+START_STATE 0
+FINAL_STATE 1
+TRANSITION 0 1 1.000000 yes
+TRANSITION 0 1 1.000000 no
+FSG_END

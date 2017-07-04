@@ -1,0 +1,6 @@
+INFO: logmath.c(283): Writing log table file 'tmp.logadd'
+INFO: logmath.c(174): Reading log table file 'tmp.logadd'
+log(1e-48) = -36896
+exp(log(1e-48)) = 1.001787e-48
+log(42) = 1247
+exp(log(42)) = 41.904771

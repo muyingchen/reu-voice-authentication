@@ -1,0 +1,77 @@
+INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
+INFO: ngram_model_trie.c(365): Header doesn't match
+INFO: ngram_model_trie.c(445): Trying to read LM in dmp format
+INFO: ngram_model_trie.c(527): ngrams 1=400, 2=1082, 3=1307
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
+INFO: ngram_model_trie.c(365): Header doesn't match
+INFO: ngram_model_trie.c(445): Trying to read LM in dmp format
+INFO: ngram_model_trie.c(527): ngrams 1=439, 2=1002, 3=1184
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_model_trie.c(177): Trying to read LM in arpa format
+INFO: ngram_model_trie.c(193): LM of order 3
+INFO: ngram_model_trie.c(195): #1-grams: 91
+INFO: ngram_model_trie.c(195): #2-grams: 212
+INFO: ngram_model_trie.c(195): #3-grams: 177
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
+INFO: ngram_model_trie.c(365): Header doesn't match
+INFO: ngram_model_trie.c(445): Trying to read LM in dmp format
+INFO: ngram_model_trie.c(527): ngrams 1=400, 2=1082, 3=1307
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
+INFO: ngram_model_trie.c(365): Header doesn't match
+INFO: ngram_model_trie.c(445): Trying to read LM in dmp format
+INFO: ngram_model_trie.c(527): ngrams 1=439, 2=1002, 3=1184
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_model_trie.c(177): Trying to read LM in arpa format
+INFO: ngram_model_trie.c(193): LM of order 3
+INFO: ngram_model_trie.c(195): #1-grams: 91
+INFO: ngram_model_trie.c(195): #2-grams: 212
+INFO: ngram_model_trie.c(195): #3-grams: 177
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_model_set.c(214): Reading LM control file './100.lmctl'
+INFO: ngram_model_set.c(216): Will prepend './' to unqualified paths
+INFO: ngram_model_set.c(228): Reading classdef from './100.probdef'
+INFO: ngram_model_set.c(258): Reading lm from './100.lm.dmp'
+INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
+INFO: ngram_model_trie.c(365): Header doesn't match
+INFO: ngram_model_trie.c(177): Trying to read LM in arpa format
+INFO: ngram_model_trie.c(70): No \data\ mark in LM file
+INFO: ngram_model_trie.c(445): Trying to read LM in dmp format
+INFO: ngram_model_trie.c(527): ngrams 1=400, 2=1082, 3=1307
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_model_set.c(293): Added class scylla containing 4 words
+INFO: ngram_model_set.c(293): Added class zero containing 2 words
+INFO: ngram_model_set.c(258): Reading lm from './102.lm.gz'
+INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
+ERROR: "pio.c", line 170: Compressed file operation for mode rb is not supported
+ERROR: "ngram_model_trie.c", line 356: File ./102.lm.gz not found
+INFO: ngram_model_trie.c(177): Trying to read LM in arpa format
+INFO: ngram_model_trie.c(193): LM of order 3
+INFO: ngram_model_trie.c(195): #1-grams: 439
+INFO: ngram_model_trie.c(195): #2-grams: 1002
+INFO: ngram_model_trie.c(195): #3-grams: 1184
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_model_set.c(258): Reading lm from './turtle.lm'
+INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
+INFO: ngram_model_trie.c(365): Header doesn't match
+INFO: ngram_model_trie.c(177): Trying to read LM in arpa format
+INFO: ngram_model_trie.c(193): LM of order 3
+INFO: ngram_model_trie.c(195): #1-grams: 91
+INFO: ngram_model_trie.c(195): #2-grams: 212
+INFO: ngram_model_trie.c(195): #3-grams: 177
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+FORWARD = 35
+1: 100
+2: 102
+3: turtle

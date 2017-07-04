@@ -1,0 +1,13 @@
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-b		0		0
+-d		10		13
+-describe	0		0
+-e		2147483647	2147483647
+-f				../../test/regression/chan3.mfc
+-header		0		0
+-i		13		13
+
+INFO: main_cepview.c(152): Displaying 13 out of 13 columns per frame
+INFO: main_cepview.c(153): Total 2178 frames
+
