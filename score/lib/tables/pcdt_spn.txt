@@ -1,0 +1,8 @@
+; A comment line
+* pcode directory = 'INSTALL_DIR/lib/spanish'
+; pcdtabspan1.txt 
+; New World Spanish word/phone/feature pcodeset.
+; code structure; top level is words. 
+; code          type  max. N    order 
+ wspan1.pcd    word    1000     freq
+ pspan1b.pcd    phone     50      arb

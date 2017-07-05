@@ -1,0 +1,10 @@
+;; Comment definition line
+* pcode directory = 'INSTALL_DIR/lib/rm'
+;; pcdtabw.txt 
+;; code structure; top level is words. 
+;; The phone code, pcdsrip2, references an ssf table.
+;; code files can usually be found in lib.
+;; code          type  max. N    order 
+ pcdsril        word    1100    alpha
+ pcdsrip2       phone     80      arb
+ pcdsrif        pfeat     35      arb

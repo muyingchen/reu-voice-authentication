@@ -1,0 +1,374 @@
+
+File pcodeset.doc                              Version 2.1  92/10/8
+
+
+I. GENERAL
+
+  This is documentation of the "pcode" approach to linguistic
+coding in use at NIST.  The primary author is Bill Fisher; any
+questions should be directed to him.
+
+  A pcode (sometimes called "pcodeset") is a code book representing
+a particular linguistic code such as phonemes or words.  A pcode
+exists in two forms: "external", an ASCII text file; and "internal",
+a data structure or object in a computer program.  This parallels
+the "external" and "internal" forms of particular elements of the
+code; for instance, a phone may be represented by "OW" externally
+and the integer 12 internally.
+
+  We have software to convert a pcode from external to internal
+form and use it to encode and decode elements of the code.  All
+of the software is in "C", compiled and running on Sun workstations.
+The software can be thought of as an impedance matcher: the external
+forms match human impedance, while the internal forms match computer
+language impedance.
+ 
+  An additional data structure that is provided for is a table
+of pcodesets (actually, pointers to them).  Using this table,
+one can define and use a hierarchy of pcodes, such as feature/
+phoneme/word.
+
+II. DESCRIPTION OF A PCODE
+
+  The "C" language that defines the internal form of a pcodeset
+is in the includable file "pcstr3.h".  Here is a specification
+of the external form of a pcodeset, along with the mapping from
+external to internal.
+
+   A. General Structure.
+
+      Each pcodeset file consists of a header section, containing
+   comments and auxiliary data in keyword form, followed by a list
+   of code items.
+
+      The first token in the file is taken by the software to define
+   the symbol that begins comment lines. This line and any others
+   in the file that begin with the comment token are ignored by
+   the software.  The header may also contain lines defining values
+   for certain variables, in key-word format; these "auxiliary data"
+   lines are flagged by "*" in the first character position.
+
+      Each actual code item consists of an ASCII spelling
+   optionally followed by a list of codes in a next-lower pcodeset
+   that comprise it.  In some alternate formats, the codes must be
+   on separate lines, and in some others, multiple codes can be
+   written on the same line.  In some formats, the user may specify
+   which integer is used to represent each element internally; in
+   others, the software will automatically assign them.
+
+      For example, here is the contents of a simple pcode file
+   defining a code for phonemes:
+
+   ------------------------------------------------------------------
+         C
+         C PHONEMIC CODE FILE
+         C
+         * NAME 'pcd6.txt'
+         * DESC 'More-or-less standard Arpabet Codes'
+         * FORMAT 'NIST1'
+         * type_case: "immaterial"
+         * separated - sep codes are " /[]"
+         C
+          iy ih ey eh ae aa ao ow uh uw er ax ah ix ay aw oy
+          p b t d k g f v th dh s z sh zh hh m n nx l w y r ch jh wh dx
+          en em el - -- kd ^ <,> <;> <:> <.> <?> '0 '1 '2 '3 '9 # + = .
+   ------------------------------------------------------------------
+
+   B. Auxiliary Data Lines.
+
+      Each auxiliary data line includes a keyword identifying a
+   variable and, when appropriate, a value for that variable.  The
+   value should be enclosed in either single or double quotes.  The
+   keywords may be in either upper or lower case, and the lines
+   themselves may be in any order.  Here are the variables
+   currently recognized, in alphabetic order:
+
+   KEYWORD         SIGNIFICANCE/VALUE(S)
+
+   compositional   If this word is present, and the word "not" is
+                   NOT in the line, then the pcode is marked as being
+                   "compositional"; that is, each element, such as the
+                   word "the", may be defined as composed of a string
+                   of elements on a next-lower pcode, such as "dh iy".
+                   If the word "not" IS present on this line, i.e.
+                   "* not compositional", then the pcode is tagged as not
+                   compositional, and no lower-code composition may be given.
+
+   desc            A brief description for documentation.
+
+   element_type    Values:
+                     "word" - for words;
+                     "phone" - for phones, allophones, or phonemes;
+                     "pfeat" - for phonological features.
+                   You can supply an arbitrary value here, but these
+                   three have special meaning for some parts of the
+                   software.
+
+   format          The format that the rest of the file is in.
+                     "NIST1": multiple codes per line, only symbol
+                        name allowed: no internal numeric value
+                        or lower-code composition.
+                     "NIST2": 1 code per line, followed by a lower-code
+                        composition.
+                     "TI1": provided for compatibility with similar codes
+                        in use at TI.  Allows an internal numeric
+                        value but no composition.  Should not be used
+                        for new pcodesets.
+
+   hash function   If this phrase appears, the pcode elements will be
+ (or "hash fcn")   stored and accessed using a hash code.  Note that
+                   this specification is incompatible with any order
+                   specification.  The name of a hash function can
+                   be specified as a value, but at present, only one
+                   hash function is used: "hash7p".
+
+   lower code      The value is the file name of the pcodeset file defining
+                   the next lower pcodeset.
+
+   max_ncodes      An estimate of the number of elements in the pcode.
+                   Since this is used to dynamically allocate space for
+                   the table, it should not err on the low side.
+
+   name            A name by which this pcodeset will be known.
+
+   order           What order the code elements should be kept in.
+                     If order is "alphabetic" or "alpha", the pcodeset will
+                     be sorted into alphabetic order, and subsequent
+                     encoding may use binary search.
+                     Other possible values are "freq", for ordering by
+                     frequency of occurrence, and "arbitrary" or "arb".
+
+   ppf             The value is the file name of an ASCII text file
+                   containing a table of symbol-to-symbol distances.
+                   (The term originally came from "phone-phone function".)
+                   The format of this file is detailed below.
+
+   separated       If only the keyword "separated" is present, with no
+                   value, or if the value is "T", then a string of
+                   the pcode's external tokens must be separated by
+                   one or more special separator characters, such as a
+                   space.  If the value is "F", then the tokens are
+                   not separated.
+                   Non-separated codes have not been tested very
+                   thoroughly yet; beware of using them.
+
+   type_case       "upper", "lower", or "mixed".
+
+
+   These keyword/variables map directly into variables in the
+internal data structure representing the pcode.  Here is a table
+of them, also showing their default values; "p1" is a pointer to a
+pcodeset data object.
+
+   External        Internal              Default
+   compositional   p1->compositional     F
+   desc            p1->desc              EMPTY_STRING
+   element_type    p1->element_type      "phone"
+   format          p1->format            "NIST2"
+   hash function   p1->hashed            F
+   lower code      p1->lower_code_fname  EMPTY_STRING
+                   p1->lower_code        NULL
+   max_ncodes      p1->max_ncodes        1000
+   name            p1->name              the name of the file
+   order           p1->order             "arbitrary"
+   ppf             p1->ppf_fname         EMPTY_STRING
+                   p1->ppf               NULL
+   separated       p1->separated         T
+   type_case       p1->type_case         "mixed"
+
+
+
+   C. Code Elements.
+
+    Following the header section come specifications of the individual
+code elements, in one of the formats mentioned above under "format".
+Two aspects of a code element can be specified in the file:  its external
+representation, an ASCII string; and its lower code composition, a
+string of symbols in the next lower code.  The software will assign
+an internal representation, an integer, to each code element.
+
+    If the format is "NIST1", then multiple code elements can be given
+on a single line, but lower code compositions can't be given.  An
+example of code elements specified like this is given above under the
+discussion of "General Structure".  At present, each symbol is limited
+to a single token bounded by whitespace.
+
+    If the format is "NIST2", then only one code element per line can
+be given, but you can supply a lower code composition for each of them.
+The external representation of the code element can be bounded by
+spaces, double quotation marks, "//", or "[]". (Technically, a symbol
+could thus contain a space, if it is bounded by other characters, but
+this option has hardly been tested.)  Following that, and if the code
+has been declared "compositional", the string of lower code elements
+can be given.  The whole string of lower code elements may optionally
+be bounded by "//" or "[]".  Here are some examples of valid specs:
+
+
+ iy0   syllabic vocalic sonorant voiced long high front y-glide
+     (a phone code, composed of elements from a feature pcodeset)
+
+ abides /ax0 b ay1 d z/
+     (a word code, composed of elements from a phone pcodeset)
+
+
+   D. The PPF Table.
+
+   As an option, a table of numeric distances between pairs of
+code elements can be supplied.  To do this, a header line with
+the key word "ppf" must be supplied, giving the name of a separate
+file that holds the table of distances.  When the pcode is read
+into a program, the ppf table will also be read in and made available
+to the program, referenced as ppf->fval[i][j].  Here is a description
+of the format of this ppf file:
+
+   The file is an ASCII text file, composed of a header section
+followed by a data section.
+
+   The header section is composed of comment lines, which begin
+with ";" in column 1, and auxiliary data lines, which begin with
+"*" in column 1.  Auxiliary data lines specify values for certain
+variables, using key-word format.  The key word is the first token or
+string in the line following "*", and the value follows, bounded by
+single or double quotes if it's a string.  Here are the possibilities:
+
+  * pcode "<NAME>"
+    [stores a name for the ppf function]
+
+  * external format "XXXXX"
+    [specifies a format for the data, either
+
+      "NIST1" - data is in the order isymbol, jsymbol, fcn value
+      "NIST2" - data is in the order fcn value, isymbol, jsymbol
+
+     The default value is "NIST1"]
+
+  * default value = 999
+    [a value to use for symbol-symbol distances not in this file;
+     the default default value is 0.]
+
+  * (not) symmetric   
+    [if a function is labeled as symmetric, only half the values --
+     the fval[i][j] ones -- need be supplied, and the software will
+     copy them into the fval[j][i] locations in the table; the default
+     value is "symmetric".]
+
+  * diagonal (not) zero
+    [indicates whether or not fval[i][i]=0 for all i, overriding
+     the default value declared, if any.  The default case is for
+     all diagonal elements to be set to zero.]
+
+   Following the header section come the function values or distances,
+one to a line.  These data lines contain three tokens, in free format:
+external (ASCII) codes for symbol "i", symbol "j", and an integer
+symbol-symbol function value for ppf->fval[i][j].  In format "NIST1",
+the order is  isymbol, jsymbol, fcn value; in format "NIST2",
+the function value is put first.
+
+
+
+   E. Tables of Pcodesets.
+
+   For a lot of applications, one must deal simultaneously with
+linguistic codes on several levels, such as word, phone, and phonological
+feature.  A way to represent this internally is provided: a data
+structure declared as the C language type "TABLE_OF_CODESETS".  It
+consists of 
+   1. ncodesets, the number of pcodesets in the table;
+   2. directory, a string naming the directory holding the pcodeset files;
+   3. cd[*], a table whose entries refer to particular pcodesets:
+      cd[1].pfname is the file name of the first (highest) pcodeset;
+      cd[1].pc is a pointer to the actual pcodeset data structure.
+
+   In external form, the table of pcodesets is given as an ASCII text
+file, containing a header section consisting of comment lines beginning
+with ";" and auxiliary data lines starting with "*", followed by data
+lines that call out the individual pcodesets, in order.
+
+   The only auxiliary line now processed is one giving the path name
+of the directory that the pcodeset files are to be found in.  The
+key word is "directory", and the value is the next token that is
+enclosed in single or double quotes.
+
+   Formerly four or five values were read in from each data line,
+but now only the name of the pcodeset (external) file is.  It is
+taken as the first token in the line bounded by spaces.  If no
+type or extension on the file name is given, the software provides
+".txt".  Other values in the line will be ignored, and can be used
+as reminders.
+
+   If "pcode1" is immediately above "pcode2" in this table, "pcode2"
+will be taken as specifying the next lower pcode to "pcode1",
+overriding any next lower pcode declaration that "pcode1" may contain.
+
+   As an example, here is the contents of a table file defining
+a hierarchy of word, phone, and feature pcodesets:
+
+
+-------------------------------------------------------------------
+; File pcdtab_wsj.txt
+;
+; Example pcodes for Wall St. Journal w/full Baker lexicon
+; and feature pcodeset instead of phone-phone distance table.
+;
+* pcode directory = "/home/fisher/ling"
+;
+; code              type  max. N    order 
+ /lex/pcdwsjl2h     word   22000   (hashed)
+ /phon/pcdp1       phone    250      arb
+ /phon/pcdfeat3    pfeat     45      arb
+--------------------------------------------------------------------
+
+
+
+III. SOFTWARE THAT USES PCODES
+
+  We have a number of "C" language data types, functions, and programs
+that do useful things with these pcodesets.  They are documented 
+separately, but here is a brief description of the most commonly
+useful of them.
+
+  A. Data Structures.
+
+     These are header files, of type *.h, whose inclusion into a
+  function or program defines a certain data type; variables of
+  this type can then be declared and used.
+
+     1. pcodeset.  This data structure is the one holding a pcodeset
+        in internal form; it's in file "pcstr3.h".
+     2. TABLE_OF_CODESETS. This is the hierarchical table of pcodesets
+        discussed above, in file "pctabstr.h".
+     3. ppfcn. This data structure holds the "ppf" symbol-to-symbol
+        function, in file "ppfstr2.h".
+     4. HASH_PARAMETERS.  This is basically a vector of parameters for the
+        particular hash function currently in use, in file "hparstr1.h".
+
+   B. Functions.
+
+      1. get_pcode3(), in file "gpcode3.c".  This is the usual function
+         to call to read in a pcodeset file and convert it to internal
+         form.
+      2. get_code_table(), in file "gctable.c".  This function is given
+         the name of an ASCII text file holding a table of pcodeset
+         file names, and reads them all in, using get_pcode3(), leaving
+         pointers to them in an object of type "TABLE_OF_CODESETS".
+      3. pcindex2() is the function that returns the internal integer
+         form of a symbol, given its external (ASCII) form and a pointer
+         to its defining pcodeset.  An interesting feature of this
+         function is that if the pcodeset is one of words, and the
+         symbol sent to pcindex2() is not in the pcodeset, then it
+         will attempt to add the item to the pcodeset.  It generates
+         the lower code (phonemic) representation of the word using
+         rather elementary spelling-to-phone functions for either
+         English or Japanese, and writes a description of the addition
+         into a file whose name is the same as the pcodeset file's,
+         with the suffix ".ADD" tacked on.  After a run, you should
+         check for the presence of this file and see if the items in
+         it should be corrected and inserted into the pcodeset file.
+      4. encode2() is the main function to encode a string of symbols
+         in a pcodeset, using pcindex2(), and
+      5. decode2() is the corresponding inverse.
+
+
+
+
+- Bill Fisher, NIST, 10/8/92

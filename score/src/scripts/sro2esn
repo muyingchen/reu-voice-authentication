@@ -1,0 +1,19 @@
+#!/bin/sh
+INSTALL_DIR=$NIST_DIR
+# Produce the extended SNOR scoring input from the SR_output (.sro)
+# transcriptions or Speech recognizer output
+#
+# 0) remove edit cues and leave the remaining words
+# 1) replace pause markers with the token 'PAUSE'
+# 2) delete the helpful interpretation marks
+# 3) replace the stars from mispronounced words with '='
+# 4) collapse runs of spaces, delete initial and final spaces
+# 5) make everything uppercase
+
+awk -f $INSTALL_DIR/bin/v_edit.awk | \
+sed -e 's/ [.]/ PAUSE /g' | \
+sed -e 's/[,.:\!\?]//g'  | \
+sed -e 's/\*\([^ ][^ ]*\)\*/=\1=/g'  | \
+sed -e 's/  */ /g' -e 's/^ //g' -e 's/ $//g'  | \
+tr '[a-z]' '[A-Z]'  | \
+cat

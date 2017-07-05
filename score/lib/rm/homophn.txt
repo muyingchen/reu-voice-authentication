@@ -1,0 +1,41 @@
+;;
+;;  homophn.txt
+;;
+;;  The following table consists of homophones from the Resource Management
+;;  Database (SNOR Format).  This table is (normally) consulted when scoring
+;;  system output from a speech recognition system that did not use a
+;;  restrictive grammar.  In this case, when a substitution of a homophone
+;;  occurs, the scoring program counts them as correctly recognized.
+;;
+;;  HISTORY
+;;     90/01/08  -  From old scoring package
+;;                  The word "TOO" wasn't in the lexicon. it was deleted
+;;
+WHO+S			WHOSE
+WEEKS			WEEK+S
+TEXAS			TEXAS+S
+TWO			TO
+DUE			DO
+THERE			THEIR
+FOUR			FOR
+CARRIERS		CARRIER+S
+CRUISERS		CRUISER+S
+CRUISER+S		CRUISERS+S
+CRUISERS+S		CRUISERS
+DOWNES			DOWNES+S
+CITRUS			CITRUS+S
+FRIGATES		FRIGATE+S
+FRIGATE+S		FRIGATES+S
+FRIGATES+S		FRIGATES
+ITS			IT+S
+SHIPS			SHIPS+S
+REEVES			REEVES+S
+MARS			MARS+S
+JARVIS			JARVIS+S
+NOT			KNOT
+LON			LONG
+MONTHS			MONTH+S
+SUBMARINES		SUBMARINE+S
+SASSAFRAS		SASSAFRAS+S
+SUBS			SUB+S
+ARKANSAS		ARKANSAS+S

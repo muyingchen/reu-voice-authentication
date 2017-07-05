@@ -1,0 +1,14 @@
+.TH SRO2LSN 1 "Release 3.0" "Scoring Pkg"
+.SH NAME
+sro2lsn - convert a list of ATIS .sro format sentences into an Lexical SNOR format.
+.SH SYNOPSIS
+sro2lsn < file.sro > file.lsn
+.SH DESCRIPTION
+This program takes each input transcription, one to a line, and
+converts the ATIS .sro transcription conventions into a more stringent
+SNOR format, as compared to .esn transcriptions.  Once done, the output
+can be used as input to the align program.  See sro.5 and esn.5 for
+detailed descriptions of the formats.
+.SH SEE ALSO
+align(1) sro(5) lsn(5)
+

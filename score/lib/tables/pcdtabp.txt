@@ -1,0 +1,8 @@
+;; Comment definition line
+* pcode directory = 'INSTALL_DIR/lib/rm'
+;; pcdtabp.txt 
+;; code structure; top level is phones, without ssf table.
+;; code files can usually be found in ../src/rdev.
+;; code          type  max. N    order 
+ pcdsrip1       phone     80      arb
+ pcdsrif        pfeat     35      arb

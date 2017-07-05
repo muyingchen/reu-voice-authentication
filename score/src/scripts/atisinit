@@ -1,0 +1,120 @@
+#!/bin/sh
+INSTALL_DIR=$NIST_DIR
+#
+#   Standard script for generating the neccessary files to score
+#   a spontaneous speech recognition test from the ATIS domain
+#
+#   Usage: This file is meant to be used like a filter, therefore
+#          all reference and hypothesis files should be piped '|'
+#          into this script
+#
+#   $1 -> the root name for all the created files which include
+#         .lex .hom .cfg
+#
+echo "Creating scoring files for an ATIS test"
+if (test $# -ne 1) then
+   echo Error Not enough arguments
+   echo Usage $0 root_name
+   exit 1
+fi
+
+echo ";;" > $1.lex
+echo ";;  file : $1.lex" >> $1.lex
+echo ";;  Desc : The lexicon file created for an ATIS test" >> $1.lex
+echo ";;" >> $1.lex
+
+echo Creating the homophone file
+echo ";;" > $1.hom
+echo ";;  file: $1.hom" >> $1.hom
+echo ";;  Desc: Homophone file for an ATIS test" >> $1.hom
+echo ";;" >> $1.hom
+echo "TWO TO" >> $1.hom
+echo "TWO TOO" >> $1.hom
+echo "TOO TO" >> $1.hom
+echo "DUE DO" >> $1.hom
+echo "THERE THEIR" >> $1.hom
+echo "FOUR FOR" >> $1.hom
+echo "ITS IT'S" >> $1.hom
+
+echo Creating the lexicon . . . 
+sed 's/(.*)$//' > $1.tmp.utts
+sed '/^;;/ d' $1.hom >> $1.tmp.utts
+
+cat $1.tmp.utts | $INSTALL_DIR/bin/mklex - $1.tmp
+cat $1.tmp >> $1.lex
+
+echo Creating a Configuration file
+echo ";;" > $1.cfg
+echo ";;   File: $1.cfg" >> $1.cfg
+echo ";;   Desc: Configuration file for an ATIS test" >> $1.cfg
+echo ";;" >> $1.cfg
+echo ";;  Format:" >> $1.cfg
+echo ";;      ;; -> comments" >> $1.cfg
+echo ";;      id value" >> $1.cfg
+echo "REF" >> $1.cfg
+echo "LEX       $1.lex" >> $1.cfg
+echo "HOMO      $1.hom" >> $1.cfg
+echo "OUTFILE   $1.ali" >> $1.cfg
+echo "ALIGN     $1.ali" >> $1.cfg
+echo "SPLTMRG   " >> $1.cfg
+echo "MONOSYL   " >> $1.cfg
+echo "ALP_NUM   " >> $1.cfg
+echo "DIST_TBL  " >> $1.cfg
+echo "NAME      gen" >> $1.cfg
+echo "DESC      This is the description from the $1.cfg" >> $1.cfg
+echo "ATIS" >> $1.cfg
+echo "NO_GR" >> $1.cfg
+echo "ONE2ONE" >> $1.cfg
+echo "HYP       HYP" >> $1.cfg
+
+
+echo Searching for special tokens
+if (test `egrep '^[<]' $1.tmp | tee $1.tmp.1 | wc -l` -gt 0) then
+    echo Converting verbal deletions
+    echo "    " Adding verbal deletions to the homophone file
+    cat $1.tmp.1 | awk '{print $1,$1}' | sed -e 's/^<//' -e 's/> / /' >> $1.hom
+    echo "    " Updating the lexicon
+    sed -e '/^;;/ d' < $1.lex > $1.tmp.2
+    sed -e '/^;;/ d' < $1.hom > $1.tmp.4
+    grep -e '^;;' < $1.lex > $1.tmp.3
+    cp $1.tmp.3 $1.lex
+    cat $1.tmp.4 $1.tmp.2 | $INSTALL_DIR/bin/mklex - - >> $1.lex
+fi
+
+if (test `grep '\[' $1.tmp | tee $1.tmp.1 | wc -l` -gt 0) then
+    echo ";; Beginning of the Non speech token subset" >> $1.lex	
+    echo "BEGIN_SUBSET" >> $1.lex	
+    echo "* SUBSET_DESC = \"Non-Speech Events   ('[ ]')\"" >> $1.lex	
+    cat $1.tmp.1 >> $1.lex
+    echo "END_SUBSET" >> $1.lex
+fi
+if (test `egrep '^[<]' $1.tmp | tee $1.tmp.1 | wc -l` -gt 0) then
+    echo ";; Beginning of the Verbally deleted subset" >> $1.lex
+    echo "BEGIN_SUBSET" >> $1.lex
+    echo "* SUBSET_DESC = \"Verbal Deletions    ('< >')\"" >> $1.lex
+    cat $1.tmp.1 >> $1.lex
+    echo "END_SUBSET" >> $1.lex
+fi
+if (test `egrep -e '-$' $1.tmp | tee $1.tmp.1 | wc -l` -gt 0) then
+    echo ";; Beginning of the false start word subset" >> $1.lex
+    echo "BEGIN_SUBSET" >> $1.lex
+    echo "* SUBSET_DESC = \"False Starts        ('  -')\"" >> $1.lex
+    cat $1.tmp.1 >> $1.lex
+    echo "END_SUBSET" >> $1.lex
+fi
+if (test `grep 'PAUSE' $1.tmp | tee $1.tmp.1 | wc -l` -gt 0) then
+    echo ";; Beginning of the Pause token subset" >> $1.lex	
+    echo "BEGIN_SUBSET" >> $1.lex	
+    echo "* SUBSET_DESC = \"Pauses              (' . ')\"" >> $1.lex	
+    cat $1.tmp.1 >> $1.lex
+    echo "END_SUBSET" >> $1.lex
+fi
+if (test `grep '=' $1.tmp | tee $1.tmp.1 | wc -l` -gt 0) then
+    echo ";; Beginning of the Mispronounced token subset" >> $1.lex	
+    echo "BEGIN_SUBSET" >> $1.lex	
+    echo "* SUBSET_DESC = \"Mispron. Words      ('= =')\"" >> $1.lex	
+    cat $1.tmp.1 >> $1.lex
+    echo "END_SUBSET" >> $1.lex
+fi
+
+rm $1.tmp.* $1.tmp

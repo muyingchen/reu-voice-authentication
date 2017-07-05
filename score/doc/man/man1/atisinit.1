@@ -1,0 +1,23 @@
+.TH ATISINIT 1 "Release 3.0" "Scoring Pkg"
+.SH NAME
+atisinit - create auxillary files for scoring ATIS spontaneous speech recognition output
+.SH SYNOPSIS
+cat *.hyp *.ref | atisinit root_name
+.SH DESCRIPTION
+.PP
+This sh script reads from standard intput a list of ATIS style SNOR
+or extended SNOR sentences and creates a lexicon, homophone and 
+cfg file.  These files are directly usable with the scoring package.
+Both reference and hypothesis files must be used for input since the
+lexicon must include all possible tokens.  Special subsets of the lexicon
+will be identified for verbal deletion, false starts and non speech
+events.  A small homophone file is created to solve alignment errors
+of verbally deleted words, along with a base set of homophones from
+the Resource Management Database.  Additionally, a setup .cfg
+configuration file is created to store these file definitions.
+.SH OUTPUT
+Output will be three files: root_name.lex root_name.hom root_name.cfg.   
+.SH SEE ALSO
+cfg.5
+
+

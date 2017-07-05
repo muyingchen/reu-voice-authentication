@@ -1,0 +1,8 @@
+;; A comment line
+* pcode directory = 'INSTALL_DIR/lib/english'
+;; pcdt_eng.txt 
+;; General Purpose English word/phone w/ppf pcodeset.
+;; code structure; top level is words. 
+;; code          type  max. N    order 
+ gpengw1.pcd    word    50000    hash
+ phon1axp.pcd   phone     50      arb

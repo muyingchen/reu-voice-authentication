@@ -1,0 +1,58 @@
+.TH ENTROPY 1 "Release 3.0" "Scoring Pkg"
+.SH NAME
+entropy - Compute the entropy of the word confusion matrix based
+on an alignment file.
+.SH SYNOPSIS
+.B entropy -ALIGN fname1 fname2 ...
+[ -LEX fname ]
+[ -CODESET fname ]
+[ -LSUBS fname ]
+[ -CFG file_name ]
+[ -DUMP ]
+[ -TEST ]
+[ -DBG n ]
+[ -DF file_name ]
+.SH DESCRIPTION
+.PP
+Given one or more alignment files, create a word confusion matrix
+then compute the entropy of the confusion matrix.  Due
+to the extremely large size of the confusion
+matrix is built in a disk file named by the '-DF' options.
+.PP
+.SH OPTIONS
+.PP
+.IP "\fB-ALIGN fname\fP"
+Supply the file names of the alignment files.
+.IP "\fB-LEX fname\fP"
+Change the default lexicon file-name to `fname'.
+This option will be overridden by subsequent CODESET
+definitions.
+.IP "\fB-CODESET fname\fP"
+Change the default pcodeset filename to `fname'
+This option will be overridden by subsequent LEX definitions.
+.IP "\fB-CFG fname\fP"
+Read the file `fname' and interpret it as command line arguments.
+.IP "\fB-DUMP\fP"
+Print to stdout all of the changeable arguments from the command-line
+.IP "\fB-TEST\fP"
+Perform a couple programmed tests.  The performed are:
+
+1. A confusion array with all 1's, Entropy : 4.6439
+
+2. A confusion array with a diagonal of all 1's, Entropy : 2.3219
+
+3: A confusion array with 4-1's and a 2, Entropy : 2.2516
+
+4: A confusion array with a 4 and a 2, Entropy : 0.9183
+
+.IP "\fB-DBG n\fP"
+Set the Debug level to n, the currently defined values are:
+   dbg flags: <= 0    = Run silent
+              >  0    = Status messages
+              >= 5    = analysis of all computations
+              >= 9    = Dump of the disk array
+
+.SH SEE ALSO
+score(1), align(1)
+.SH BUGS
+If you see `em, smash `em!

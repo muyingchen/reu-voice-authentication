@@ -1,0 +1,28 @@
+.TH NGSCORE 1 "Release 3.1" "Scoring Pkg"
+.SH NAME
+ngscore - score the hypothesis sentences from a recognition
+system which did not impose a grammar.
+.SH SYNOPSIS
+.B ngscore <OPTIONS> hyp_files ...
+ 
+ 
+  OPTS  -->  -<CORPUS> | -ref fname | <DICT> | -HOMO fname | 
+             [ <OPTIONS> ]
+               
+     CORPUS    --> rm | wsj | timit | atis | swb | no_id |
+                   notype | spu_id 
+     DICT      --> -LEX fname | -CODESET fname | -autolex
+     OPTIONS   --> <ALIGN_OPT> | <SCORE_OPT>
+     ALIGN_OPT --> -phone | -frag | -tmk | -ctm | -sm_fom num 
+     SCORE_OPT --> -pralign | -sc_all | -sum | -rsum
+
+
+.SH DESCRIPTION
+Perform an alignment of all the hypothesis sentences contained in the
+'hyp_files ...' as in wgscore, except, forgive any subsitution errors
+involving words in the homophone file defined by "-HOMO fname".
+
+.SH SEE ALSO
+wgscore(1) align(1)
+.SH BUGS
+If you see `em, smash `em!

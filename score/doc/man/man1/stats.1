@@ -1,0 +1,129 @@
+.TH STATS 1 "Release 3.0" "Scoring Pkg"
+.SH NAME
+stats - Statically compare two or more speech recognition systems
+.SH SYNOPSIS
+.B stats -ALIGN fname1 fname2 ...
+[ -LEX fname ]
+[ -CODESET fname ]
+[ -LSUBS fname ]
+[ -CFG file_name ]
+[ -SHLSUBS ]
+[ -DUMP ]
+[ -LP ]
+[ -HDR ]
+[ -TEST_NAME "string" ]
+[ -TROFF ]
+[ -SENT_MCN ]
+[ -MTCH_PR ]
+[ -MIN_GOOD n ]
+[ -SEG_LONG ]
+[ -SEG_AVE ]
+[ -SIGNTEST ]
+[ -WILCOXON ]
+[ -SIG ]
+[ -ANOVAR ]
+[ -RANGE ]
+[ -DUMP_COUNT ]
+[ -V ]
+[ -PCT_FORM char ]
+.SH DESCRIPTION
+This Program takes align sentences of speech recognition systems
+output and compares all the systems to one another by means of statistical
+tests:
+.SH OPTIONS
+.PP
+.IP "\fB-ALIGN fname\fP"
+Supply the file-names of the alignment files
+to be statistically compared.
+.IP "\fB-LEX fname\fP"
+Change the default lexicon file-name to `fname'.
+This option will be overridden by subsequent CODESET definitions.
+.IP "\fB-CODESET fname\fP"
+Change the default pcodeset filename to `fname'
+This option will be overridden by subsequent LEX definitions.
+.IP "\fB-LSUBS fname\fP"
+Change the default file for lexicon subsets to
+`fname'.  This arguement is for gathering stats
+on certain parts of the lexicon.
+.IP "\fB-CFG fname\fP"
+Read the file `fname' and interpret it as
+command line arguments.
+.IP "\fB-SHLSUBS\fP"
+Print to stdout the currently defined lexicon subsets
+.IP "\fB-DUMP\fP"
+Print to stdout all of the changeable arguments from the command-line.
+.IP "\fB-LP\fP"
+Format the printouts to 132 columns.
+.IP "\fB-HDR\fP"
+Print a header page to show the recognition system names and descriptions.
+.IP "\fB-TEST_NAME string\fP"
+Below the title of each report, this quoted
+"string" will be printed.
+.IP "\fB -TROFF\fP"
+Produce tbl files to pipe to troff for printing laser-printer reports
+of the Matched Pairs and Sentence McNemar's tests plus one file of the
+two together.  The files created are MTCH.tbl, MCN.tbl and
+MTCH_MCN.tbl.
+.IP "\fB-SENT_MCN\fP"
+Print to stdout out a comparison matrix showing results of system
+comparisons using the Sentence Level McNemar test.
+.IP "\fB-MTCH_PR\fP"
+Print to stdout out a comparison matrix showing results of system
+comparisons using the Matched Pairs Segment analysis.
+.IP "\fB-MIN_GOOD n\fP"
+In order to do a Matched Pairs analysis, the definition of an
+erroneous segment is assumed to be 2 correctly recognized words on
+each end of the segment.  This command-line argument changes the
+length to n.
+.IP "\fB-SEG_LONG\fP"
+Print a report showing the number of sentence segments found for
+varying numbers for MIN_GOOD.
+.IP "\fB-SEG_AVE\fP"
+Print a report just showing the average number of sentence segments
+for varying amounts of MIN_GOOD over all the sentences from all the
+systems.
+.IP "\fB-SIGNTEST\fP"
+Print a report for the sign test.  See signtest.doc for a further explaination.
+.IP "\fB-WILCOXON\fP"
+Print a report for the Wilcoxon Signed Rank test.  See wilcoxon.doc
+for a further explaination.
+.IP "\fB-SIG\fP"
+Print a compsite report for the Sentence Mcnemar, Matched Pairs
+Sentence Segment, Sign and Wilcoxon tests.  If the '-V' flag is used,
+a report is written to a file for each system.  The filename is called
+'NAME.sig', where NAME is the system name given to the alignment file
+during the alignment process.
+.IP "\fB-ANOVAR\fP"
+Print to stdout out a comparison matrix showing results of system
+comparisons using the Analysis of Variance by Ranks.
+.IP "\fB-RANGE\fP"
+Print to stdout range analysis ranks by for systems and speakers in
+table and graph formats.
+.IP "\fB-DUMP_COUNT\fP"
+Print to stdout showing the number of correctly recognized words,
+substitutions, deletions and insertions for each speaker of each
+system.  The totals of matching correct sentences are also included.
+.IP "\fB-V\fP"
+Print detailed reports for the significance tests.
+.IP "\fB-PCT_FORM char\fP"
+To calculate the ranges and to do the ANOVAR test a formula must be
+used to calculate percentages of some form to show the accuracy of
+recognition.  The Default is Word Accuracy.  The Available formulas
+are:
+
+         R  ->  Percent Correctly Recognized =
+                    number of words correct
+             100 X  -----------------------
+                    number of reference words
+
+         E  ->  Total Error = 
+                       number of errors
+             100 X  -----------------------
+                    number of reference words
+
+         W  ->  Word Accuracy =  100% - Total Error
+
+.SH SEE ALSO
+align(1), stats(1), score(1)
+.SH BUGS
+If you see `em, smash `em!

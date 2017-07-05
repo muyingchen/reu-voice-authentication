@@ -1,0 +1,67 @@
+*************** unfinished
+
+File:  domains.txt
+
+Brief: This file will decribe how to used the scoring package on a domain
+       other than Resource Management.
+
+
+Overview:
+
+       The scoring package was developed as a general purpose tool for
+   scoring the accuracy of any type of token matching or identifying system,
+   within the confines of the following test format.
+
+       1: The results must be comparable to some "reference" truth.  Thoughout
+          this document this will be called the reference answers.  For
+          example, in Resource Management, the read prompt strings are being
+          used.
+
+       2: The expected result tokens must have a one-to-one matching to
+          the reference answers.  In truth, the actual results will not have
+          a one-to-one correspondance (unless the results are 100% correct),
+
+       3: The lexicon for tokens must be known.  Simply, this means the 
+          a sorted list of all tokens must be obtainable.
+
+   If these requirments have been met, the package may be used.
+
+
+Setting Up the New Domain:
+
+       Below are the necessary steps for using the scoring package on a
+   new domain.  Before reading this, you should have already read "cfg.5"
+   in the doc directory.  This gives a description of the configuration
+   file format used for the scoring package.  Once you have read it, make
+   a private copy of the file drivers/generic.cfg for your new domain.
+
+       1: Preparing the reference and hypothesis files
+
+             There are 3 modes of loading the reference and hypothesis
+          files, all of which depend upon the relationship between the 
+          hypothesis and reference files.  
+ 
+          A. Explaination of the hypothesis files
+
+                 Although scoring package was meant to be general, it was 
+             however made for a specific purpose, to score Resource Management
+             speech recognition results.  One of the main considerations was 
+             tractability of results based on speakers and the sentences they
+             spoke.  Therfore each hypothesis sentence, or string of tokens,
+             had a sentence identifier appended to it.  The identifier's form
+             is '(speaker-sentence)'.  If extended into general terms, the
+             speaker can be mapped to a group, and each sentence is an element
+             of that group.
+
+          B. The Reference files.
+
+       2: The Lexicon
+
+              This is perhaps the most important step because every program
+          and file uses the lexicon.  What needs to come out of this step
+          is an alphabetically sorted list of all the possible tokens from
+          reference and hypothesis answers.  In UNIX, this can be done with
+          the script 'mklex' in the bin directory.  Once the lexicon is made,
+          change the filename after the 'LEX' argument to that of your newly
+          created lexicon.
+          

@@ -1,0 +1,1206 @@
+;; (This line defines what the comment flag is.)
+;;
+* NAME "atis1w.pcd"
+* DESC "ATIS words"
+;;
+;; This pcodeset is a complete pcodeset for ATIS words as of 6/30/94.
+;; Where the words can't be found in the timit and ucla
+;; dictionaries, prons for them have been made by hand-correcting
+;; the  output of function ttp1().
+;;
+* code is compositional, separated by " ".
+* element type is "word".
+* hash function is "hash7p"
+* max_ncodes is "6000"
+* type_case is "lower".
+;; version with even lower feature pcodeset:
+;;* lower code is "phon1ax.txt".
+;; version with phone-phone distance table:
+* lower code is "phon1axp.pcd".
+;;
+'kay k '1 ey
+a '1 ey
+a's '1 ey z
+aa '2 ey '1 ey
+abbreviation '0 ax b r '2 iy v '0 iy '1 ey sh '0 ax n
+abbreviations '0 ax b r '2 iy v '0 iy '1 ey sh '0 ax n z
+able '1 ey b '0 ax l
+about '0 ax b '1 aw t
+above '0 ax b '1 ax v
+accommodations '0 ax k '2 aa m '0 ax d '1 ey sh '0 ax n z
+accompanying '0 ax k '1 ax m p '0 ax n '0 iy '0 ih nx
+account '0 ax k '1 aw n t
+across '0 ax k r '1 ao s
+add '1 ae d
+additional '0 ax d '1 ih sh '0 ax n '0 ax l
+adult '0 ax d '1 ax l t
+advance '0 ax d v '1 ae n s
+after '1 ae f t '0 ax r
+afternoon '2 ae f t '0 ax r n '1 uw n
+afternoons '2 ae f t '0 ax r n '1 uw n z
+afterwards '1 ae f t '0 ax r w '0 ax r d z
+again '0 ax g '1 eh n
+agencies '1 ey jh '0 ax n s '0 iy z
+air '1 eh r
+air's '1 eh r z
+aircraft '1 eh r k r '2 ae f t
+aircrafts '1 eh r k r '2 ae f t s
+airfare '1 ae '0 ax r f '2 ae '0 ax r
+airfares '1 ae '0 ax r f '2 ae '0 ax r z
+airline '1 eh r l '2 ay n
+airlines '1 eh r l '2 ay n z
+airlines' '1 eh r l '2 ay n z
+airplane '1 eh r p l '2 ey n
+airplanes '1 eh r p l '0 ey n z
+airport '1 eh r p '2 ao r t
+airport's '1 eh r p '2 ao r t s
+airports '1 eh r p '2 ao r t s
+airways '1 eh r w '2 ey z
+alaska '0 ax l '1 ae s k '0 ax
+all '1 ao l
+along '0 ax l '1 ao nx
+alright '0 ao l r '1 ay t
+also '1 ao l s '0 ow
+am '1 ae m
+american '0 ax m '1 eh r '0 ih k '0 ax n
+american's '0 ax m '1 eh r '0 ih k '0 ax n z
+amount '0 ax m '1 aw n t
+an '1 ae n
+and '1 ae n d
+angeles '1 ae n jh '0 ax l '0 ih s
+another '0 ax n '1 ax dh '0 ax r
+any '1 eh n '0 iy
+anything '1 eh n '0 iy th '2 ih nx
+anywhere '1 eh n '0 iy w '2 eh r
+apart '0 ax p '1 aa r t
+apply '0 ax p l '1 ay
+approximately '0 ax p r '1 aa k s '0 ax m '0 ax t l '0 iy
+april '1 ey p r '0 ax l
+are '1 aa r
+area '1 eh r '0 iy '0 ax
+areas '1 eh r '0 iy '0 ax z
+aren't '1 aa r n t
+arizona '2 eh r '0 ih z '1 ow n '0 ax
+around '0 ax r '1 aw n d
+arrange '0 ax r '1 ey n jh
+arranged '0 ax r '1 ey n jh d
+arrangement '0 ax r '1 ey n jh m '0 ax n t
+arrangements '0 ax r '1 ey n jh m '0 ax n t s
+arrival '0 ax r '1 ay v '0 ax l
+arrive '0 ax r '1 ay v
+arrives '0 ax r '1 ay v z
+arriving '0 ax r '1 ay v '0 ih nx
+as '1 ae z
+aspen '1 ae s p '0 ax n
+assuming '0 ax s '1 uw m '0 ih nx
+at '1 ae t
+atl '1 ey t '1 iy '1 eh l
+atlanta '0 ae t l '1 ae n t '0 ax
+atlanta's '0 ae t l '1 ae n t '0 ax z
+august '1 ao g '0 ax s t
+availability '0 ax v '2 ey l '0 ax b '1 ih l '0 ih t '0 iy
+available '0 ax v '1 ey l '0 ax b '0 ax l
+avis '1 ey v '0 ih s
+avoid '0 ax v '1 oy d
+b b '1 iy
+back b '1 ae k
+bag b '1 ae g
+bags b '1 ae g z
+baltimore b '1 ao l t '0 ax m '2 ao r
+base b '1 ey s
+basis b '1 ey s '0 ih s
+bay b '1 ey
+be b '1 iy
+beach b '1 iy ch
+been b '1 ih n
+before b '0 ih f '1 ao r
+begin b '0 ih g '1 ih n
+beginning b '0 ih g '1 ih n '0 ih nx
+begins b '0 ih g '1 ih n z
+being b '1 iy '0 ih nx
+belong b '0 ih l '1 ao nx
+below b '0 ih l '1 ow
+besides b '0 ih s '1 ay d z
+best b '1 eh s t
+between b '0 ih t w '1 iy n
+big b '1 ih g
+bit b '1 ih t
+bn b '1 iy '1 eh n
+body b '1 aa d '0 iy
+boeing b '1 ow '0 ih nx
+boeing's b '1 ow '0 ih nx z
+book b '1 uh k
+booked b '1 uh k t
+booking b '1 uh k '0 ih nx
+boston b '1 ao s t '0 ax n
+boston's b '1 ao s t '0 ax n z
+both b '1 ow th
+bound b '1 aw n d
+breakfast b r '1 eh k f '0 ax s t
+brief b r '1 iy f
+broad b r '1 ao d
+built b '1 ih l t
+burbank b '1 ax r b '2 ae nx k
+bus b '1 ax s
+buses b '1 ax s '0 ih z
+business b '1 ih z n '0 ih s
+busses b '1 ax s '0 ax z
+but b '1 ax t
+button b '1 ax t '0 ax n
+buy b '1 ay
+by b '1 ay
+c s '1 iy
+c's s '1 iy z
+cab k '1 ae b
+california k '2 ae l '0 ax f '1 ao r n y '0 ax
+call k '1 ao l
+called k '1 ao l d
+can k '1 ae n
+can't k '1 ae n t
+canada k '1 ae n '0 ax d '0 ax
+cancel k '1 ae n s '0 ax l
+capacities k '0 ax p '1 ae s '0 ih t '0 iy z
+capacity k '0 ax p '1 ae s '0 ih t '0 iy
+car k '1 aa r
+card k '1 aa r d
+carnival k '1 aa r n '0 ax v '0 ax l
+carolina k '2 ae r '0 ax l '1 ay n '0 ax
+carried k '1 ae r '0 iy d
+carrier k '1 ae r '0 iy '0 ax r
+carriers k '1 ae r '0 iy '0 ax r z
+carries k '1 ae r '0 iy z
+carry k '1 ae r '0 iy
+cars k '1 aa r z
+case k '1 ey s
+category k '1 ae t '0 ax g '2 ao r '0 iy
+center s '1 eh n t '0 ax r
+chance ch '1 ae n s
+change ch '1 ey n jh
+changed ch '1 ey n jh d
+changes ch '1 ey n jh '0 ih z
+charge ch '1 aa r jh
+charlotte sh '1 aa r l '0 ax t
+chart ch '1 aa r t
+cheap ch '1 iy p
+cheaper ch '1 iy p '0 ax r
+cheapest ch '1 iy p '0 ax s t
+cheaply ch '1 iy p l '0 iy
+cheers ch '1 ih r z
+chicago sh '0 ax k '1 aa g '2 ow
+choices ch '1 oy s '0 ih z
+choose ch '1 uw z
+christmas k r '1 ih s m '0 ax s
+cincinnati s '2 ih n s '0 ax n '1 ae t '0 iy
+cities s '1 ih t '0 iy z
+city s '1 ih t '0 iy
+city's s '1 ih t '0 iy z
+class k l '1 ae s
+classed k l '1 ae s t
+classes k l '1 ae s '0 ax z
+clear k l '1 ih r
+cleveland k l '1 iy v l '0 ax n d
+click k l '1 ih k
+close k l '1 ow z
+closest k l '1 ow s '0 ih s t
+co k '1 ow
+coach k '1 ow ch
+coast k '1 ow s t
+code k '1 ow d
+codes k '1 ow d z
+colgan k '1 ow l g '0 ax n
+colorado k '2 aa l '0 ax r '1 aa d '0 ow
+columbia k '0 ax l '1 ax m b '0 iy '0 ax
+columbus k '0 ax l '1 ax m b '0 ax s
+column k '1 aa l '0 ax m
+combination k '2 aa m b '0 ax n '1 ey sh '0 ax n
+combined k '0 ax m b '1 ay n d
+come k '1 ax m
+comes k '1 ax m z
+coming k '1 ax m '0 ih nx
+commercial k '0 ax m '1 ax r sh '0 ax l
+commercials k '0 ax m '1 ax r sh '0 ax l z
+common k '1 aa m '0 ax n
+companies k '1 ax m p '0 ax n '0 iy z
+companion k '0 ax m p '1 ae n y '0 ax n
+company k '1 ax m p '0 ax n '0 iy
+confirm k '0 ax n f '1 ax r m
+connect k '0 ax n '1 eh k t
+connecting k '0 ax n '1 eh k t '0 ih nx
+connection k '0 ax n '1 eh k sh '0 ax n
+connects k '0 ax n '1 eh k t s
+consider k '0 ax n s '1 ih d '0 ax r
+consist k '0 ax n s '1 ih s t
+contains k '0 ax n t '1 ey n z
+continental k '2 aa n t '0 ax n '1 eh n t '0 ax l
+continue k '0 ax n t '1 ih n y '0 uw
+continuing k '0 ax n t '1 ih n y '0 uw '0 ih nx
+convenient k '0 ax n v '1 iy n y '0 ax n t
+cooked k '1 uh k t
+cool k '1 uw l
+correct k '0 ax r '1 eh k t
+correction k '0 ax r '1 eh k sh '0 ax n
+correspond k '2 aa r '0 ax s p '1 aa n d
+cost k '1 ao s t
+costs k '1 ao s t s
+could k '1 uh d
+count k '1 aw n t
+county k '1 aw n t '0 iy
+cover k '1 ax v '0 ax r
+covered k '1 ax v '0 ax r d
+craft k r '1 ae f t
+crafts k r '1 ae f t s
+cross k r '1 ao s
+current k '1 ax r '0 ax n t
+d d '1 iy
+d8s d '1 iy '1 ey t '1 eh s
+daily d '1 ey l '0 iy
+dallas d '1 ae l '0 ax s
+dallas' d '1 ae l '0 ax s
+dash d '1 ae sh
+data d '1 ey t '0 ax
+date d '1 ey t
+dates d '1 ey t s
+day d '1 ey
+days d '1 ey z
+dc d '2 iy s '1 iy
+dear d '1 ih r
+december d '0 ih s '1 eh m b '0 ax r
+define d '0 ih f '1 ay n
+delays d '0 ih l '1 ey z
+delete d '0 ih l '1 iy t
+delta d '1 eh l t '0 ax
+delta's d '1 eh l t '0 ax z
+den d '1 eh n
+denmark d '1 eh n m '2 aa r k
+denver d '1 eh n v '0 ax r
+denver's d '1 eh n v '0 ax r z
+depart d '0 ih p '1 aa r t
+departing d '0 ih p '1 aa r t '0 ih nx
+departs d '0 ih p '1 aa r t s
+departure d '0 ih p '1 aa r ch '0 ax r
+departures d '0 ih p '1 aa r ch '0 ax r z
+describe d '0 ih s k r '1 ay b
+description d '0 ih s k r '1 ih p sh '0 ax n
+descriptions d '0 ih s k r '1 ih p sh '0 ax n z
+designation d '2 eh z '0 ih g n '1 ey sh '0 ax n
+designations d '2 eh z '0 ih g n '1 ey sh '0 ax n z
+destination d '2 eh s t '0 ax n '1 ey sh '0 ax n
+destinations d '2 eh s t '0 ax n '1 ey sh '0 ax n z
+details d '0 ih t '1 ey l z
+determine d '0 ih t '1 ax r m '0 ih n
+detroit d '0 ih t r '1 oy t
+dfw d '1 iy '1 eh f d '1 ax b '0 ax l y '2 uw
+did d '1 ih d
+didn't d '1 ih d '0 ax n t
+diego d '0 iy '1 ey g '0 ow
+diet d '1 ay '0 ax t
+difference d '1 ih f r '0 ax n s
+different d '1 ih f r '0 ax n t
+dinner d '1 ih n '0 ax r
+dinners d '1 ih n '0 ax r z
+direct d '0 ay r '1 eh k t
+discount d '0 ih s k '1 aw n t
+discounted d '1 ih s k '0 aw n t '0 ih d
+discounts d '0 ih s k '1 aw n t s
+display d '0 ih s p l '1 ey
+distance d '1 ih s t '0 ax n s
+distances d '1 ih s t '0 ax n s '0 ax z
+distant d '1 ih s t '0 ax n t
+district d '1 ih s t r '0 ih k t
+dl d '1 iy '1 eh l
+do d '1 uw
+does d '1 ax z
+doesn't d '1 ax z '0 ax n t
+dollar d '1 aa l '0 ax r
+dollars d '1 aa l '0 ax r z
+don't d '1 ow n t
+double d '1 ax b '0 ax l
+douglas d '1 ax g l '0 ax s
+downtown d '1 aw n t '1 aw n
+due d y '1 uw
+dulles d '1 ax l '0 ax s
+duration d y '0 uh r '1 ey sh '0 ax n
+during d '1 uh r '0 ih nx
+e '1 iy
+each '1 iy ch
+earlier '1 ax r l '0 iy '0 ax r
+earliest '1 ax r l '0 iy '0 ax s t
+early '1 ax r l '0 iy
+easily '1 iy z '0 ax l '0 iy
+east '1 iy s t
+eastern '1 iy s t '0 ax r n
+eastern's '1 iy s t '0 ax r n z
+eat '1 iy t
+economy '0 ih k '1 aa n '0 ax m '0 iy
+edt '1 iy d '1 iy t '1 iy
+eight '1 ey t
+eight's '1 ey t s
+eighteen '1 ey t '1 iy n
+eighteenth '0 ey t '1 iy n th
+eighth '1 ey t th
+eighties '1 ey t '0 iy z
+eighty '1 ey t '0 iy
+either '1 iy dh '0 ax r
+elapsed '0 ih l '1 ae p s t
+eleven '0 ih l '1 eh v '0 ax n
+eleven's '0 ih l '1 eh v '0 ax n z
+elevens '0 ih l '1 eh v '0 ax n z
+eleventh '0 ih l '1 eh v '0 ax n th
+end '1 eh n d
+ended '1 eh n d '0 ih d
+ending '1 eh n d '0 ih nx
+ends '1 eh n d z
+engine '1 eh n jh '0 ax n
+enroute '0 eh n r '1 uw t
+entire '0 ih n t '1 ay '0 ax r
+equal '1 iy k w '0 ax l
+equipment '0 ih k w '1 ih p m '0 ax n t
+evening '1 iy v n '0 ih nx
+evenings '1 iy v n '0 ih nx z
+ever '1 eh v '0 ax r
+every '1 eh v r '0 iy
+everyday '1 eh v r '0 iy d '2 ey
+everything '1 eh v r '0 iy th '2 ih nx
+exceeding '0 ih k s '1 iy d '0 ih nx
+excursion '0 ih k s k '1 ax r zh '0 ax n
+excuse '0 ih k s k y '1 uw s
+exist '0 ih g z '1 ih s t
+exiting '1 eh k s '0 ih t '0 ih nx
+expensive '0 ih k s p '1 eh n s '0 ih v
+explain '0 ih k s p l '1 ey n
+explanation '2 eh k s p l '0 ax n '1 ey sh '0 ax n
+explanations '2 eh k s p l '0 ax n '1 ey sh '0 ax n z
+eye '1 ay
+f '1 eh f
+fair f '1 eh r
+fall f '1 ao l
+far f '1 aa r
+fare f '1 eh r
+fares f '1 eh r z
+fastest f '1 ae s t '0 ax s t
+february f '1 eh b y '0 ax w '2 eh r '0 iy
+few f y '1 uw
+field f '1 iy l d
+fifteen f '0 ih f t '1 iy n
+fifteenth f '0 ih f t '1 iy n th
+fifth f '1 ih f th
+fiftieth f '1 ih f t '0 iy '0 ih th
+fifty f '1 ih f t '0 iy
+fight f '1 ay t
+file f '1 ay l
+finally f '1 ay n '0 ax l '0 iy
+find f '1 ay n d
+finding f '1 ay n d '0 ih nx
+fine f '1 ay n
+finish f '1 ih n '0 ih sh
+finishing f '1 ih n '0 ih sh '0 ih nx
+first f '1 ax r s t
+fit f '1 ih t
+five f '1 ay v
+flies f l '1 ay z
+flight f l '1 ay t
+flights f l '1 ay t s
+flown f l '1 ow n
+fly f l '1 ay
+flyer f l '1 ay '0 ax r
+flying f l '1 ay '0 ih nx
+fokker f '1 aa k '0 ax r
+following f '1 aa l '0 ow '0 ih nx
+food f '1 uw d
+for f '1 ao r
+fort f '1 ao r t
+forty f '1 ao r t '0 iy
+found f '1 aw n d
+four f '1 ao r
+fours f '1 ao r z
+fourteen f '1 ao r t '1 iy n
+fourteenth f '1 ao r t '1 iy n th
+fourth f '1 ao r th
+fran f r '1 ae n
+francisco f r '0 ae n s '1 ih s k '0 ow
+francisco's f r '0 ae n s '1 ih s k '0 ow z
+frequent f r '1 iy k w '0 ax n t
+fri '1 eh f '1 aa r '1 ay
+friday f r '1 ay d '0 ey
+friday's f r '1 ay d '0 ey z
+fridays f r '1 ay d '0 ey z
+friendship f r '1 eh n d sh '0 ih p
+from f r '1 ax m
+fruit f r '1 uw t
+full f '1 uh l
+fun f '1 ax n
+g jh '1 iy
+gave g '1 ey v
+general jh '1 eh n '0 ax r '0 ax l
+georgia jh '1 ao r jh '0 ax
+get g '1 eh t
+gets g '1 eh t s
+give g '1 ih v
+given g '1 ih v '0 ax n
+go g '1 ow
+goes g '1 ow z
+going g '1 ow '0 ih nx
+gone g '1 ao n
+good g '1 uh d
+grand g r '1 ae n d
+great g r '1 ey t
+ground g r '1 aw n d
+grounds g r '1 aw n d z
+guardia g w '1 aa r d '0 iy '0 ax
+guess g '1 eh s
+h '1 ey ch
+had hh '1 ae d
+happen hh '1 ae p '0 ax n
+hartfield hh '1 aa r t f '2 iy l d
+has hh '1 ae z
+have hh '1 ae v
+having hh '1 ae v '0 ih nx
+head hh '1 eh d
+heading hh '1 eh d '0 ih nx
+heathrow hh '1 iy th r '0 ow
+hell hh '1 eh l
+hello hh '0 eh l '1 ow
+help hh '1 eh l p
+her hh '1 ax r
+here hh '1 ih r
+hertz hh '1 ax r t s
+hi hh '1 ay
+highest hh '1 ay '0 ih s t
+hilton hh '1 ih l t '0 ax n
+his hh '1 ih z
+history hh '1 ih s t '0 ax r '0 iy
+hit hh '1 ih t
+hold hh '1 ow l d
+holds hh '1 ow l d z
+hotel hh '0 ow t '1 eh l
+hotels hh '0 ow t '1 eh l z
+hour '1 aw '0 ax r
+hours '1 aw '0 ax r z
+houston hh y '1 uw s t '0 ax n
+how hh '1 aw
+hub hh '1 ax b
+hundred hh '1 ax n d r '0 ax d
+i '1 ay
+i'd '1 ay d
+i'll '1 ay l
+i'm '1 ay m
+identify '0 ay d '1 eh n t '0 ax f '2 ay
+if '1 ih f
+illness '1 ih l n '0 ih s
+in '1 ih n
+include '0 ih n k l '1 uw d
+included '0 ih n k l '1 uw d '0 ih d
+including '0 ih n k l '1 uw d '0 ih nx
+indiana '2 ih n d '0 iy '1 ae n '0 ax
+indianapolis '2 ih n d '0 iy '0 ax n '1 ae p '0 ax l '0 ih s
+inexpensive '2 ih n '0 ih k s p '1 eh n s '0 ih v
+inflight '1 ih n f l '2 ay t
+info '1 ih n f '0 ow
+information '2 ih n f '0 ax r m '1 ey sh '0 ax n
+informations '2 ih n f '0 ax r m '1 ey sh '0 ax n z
+initials '0 ih n '1 ih sh '0 ax l z
+inquire '0 ih n k w '1 ay r
+instead '0 ih n s t '1 eh d
+interested '1 ih n t r '0 ih s t '0 ih d
+intermediate '2 ih n t '0 ax r m '1 iy d '0 iy '0 ih t
+international '2 ih n t '0 ax r n '1 ae sh '0 ax n '0 ax l
+international's '2 ih n t '0 ax r n '1 ae sh '0 ax n '0 ax l z
+into '1 ih n t '0 uw
+involves '0 ih n v '1 aa l v z
+irrelevant '0 ih r '1 eh l '0 ax v '0 ax n t
+is '1 ih z
+isn't '1 ih z '0 ax n t
+issue '1 ih sh '0 uw
+it '1 ih t
+it's '1 ih t s
+itinerary '0 ay t '1 ih n '0 ax r '2 eh r '0 iy
+its '1 ih t s
+j jh '1 ey
+january jh '1 ae n y '0 uw '2 eh r '0 iy
+jet jh '1 eh t
+jets jh '1 eh t s
+john jh '1 aa n
+jones jh '1 ow n z
+jose hh '2 ow z '1 ey
+july jh '0 uw l '1 ay
+jun jh '1 ax n
+june jh '1 uw n
+just jh '1 ax s t
+k k '1 ey
+kansas k '1 ae n z '0 ax s
+kate k '1 ey t
+kennedy k '1 eh n '0 ax d '0 iy
+kick k '1 ih k
+kind k '1 ay n d
+kindly k '1 ay n d l '0 iy
+kinds k '1 ay n d z
+know n '1 ow
+known n '1 ow n
+kosher k '1 ow sh '0 ax r
+l '1 eh l
+l's '1 eh l z
+la l '1 aa
+laguardia l '0 ax g w '1 aa r d '0 iy '0 ax
+lake l '1 ey k
+land l '1 ae n d
+landing l '1 ae n d '0 ih nx
+landings l '1 ae n d '0 ih nx z
+lands l '1 ae n d z
+large l '1 aa r jh
+largest l '1 aa r jh '0 ax s t
+las l '0 ao z
+last l '1 ae s t
+late l '1 ey t
+later l '1 ey t '0 ax r
+latest l '1 ey t '0 ih s t
+latitude l '1 ae t '0 ax t '2 uw d
+law l '1 ao
+lax l '1 ae k s
+layover l '1 ey '2 ow v '0 ax r
+layovers l '1 ey '2 ow v '0 ax r z
+least l '1 iy s t
+leave l '1 iy v
+leaves l '1 iy v z
+leaving l '1 iy v '0 ih nx
+left l '1 eh f t
+leg l '1 eh g
+length l '1 eh nx k th
+less l '1 eh s
+let l '1 eh t
+let's l '1 eh t s
+level l '1 eh v '0 ax l
+like l '1 ay k
+limit l '1 ih m '0 ih t
+limo l '1 ih m '0 ow
+limousine l '2 ih m '0 ax z '1 iy n
+limousines l '2 ih m '0 ax z '1 iy n z
+list l '1 ih s t
+listed l '1 ih s t '0 ih d
+listen l '1 ih s '0 ax n
+listening l '1 ih s '0 ax n '0 ih nx
+listing l '1 ih s t '0 ih nx
+listings l '1 ih s t '0 ih nx z
+live l '1 ih v
+liz l '1 ih z
+locate l '0 ow k '1 ey t
+location l '0 ow k '1 ey sh '0 ax n
+locations l '0 ow k '1 ey sh '0 ax n z
+lockheed l '1 aa k hh '2 iy d
+logan l '1 ow g '0 ax n
+london l '1 ax n d '0 ax n
+long l '1 ao nx
+longer l '1 ao nx g '0 ax r
+longest l '1 ao nx g '0 ih s t
+look l '1 uh k
+looking l '1 uh k '0 ih nx
+los l '1 ow s
+louis l '1 uw '0 iy
+lowest l '1 ow '0 ih s t
+lufthansa l '0 ax f t '1 ae n z '0 ax
+lunch l '1 ax n ch
+lunchtime l '1 ax n ch t '2 ay m
+m '1 eh m
+made m '1 ey d
+make m '1 ey k
+makes m '1 ey k s
+making m '1 ey k '0 ih nx
+many m '1 eh n '0 iy
+march m '1 aa r ch
+massachusetts m '2 ae s '0 ax ch '1 uw s '0 ax t s
+master m '1 ae s t '0 ax r
+match m '1 ae ch
+max m '1 ae k s
+may m '1 ey
+maybe m '1 ey b '0 iy
+mcdonnell m '0 ih k d '1 aa n '0 ax l
+me m '1 iy
+meal m '1 iy l
+meal's m '1 iy l z
+meals m '1 iy l z
+mean m '1 iy n
+meanings m '1 iy n '0 ih nx z
+means m '1 iy n z
+meant m '1 eh n t
+memphis m '1 eh m f '0 ih s
+mentioned m '1 eh n sh '0 ax n d
+message m '1 eh s '0 ih jh
+messages m '1 eh s '0 ih jh '0 ih z
+miami m '0 ay '1 ae m '0 iy
+mid m '1 ih d
+midday m '1 ih d d '2 ey
+midnight m '1 ih d n '2 ay t
+midway m '2 ih d w '1 ey
+might m '1 ay t
+miles m '1 ay l z
+milwaukee m '0 ih l w '1 ao k '0 iy
+min m '1 ih n
+mind m '1 ay n d
+minneapolis m '2 ih n '0 iy '1 ae p '0 ax l '0 ih s
+minnesota m '2 ih n '0 ih s '1 ow t '0 ax
+minus m '1 ay n '0 ax s
+minutes m '1 ih n '0 ax t s
+mistake m '0 ih s t '1 ey k
+misunderstand m '2 ih s '0 ax n d '0 ax r s t '1 ae n d
+misunderstood m '2 ih s '0 ax n d '0 ax r s t '1 uh d
+monday m '1 ax n d '0 ey
+monday's m '1 ax n d '0 ey z
+mondays m '1 ax n d '0 ey z
+money m '1 ax n '0 iy
+montreal m '2 aa n t r '0 iy '1 ao l
+more m '1 ao r
+morning m '1 ao r n '0 ih nx
+mornings m '1 ao r n '0 ih nx z
+most m '1 ow s t
+movie m '1 uw v '0 iy
+movies m '1 uw v '0 iy z
+much m '1 ax ch
+muffins m '1 ax f '0 ax n z
+must m '1 ax s t
+my m '1 ay
+n '1 eh n
+name n '1 ey m
+names n '1 ey m z
+nashville n '1 ae sh v '0 ih l
+nationair n '1 ey sh '0 ax n '1 eh r
+national n '1 ae sh '0 ax n '0 ax l
+near n '1 ih r
+need n '1 iy d
+needing n '1 iy d '0 ih nx
+needs n '1 iy d z
+nevada n '0 ax v '1 ae d '0 ax
+never n '1 eh v '0 ax r
+new n '1 uw
+newark n '1 uw '0 ax r k
+next n '1 eh k s t
+nice n '1 ay s
+night n '1 ay t
+nights n '1 ay t s
+nighttime n '1 ay t t '2 ay m
+nine n '1 ay n
+niner n '1 ay n '0 ax r
+nineteen n '2 ay n t '1 iy n
+nineteenth n '2 ay n t '1 iy n th
+ninety n '1 ay n t '0 iy
+ninth n '1 ay n th
+nist n '1 ih s t
+no n '1 ow
+non n '1 aa n
+nonstop n '1 aa n s t '1 aa p
+noon n '1 uw n
+noons n '1 uw n z
+noontime n '1 uw n t '2 ay m
+north n '1 ao r th
+northwest n '2 ao r th w '1 eh s t
+northwestern n '2 ao r th w '1 eh s t '0 ax r n
+not n '1 aa t
+note: n '1 ow t
+november n '0 ow v '1 eh m b '0 ax r
+now n '1 aw
+null n '1 ax l
+number n '1 ax m b '0 ax r
+numbers n '1 ax m b '0 ax r z
+o '1 ow
+o'clock '0 ax k l '1 aa k
+o'hare '0 ow hh '1 eh r
+o's '1 ow z
+oak '1 ow k
+oakland '1 ow k l '0 ax n d
+oakland's '1 ow k l '0 ax n d z
+obtain '0 ax b t '1 ey n
+october '0 aa k t '1 ow b '0 ax r
+of '1 ax v
+off '1 ao f
+offer '1 ao f '0 ax r
+offered '1 ao f '0 ax r d
+offers '1 ao f '0 ax r z
+often '1 ao f '0 ax n
+oh '1 ow
+ohio '0 ow hh '1 ay '0 ow
+okay '0 ow k '1 ey
+omaha '1 ow m '0 ax hh '2 ao
+on '1 aa n
+once w '1 ax n s
+one w '1 ax n
+one's w '1 ax n z
+one-stop w '1 ax n s t '1 aa p
+one-way w '1 ax n w '1 ey
+ones w '1 ax n z
+only '1 ow n l '0 iy
+ontario '0 aa n t '1 eh r '0 iy '0 ow
+onto '1 aa n t '0 uw
+ooh '1 uw
+oops '1 uh p s
+open '1 ow p '0 ax n
+operation '2 aa p '0 ax r '1 ey sh '0 ax n
+option '1 aa p sh '0 ax n
+optional '1 aa p sh '0 ax n '0 ax l
+options '1 aa p sh '0 ax n z
+or '1 ao r
+orange '1 ao r '0 ih n jh
+order '1 ao r d '0 ax r
+ordered '1 ao r d '0 ax r d
+origin '1 ao r '0 ih jh '0 ih n
+originate '0 ax r '1 ih jh '0 ax n '2 ey t
+originating '0 ax r '1 ih jh '0 ax n '2 ey t '0 ih nx
+origination '0 ax r '2 ih jh '0 ax n '1 ey sh '0 ax n
+origins '1 ao r '0 ax jh '0 ih n z
+orlando '0 ao r l '1 ae n d '0 ow
+orleans '0 ao r l '1 iy n z
+other '1 ax dh '0 ax r
+our '1 aw r
+out '1 aw t
+over '1 ow v '0 ax r
+overnight '2 ow v '0 ax r n '1 ay t
+own '1 ow n
+p p '1 iy
+pan p '1 ae n
+pardon p '1 aa r d '0 ax n
+paris p '1 ae r '0 ih s
+part p '1 aa r t
+particular p '0 ax r t '1 ih k y '0 ax l '0 ax r
+party p '1 aa r t '0 iy
+passage p '1 ae s '0 ih jh
+passenger p '1 ae s '0 ax n jh '0 ax r
+passengers p '1 ae s '0 ax n jh '0 ax r z
+past p '1 ae s t
+paul p '1 ao l
+pay p '1 ey
+payload p '1 ey l '2 ow d
+pennsylvania p '2 eh n s '0 ax l v '1 ey n y '0 ax
+people p '1 iy p '0 ax l
+per p '1 ax r
+period p '1 ih r '0 iy '0 ax d
+perks p '1 ax r k s
+person p '1 ax r s '0 ax n
+petersburg p '1 iy t '0 ax r z b '2 ax r g
+philadelphia f '2 ih l '0 ax d '1 eh l f '0 iy '0 ax
+philadelphia's f '2 ih l '0 ax d '1 eh l f '0 iy '0 ax z
+philly f '1 ih l '0 iy
+philly's f '1 ih l '0 iy z
+phoenix f '1 iy n '0 ih k s
+pick p '1 ih k
+picked p '1 ih k t
+pitt p '1 ih t
+pittsburgh p '1 ih t s b '0 ax r g
+place p l '1 ey s
+places p l '1 ey s '0 ih z
+plan p l '1 ae n
+plane p l '1 ey n
+planes p l '1 ey n z
+planning p l '1 ae n '0 ih nx
+plano p l '1 ey n '0 ow
+plates p l '1 ey t s
+please p l '1 iy z
+point p '1 oy n t
+points p '1 oy n t s
+portland p '1 ao r t l '0 ax n d
+possible p '1 aa s '0 ax b '0 ax l
+pounds p '1 aw n d z
+prefer p r '0 ih f '1 ax r
+preferably p r '1 eh f '0 ax r '0 ax b l '0 iy
+previous p r '1 iy v '0 iy '0 ax s
+price p r '1 ay s
+priced p r '1 ay s t
+prices p r '1 ay s '0 ih z
+print p r '1 ih n t
+prior p r '1 ay '0 ax r
+probably p r '1 aa b '0 ax b l '0 iy
+processing p r '1 aa s '0 eh s '0 ih nx
+program p r '1 ow g r '0 ae m
+programmed p r '1 ow g r '2 ae m d
+prop p r '1 aa p
+provided p r '0 ax v '1 ay d '0 ih d
+providence p r '1 aa v '0 ax d '0 ax n s
+public p '1 ax b l '0 ih k
+purchase p '1 ax r ch '0 ax s
+put p '1 uh t
+q k y '1 uw
+quebec k w '0 ih b '1 eh k
+query k w '1 ih r '0 iy
+question k w '1 eh s ch '0 ax n
+r '1 aa r
+rail r '1 ey l
+range r '1 ey n jh
+rate r '1 ey t
+rates r '1 ey t s
+rather r '1 ae dh '0 ax r
+rats r '1 ae t s
+reach r '1 iy ch
+read r '1 iy d
+ready r '1 eh d '0 iy
+really r '1 iy l '0 iy
+recognize r '1 eh k '0 ax g n '2 ay z
+record r '1 eh k '0 ax r d
+recorded r '0 ih k '1 ao r d '0 ih d
+recording r '0 ih k '1 ao r d '0 ih nx
+red r '1 eh d
+redeye r '1 eh d '2 ay
+reduced r '0 ih d '1 uw s t
+refund r '0 ih f '1 ax n d
+regarding r '0 ih g '1 aa r d '0 ih nx
+relates r '0 ih l '1 ey t s
+remove r '0 ih m '1 uw v
+reno r '1 iy n '0 ow
+rent r '1 eh n t
+rental r '1 eh n t '0 ax l
+rentals r '1 eh n t '0 ax l z
+rented r '1 eh n t '0 ih d
+renting r '1 eh n t '0 ih nx
+repeat r '0 ih p '1 iy t
+rephrase r '0 iy f r '1 ey z
+request r '0 ih k w '1 eh s t
+requested r '0 ih k w '1 eh s t '0 ih d
+requesting r '0 ih k w '1 eh s t '0 ih nx
+reservation r '2 eh z '0 ax r v '1 ey sh '0 ax n
+reservations r '2 eh z '0 ax r v '1 ey sh '0 ax n z
+reserve r '0 ih z '1 ax r v
+restrict r '0 ih s t r '1 ih k t
+restriction r '0 ih s t r '1 ih k sh '0 ax n
+restrictions r '0 ih s t r '1 ih k sh '0 ax n z
+results r '0 ih z '1 ax l t s
+return r '0 ih t '1 ax r n
+returning r '0 ih t '1 ax r n '0 ih nx
+returns r '0 ih t '1 ax r n z
+richmond r '1 ih ch m '0 ax n d
+right r '1 ay t
+round r '1 aw n d
+round-trip r '1 aw n d t r '2 ih p
+route r '1 uw t
+run r '1 ax n
+s '1 eh s
+safest s '1 ey f '0 ih s t
+safety s '1 ey f t '0 iy
+said s '1 eh d
+saint s '1 ey n t
+salad s '1 ae l '0 ax d
+salt s '1 ao l t
+sam s '1 ae m
+same s '1 ey m
+san s '1 ae n
+saturday s '1 ae t '0 ax r d '0 ey
+saturday's s '1 ae t '0 ax r d '0 ey z
+saturdays s '1 ae t '0 ax r d '0 ey z
+save s '1 ey v
+saving s '1 ey v '0 ih nx
+say s '1 ey
+says s '1 eh z
+scenario s '0 ax n '1 ae r '0 iy '0 ow
+schedule s k '1 eh jh '0 uw l
+scheduled s k '1 eh jh '0 uw l d
+schedules s k '1 eh jh '0 uw l z
+scratch s k r '1 ae ch
+screen s k r '1 iy n
+scroll s k r '1 ow l
+seat s '1 iy t
+seating s '1 iy t '0 ih nx
+seatings s '1 iy t '0 ih nx z
+seats s '1 iy t s
+seattle s '0 iy '1 ae t '0 ax l
+second s '1 eh k '0 ax n d
+section s '1 eh k sh '0 ax n
+see s '1 iy
+seem s '1 iy m
+seems s '1 iy m z
+seen s '1 iy n
+send s '1 eh n d
+sentences s '1 eh n t '0 ax n z '0 ax z
+september s '0 eh p t '1 eh m b '0 ax r
+series s '1 ih r '0 iy z
+serve s '1 ax r v
+served s '1 ax r v d
+serves s '1 ax r v z
+service s '1 ax r v '0 ih s
+serviced s '1 ax r v '0 ih s t
+services s '1 ax r v '0 ax s '0 ax z
+servicing s '1 ax r v '0 ih s '0 ih nx
+serving s '1 ax r v '0 ih nx
+session s '1 eh sh '0 ax n
+set s '1 eh t
+sev s '1 eh v
+seven s '1 eh v '0 ax n
+seventeen s '2 eh v '0 ax n t '1 iy n
+seventeenth s '2 eh v '0 ax n t '1 iy n th
+seventh s '1 eh v '0 ax n th
+seventy s '1 eh v '0 ax n t '0 iy
+sfo '1 eh s '1 eh f '1 ow
+shall sh '1 ae l
+she sh '1 iy
+shoot sh '1 uw t
+shortest sh '1 ao r t '0 ih s t
+shortly sh '1 ao r t l '0 iy
+should sh '1 uh d
+show sh '1 ow
+showed sh '1 ow d
+shown sh '1 ow n
+shows sh '1 ow z
+shuttle sh '1 ax t '0 ax l
+similar s '1 ih m '0 ax l '0 ax r
+since s '1 ih n s
+single s '1 ih nx g '0 ax l
+sit s '1 ih t
+six s '1 ih k s
+sixteen s '1 ih k s t '1 iy n
+sixteenth s '1 ih k s t '1 iy n th
+sixth s '1 ih k s th
+sixty s '1 ih k s t '0 iy
+size s '1 ay z
+skip s k '1 ih p
+slash s l '1 ae sh
+slowest s l '1 ow '0 ih s t
+smaller s m '1 ao l '0 ax r
+smallest s m '1 ao l '0 ih s t
+snack s n '1 ae k
+snacks s n '1 ae k s
+snor s n '1 ow r
+so s '1 ow
+some s '1 ax m
+something s '1 ax m th '0 ih nx
+sometime s '1 ax m t '2 ay m
+somewhere s '1 ax m w '2 eh r
+sooner s '1 uw n '0 ax r
+soonest s '1 uw n '0 ih s t
+sorry s '1 aa r '0 iy
+sort s '1 ao r t
+sorted s '1 ao r t '0 ih d
+southern s '1 ax dh '0 ax r n
+southwest s '2 aw th w '1 eh s t
+space s p '1 ey s
+special s p '1 eh sh '0 ax l
+specials s p '1 eh sh '0 ax l z
+specific s p '0 ih s '1 ih f '0 ih k
+specifics s p '0 ih s '1 ih f '0 ih k s
+specified s p '1 eh s '0 ax f '2 ay d
+speed s p '1 iy d
+spend s p '1 eh n d
+spouse s p '1 aw s
+spring s p r '1 ih nx
+stand s t '1 ae n d
+standard s t '1 ae n d '0 ax r d
+stands s t '1 ae n d z
+stapleton s t '1 ey p '0 ax l t '0 ax n
+start s t '1 aa r t
+starting s t '1 aa r t '0 ih nx
+states s t '1 ey t s
+status s t '1 ey t '0 ax s
+stay s t '1 ey
+staying s t '1 ey '0 ih nx
+steak s t '1 ey k
+still s t '1 ih l
+stop s t '1 aa p
+stopover s t '1 aa p '2 ow v '0 ax r
+stopovers s t '1 aa p '2 ow v '0 ax r z
+stopping s t '1 aa p '0 ih nx
+stops s t '1 aa p s
+straight s t r '1 ey t
+street s t r '1 iy t
+stuck s t '1 ax k
+student s t '1 uw d '0 ax n t
+stupid s t '1 uw p '0 ih d
+subway s '1 ax b w '2 ey
+such s '1 ax ch
+sunday s '1 ax n d '0 ey
+sundays s '1 ax n d '0 ey z
+sure sh '1 uh r
+symbol s '1 ih m b '0 ax l
+system s '1 ih s t '0 ax m
+systems s '1 ih s t '0 ax m z
+t t '1 iy
+tables t '1 ey b '0 ax l z
+tacoma t '0 ax k '1 ow m '0 ax
+take t '1 ey k
+takeoff t '1 ey k '2 ao f
+takeoffs t '1 ey k '2 ao f s
+takes t '1 ey k s
+taking t '1 ey k '0 ih nx
+talk t '1 ao k
+talking t '1 ao k '0 ih nx
+tallahassee t '2 ae l '0 ax hh '1 ae s '0 iy
+tampa t '1 ae m p '0 ax
+taxi t '1 ae k s '0 iy
+telephone t '1 eh l '0 ax f '2 ow n
+tell t '1 eh l
+ten t '1 eh n
+ten's t '1 eh n z
+tennessee t '2 eh n '0 ax s '1 iy
+tens t '1 eh n z
+tenth t '1 eh n th
+term t '1 ax r m
+terminates t '1 ax r m '0 ih n '2 ey t s
+terms t '1 ax r m z
+test t '1 eh s t
+texas t '1 eh k s '0 ax s
+than dh '1 ae n
+thank th '1 ae nx k
+thanks th '1 ae nx k s
+that dh '1 ae t
+that's dh '1 ae t s
+the dh '0 ax
+their dh '1 eh r
+them dh '1 eh m
+then dh '1 eh n
+there dh '1 eh r
+there's dh '1 eh r z
+these dh '1 iy z
+they dh '1 ey
+they're dh '1 eh r
+thing th '1 ih nx
+think th '1 ih nx k
+third th '1 ax r d
+thirteen th '2 ax r t '1 iy n
+thirteenth th '2 ax r t '1 iy n th
+thirtieth th '1 ax r t '0 iy '0 ih th
+thirty th '1 ax r t '0 iy
+this dh '1 ih s
+those dh '1 ow z
+thought th '1 ao t
+thousand th '1 aw z '0 ax n d
+three th r '1 iy
+three's th r '1 iy z
+threes th r '1 iy z
+thrift th r '1 ih f t
+through th r '1 uw
+thu th '1 er z d '2 iy
+thursday th '1 ax r z d '0 ey
+thursdays th '1 ax r z d '0 ey z
+ticket t '1 ih k '0 ih t
+tickets t '1 ih k '0 ih t s
+till t '1 ih l
+time t '1 ay m
+times t '1 ay m z
+tip t '1 ih p
+to t '1 uw
+toast t '1 ow s t
+today t '0 ax d '1 ey
+tokyo t '1 ow k '0 iy '2 ow
+told t '1 ow l d
+tomorrow t '0 ax m '1 aa r '0 ow
+tonight t '0 ax n '1 ay t
+too t '1 uw
+toronto t '0 ax r '1 aa n t '0 ow
+total t '1 ow t '0 ax l
+tough t '1 ax f
+toward t '1 ao r d
+tower t '1 aw '0 ax r
+town t '1 aw n
+trains t r '1 ey n z
+trans t r '1 ae n z
+transcontinental t r '2 ae n s k '0 aa n t '0 ax n '1 eh n t '0 ax l
+transcriptions t r '2 ae n s k r '1 ih p sh '0 ax n z
+transit t r '1 ae n s '0 ih t
+transport t r '0 ae n s p '1 ao r t
+transportation t r '2 ae n s p '0 ax r t '1 ey sh '0 ax n
+trap t r '1 ae p
+travel t r '1 ae v '0 ax l
+traveled t r '1 ae v '0 ax l d
+traveling t r '1 ae v l '0 ih nx
+travels t r '1 ae v '0 ax l z
+trip t r '1 ih p
+trips t r '1 ih p s
+try t r '1 ay
+trying t r '1 ay '0 ih nx
+tucson t '1 uw s '2 aa n
+tue t '1 uw z d '2 iy
+tuesday t y '1 uw z d '0 ey
+tuesdays t y '1 uw z d '0 ey z
+tulsa t '1 ax l s '0 ax
+turbo t '1 ax r b '0 ow
+turboprop t '1 ax r b '0 ow p r '2 aa p
+turns t '1 ax r n z
+tuscon t '1 ax s k '0 ax n
+tw t '1 iy  d '1 ax b '0 ax l y '2 uw
+twelfth t w '1 eh l f th
+twelve t w '1 eh l v
+twentieth t w '1 eh n t '0 iy '0 ih th
+twenty t w '1 eh n t '0 iy
+two t '1 uw
+type t '1 ay p
+types t '1 ay p s
+u y '1 uw
+unbook '2 ax n b '1 uh k
+under '1 ax n d '0 ax r
+understand '2 ax n d '0 ax r s t '1 ae n d
+united y '0 uw n '1 ay t '0 ih d
+until '0 ax n t '1 ih l
+up '1 ax p
+upon '0 ax p '1 aa n
+us '1 ax s
+use y '1 uw z
+used y '1 uw z d
+uses y '1 uw z '0 ih z
+using y '1 uw z '0 ih nx
+utterance '1 ax t '0 ax r '0 ax n s
+v v '1 iy
+various v '1 eh r '0 iy '0 ax s
+vegas v '1 ey g '0 ax s
+very v '1 eh r '0 iy
+via v '1 ay '0 ax
+vienna v '0 iy '1 eh n '0 ax
+visa v '1 iy z '0 ax
+visit v '1 ih z '0 ih t
+w d '1 ax b '0 ax l y '2 uw
+waiting w '1 ey t '0 ih nx
+want w '1 aa n t
+wanted w '1 aa n t '0 ax d
+was w '1 ax z
+washington w '1 aa sh '0 ih nx t '0 ax n
+washington's w '1 aa sh '0 ih nx t '0 ax n z
+way w '1 ey
+ways w '1 ey z
+we w '1 iy
+we'd w '1 iy d
+we're w '1 ih r
+wednesday w '1 eh n z d '0 ey
+wednesdays w '1 eh n z d '0 ey z
+week w '1 iy k
+weekday w '1 iy k d '2 ey
+weekdays w '1 iy k d '2 ey z
+weekend w '1 iy k '2 eh n d
+weight w '1 ey t
+well w '1 eh l
+were w '1 ax r
+west w '1 eh s t
+westchester w '1 eh s ch '2 eh s t '0 ax r
+western w '1 eh s t '0 ax r n
+what w '1 ax t
+what're w '1 ax t '0 ax r
+what's w '1 ax t s
+whats wh '1 ax t s
+when w '1 eh n
+when's w '1 eh n z
+where w '1 eh r
+where's w '1 eh r z
+whether w '1 eh dh '0 ax r
+which w '1 ih ch
+who hh '1 uw
+whoops hh '1 uw p s
+whose hh '1 uw z
+why w '1 ay
+will w '1 ih l
+window w '1 ih n d '0 ow
+winter w '1 ih n t '0 ax r
+wish w '1 ih sh
+with w '1 ih dh
+within w '0 ih dh '1 ih n
+without w '0 ih dh '1 aw t
+word w '1 ax r d
+words w '1 ax r d z
+work w '1 ax r k
+working w '1 ax r k '0 ih nx
+worth w '1 ax r th
+would w '1 uh d
+wrote r '1 ow t
+x '1 eh k s
+y w '1 ay
+yeah y '1 eh '0 ax
+year y '1 ih r
+yes y '1 eh s
+yet y '1 eh t
+york y '1 ao r k
+york's y '1 ao r k s
+you y '1 uw
+you'd y '1 uw d
+you're y '1 uh r
+your y '1 uh r
+zero z '1 ih r '0 ow
+zone z '1 ow n
+zones z '1 ow n z

@@ -1,0 +1,102 @@
+#!/bin/sh
+#setup program for the NIST scoring package Rev 2.0
+
+
+#### Define the echo command
+if test "`echo -n foobar | egrep -e -n`" = "" ; then
+	ECHO_NNL="echo -n"
+	DONE_CMD="echo Done"
+else
+	ECHO_NNL="echo"
+	DONE_CMD=""
+fi
+
+#
+#this program makes include files to run the scoring software
+#
+$ECHO_NNL "   Changing script names . . . "
+scripts=`(cd ./src/scripts ; find . -print | grep '\.$' | sed 's/\.$//')`
+for sc in $scripts
+do
+    mv ./src/scripts/$sc. ./src/scripts/$sc
+done
+$DONE_CMD
+#
+#   Second setup the include file for compilations
+#
+setup=include/score/setup.h
+$ECHO_NNL Creating the C program inclusion file . . ". "
+echo '/******************************************************/' \
+          > ${setup}
+echo '/*    file: setup.h                                   */' \
+          >> ${setup}
+echo '/*    by Jonathan G. Fiscus                           */' \
+          >> ${setup}
+echo '/*    National Institute of Standards and Technology  */' \
+          >> ${setup}
+echo '/*                                                    */' \
+          >> ${setup}
+echo '/*       Definition of installation directory         */' \
+          >> ${setup}
+echo '/******************************************************/' \
+          >> ${setup}
+echo "" >>  ${setup}
+echo '#define INSTALL_DIR	' \"`pwd`\" >>  ${setup}
+echo '#define SETUP_CONFIG_FILE	' \"`pwd`/lib/rm1.cfg\" >>  ${setup}
+$DONE_CMD
+
+##############################################################
+#    make all the script files to run the scoring package    #
+##############################################################
+
+#extract and get a list of the files
+files=`(cd src/scripts; ls)`
+
+#convert the script files
+for cf in $files
+do
+    $ECHO_NNL Creating script file src/scripts/$cf . . ". "
+    sed 's:\$NIST_DIR:'`pwd`':' < src/scripts/$cf > bin/$cf 
+    chmod 755 bin/$cf
+    $DONE_CMD
+done
+
+
+##############################################################
+#    make all the driver tables in the drivers dir           #
+##############################################################
+#make the directory definition in a file
+
+#extract and get a list of the files
+files=`(cd lib/tables; ls *.txt)`
+
+#convert the driver table files
+for cf in $files
+do
+    $ECHO_NNL Creating driver file lib/$cf . . ". "
+    sed "s:INSTALL_DIR:`pwd`:" lib/tables/$cf > lib/$cf 
+    chmod 666 lib/$cf
+    $DONE_CMD
+done
+
+###############################################################
+#  create the generic configuration file                      #
+###############################################################
+scoredir=`pwd | sed 's/\//|/g'`
+cd lib/tables
+for cf in *.cfg
+do
+    $ECHO_NNL Creating configuration file lib/$cf . . ". "
+    sed -e "s/INSTALL_DIR/$scoredir/g" -e 's/|/\//g' < $cf > ../$cf
+    $DONE_CMD
+done
+cd ../..
+
+
+echo ""
+echo ""
+echo "Setup finished.  Read score.rdm to get started."
+echo ""
+
+
+

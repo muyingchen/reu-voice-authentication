@@ -1,0 +1,52 @@
+;
+; File Pcdsrif.txt
+; 
+; Mike Cohen's SRI feature set. 
+;
+; The style of feature representation is privative -- that is,
+; a feature will be in the  representation of a phone iff the
+; phone is positively specified for that feature.  Feature
+; representations are string of feature names.
+;
+* NAME "pcdsrif.txt"
+* DESC "SRI phonetic features"
+* DATE "1/26/90"
+* FORMAT "NIST1"
+* code elements are separated by " "
+* order: "arbitrary"
+* element type: "pfeat"
+;
+ stressed
+ syllabic
+ consonantal
+ vocalic
+ sonorant
+ voiced
+ long
+ short
+ high
+ low
+ front
+ back
+ diphthong
+ w-glide
+ y-glide
+ schwa
+ rounded
+ stop
+ plosive
+ affricate
+ fricative
+ nasal
+ liquid
+ glide
+ lateral
+ labial
+ labio-dental
+ dental
+ palatal
+ alveolar
+ velar
+ glottal
+ aspirate
+ occlusion

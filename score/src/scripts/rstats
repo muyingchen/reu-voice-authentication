@@ -1,0 +1,97 @@
+#!/bin/sh
+INSTALL_DIR=$NIST_DIR
+#
+#   STANDARD SCRIPT TO RUN THE STATISTICS PROGRAM
+#
+#   $1 -> EITHER THE TEST_CONDITION, OR THE FIRST SYSTEM ALIGN FILE
+#   $2 -> ALIGNMENT FILE NAME
+#      .
+#      .
+#      .
+#   $* -> ALIGNMENT FILE NAME
+#
+
+usage="Usage: rstats [-LP | -<CORP> | -LEX <LEXICON> | -CODESET <CODESET> |
+              <test_condition> sys1.ali sys2.ali . . . 
+       Where:
+             CORP -> RM | ATIS | WSJ | SWB
+"
+
+echo "Standard script to run the stats program"
+echo "" 
+############################################
+#  make sure there are at least 2 arguments#
+############################################
+if (test $# -lt 2) then
+    echo Not enough alignment files on the command line
+    echo "$usage"
+    exit 1
+fi
+
+############################################
+#  check to see if -LP is on the command   #
+#  line                                    #
+############################################
+lp=""
+lex=""
+dbg="FALSE"
+while test ! "`echo $1|grep '^-'`" = "" ; do
+    arg=`echo $1|tr A-Z a-z`
+    if test "$arg" = "-lp" ; then
+        lp="-LP"
+    elif test "$arg" = "-rm" ; then
+	cfg_file="-cfg ${INSTALL_DIR}/lib/rm1.cfg"
+    elif test "$arg" = "-wsj" ; then
+	cfg_file="-cfg ${INSTALL_DIR}/lib/wsj.cfg"
+    elif test "$arg" = "-atis" ; then
+	cfg_file="-cfg ${INSTALL_DIR}/lib/atis.cfg"
+    elif test "$arg" = "-swb" ; then
+	cfg_file="-cfg ${INSTALL_DIR}/lib/swb.cfg"
+    elif test "$arg" = "-dbg" ; then
+	dbg="TRUE"
+    elif test "$arg" = "-lex" ; then
+	lex="-lex $2"
+	shift
+    elif test "$arg" = "-codeset" ; then
+	lex="-codeset $2"
+	shift
+    fi
+    shift
+done
+
+############################################
+#  check the testname in $1                #
+############################################
+if (test -r "$1") then
+    test_name="STATS from std_stats"
+else
+    test_name="$1"
+    shift
+fi
+
+############################################
+#   check the number of systems            #
+############################################
+if (test $# -lt 2) then
+    echo "ERROR: not enough alignment filed on command line."
+    echo "$usage"
+    exit 1
+fi
+
+if [ "$dbg" = "TRUE" ] ; then
+    echo "lp = $lp"
+    echo "cfg = $cfg_file"
+    echo "lex = $lex"
+    echo "test_name = $test_name"
+    echo "alignment files = $*"
+fi
+
+############################################
+#   run the program                        #
+############################################
+cmd="$INSTALL_DIR/bin/stats $lex $cfg_file -ALIGN $* -SENT_MCN -MTCH_PR -SIGNTEST -WILCOXON -SIG -RANGE $lp"
+if [ "$dbg" = "TRUE" ] ; then
+    echo "$cmd -TEST_NAME \"$test_name\""
+fi
+$cmd -TEST_NAME "$test_name" > stats.out
+echo Done with statistics package

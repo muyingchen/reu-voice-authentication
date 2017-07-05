@@ -1,0 +1,153 @@
+.TH tmk 5 "Release 3.3" "Scoring Pkg"
+.SH NAME
+tmk - Definition of time marked scoring input
+.SH DESCRIPTION
+This describes the time marked input files to be used for scoring
+speech recognizers via the NIST align() program.  Both the reference
+and hypothesis input files share this format. 
+
+The file format is a concatentation of utterance time marks, each
+beginning with an utterance id enclosed in parens, followed by the
+word tokens and then concluded with the utterance id and the string
+"END" enclosed in parens.  Each word token must have a start time,
+duration, and word text.  Optionally, a conversation and channel
+identifier (both must occur) can be prepended to each word, or a
+confidence score can be appended.
+
+Optionally, lines beginning with ';;' are considered comments and are
+ignored
+
+Included below is an example:
+
+.RS
+;;
+.RE
+.RS
+;;  Comments follow ';;'
+.RE
+.RS
+;;
+.RE
+.RS
+;;  The Blank lines are ignored
+.RE
+.RS
+
+.RE
+.RS
+;;
+.RE
+.RS
+(7654-B-0021)
+.RE
+.RS
+1.34 0.2  I -6.763
+.RE
+.RS
+2.00 0.34 CAN -12.384530
+.RE
+.RS
+3.40 0.5  ADD 2.806418
+.RE
+.RS
+7.00 0.2  AS 0.537922
+.RE
+.RS
+9.10 0.5  WE -7.476159
+.RE
+.RS
+10.50 0.1 DO 0.650637
+.RE
+.RS
+12.50 0.6 HAVE 1.688214
+.RE
+.RS
+14.40 1.1 POLLUTION -1.204125
+.RE
+.RS
+      :
+.RE
+.RS
+      :
+.RE
+.RS
+(7654-B-0021 END)
+.RE
+.RS
+;;
+.RE
+.RS
+;;
+.RE
+.RS
+(7654-B-0024)
+.RE
+.RS
+	:
+.RE
+.RS
+	:
+.RE
+.RS
+(0004-B-0024 END)
+.RE
+
+OR
+
+;;
+.RE
+.RS
+(7654-B-0021)
+.RE
+.RS
+7654 B 1.34 0.2  I -6.763
+.RE
+.RS
+7654 B 2.00 0.34 CAN -12.384530
+.RE
+.RS
+7654 B 3.40 0.5  ADD 2.806418
+.RE
+.RS
+7654 B 7.00 0.2  AS 0.537922
+.RE
+.RS
+      :
+.RE
+.RS
+      :
+.RE
+
+
+OR
+
+;;
+.RE
+.RS
+(7654-B-0021)
+.RE
+.RS
+7654 B 1.34 0.2  I
+.RE
+.RS
+7654 B 2.00 0.34 CAN
+.RE
+.RS
+7654 B 3.40 0.5  ADD
+.RE
+.RS
+7654 B 7.00 0.2  AS
+.RE
+.RS
+      :
+.RE
+.RS
+      :
+.RE
+
+
+
+
+.SH SEE ALSO
+
+

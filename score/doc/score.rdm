@@ -1,0 +1,657 @@
+
+          WELCOME TO THE REVISED NIST BENCHMARK SPEECH RECOGNITION 
+                          SYSTEM SCORING PROGRAM
+
+
+DISCLAIMERS
+
+      (1)  The scoring software package included in this CD-ROM was
+      developed and tested using Berkeley 4.2 and 4.3 UNIX (TM) operating
+      systems. It has been successfully implemented at other sites, and
+      at one site, modifications have been successfully made to permit
+      implementation in an MS-DOS environment.  However, in implementing
+      this software, it may be necessary to make minor local
+      modifications. Little effort was expended in optimizing this
+      software for memory allocation or run-times, since it was thought
+      likely to be infrequently executed.
+
+      (2)  The implementation of statistical significance tests
+      incorporated in the scoring software package represents a
+      preliminary effort to introduce these considerations to performance
+      assessment for speech recognition technology, and is intended to
+      "encourage researchers who are reporting empirical results to use
+      statistical measures in summarizing their findings and drawing
+      conclusions".  Some of the assumptions required for these tests to
+      be strictly applicable (e.g., independence of errors and the
+      availability of sufficient errors to justify assumptions about
+      distributions) may not be satisfied for some of the benchmark test
+      material. 
+
+      (3)  These speech corpora and software tools have been developed
+      for use within the DARPA speech research community.  Although the
+      corpora and scoring software have been adopted for widespread use
+      within the DARPA speech community, they are the subject of ongoing
+      research.  Although care has been taken to ensure that all CD-ROM
+      based data and software is complete and error-free, it may not meet
+      all users' requirements.  As such, it is made available to the
+      speech research community at large, without endorsement, or
+      express or implied warranties.  The results of tests conducted with this
+      test material and/or analyses of performance of speech recognition
+      systems are not to be  construed as official findings of the National
+      Institute of Standards and Technology, the Department of Defense, or
+      the United States Government.
+
+
+
+Table of Contents:
+
+
+I.      Installation
+
+II.	Data Flow
+
+	II.A   Alignment
+	II.B   Scoring
+	II.C   Statistics
+
+III.	Hints On Running The Programs	
+
+	III.A  Aligning and Scoring.
+	III.B  Statistics.
+
+IV.	Hypothesis Sentence File Format
+
+V.	How To Analyze The Test Data.
+
+VI.	C-Language Interface to String Alingments
+
+	VI.A  Overview
+	VI.B  Data Structures
+	VI.C  Function Descriptions
+		VI.C.1  align_init()
+		VI.C.2  align_strings()
+		VI.C.3  align_close()
+		VI.C.4  print_SCORE_T()
+
+VII.	Revision History
+
+
+I.      Installation
+
+      To install NIST's Scoring Package, follow these two steps:
+
+         1: Load the source code from the distribution medium.  This
+            can be accomplisheda in BSD UNIX 4.X by using the following
+            commands:
+
+            From Compressed Tar File:
+                zcat score_3.0.tar.Z | tar xvf -
+
+            From CD-ROM:
+                cp -r /cdrom/score nist
+
+                    - or -
+
+               in System V UNIX by using the following commands:
+
+               % mkdir /usr/home/nist
+               % cd /cdrom/score
+               % tar cf - ./* | (cd /usr/home/nist; tar xvf -)
+
+         2: Next compile the source code with the following commands:
+
+            % cd nist
+            % sh src/scripts/install.
+
+      NOTE:  There is some sample data in the directory "nist/lib/data" 
+             for those who wish to "test drive" the scoring program.
+
+II.	Data Flow
+
+      The new version of the NIST program for scoring DARPA BENCHMARK TESTS
+   for speech recognition systems has significantly changed the flow of data
+   through the scoring process.  
+
+      II.A   Alignment
+
+         First, the file containing a list of hypothesis sentences from a
+      single speech recognition system is read into the alignment program.
+      (Note: in order to load hypothesis sentences, they must be in the
+      format specified below.)  Then, either a simple dynamic programming, or
+      a phone-mediated dynamic programming algorithm is used to align each
+      hypothesis sentence to the matching orthographic transcription.
+      After all alignments are completed, each resulting pair of words is
+      labeled as either correctly recognized or resulting in a substitution,
+      insertion or deletion. Finally, the structure containing all of the
+      system's sentences is written to a file with the extension ".ali",
+      signifying an alignment file.
+
+   II.B. Scoring
+
+         Once an alignment file has been made for the system, the system may
+      be scored by using the "score" program.  The score program reads in an
+      alignment file, then counts and reports results at four summary levels:
+      (1) speaker sentence utterances, (2) speaker summaries, (3) system
+      summary by speaker and (4) detailed system summary.
+         
+          1.  Speaker sentence utterances summary level - provides a detailed
+              scoring of each sentence utterance for the speaker.  
+              Output file name format: "<speaker-name>.snt"
+
+          2.  Speaker summary level reports - provides scoring summaries
+              of all the sentence utterances for the speaker.
+              Output file name format: "<speaker-name>.sum"
+
+          3.  System summary by speaker report -  provides a table of 
+              system summary percentages for each speaker.  The following
+              catagories are tabulated:
+
+                  - correctly recognized words
+                  - substituted words
+                  - inserted words
+                  - deleted words
+                  - total error
+                  - sentence error
+
+              Output file name format: "<system-code>.sys"
+
+          4.  Detailed system summary - provides scoring summaries
+              for all the sentence utterances for the entire test set.
+              Output file name format: "<system_code>.sys_dtl"
+
+
+   II.C. Statistics
+   
+          The "stats" program may be used to evaluate differences between
+      speech recognition systems.  The stats program uses several alignment
+      files from different systems as input for statistical tests to analyze
+      the differences between systems.  (Note: to obtain meaningful results
+      from this program, all the systems must use identical test material.)
+      Currently, the following tests have been implemented: (1) Sentence
+      level McNemar's test, (2) Matched Pairs test on sentence segments, and
+      (3)  Analysis of variance by ranks (ANOVAR).  A procedure is also
+      included which plots range graphs of recognition accuracy for speakers
+      and systems.
+
+
+   DIAGRAM 1. DATA FLOW THROUGH THE SCORING PROCESS
+          
+        ---------------
+       / recognition /
+      /  hypothesis /
+     /      file   /
+    ---------------          
+            |
+            |
+            V
+       -------------           -------------------
+       |           |          /                 /
+       |   align   |   --->  / system_name.ali /
+       |           |        /                 /
+       -------------       -------------------
+                                     |
+                                     |
+                                     V
+                               -------------
+                               |           |        -------------------------
+                               |   score   |  ---> / spkr_names.snt         /
+                               |           |      /  spkr_names.sum        /
+                               -------------     /   system_name.sys      /
+                                                /    system_code.sys_dtl /
+                                               --------------------------
+
+
+   DIAGRAM 2. DATA FLOW THROUGH THE STATISTICS PROGRAM
+
+        --------------------
+       / system1.ali      /
+      /  system2.ali     /
+     /       .          /
+    /        .         /
+   /         .        /
+  /      systemN.ali /
+ --------------------
+          |
+          |
+          V
+    -------------           -------------------------------
+    |           |          / reports on: McNemar's test  /
+    |   stats   |  --->   /              Matched Pairs  / 
+    |           |        /               ANOVAR test   /
+    -------------       /                Range graphs /
+                       -------------------------------
+                       
+
+
+
+III.	Hints On Running The Programs
+
+    III.A  Aligning and Scoring.
+
+          Two "sh" scripts are included which allow scoring of recognition
+       systems which use either an imposed grammar or no grammar.  When 
+       scoring a system which did not use a grammar, homophone errors are
+       counted as correct.  They may be invoked as follows:
+
+	    wgscore <OPTIONS> hyp_files ...
+ 
+	        OPTIONS  -->  [ -<CORPUS> | -REF fname | <DICT> | -phone ]
+        	       
+                    CORPUS --> RM | WSJ | TIMIT | ATIS | NO_ID | NTYPE | SPU_ID 
+	            DICT   --> [ -LEX fname | -CODESET fname | -autolex ]
+
+          EXAMPLES:
+
+              wgscore -rm sys1.hyp 
+              wgscore -rm sys2.hyp
+
+        Output files will be placed in a directory with the directory naming
+        convention: "<hypothesis-file-name>.scr".
+
+    III.B  Statistics.
+
+           A shell script is also included to run the "stats" program and may
+        be invoked as follows:
+ 
+	    rstats [-LP | -<CORP> | -LEX <LEXICON> | -CODESET <CODESET> |
+                       <test_condition> sys1.ali sys2.ali . . . 
+
+	             CORP -> RM | ATIS | WSJ
+ 
+          EXAMPLES:
+   
+              rstats -rm "Speaker Dependent, No Grammar" sys1.ali sys2.ali
+
+        Output from the stats program will be placed in the file: "stats.out"
+
+
+
+IV.	Hypothesis Sentence File Format
+
+       The hypothesis sentence file must use the sentence format which was 
+    specified in the October '89 DARPA Resource Management Benchmark Speech 
+    Recognition Tests.  All hypothesis words and sentences must be in SNOR 
+    format.  Each hypothesis sentence is followed by a unique utterance 
+    identifier consisting of the speaker identifier combined with the 
+    sentence identifier and has the following format:
+
+                           (<SPEAKER-ID>-<SENTENCE-ID>)
+
+    For example, the hypothesis string recognized from sentence ST0002, 
+    spoken by speaker JDM2 would be followed by: "(JDM2-ST0002)".
+
+       When using the statistical analysis programs, the hypothesis files
+    from each system must be sorted identically by speaker and sentence
+     in ascending order.  The "sh" script "prephyps", in the scripts
+    directory, will sort the input file of hypothesis strings into the
+    proper sequence and may be invoked as follows:
+
+       prephyps <hyp_file> <output_hyp_file>
+
+       EXAMPLES:
+          prephyps sys1.hyp sys1.hyp.s
+          prephyps sys1.hyp
+
+            * The second example overwrites the original file with the sorted
+              hypothesis strings.
+
+    HYPOTHESIS STRING EXAMPLES:
+
+       IS JASON+S MAXIMUM SUSTAINED SPEED SLOWER THAN JUPITER+S (JDM2-ST0009)
+       TURN AREAS OFF AND REDRAW CURRENT AREA (JDM2-ST0029)
+       IS TRIPOLI IN THE HOOKED PORT (JDM2-ST0064)
+       
+
+V.	How To Analyze The Test Data.
+
+       Provided for the installer are several hypothesis files to test the
+    scoring package.  These hypothesis files were created with random errors,
+    and are not representative of actula system output.  These file may be
+    used by following the commands below:
+
+       1. Change your current directory.
+          % cd "scoring/data"
+
+       2. Score all the hypothesis sentences.
+          % ../bin/ngscore sys1.hyp sys1 "System 1 of example test data"
+          % ../bin/ngscore sys2.hyp sys2 "System 2 of example test data"
+          % ../bin/ngscore sys3.hyp sys3 "System 3 of example test data"
+    
+       3. (OPTIONAL) Run the statistics program.
+          % ../bin/rstats "SPEAKER DEPENDENT NO GRAMMAR" *.scr/*.ali
+
+       4. Review the results.
+
+          a. The resulting output from scoring each system will have been
+             placed into a separate subdirectory labelled
+             "<hypothesis-file-name>.scr". (i.e. the ".snt", ".sum", ".sys"
+             and ".ali" files).  All files except the ".ali" file are
+             readable ASCII files.
+
+          b. (OPTIONAL) Results for the statistics program will have been 
+             written into the file "stats.out" in the current working 
+             directory.  This filehas all reports centered on 132 columns so
+             making a printout is the easiest way to review the results.
+           
+
+
+VI.	C-Language Interface to String Alingments
+
+VI.A   Overview
+
+The C-Language interface to the NIST Speech Recognition Scoring
+package has been developed to allow a simple functional interface to
+string alignments based on:
+
+    a. the standard scoring methodology or
+       word to word phonetic feature differences,
+    b. split and merge rescoring.
+
+The programmer initializes the alignment code with a single function,
+'align_init' and is then able to align reference and hypothesis
+strings using the 'align_strings' function.  When the programmer is
+finished with the alignment calls, the function 'align_close' cleans
+up the alignment package.
+
+VI.B  Data Structures
+
+The SCORE_T structure is created by a call to 'align_init' and is
+free'd by 'align_close'.  It is used in the alignment process to
+output the aligned sentence and it's scores.  The "aligned" sentence is
+returned in a sentence structure.  The contents of both structures are 
+defined below.
+
+    typedef struct sent_struct{
+        char *sentence_id;         character string for sentences id 
+				   This is not used in the C-lang   
+				   interface.
+        short nref;                number of reference words
+        PCIND_T *ref_ind_arr;      PCIND_T arr for ref word indexes
+        PCIND_T *hyp_ind_arr;      PCIND_T arr for hyp word indexes
+        short *eval_arr;           word evaluation arrar defining the 
+				      word's correctness
+    } SENT;
+
+    typedef struct score_struct{
+        float word_error;          equals (num_err / num_ref) * 100.0       
+        int num_ref;               the number of reference words      
+        int num_correct;           the number of correct words        
+        int num_deletes;           the number of deleted words        
+        int num_inserts;           the number of inserted words       
+        int num_subs;              the number of substituted words    
+        int num_merges;            the number of words merged together
+        int num_splits;            the number of words split apart    
+        SENT *sent;                An internal representation of the  
+                                   aligned hyp and ref strings        
+    } SCORE_T ;
+
+
+VI.C  Function Descriptions
+
+VI.C.1  align_init()
+
+Description:
+
+    Initialize the NIST speech recognition alignment package to 
+align and score hypothesized utterance texts.
+
+Syntax:
+
+    SCORE_T *align_init(char *pcdt_file,char *homo_file,
+			 int homo_correct)
+
+Arguments:
+
+    The alignment code is initialize by the function call
+'align_init'.  The procedure opens the pcodeset table defined by
+'pcdt_file', to be used in the dictionary lookup of words.  The
+'homo_file' defines the filename containing a list of homophones.  See
+'homo.5' for the files format.  If the boolean argument 'homo_correct'
+is equal to 1, then substitution errors involving 2 homophones are
+considered to be correct.  If there is no file of homophones, a null
+string, "", or NULL should be passed as a place holder.
+
+Note that 'homo_correct' should only be used IF the speech recognition
+system did not use a language model as a search constraint.
+
+Return Value:
+
+    Upon successful completion, a pointer to a SCORE_T is returned,
+otherwise NULL is returned.  The structure will be used with each call
+to 'align_strings' which will store in it the results of each pair of
+aligned strings.
+
+See Also:
+
+    align_strings(), align_close(), print_SCORE_T()
+
+VI.C.2  align_strings()
+
+Description:
+
+    Align the reference and hypothesis strings, and then score them,
+returning the results in the 'score' argument.
+
+Syntax:
+
+    int align_strings(char *hyp,char *ref,SCORE_T *score,
+		      int do_phone, int do_sm_rscr)
+
+Arguments:
+
+    Take the null-terminated input strings 'hyp' and 'ref' containing
+words contained in the codeset and separated by whitespace and align
+them storing the results in the SCORE_T structure.  (See the
+definition of the SCORE_T structure for it's contents.)  If the
+boolean flag, 'do_phone' is equal to 1, the alignments are performed
+using word distances calculated by phonemic feature distances.  If the
+the boolean flag, 'do_sm_rscr' is equal to 1, after the alignments
+have been made, they are re-aligned by allowing words involved in
+splits or merges to be combined into a single lexeme if the
+(figure-of-merit) FOM is greater than 2.0.  For a complete description
+of the Split and Merge rescoring, see section XXX.
+    
+Return Value:
+
+    If the alignment was successful, zero is returned, otherwise
+greater than zero is returned.
+
+See Also:
+
+    align_init(), print_SCORE_T()
+
+VI.C.3  align_close()
+
+Description:
+
+    Clean up the alignment code, and deallocate the SCORE_T structure.
+
+Syntax:
+
+    int align_close(SCORE_T *sct)
+
+Arguments:
+
+    Clean up the alignment code, and then deallocate the passed in
+SCORE_T structure that was created be a call to 'align_init'.
+
+Return Value:
+
+    Zero is returned upon successful completion, otherwise greater
+than zero is returned.
+
+See Also:
+
+    align_init()
+
+
+VI.C.4  print_SCORE_T()
+
+Description:
+
+    Print the results of an alignment in a tidy form to a FILE
+pointer.
+
+Syntax:
+
+    void print_SCORE_T(SCORE_T *score,FILE *fp)
+    
+Arguments:
+
+    Given a pointer to a SCORE_T structure, 'score', print a report
+to the FILE pointer, 'fp', containing the score of the sentence
+and the aligned strings.  As of August 2, 1994, the report looks
+like the example below.
+
+         Sentence Recognition Summary
+ 
+               Word Scores              |      
+   Corr  Ins  Del  Sub  Splits  Merges  |  Word Error
+     4     2    1    3     0       0    |     75.00%
+ 
+Transcript:
+REF:  the ***** *** GERRYMANDURING cat FLOAT BLUE OF   the moon 
+HYP:  the GERRY MAN DURING         cat ***** FLEW OVER the moon 
+EVAL:     I     I   S                  D     S    S             
+
+
+Return Value:
+
+    No value returned
+
+See Also:
+
+    SCORE_T
+
+VII. Revision History
+
+    CHANGES FROM VERSION 2.0 to 3.0
+
+        The following additions have been made to the scoring package:
+
+        1: The comment character has been changed to 2 semicolons ';;' to 
+           permit lexical items to begin with a single semicolon.
+        2: The CSR Wall Street Journal utterance id format has been added to
+           the utterance id parser.
+        3: The Scoring package's lexicon has been replaced by Bill Fisher's 
+           Pcode set definition.  The old style can still be read so backward
+           compatibility has been maintained.
+        4: The alignment procedure no longer the a word to word distance matrix
+           to perform Phone Mediated Alingments.  The Pcode set definition
+           provides the necessary information.
+        5: The Pcode set definition allows dynamic, (during alignment), lexicon
+           expansion.
+        6: Additional Statistical tests added to the stats program:
+           Wilcoxon Signed Rank Test and the Signtest.
+
+    CHANGES FROM VERSION 3.0 to 3.1
+	
+	1: Added the ability to score against reference sentences with
+	   alternations.
+	2: Added computations of split and merge figure of merit to 
+	   the scoring reports generated by '-ovrdtl' and '-spkr'.
+	3: Added the ability to rescore alignments based on rescoring
+	   using splits and merges.  (See align.1 for details)
+	4: Modified the command line interfaces of all programs so as to
+	   not use RM driver files as a default.
+	5: Fixed the 'wgscore' and 'ngscore' scripts.
+	6: Changes to the align program:
+	     Additional Options:
+                 SM     -> rescore using the forgiving split and merges
+	         SM_FOM -> Set the Figure-of-Merit Threshhold
+	         GENID1 -> interpret utt id's as (<SPKR>-<UNIQUE_ID>)
+		 GENID2 -> interpret utt id's as (<SPKR>-<NON-UNIQUE_ID>)
+		 GENID3 -> interpret utt id's as (<UNIQUE_ID>)
+		 NOTYPE -> have no utterance id's
+		 SH_LEX -> print the lexicon used for scoring
+	7: Added an option "SCORES" to pralign that prints the scores
+	   of each sentence.
+	8: Drastic improvements to wgscore, ngscore and rstat.
+
+    CHANGES FROM VERSION 3.1 to 3.2
+	1: Improved wgscore and ngscore.
+	2: Changed the default command line options for the programs:
+	   align, score, and stats.
+	3: Improved the ayutomatic creation of pcode tables such that
+	   words added to the '.ADD' files are automatically read in after
+	   the main pcode.
+	4: Corrected problems caused be un-writeable '.ADD' files.
+
+    CHANGES FROM VERSION 3.2 to 3.3
+	1: Updates to the 'libphone' functions.
+	2: Created the C-Language Interface. (See 'doc/score.rdm')
+
+    CHANGES FROM VERSION 3.3 to 3.4
+	1: Modified headers and function calls so that it'll compile
+	   on the SGI.
+
+    CHANGES FROM VERSION 3.4 to 3.5
+ 	1: Converted all code to ANSI C.
+	2: Added a new utterance ID type, "SWB", to align(1),
+	   wgscore(1) and ngscore(1).  The format it
+	   <CONVERSATION>_<CHANNEL>_<SEGMENT_ID>).
+	3: Corrected core dumps caused by large utterances.
+	4: Removed size limitations in the rankutil.c function groups.
+	5: Had aldist2() no longer report a warning if both the ref and the
+	   hyp sentences are empty.
+	6: Added a flag to align(1), wgscore(1) and ngscore(1),
+	   "-frag" to forgive substitution errors involving fragments
+	   whose spelling is a super string of the hypothesized word.
+	
+    CHANGES FROM VERSION 3.5 to 3.5.1
+	1: Corrected memory management in the score and phone libraries.
+	2: Modified the network deletion functions of the phone library.
+    
+    CHANGES FROM VERSION 3.5.1 to 3.5.6
+	1: Repaired a bug in the remove silence function.  Also added
+	   error checking silence strings found as substrings in larger
+	   words.
+	2: Corrected an infinite loop caused by an empty line at the end
+	   of either a reference or hypothesis input file.
+	3: Corrected a bug scrprnt.c which resulted in incorrect
+	   report names.
+	4: Removed the use of index() in favor of strchr() to enhance 
+	   portablility.
+	5: Corrected pointer arithemtic in the automatic expansion of
+	   speaker and sentence arrays in loadhyps.c.
+	6: Compiled and tested the package on the AIX 3.2 OS.
+
+    CHANGES FROM VERSION 3.5.6 to 3.6
+	1: Added the ability align time marked input files.  The files must
+	   conform to the format specified in tmk(5).
+	2: Added the ability to score entire time marked conversations.
+	   The algorithm is defined in "convscor.txt" and the input reference
+	   and hypothesis files must conform to format specifed in ctm(5).
+	3: In order to speed the alignment and scoring process the align(1)
+	   program can produce summary scoring reports if either of the 
+	   options "-sum" of "-rsum" is used.  In addition, wgscore 
+	4: Added the options "-tmk" and "-ctm" to align(1), wgscore(1) and
+	   ngscore(1) to handle time marked input.
+	5: Modified mklex to be more portable.
+	6: Corrected the phone-mediated alignments so as to prefer correct
+	   word matches when the phonemic distances are equal.
+	7: Corrected a bug Split/Merge Figure-of-Merit computation in
+	   sm_pkg1.c which causes a core dump when a divide by zero case
+	   occurs.
+
+    CHANGES FROM VERSION 3.6 to 3.6.1
+	1. Added a Weighted Word Scoring program "wwscore".  Also defined
+	   a new file format, wwl(5) as an input to this program.  For 
+	   fuuther documentation, read "doc/wwscor.doc".
+	2. Added the ability for "align(1)" to do Weighted Word Scoring
+	   by using the option "-wwl fname".
+	3. Modified wgscore(1) and ngscore(1) to accept a Word Weight List
+	   file and perform Weighted Word Scoring.
+	4. Improved the Conversation Scoring file "convscor.txt".
+	5. Modified the Split and Merge post-processor to select the most 
+	   likely split or merge first.
+	6. Decreased the run-time for phonetic alignments by optimizing
+	   the dynamic programming algoritm.
+
+    CHANGES FROM VERSION 3.6.1 to 3.6.2
+	1: Added the Insertion/Deletion sorting procedure for aligning
+	   time-marked (TMK) sentences.  This procedure was already added
+	   to the conversation time-marked alignment.
+	2: Modified the reference CTM and TMK format to permit Alternative
+	   time-marks and transcriptions.  This also necessitated changes
+	   to the chunking function used in CTM scoring.

@@ -1,0 +1,83 @@
+File ~billf/doc/pcd_score.doc
+
+
+  Use of Phonological Code Sets (pcodesets) in Scoring
+
+
+  Use of pcodesets in scoring opens up a wide variety of different
+ways to score, but it can be difficult to control.  This is a brief
+users' guide to help with some of the difficulties you may encounter.
+
+  In brief, a pcodeset is a set of symbols, defined in an ASCII text
+file, that can be used by software.  A pcodeset may be of three types:
+word, phone, or feature.  A pcodeset file may provide for each of its
+symbols a representation in terms of a lower pcodeset; e.g.  the word
+"bat" in a word-level pcodeset file may have the representation "/b '1
+ae t/" in a lower phone-level pcodeset.  Similarly, symbols for phones
+may have representations in terms of a string of symbols from a lower
+feature-level pcodeset.  As an alternative to having lower-code
+representations of its symbols, a pcodeset file may specify another
+file that just contains a set of symbol-to-symbol distances.  These
+files are called "ppf" files because they were originally used only to
+hold phone-to-phone distances.  For more details, see the pcodeset
+documentation file.
+
+   A pcdtab is a hierarchical set of pcodesets at different levels;
+typically word-level, then phone-level, then feature-level, called out
+in an ASCII text file.
+
+   Pcdtabs are the primary parameters for the alignments used in a
+scoring run.  A typical scoring run using phonological alignments will
+use one with a top-level pcodeset file defining the word symbols to be
+found in the transcriptions, then a pcodeset defining the phones used
+to represent the word, with a pointer to a ppf file that defines the
+phone-to-phone distance.  Using these descriptions of the sounds of
+the words, the alignment algorithm will find an alignment that
+minimizes the sum of indicated phone-to-phone distances.
+  
+  What happens if a word in a transcription is not in the top-level
+word pcodeset?  In this case, the software will attempt to create a
+pronunciation for the word and add it to the word pcodeset in core,
+also writing out the new word and its pronunciation into an ASCII text
+file with "ADD" in its name.  After every scoring run the user should
+check to see if an "ADD" file has been created, and if so, add its
+contents back into the word pcodeset file before the next run.
+Putting the new words into a separate file instead of just creating a
+new version of the word pcodeset file allows the user to edit and
+correct any bad pronunciations that the software might have made.
+
+   At present, the software that makes up new pronunciations for words
+when needed works on English, Japanese, and Spanish, defaulting to
+English.  For English, it uses a basic set of general rules that work
+pretty well for unknown words; but there are so many lexical
+exceptions to general rules of pronunciation in English that you
+really need to have a large word-level pcodeset file to get good
+accuracy.  Not so for Spanish; pronunciation in that language is so
+regular a function of the spelling that the only reason to edit the
+contents of a Spanish ADD file back into the word pcodeset is gain in
+computational efficiency (which may be considerable).  The Japanese
+rules rely on a straightforward Romanization in ASCII that makes
+translation to phones trivial.
+
+   If you want to make a scoring run using the older "word mediated"
+alignments, which don't take into account the likely sound of the
+words, you can do it by using a pcdtab that specifies only a single
+pcodeset file of words.  In this case, if the software has to add an
+unknown word to the pcodeset, it makes one without a pronunciation and
+writes that out into the "ADD" file.  BE VERY CAREFUL WHEN EDITING
+"ADD" FILES BACK INTO WORD-LEVEL PCODESET FILES NOT TO ADD WORDS
+WITHOUT PRONUNCIATIONS INTO A FILE OF WORDS WITH PRONUNCIATIONS, OR
+VICE-VERSA.  Trying to use such a file will probably cause the
+software to barf.
+
+  In theory you could use a pcdtab using a feature-level pcodeset
+below the phone pcodeset, but that would run very slowly, through
+three levels of recursion.  The utility program "mkdtab2" has been
+provided to pre-calculate phone-to-phone distances into a "ppf" file,
+based on a phone-level pcodeset file that has feature descriptions of
+each phone.  Distance in this ppf file is expressed as the number of
+features that would have to be added or deleted to edit one phone into
+another, the same as would be used by the alignment code running on
+the full three-level pcdtab.  Using the ppf table at the phone level
+instead of recursing another level saves a lot of time and gives the
+same result.

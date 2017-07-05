@@ -1,0 +1,13 @@
+.TH SRO2ESN 1 "Release 3.0" "Scoring Pkg"
+.SH NAME
+sro2esn - convert a list of ATIS .sro format sentences into an
+extended SNOR format.
+.SH SYNOPSIS
+sro2asn < file.sro > file.esn
+.SH DESCRIPTION
+This program takes each input transcription, one to a line, and
+converts the ATIS .sro transcription conventions into an extended
+SNOR format.  Once done, the output can be used as input to the align
+program.  See sro.5 and esn.5 for detailed descriptions of the formats.
+.SH SEE ALSO
+align(1) sro(5) esn(5)

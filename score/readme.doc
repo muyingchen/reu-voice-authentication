@@ -1,0 +1,30 @@
+sphere/readme.doc:
+
+	  The NIST Speech Recognition Scoring Package (SCORE)
+			     Version 3.6.2
+
+
+To install the SCORE package from a CD-ROM:
+
+	Recursively copy the "score" directory from the CD-ROM to a
+	writable disk drive.  Then, change directory to the copied
+	version and run the UNIX install command.  This can be
+	accomplished on a UNIX system with the commands:
+
+	    % cp -r sphere <YOUR_DIR>
+	    % cd <YOUR_DIR>
+	    % sh src/scripts/install.sh
+
+To install the SCORE package from a compressed-tar file:
+
+	Extract the programs from the compressed-tar file then run the
+	UNIX install command.  This can be accomplished on a UNIX system
+	with the commands:
+
+	    % zcat score_3.5.tar.Z | tar xvf -
+	    % cd nist
+	    % sh src/scripts/install
+
+For a description of the scoring package and it's use, read the file,
+'doc/score.rdm'.  UNIX-style man pages can be found in 'doc/man'.
+

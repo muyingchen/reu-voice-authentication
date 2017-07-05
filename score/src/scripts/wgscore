@@ -1,0 +1,355 @@
+#!/bin/sh
+INSTALL_DIR=$NIST_DIR
+#
+#   SH SCRIPT TO SCORE A 
+#
+#   $1 -> HYPOTHESIS FILENAME
+#   $2 -> SYSTEM NAME
+#   $3 -> SYSTEM DESCRIPTION  < a quoted string upto 40 characters >
+#   $4 -> TEST NAME  <the name of the test set, ex RM, WSJ, TIMIT>
+#
+#
+proc=$0
+if test "`echo $proc|grep wgscore`" = "" ; then
+   case=no
+   case_opt="-NO_GR"
+   ng_opt="| -HOMO fname "
+else
+   case=with
+   case_opt=""
+   ng_opt=""
+fi
+
+usage="Usage: $proc <OPTIONS> hyp_files ...
+       Where:
+
+	OPTIONS  -->  -<CORPUS> | -ref fname | <DICT> | [ <OPTIONS> ]
+                        <SCORE_OPT> ]
+               	
+             CORPUS     --> rm | wsj | timit | atis | swb | no_id | notype |
+                            spu_id 
+             DICT       --> -LEX fname | -CODESET fname | -autolex 
+             OPTIONS    --> <ALIGN_OPT> | <SCORE_OPT>
+	     ALIGN_OPT  --> -phone $ng_opt | -sm_fom num | -frag | 
+                            -tmk | -ctm | -pooce
+             SCORE_OPT  --> -sc_all | -sum | -rsum | -pralign |
+                            -wwl fname
+
+"
+
+
+
+############################################
+#  Parse the command line arguments       #
+############################################
+lp=""
+corp=""
+cfg_file=""
+dict=""
+lex=""
+lex_opt=""
+idtype=""
+do_autolex="FALSE"
+hyps=""
+reftohyp=""
+ref=""
+ref_opt=""
+wwl_opt=""
+homo=""
+homo_opt=""
+phone=""
+frag_opt=""
+do_pralign=""
+tmk_input=""
+pooce=""
+score_all=""
+qscore=""
+
+while test "`echo \|$1|sed 's/^|[-].*/-/'`" = "-" ; do
+    arg=`echo \|$1| sed 's/^|//' | tr A-Z a-z`
+    case $arg in 
+        -rm)
+            cfg_file="-cfg ${INSTALL_DIR}/lib/rm1.cfg"
+            ;;
+        -wsj)
+            cfg_file="-cfg ${INSTALL_DIR}/lib/wsj.cfg"
+            ;;
+        -swb)
+            cfg_file="-cfg ${INSTALL_DIR}/lib/swb.cfg"
+            ;;
+        -atis)
+            cfg_file="-cfg ${INSTALL_DIR}/lib/atis.cfg" 
+            ;;
+        -spu_id)
+            idtype="-SPU_ID"
+            reftohyp="-one2many"
+            ;; 
+        -notype)
+            idtype="-NOTYPE"
+            reftohyp="-one2many"
+            ;;
+        -no_id)
+            idtype="-NO_ID"
+            ;;
+        -pooce)
+            pooce="-pooce"
+            ;; 
+        -phone)
+            phone="-phone"
+            ;; 
+        -frag)
+            frag_opt="-frag"
+            ;;
+        -tmk)
+            tmk_input="-tmk -one2one"
+            ;;
+        -ctm)
+            tmk_input="-ctm -one2one"
+            ;;
+        -autolex)
+            do_autolex="TRUE"
+            ;;
+        -pralign)
+            do_pralign="TRUE"
+            ;;
+        -lex)
+            lex="$2"
+            dict=lex
+            if test ! -f $lex ; then
+                echo "Error: Dictionary file '$lex' does not exist"
+                echo "$usage"
+                exit 1
+            fi
+            lex_opt="-lex $2"
+            shift
+            ;;
+        -homo)
+            homo="$2"
+            if test ! -f $homo ; then
+                echo "Error: Homophone file '$homo' does not exist"
+                echo "$usage"
+                exit 1
+            fi
+            homo_opt="-homo $2"
+            shift
+            ;;
+        -sm_fom)
+            sm_opt="-sm -sm_fom $2"
+            shift
+            ;;
+        -ref)
+            ref="$2"
+            if test ! -f $ref ; then
+                echo "Error: Reference file '$ref' does not exist"
+                echo "$usage"
+                exit 1
+            fi
+            ref_opt="-ref $2"
+            shift
+            ;;
+        -wwl)
+            wwl_opt="-wwl $2"
+            if test ! -f $2 ; then
+                echo "Error: Word Weight List (WWL) file '$2' does not exist"
+                echo "$usage"
+                exit 1
+            fi
+            shift
+            ;;
+        -codeset)
+            lex="$2"
+            dict=codeset
+            if test ! -f $lex ; then
+                echo "Error: Codeset file '$lex' does not exist"
+                echo "$usage"
+                exit 1
+            fi
+            lex_opt="-codeset $2"
+            shift
+            ;;
+        -sc_all)
+            score_all="TRUE"
+            ;;
+        -sum)
+            qscore="$qscore -sum"
+            ;;
+        -rsum)
+            qscore="$qscore -rsum"
+            ;;
+        -dbg)
+            debug="TRUE"
+            ;;
+        *)
+            echo "Warning: Un-recognized argument '$arg'"
+            ;;
+    esac
+    shift
+done
+
+if test "$score_all" = "" -a "$qscore" = "" ; then
+    score_all="TRUE"
+fi
+
+if test "$debug" = "TRUE" ; then
+    echo "lp= $lp"
+    echo "corp= $corp"
+    echo "dict= $dict"
+    echo "cfg_file= $cfg_file"	
+    echo "lex= $lex"
+    echo "lex_opt= $lex_opt"
+    echo "homo= $homo"
+    echo "homo_opt= $homo_opt"
+    echo "idtype= $idtype"
+    echo "do_autolex= $do_autolex"
+    echo "hyps= $hyps"
+    echo "ref= $ref"
+    echo "ref_opt= $ref_opt"
+    echo "phone= $phone"
+    echo "frag_opt= $frag_opt"
+    echo "sm_opt= $sm_opt"
+    echo "do_pralign= $do_pralign"
+    echo "tmk_input= $tmk_input"
+    echo "pooce= $pooce"
+    echo "score_all= $score_all"
+    echo "qscore= $qscore"
+    echo "wwl_opt= $wwl"
+fi
+
+# Check the args
+if test ! "$idtype" = "" ; then
+    if test "$ref" = "" ; then
+	echo "Error: CORPUS Type '$idtype' requires a '-REF fname' option"
+	echo "$usage"
+        exit 1
+    fi
+    if test "$lex_opt" = "" -a "$do_autolex" = "FALSE" ; then
+        echo "Error: CORPUS Type '$idtype' requires a <DICT> Argument"
+	echo "$usage"
+        exit 1
+    fi
+fi
+if test "$ref" = "" -a "$do_autolex" = TRUE ; then
+    echo "Error: Autolex requires a '-REF fname' Argument"
+    echo "$usage"
+    exit 1
+fi
+if test "$phone" = "-phone" ; then
+    if test ! "$dict" = "codeset" -a "$cfg_file" = "" ; then
+        echo "Error: -phone requires the <DICT> argument to be a CODESET"
+        echo "$usage"
+        exit 1
+    fi
+fi
+
+
+echo Standard script to score hyps for the \"$case\" grammar case
+echo ""
+########################################
+# make sure there are enough args      #
+########################################
+if test $# -lt 1 ; then
+    echo Not enough arguments, no hyp files defined
+    echo "$usage"
+    exit 1
+fi
+
+
+########################################
+# make sure the hypothesis file exists #
+########################################
+while test ! "$1" = "" ; do
+    if test ! -r $1 ; then
+        echo The Hopothesis file \'$1\' does not exist. . . Score Aborted
+        echo "$usage"
+        exit 1
+    fi
+
+    ####################################################
+    #check to see if the HYP file is in this directory #
+    ####################################################
+    if test `echo $1 | grep '/' | wc -c` -ne 0 ; then
+        echo -n The Hypothesis file '$1' must be in the current directory. . . 
+        echo "Score aborted!!!"
+        exit 1
+    fi
+
+    hyps="$hyps $1"
+    shift
+done
+#
+#  if autolex was selected, generate a lexicon file for the refs
+#  and hyps.
+#
+if test "$do_autolex" = "TRUE" ; then
+    echo "Automatically creating the lexicon into file 'auto.lex'"
+    cat $ref $hyps | ${INSTALL_DIR}/bin/mklex - auto.lex
+    lex="auto.lex"
+    lex_opt="-lex auto.lex"
+
+    if test "$debug" = "TRUE" ; then
+        echo "Auto_lex reset lex= $lex"
+        echo "Auto_lex reset lex_opt= $lex_opt"
+    fi
+fi
+
+for hyp in $hyps ; do
+    ############################################################
+    # aligning sentences in the hypothesis file                #
+    ############################################################
+
+    echo Aligning the hypothesis sentences in the file $hyp . . . 
+    echo ""
+    if [ "$score_all" = "TRUE" -o "$do_pralign" = "TRUE" ] ; then
+        mkdir ${hyp}.scr
+	outfile="-OUTFILE $hyp.scr/$hyp.ali"
+    else
+	outfile="-OUTFILE ''"
+    fi
+    acmp="$INSTALL_DIR/bin/align -HYP $hyp $ref_opt $lex_opt -NAME $hyp -DESC $hyp $cfg_file $outfile -SILENCE $reftohyp $case_opt $idtype $phone $homo_opt $sm_opt $frag_opt $tmk_input $qscore $pooce $wwl_opt"
+    if test "$debug" = "TRUE" ; then
+        echo "$acmp"
+    fi
+    $acmp
+
+    if test "$score_all" = "TRUE" -o "$do_pralign" = "TRUE" ; then
+        if test ! -f $hyp.scr/$hyp.ali ; then
+	    echo "Error: Alignment file '$hyp.scr/$hyp.ali' was not created"
+   	    exit 1
+        else
+            echo Done with alignment
+        fi
+    fi
+
+    ###########################################################
+    # Now score the system                                    #
+    ###########################################################
+    
+    if [ "$score_all" = "TRUE" ] ; then
+        echo ""
+        echo Scoring the file $hyp.scr/$hyp.ali . . . 
+        echo ""
+        scmd="$INSTALL_DIR/bin/score -ALIGN $hyp.scr/$hyp.ali $lex_opt $cfg_file -SENT -SPKR -OVRALL -OVRDTL -OUT_DIR $hyp.scr"
+        if test "$debug" = "TRUE" ; then
+            echo "$scmd"
+        fi
+        $scmd
+        echo "Scoring finished"
+    fi
+
+    if [ "$do_pralign" = "TRUE" ] ; then
+    	pcmd="$INSTALL_DIR/bin/pralign -ALIGN $hyp.scr/$hyp.ali $lex_opt $cfg_file"
+	if test "$debug" = "TRUE" ; then
+            echo "$pcmd" \> $hyp.scr/$hyp.pralign
+    	fi
+	$pcmd > $hyp.scr/$hyp.pralign
+	echo "Print Alignments finished"
+    fi
+done
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+.TH SCORE 1 "Release 3.0" "Scoring Pkg"
+.SH NAME
+score - score and print results of a recognition systems output
+.SH SYNOPSIS
+.B score
+[ -ALIGN fname ] 
+[ -LEX fname ]
+[ -CODESET fname ]
+[ -OUT_DIR dir_name ]
+[ -CFG fname ]
+[ -SPLTMRG fname ]
+[ -LSUBS fname ]
+[ -MONOSYL fname ]
+[ -ALP_NUM fname ]
+[ -SHCODE ]
+[ -SHLSUBS ]
+[ -SHALPHA ]
+[ -SHMONO ]
+[ -SHSPLT_MRG ]
+[ -HOMO_ERROR ]
+[ -SENT ]
+[ -SPKR ]
+[ -OVRALL ]
+[ -OVRRAW ]
+[ -OVRDTL ]
+[ -DUMP ]
+.SH DESCRIPTION
+Score takes the output file of aligned sentences created by the 
+align(1) program and scores (i.e. counts errors) the accuracy of
+the recognition system.  The program can report results at several
+different levels: sentence, speaker, overall detailed and an overall
+summary.
+
+If an invalid output directory [ -OUT_DIR dir_name ] is specified,
+the reports are printed to stdout.  Otherwise, report files are
+created within the directory.  The extension for sentence a level
+report is ".snt",  ".spk" for speaker a level report, .sys_dtl for the
+overall detailed report and ".sys" for the overall summary level.
+.SH OPTIONS
+.PP
+.IP "\fB-ALIGN fname\fP"
+Change the default name of the input file-name of
+aligned sentences from "ALIGNED_FILE" to `fname'
+.IP "\fB-LEX fname\fP"
+Change the default lexicon file-name to `fname'
+This option will be overridden by subsequent CODESET definitions.
+.IP "\fB-CODESET fname\fP"
+Change the default pcodeset filename to `fname'
+This option will be overridden by subsequent LEX definitions.
+.IP "\fB-OUT_DIR dir\fP"
+Give the Scoring program a directory to store
+the printed reports in.  If this argument is not
+used, or is an invalid directory, the program
+prints reports to stdout
+.IP "\fB-CFG fname\fP"
+Set the configuration filename to 'fname',
+see cfg.5 for the file format.
+.IP "\fB-SPLTMRG fname\fP"
+Change the default splits and merges file-name to `fname'
+.IP "\fB-MONOSYL fname\fP"
+Change the default mono-syllable file-name to `fname'
+.IP "\fB-ALP_NUM fname\fP"
+Change the default alpha_numeric file-name to `fname'
+.IP "\fB-SHCODE\fP"
+Print to stdout the currently used lexicon
+.IP "\fB-SHLSUBS\fP"
+Print to stdout the currently defined lexicon subsets
+.IP "\fB-SHALPHA\fP"
+Print to stdout the currently used alpha-numeric file
+.IP "\fB-SHMONO\fP"
+Print to stdout the currently used mono-syllable file
+.IP "\fB-SHSPLT_MRG\fP"
+Print to stdout the currently used splits and merges file
+.IP "\fB-HOMO_ERROR\fP"
+Count correct homophones as errors
+.IP "\fB-SENT\fP"
+Print scoring reports at the sentence level
+.IP "\fB-SPKR\fP"
+Print scoring reports at the speaker level
+.IP "\fB-OVRALL\fP"
+Print an overall scoring report
+.IP "\fB-OVRRAW\fP"
+Print an overall raw scoring report
+.IP "\fB-OVRDTL\fP"
+Print an "detailed" overall scoring report
+.IP "\fB-DUMP\fP"
+Print to stdout all of the changeable arguments from the command-line
+.SH SEE ALSO
+align(1), stats(1), cfg(5)
+.SH BUGS
+    If you see `em, smash `em!

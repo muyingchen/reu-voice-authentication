@@ -1,0 +1,33 @@
+
+CFG(5)                                                         CFG(5)
+
+                          NIST`s alignment program
+
+
+NAME
+
+    cfg - define configuration options for the scoring programs
+
+DESCRIPTION
+
+        The scoring program has many setable command line parameters,
+    the configuration file provides a conveinient way to manage them.  The
+    format is as follows:
+
+        1.  Lines beginning with a ';' are comments.
+
+            ; this is a comment
+
+        2.  Command line arguments followed by there values.  For arguments
+            that are flags, there is no value.
+
+            REF      drivers/rm/al_sents.snr
+            ONE2ONE
+
+    The file drivers/generic.cfg is a general purpose configuration file
+    for Resource Managment tests as well as the example results in the 
+    data directory.
+
+SEE ALSO
+ 
+    align.1 score.1 stats.1 pralign.1 prnalign.1

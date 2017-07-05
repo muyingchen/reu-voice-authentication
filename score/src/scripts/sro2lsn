@@ -1,0 +1,36 @@
+#!/bin/sh
+INSTALL_DIR=$NIST_DIR
+# Produce the Lexical SNOR scoring input from the SR_output (.sro)
+# transcriptions or Speech recognizer output
+#
+# 0) remove edit cues and leave the remaining words
+# 1) add spaces before and after alternation markers
+# 2) delete the helpful interpretation marks
+# 3) delete non-lexical acoustic events in square brackets
+# 4) remove angle brackets from verbally deleted words
+# 5) remove the stars from mispronounced words
+# 6) delete false start words ending (or beginning) with a hyphen
+# 7) replace any empty alternations with @
+# 8) collapse runs of spaces, delete initial and final spaces
+# 9) make everything uppercase
+
+awk -f $INSTALL_DIR/sro2lsn.awk* | \
+gawk 'BEGIN {notin=0;} {for (arg=1; arg<=NF; arg++) \
+	{val=$arg; for (i=1; i<=length(val); i++) \
+        	{chr=substr($arg,i,1); \
+		 if (chr ~ /{/)      {printf(" { "); notin=1;}  \
+		 else if (chr ~ /}/) {printf(" } "); notin=0;} \
+		 else if (chr ~ /\// && notin==1) {printf(" / ");} \
+		 else                {printf("%c",chr);} \
+	         }
+	 printf(" "); } \
+ printf("\n");  }' | \
+sed -e 's/[,.:\!\?~]//g'  | \
+sed -e 's/\[[^ ][^ ]*\]//g'  | \
+sed -e 's/[<>]//g'  | \
+sed -e 's/\*\([^ ][^ ]*\)\*/\1/g'  | \
+sed -e 's/[^ ][^ ]*-//g' -e 's/-[^ ][^ ]*//g'  | \
+sed -e 's/{ *\//{ @ \//g' -e 's/\/ *}/\/ @ }/g' -e 's/\/ *\//\/ @ \//g' | \
+sed -e 's/  */ /g' -e 's/^ *//g' -e 's/ *$//g'  | \
+tr '[a-z]' '[A-Z]'  | \
+cat

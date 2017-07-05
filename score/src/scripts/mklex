@@ -1,0 +1,73 @@
+#!/bin/sh
+INSTALL_DIR=$NIST_DIR
+#   SH script to create a lexicon from the input list of tokens
+#
+#   Usage:  This is a filter script therfore :
+#           cat input.lists | mklex > lexicon.new
+#
+#   Description:
+#           This program takes each line of tokens and makes them 
+#           one to a line, removes all the blank lines, sorts the list
+#           leaving only the unique words then converts all lower case
+#           words to upper case.  
+#
+#   Warning:
+#           This program assumes there are no punctuation marks or sentence
+#           id's in the input token lists
+#
+trap "/bin/rm -f /tmp/mklex.$$ ; exit 1" 1 2 3 15
+#
+if (test $# -ne 2) then
+    echo Error: Improper argument count
+    echo Usage: mklex input output
+    exit 1
+fi
+#
+# check to see where the input is from
+#
+if (test "$1" = "-") then
+    input=""
+else
+    input=" < $1 "
+fi
+#
+# check to see where the output goes to
+#
+if (test "$2" = "-") then
+    output=""
+else
+    output=">> $2"
+fi
+
+command="sed '/^;;/d' | \
+	 sed -e 's/(.*) *$//' $input \
+	     -e 's/\([^ ]\)[}/]/\1/g' \
+	     -e 's/ [{]/ /g' | \
+         tr ' ' '\012' | tr a-z A-Z | sed '/^$/ d' | sort -u "
+sh -c "$command" > /tmp/mklex.$$
+num_lex=`cat /tmp/mklex.$$|wc -l | awk '{print $1+50}'`
+
+
+if (test "$2" = "-") then
+    echo ";; This Lexicon created by mklex"
+    echo ";;"
+    echo "* code is not compositional"
+    echo '* element type is "word".'
+    echo '* order is "alphabetic"'
+    echo '* max_ncodes is "'$num_lex'"'
+    echo '* type_case is "upper".'
+    cat /tmp/mklex.$$ >> $2
+else
+    echo ";; This Lexicon created by mklex" > $2
+    echo ";;" >> $2
+    echo "* code is not compositional" >> $2
+    echo '* element type is "word".' >> $2
+    echo '* order is "alphabetic"' >> $2
+    echo '* max_ncodes is "'$num_lex'"' >> $2
+    echo '* type_case is "upper".' >> $2
+    cat /tmp/mklex.$$ >> $2
+fi
+
+/bin/rm -f /tmp/mklex.$$
+
+

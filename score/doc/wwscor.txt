@@ -1,0 +1,98 @@
+File: wwscor.txt
+Date: March 03, 1994
+
+
+Purpose:
+--------
+
+To describe the algorithm for computing weighted word scores of speech
+recognition systems.
+
+
+Input Word Weights List (WWL) format:
+-------------------------------------
+
+The Word Weights List (WWL) is a file containing a list of lexemes,
+each with an associated set of weights.  The file contains an ASCII
+header which defines properties of the weights, and a list of lexemes
+with a set of associated weights.
+ 
+The header consists of comment lines, (lines that begin with ';;').
+Inside some comment lines are comment information strings which define
+attributes of the file and the weights.  While the format of comment
+lines is unrestricted, lines containing comment information strings
+have a specific format.  Their format is:
+ 
+     ;; '<COMMENT_INFO_STR>' '<VALUE>' [ '<VALUE>' ... ]
+ 
+          where:
+ 
+              COMMENT_INFO_STR :== "Default missing weight" | "Labels"
+ 
+              VALUE            :== (Context dependent values)
+ 
+For the "Default missing weight", the value enclosed in single
+quotes defines the weight given to lexemes not present in the list.
+ 
+The "Headings" string defines column headings for each column present
+in the file.  The first heading must be "Word Spelling", the rest of
+the <VALUE> strings define headings for each column of word weights.
+There is compile time defined limit of 5 word weights per WWL file.
+ 
+By default, the "Default missing weight" is zero, and the "Labels" for
+each weight column are generated automatically.
+ 
+The remainder of the file consists of records for each lexeme, one
+lexeme to a line.  The firsts string on the line is the lexeme's
+spelling, followed by up to 5, white space separated, floating point
+weights for that lexeme.  The format is:
+ 
+      <Spelling> <VALUE> [ <VALUE> ... ]
+ 
+
+Weighted Word Scoring Process:
+------------------------------
+
+1: Time-mark align the ref and hyp strings, then realign the strings,
+allowing splits and merges with FOM > a specified threshold.  Each
+word is classified as Correct, Substituted, Inserted, Deleted, Split
+or Merged.
+
+2: Compute the following measures for each sentence:
+                           
+	Note: W(R ) and W(H )   Denote the word's weight.  If the Word is
+		 i         i    a Split or Merge, it's weight is the sum
+				of it's constituent parts.
+
+	      SW(x)             Denotes the sum of the weights in category
+				"x".
+	           __  
+	SW(REF)  = \   W(R )
+		   /_     i 
+	           __
+	SW(CORR) = \   W(R )   if R  == H
+		   /_     i        i     i
+	           __
+	SW(SUB)  = \   Max[W(R ),W(H )]    if R  != H   (No Split/Merge)
+		   /_         i     i          i     i
+	           __
+	SW(INS)  = \   W(H )   if R  == 0
+	 	   /_     i        i     
+	           __
+	SW(DEL)  = \   W(R )   if H  == 0
+		   /_     i        i     
+	           __      
+	SW(MERG) = \   Max[ W(R ) ,W(H )]    if R  != H  and a Merge
+		   /_          i      i          i     i
+	           __             
+	SW(SPLT) = \   Max[W(R ),  W(H )]    if R  != H  and a Split
+		   /_         i       i          i     i 
+ 
+	%Corr   = SW(CORR) / SW(REF) * 100.0
+	%Sub    = SW(SUB)  / SW(REF) * 100.0
+	%Del    = SW(DEL)  / SW(REF) * 100.0
+	%Ins    = SW(INS)  / SW(REF) * 100.0
+	%Merge  = SW(MERG) / SW(REF) * 100.0
+	%Split  = SW(SPLT) / SW(REF) * 100.0
+	%Err    = (SW(SUB) + SW(DEL) + SW(INS) + SW(MERG) + SW(SPLT)) / 
+			SW(REF) * 100.0

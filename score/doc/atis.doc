@@ -1,0 +1,250 @@
+
+ 
+                      Primer for Scoring ATIS Domain
+               Spontaneous Speech Recognition Experiments
+
+
+This document will lead you through an example scoring session for
+speech recognizer output from an ATIS domain system.  It assumes the
+user has installed (compiled) the scoring package.  If you have not
+compiled the scoring package, please do so now. 
+
+Throughout this document, you'll need to execute several commands from
+the command line so make sure you have the abilitity.  For starters,
+go into the "atis_test" subdirectory and list its contents.
+
+Execute the following commands ('%' Stands for the shell prompt)
+
+    % cd atis_test
+    % ls
+
+There should be four files: "atis.ref", "sys1.hyp", "sys2.hyp", and
+"sys3.hyp".  Each ".hyp" file is the output of a different speech
+recognition system.  Look through these files to become acquainted
+their formats.  The ".ref" file contains the reference transcriptions
+for all utterances in the test set.  It has the same format as the
+".hyp" files.
+
+The "sro2lsn" script in "../bin" is provided to convert normal Speech
+Recognizer Output (.sro) files to Lexical SNOR format (.lsn).  However,
+for this demonstration, all four files have already been converted to
+LSN format.  When you start scoring your own data you may need to use
+the "sro2lsn" script.
+
+Next, three special files must be created from out two input files:
+a lexicon, a homophone and configuration file.  The script 
+"../bin/atisinit" will do this for you.  Execute the following command:
+
+    % cat *.hyp *.ref | ../bin/atisinit atis_lsn
+
+The script will create:
+    1: atis_lsn.cfg -> a configuration file to set up options used by the
+                       scoring package.  (It will contain file name 
+                       definitions of the lexicon and homophone files for
+                       the scoring package.)
+    2: atis_lsn.hom -> an abbreviated list of homophones from the
+                       resource management set of homophones.  (For the
+                       extended SNOR described below, there will be more
+                       homophones added to this file.)
+    3: atis_lsn.lex -> the lexicon from the combination of ref and hyp
+                       files.
+    4: atis_lsn.lsub -> a lexical subset file
+
+Look through these files to become acquainted their formats.
+
+Now you're ready to align the hypothesis sentences to the reference
+sentences.
+
+    % ../bin/align -CFG atis_lsn.cfg -HYP sys1.hyp -OUTFILE sys1.ali \
+      -NAME sys1 -REF atis.ref
+    % ../bin/align -CFG atis_lsn.cfg -HYP sys2.hyp -OUTFILE sys2.ali \
+      -NAME sys2 -REF atis.ref
+    % ../bin/align -CFG atis_lsn.cfg -HYP sys3.hyp -OUTFILE sys3.ali \
+      -NAME sys3 -REF atis.ref
+
+During execution, the program will print several status messages and
+array expansion warnings, only worry if you see "Error: . . . . "
+
+At this point, you may not believe it actually worked, so lets print
+out the aligned sentences.  To do it, run the "../bin/pralign" program
+using the command below.  Notice the command is piped to more because
+this program makes a lot of output. 
+
+    % ../bin/pralign -CFG atis_lsn.cfg -ALIGN sys1.ali | more 
+    % ../bin/pralign -CFG atis_lsn.cfg -ALIGN sys2.ali | more 
+    % ../bin/pralign -CFG atis_lsn.cfg -ALIGN sys3.ali | more 
+
+Maybe now your asking yourself, how well the system actually did,
+score wise.  Running the "../bin/score" program will produce the systems
+results.  If you wish to get more detailed analysis, consult the score.1
+file in the doc directory for more complete explanation of it's use.
+
+    % ../bin/score -CFG atis_lsn.cfg -ALIGN sys1.ali -OVRDTL -OVRALL > sys1.rpt
+    % ../bin/score -CFG atis_lsn.cfg -ALIGN sys2.ali -OVRDTL -OVRALL > sys2.rpt
+    % ../bin/score -CFG atis_lsn.cfg -ALIGN sys3.ali -OVRDTL -OVRALL > sys3.rpt
+
+If everything ran correctly, the file "sys1.rpt" should contain the
+following table:
+
+       ,-------------------------------------------------------------.
+       |        This is the description from the atis_lsn.cfg        |
+       |-------------------------------------------------------------|
+       | SPKR    | # Snt |  Corr    Sub    Del    Ins    Err  S. Err |
+       |---------+-------+-------------------------------------------|
+       | 15-V    |   21  |  89.7    9.1    1.2    3.6   13.9    66.7 |
+       |---------+-------+-------------------------------------------|
+       | 16-V    |   36  |  92.6    6.3    1.1    1.1    8.5    50.0 |
+       |---------+-------+-------------------------------------------|
+       | 1C-V    |   42  |  86.8    7.5    5.7    3.2   16.4    76.2 |
+       |---------+-------+-------------------------------------------|
+       | 1K-V    |   26  |  81.0   12.3    6.7    2.9   21.9    92.3 |
+       |---------+-------+-------------------------------------------|
+       | 1U-V    |   25  |  86.6   11.5    2.0    4.9   18.4    68.0 |
+       |---------+-------+-------------------------------------------|
+       | 25-V    |   20  |  75.7   20.0    4.3    7.0   31.4    95.0 |
+       |---------+-------+-------------------------------------------|
+       | 27-V    |   30  |  80.9   12.4    6.7    4.7   23.8    90.0 |
+       |---------+-------+-------------------------------------------|
+       | 6Z-S    |   29  |  94.2    4.2    1.6    1.0    6.7    31.0 |
+       |---------+-------+-------------------------------------------|
+       | 70-S    |    2  | 100.0    0.0    0.0    0.0    0.0     0.0 |
+       |---------+-------+-------------------------------------------|
+       | 71-S    |   31  |  89.0    9.8    1.1    1.1   12.1    41.9 |
+       |---------+-------+-------------------------------------------|
+       | 72-S    |   32  |  96.4    2.9    0.7    1.0    4.6    25.0 |
+       |---------+-------+-------------------------------------------|
+       | 73-S    |   17  |  89.0    7.9    3.1    0.0   11.0    52.9 |
+       |---------+-------+-------------------------------------------|
+       | 74-S    |   19  |  96.1    3.0    0.9    0.9    4.7    36.8 |
+       |---------+-------+-------------------------------------------|
+       | 75-S    |   16  |  92.6    5.2    2.2    0.0    7.4    31.2 |
+       |---------+-------+-------------------------------------------|
+       | 76-S    |    2  |  83.3   16.7    0.0   11.1   27.8   100.0 |
+       |---------+-------+-------------------------------------------|
+       | 77-S    |   30  |  93.3    3.8    2.9    1.4    8.1    46.7 |
+       |---------+-------+-------------------------------------------|
+       | 78-S    |   23  |  96.7    3.1    0.3    1.7    5.0    43.5 |
+       |---------+-------+-------------------------------------------|
+       | EH-S    |   32  |  88.0    9.8    2.3    1.5   13.5    75.0 |
+       |---------+-------+-------------------------------------------|
+       | EM-S    |    8  |  91.2    8.8    0.0    1.8   10.5    50.0 |
+       |---------+-------+-------------------------------------------|
+       | EO-S    |   46  |  89.4    6.7    3.9    2.4   13.0    54.3 |
+       |---------+-------+-------------------------------------------|
+       | F2-S    |   26  |  92.0    8.0    0.0    3.9   11.8    50.0 |
+       |---------+-------+-------------------------------------------|
+       | FK-S    |   18  |  91.8    6.5    1.7    3.7   11.9    61.1 |
+       |---------+-------+-------------------------------------------|
+       | FN-S    |   29  |  88.1   10.7    1.1    3.7   15.5    79.3 |
+       |---------+-------+-------------------------------------------|
+       | FR-S    |   42  |  79.3   17.2    3.5    3.5   24.2    81.0 |
+       |---------+-------+-------------------------------------------|
+       | IA-S    |    8  |  93.4    2.2    4.4    0.0    6.6    75.0 |
+       |---------+-------+-------------------------------------------|
+       | JE-S    |   51  |  85.9   10.3    3.8    1.7   15.8    62.7 |
+       |---------+-------+-------------------------------------------|
+       | JI-S    |   50  |  97.3    1.8    0.9    7.4   10.1    50.0 |
+       |---------+-------+-------------------------------------------|
+       | JJ-S    |   90  |  96.5    1.9    1.6    2.1    5.6    36.7 |
+       |---------+-------+-------------------------------------------|
+       | QH-S    |   14  |  95.8    3.4    0.8    0.0    4.2    28.6 |
+       |---------+-------+-------------------------------------------|
+       | QR-S    |    9  |  99.1    0.9    0.0    0.9    1.7    22.2 |
+       |---------+-------+-------------------------------------------|
+       | RA-S    |   37  |  97.6    2.0    0.3    3.0    5.4    29.7 |
+       |---------+-------+-------------------------------------------|
+       | RD-S    |   20  |  87.3    7.8    4.9    2.0   14.7    70.0 |
+       |---------+-------+-------------------------------------------|
+       | RH-S    |   14  |  93.8    4.9    1.2    3.7    9.9    21.4 |
+       |---------+-------+-------------------------------------------|
+       | RQ-S    |   36  |  96.7    1.5    1.8    0.5    3.8    36.1 |
+       |---------+-------+-------------------------------------------|
+       | RR-S    |   33  |  96.9    2.9    0.3    1.8    5.0    39.4 |
+       |---------+-------+-------------------------------------------|
+       | S0-S    |   25  |  94.7    2.9    2.4    1.0    6.3    24.0 |
+       |---------+-------+-------------------------------------------|
+       | S8-S    |   12  | 100.0    0.0    0.0    1.1    1.1     8.3 |
+       |=============================================================|
+       | Sum/Avg | 1001  |  90.7    6.9    2.5    2.5   11.8    52.4 |
+       `-------------------------------------------------------------'
+
+Now you probably want to run the statistical significance tests on
+the three different systems to find out if their differences are
+statistically significant.
+
+    % ../bin/stats -CFG atis_lsn.cfg -ALIGN sys1.ali sys2.ali sys3.ali -SIG
+
+There probably will be lots of "Warning" messages, but don't worry unless
+you get "Error" messages.  If everything ran correctly, you should get the
+following:
+
+                  Composite Report of All Significance Tests                   
+                                 For the  Test                                 
+
+                             Test Name                           Abbrev.
+       -----------------------------------------------------     -------
+          Matched Pair Sentence Segment (Word Error) Test          MP   
+       Signed Paired Comparison (Speaker Word Accuracy) Test       SI   
+         Wilcoxon Signed Rank (Speaker Word Accuracy) Test         WI   
+                   McNemar (Sentence Error) Test                   MN   
+
+
+                   |---------------------------------------|
+                   |         |  sys1   |  sys2   |  sys3   |
+                   |---------+---------+---------+---------|
+                   |  sys1   |         | MP sys2 | MP sys1 |
+                   |         |         | SI sys2 | SI same |
+                   |         |         | WI sys2 | WI same |
+                   |         |         | MN sys2 | MN sys3 |
+                   |---------+---------+---------+---------|
+                   |  sys2   |         |         | MP sys2 |
+                   |         |         |         | SI sys2 |
+                   |         |         |         | WI sys2 |
+                   |         |         |         | MN sys2 |
+                   |---------+---------+---------+---------|
+                   |  sys3   |         |         |         |
+                   |         |         |         |         |
+                   |         |         |         |         |
+                   |         |         |         |         |
+                   |---------------------------------------|
+
+The above table shows that "sys2" is statistically better than "sys1"
+and "sys3" in all four significance tests.  "sys1" is statistically better
+than "sys3" in the MP test, and "sys3" is statistically better than "sys1"
+in the MN test.  The differences between "sys1" and "sys3" are not
+statistically significant for the SI and WI tests.
+
+You've just completed the first section of this primer using the
+Lexical SNOR transcription convention to score a sample test.  Next we'll
+move on the detailed diagnostics for spontaneous speech recognition tests. 
+
+The detailed diagnostics will be based on the Extended SNOR
+transcription convention which includes spontaneous speech events
+phenomena such as non speech events, false starts and mispronounced
+words.  We'll use all the commands from above, except bin/sro2esn will
+be used in place of bin/sro2lsn to create reference and hypothesis
+transcriptions.  The diffence being the rules as described in the file
+"atis_sr.doc".  Create the reference and hyp files using the new script. 
+
+    % ../bin/sro2esn < ../data/atis_smp.sro > atis_ref.esn
+    % ../bin/sro2esn < ../data/atis_smp.hyp > atis_hyp.esn
+
+As before create the special files for the scoring package: a lexicon,
+homophone and configuration file.  Once completed, compare the new files
+to the ones created before.  You should notice there are more lexical items
+and more homophones.
+
+    % cat atis_ref.esn atis_hyp.esn | ../bin/atisinit atis_esn
+
+Align the reference and hypothesis transcriptions using the align program. 
+
+    % ../bin/align -CFG atis_esn.cfg -HYP atis_hyp.esn -REF atis_ref.esn
+
+Now print out the aligned sentences and print the scores of the
+system.  The answers you get should be slightly lower than before, because
+there are more disfluencies in the reference sentences.
+
+    % ../bin/pralign -CFG atis_esn.cfg -ALIGN atis_esn.ali | more 
+    % ../bin/score -CFG atis_esn.cfg -ALIGN atis_esn.ali -OVRDTL -OVRALL |more
+
+That's it, and good luck!

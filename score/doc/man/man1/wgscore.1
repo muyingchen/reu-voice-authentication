@@ -1,0 +1,121 @@
+.TH WGSCORE 1 "Release 3.1" "Scoring Pkg"
+.SH NAME
+wgscore - score the hypothesis sentences from a recognition
+system which imposed a grammar.
+.SH SYNOPSIS
+.B wgscore <OPTS> hyp_files ...
+ 
+  OPTS  -->  -<CORPUS> | -ref fname | <DICT> | [ <OPTIONS> ]
+               
+     CORPUS    --> rm | wsj | timit | atis | swb | no_id |
+                   notype | spu_id 
+     DICT      --> -LEX fname | -CODESET fname | -autolex
+     OPTIONS   --> <ALIGN_OPT> | <SCORE_OPT>
+     ALIGN_OPT --> -phone | HOMO fname  | -frag | -tmk | 
+                   -ctm | -pooce | -sm_fom num 
+     SCORE_OPT --> -pralign | -sc_all | -sum | -rsum
+
+
+
+.SH DESCRIPTION
+Perform an alignment of all the hypothesis sentences contained in the
+'hyp_files ...' then score the recognition accuracy for the system.
+If the '-ref fname' option is used, the hypothesis transcripts will be
+scored against that file of reference transcriptions.  By default the
+transcript files must be formatted according the the specifications
+set forth in 'align(1)', otherwise the options '-tmk' or '-ctm' redefine
+the input file format.
+
+By default, a directory will be created for the hypothesis file using
+the name of the file with an appended '.scr' extension.  Located in
+the directory will be the following files:
+
+	<hyp>.ali     -> binary file of alignments.  
+
+	<hyp>.sys     -> overall scoring summary for the system
+
+	<hyp>.sys_dtl -> detailed overall scoring summary for the system
+
+	<spkr>.snt    -> detailed sentence analysis for each speaker
+
+	<spkr>.sum    -> detailed scoring summary for each speaker
+
+	<hyp>.pralign -> text file of alignments.  Each sentence is
+aligned with the reference sentence.  This file
+is only present IF the "-pralign" option is used.
+
+If a <CORPUS> type is "RM", "WSJ", "ATIS" or "SWB", the program will
+use a configuration file supplied for that corpus in the 'lib'
+directory of the scoring package distribution as well as force the
+alignment program 'align' to properly interpret the utterance id's at
+the end of each utterance transcriptions.
+
+If the <CORPUS> type is "NO_ID", "NTYPE" or "SPU_ID", the utterance 
+are interpretted as defined in 'align(1)'.  These options require a
+reference file to be supplied as well as a <DICT> option.  
+
+The <DICT> Options:
+
+.IP "\fB-LEX fname\fP"
+A lexicon file as described in "pcode.doc"
+.IP "\fB-CODESET fname\fP"
+A Table of Pcodes as described in "pcdtab.doc"
+.IP "\fB-autolex\fP"
+Automatically create a lexicon file from the hypothesis
+and reference files.  Not this option requires a reference file to be
+specified on the command line.
+
+.PP
+The <ALIGN_OPT> Options:
+.PP
+
+.IP "\fB-phone\fP"
+The alignment is done using a phonemic distance function.  If this
+option is used, the <DICT> option must be a CODESET.
+
+.IP "\fB-frag\fP"
+After the alignment, forgive substitution errors involving fragments
+whose spelling is a super string of the hypothesized word.
+
+.IP "\fB-tmk\fP"
+The input files are time marked reference and hypothesis files.  See
+tmk(5) for the file format.
+
+.IP "\fB-ctm\fP"
+The input files are time marked conversation reference and hypothesis
+files.  See ctm(5) for the file format.  The Conversations and
+channels are marked on each word, and the alignment program aligns
+them according to the algorithm specified in 'convscor.txt' in the
+'doc' directory of the scoring package.
+
+.IP "\fB-sm_fom num\fP"
+Perform the alignment, then rescore the alignments merging or splitting 
+words if the split/merge figure of merit is greater than the number 
+defined by 'num'.
+
+
+.PP
+The <SCORE_OPT> Options:
+.PP
+
+.IP "\fB-pralign\fP"
+After the alignment, create a file of aligned text strings using the
+program pralign().
+.IP "\fB-sc_all\fP"
+Create the output directory as described above.  This option is
+neccessary only if another scoring option is used, and the output
+directory is also requested.
+.IP "\fB-sum\fP"
+Instead of creating the voluminous output created by default, just
+create a scoring summary file called <hyp>.sys in the same directory
+as the hypothesis file.  This option is much quicker than creating the
+output directory.
+.IP "\fB-rsum\fP"
+Like "-sum", create just a scoring summary file that contain word
+counts instead of percentages.
+
+
+.SH SEE ALSO
+align(1) pralign(1) score(1) tmk(5) ctm(5)
+.SH BUGS
+If you see `em, smash `em!

@@ -1,0 +1,96 @@
+;;
+;; File Pcdsrip2.txt
+;; 
+;; SRI phones with feature composition per Mike Cohen 1/25/90. 
+;; (NIST added feature "STRESSED" for lexically-stressed syllabics.)
+;;
+* NAME "pcdsrip2.txt"
+* DESC "SRI phone codes with ssf table"
+* DATE "2/26/90"
+* FORMAT "NIST2"
+* This pcode is separated;; separator characters are " /[]".
+* The element type is "phone".
+* compositional;; lower code = "pcdsrif.txt"
+* also, ppf file is "ppdist.txt"
+;;
+iy+1   stressed syllabic vocalic sonorant voiced long high front y-glide
+iy     syllabic vocalic sonorant voiced long high front y-glide
+ih+1   stressed syllabic vocalic sonorant voiced short high front
+ih     syllabic vocalic sonorant voiced short high front
+ey+1   stressed syllabic vocalic sonorant voiced long front y-glide
+ey     syllabic vocalic sonorant voiced long front y-glide
+eh+1   stressed syllabic vocalic sonorant voiced short front
+eh     syllabic vocalic sonorant voiced short front
+;; ??:
+;; ae   syllabic sonorant vocalic voiced front
+ae+1   stressed syllabic vocalic sonorant voiced short low front
+ae     syllabic vocalic sonorant voiced short low front
+aa+1   stressed syllabic vocalic sonorant voiced low back
+aa     syllabic vocalic sonorant voiced low back
+ao+1   stressed syllabic vocalic sonorant voiced long back rounded
+ao     syllabic vocalic sonorant voiced long back rounded
+ow+1   stressed syllabic vocalic sonorant voiced long back w-glide rounded
+ow     syllabic vocalic sonorant voiced long back w-glide rounded
+uh+1   stressed syllabic vocalic sonorant voiced short high back rounded
+uh     syllabic vocalic sonorant voiced short high back rounded
+uw+1   stressed syllabic vocalic sonorant voiced long high back w-glide rounded
+uw     syllabic vocalic sonorant voiced long high back w-glide rounded
+ay+1   stressed syllabic vocalic sonorant voiced long low diphthong y-glide
+ay     syllabic vocalic sonorant voiced long low diphthong y-glide
+oy+1   stressed syllabic vocalic sonorant voiced long back diphthong y-glide rounded
+oy     syllabic vocalic sonorant voiced long back diphthong y-glide rounded
+aw+1   stressed syllabic vocalic sonorant voiced long front diphthong w-glide rounded
+aw     syllabic vocalic sonorant voiced long front diphthong w-glide rounded
+er+1   stressed syllabic vocalic sonorant voiced short
+er     syllabic vocalic sonorant voiced short
+axr+1  stressed syllabic vocalic sonorant voiced short schwa
+axr    syllabic vocalic sonorant voiced short schwa
+ah+1   stressed syllabic vocalic sonorant voiced short
+ah     syllabic vocalic sonorant voiced short
+ax+1   stressed syllabic vocalic sonorant voiced short schwa
+ax     syllabic vocalic sonorant voiced short schwa
+ux+1   stressed syllabic vocalic sonorant voiced long high front w-glide rounded
+ux     syllabic vocalic sonorant voiced long high front w-glide rounded
+axd+1  stressed syllabic vocalic sonorant short schwa
+axd    syllabic vocalic sonorant short schwa
+ix+1   stressed syllabic vocalic sonorant voiced short high schwa
+ix     syllabic vocalic sonorant voiced short high schwa
+wh     consonantal sonorant glide labial
+w      consonantal sonorant voiced glide labial
+y      consonantal sonorant voiced glide palatal
+r      consonantal vocalic sonorant voiced liquid
+l      consonantal sonorant voiced liquid lateral alveolar
+el     syllabic consonantal sonorant voiced liquid lateral alveolar
+em     syllabic consonantal sonorant voiced stop nasal labial
+en     syllabic consonantal sonorant voiced stop nasal alveolar
+eng    syllabic consonantal sonorant voiced stop nasal velar
+m      consonantal sonorant voiced stop nasal labial
+n      consonantal sonorant voiced stop nasal alveolar
+ng     consonantal sonorant voiced stop nasal velar
+bcl    consonantal voiced stop labial occlusion
+dcl    consonantal voiced stop alveolar occlusion
+gcl    consonantal voiced stop velar occlusion
+kcl    consonantal stop velar occlusion
+pcl    consonantal stop labial occlusion
+tcl    consonantal stop alveolar occlusion
+p      consonantal stop plosive labial
+b      consonantal voiced stop plosive labial
+t      consonantal stop plosive alveolar
+d      consonantal voiced stop plosive alveolar
+k      consonantal stop plosive velar
+g      consonantal voiced stop plosive velar
+ch     consonantal stop plosive affricate palatal alveolar
+jh     consonantal voiced stop plosive affricate palatal alveolar
+dx     consonantal voiced stop alveolar
+nx     consonantal voiced stop nasal alveolar
+f      consonantal fricative labio-dental
+v      consonantal voiced fricative labio-dental
+th     consonantal fricative dental
+dh     consonantal voiced fricative dental
+s      consonantal fricative alveolar
+z      consonantal voiced fricative alveolar
+sh     consonantal fricative palatal
+zh     consonantal voiced fricative palatal
+q      consonantal stop glottal
+hh     consonantal fricative glottal aspirate
+hv     consonantal voiced fricative glottal aspirate

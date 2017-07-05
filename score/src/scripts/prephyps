@@ -1,0 +1,50 @@
+#!/bin/sh
+INSTALL_DIR=$NIST_DIR
+#
+#   STANDARD SCRIPT TO PREPARE A FILE OF HYPOTHESIS SENTENCES
+#
+#   $1 -> THE FILE OF HYPOTHESIS SENTENCES
+#   $2 -> OUTPUT FILE OF PREPARED HYPOTHESIS SENTENCES
+#
+
+echo "Standard script to prepare hypothesis sentences for alignment"
+echo "" 
+
+if (test $# -ge 1) then
+    prev_hyp=$1
+else
+    echo "No hypothesis file on command line"
+    echo Usage\: sh prephyps hyp_filename \<output_hyp_filename\>
+    echo ""
+    exit 1
+fi
+
+if (test ! -s $prev_hyp) then
+    echo Hypothesis file \"$prev_hyp\" not found
+    echo Usage\: sh prephyps hyp_filename \<output_hyp_filename\>
+    echo ""
+    exit 1
+fi
+    
+if (test $# -lt 2) then
+    echo New hypothesis file will be copied back into $prev_hyp
+    new_hyp=$prev_hyp
+else
+    new_hyp=$2
+fi
+
+#####################################
+#   converting the file             #
+#####################################
+cat $prev_hyp | sed 's/\(.*\)\(([^()]*)\) *$/\2\1/' | sort | \
+                sed 's/^\(([^()]*)\)\(.*\)/\2\1/' > /tmp/new.hyp
+len_prev=`cat $prev_hyp | wc -l`
+len_new=`cat /tmp/new.hyp | wc -l`
+    
+if (test $len_prev -eq $len_new) then
+    cp /tmp/new.hyp $new_hyp
+else
+    echo New file doesn\'t match old file length, Abort . . . 
+fi
+
+rm -f /tmp/new.hyp

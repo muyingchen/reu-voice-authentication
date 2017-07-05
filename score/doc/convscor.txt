@@ -1,0 +1,210 @@
+File: convscor.txt
+Date: March 3, 1995
+
+
+Purpose: 
+--------
+
+	To describe the algorithm employed to score speech recognition
+experiments on entire SWITCHBOARD conversations and the specific
+scoring instructions.
+
+
+Input Reference and Hypothesis files:
+-------------------------------------
+
+	The file format (called "ctm" and defined in
+"doc/man/man5/ctm.5") is a concatenation of time marks for each word
+in each side of all conversations.  Each word token must have a
+conversation id, channel identifier [A | B], start time, duration, and
+word text.  Optionally a confidence score can be appended for each
+word.
+
+	The file must be sorted by the first three columns: the first
+and the second in ASCII order, and the third in numeric order.  The
+UNIX sort command: "sort +0 -1 +1 -2 +2nb -3" will sort the words into
+appropriate order.
+
+	Lines beginning with ';;' are considered comments and are
+ignored.  Blank lines are also ignored.
+
+     Included below is an example:
+
+          ;;
+          ;;  Comments follow ';;'
+          ;;
+          ;;  The Blank lines are ignored
+
+          ;;
+          7654 A 11.34 0.2  YES -6.763
+          7654 A 12.00 0.34 YOU -12.384530
+          7654 A 13.30 0.5  CAN 2.806418
+          7654 A 17.50 0.2  AS 0.537922
+                :
+          7654 B 1.34 0.2  I -6.763
+          7654 B 2.00 0.34 CAN -12.384530
+          7654 B 3.40 0.5  ADD 2.806418
+          7654 B 7.00 0.2  AS 0.537922
+                :
+
+
+Scoring Process:
+----------------
+
+	The scoring of Switchboard conversations can be thought of as
+a multi-step process.  
+
+	1: Read in the reference and hypothesis time-marked transcripts
+	   for an entire conversation.  This includes all time-marked words
+	   for both channels.
+
+	2: Align and score each of the channels using the following
+	   strategy:
+
+	   a. Select a segment of the reference transcript which
+	      is small enough to be aligned via NIST's alignment routines.
+
+	      The segment is found by first going to the Nth word in both 
+	      the reference and hypothesis transcript, then looking backwards
+	      in time to find the first silence gap that both the reference
+	      and hypothesis transcripts have in common.  Continue looking
+	      back until a segment is found.		
+
+	   b. Time align the reference and hypothesis segments using a 
+              dynamic programming algorithm.  For any possible alignment,
+	      we assign a distance or penalty function that is the
+	      accumulation over all its components of the following:
+
+		For deletions, ref_end - ref_start, the duration of
+		the reference word.
+
+		For insertions, hyp_end - hyp_start, the duration of the
+		hypothesis word.
+
+		For substitutions or correct alignment of identical
+		words, |hyp_start - ref_start| + |hyp_end - ref_end|,
+		the duration of non-time overlapping portions of the words
+
+	      We find the alignment that minimizes the accumulated
+	      distance or penalty via a dynamic programming type algorithm.
+
+	   c. Remove non-correctly matched hypothesis words whose midpoint
+              is inside the range of an identically spelled reference word 
+	      in the opposite channel.  Note, each out-of-channel reference
+	      word can be used only once to forgive a hypothesis word.
+
+	   d. Time align the reference and modified hypothesis segment using
+	      the same algorithm as step 2.b.
+
+	   e. Sort adjacent insertions and deletions time order.
+	      This step is necessary as the dynamic programming
+	      algorithm do not favor or disfavor time order when the
+	      optimum alignment is chosen.
+
+	   f. Repeat from step 2.a for each channel of the conversations
+
+	3. Goto step 1 until all conversations are finished.
+
+	4. Post-process the alignments, accounting for Splits and Merges.
+
+	   Our  function for finding splits and merges is a post-processor
+	   that starts with a 1-to-1 word-level time alignment.  A
+	   candidate for a split or merge is a sequence of a substitution
+	   adjacent to an indel.  A candidate split/merge is accepted if its
+	   figure of merit (FOM) is above a parametric figure of merit
+	   threshold.  Candidates are examined in order by decreasing FOM;
+	   if one is accepted, the alignment is so marked and the candidate
+	   list is reformed. A candidate is not considered if one of its words
+	   overlaps into a previously-chosen split or merge; thus when two
+	   candidates are in conflict, e.g. a substitution preceded by
+	   a deletion and followed by an insertion, we take the
+           highest valued and block the other.  
+
+	   The FOM that we currently use is the ratio of the time distance
+	   between the REF and HYP word strings in the s/m candidate under the
+	   hypothesis that a s/m has not occurred to the distance under the
+	   hypothesis that a s/m has occurred.  For example, letting D(x,y) be
+           the phonological distance between word x and y, if the
+           candidate s/m is:
+
+                REF: | A | B |          
+                HYP: | * | C | 
+
+           then the FOM value is:
+
+			D(A,*) + D(B,C)
+		FOM = -------------------
+			     D(AB,C)
+
+           See Fisher et al 1995, Further Studies in Phonological
+           Scoring for further documentation.
+
+        5. Compute both the standard metrics, and the Weighted Word 
+	   Metrics.  Read "wwscor.txt" for further documentation on
+	   this scoring method.
+
+Scoring Steps:
+--------------
+
+	As with all other NIST alignment protocols, the Bourne shell
+script "wgscore", located in the "bin" directory of the distribution,
+performs the alignment and scoring process.  The script requires the
+following inputs: the reference file, the hypothesis file, and command
+line flags.  The reference and hypothesis files must be in the format
+described in the section entitled "Input Reference and Hypothesis files".
+
+	To score the time-marked conversation reference transcriptions
+against the system-generated time-marked conversation transcriptions,
+use the utility "wgscore" as follows:
+ 
+   wgscore <OPTIONS> hyp_files ...
+ 
+       Where:
+ 
+	OPTIONS  -->  -<CORPUS> | -ref fname | <DICT> | [ <OPTIONS> ]
+                        <SCORE_OPT> ]
+               	
+             CORPUS     --> rm | wsj | timit | atis | swb | no_id | notype |
+                            spu_id 
+             DICT       --> -LEX fname | -CODESET fname | -autolex 
+             OPTIONS    --> <ALIGN_OPT> | <SCORE_OPT>
+	     ALIGN_OPT  --> -phone | -sm num | -frag | 
+                            -tmk | -ctm 
+             SCORE_OPT  --> -sc_all | -sum | -rsum | -pralign |
+			    -wwl fname 
+
+    Note: More detailed documentation for using wgscore is located in
+	  the man page, "doc/man/man1/wgscore.1"
+ 
+To align and score the devtest data, use the command:
+
+	wgscore -ref lvcsr_dev_test_ref.ctm -ctm -swb -sum -sm 2.0 \
+		-wwl dev_test_weights.940302.wwl example.hyp 
+
+		Argument Explanations:
+
+			-ref lvcsr_dev_test_ref.ctm
+				Defines input reference file
+			-ctm 
+				Defines the input file format and
+				scoring algorithm.
+			-swb
+				Defines how to interpret the
+				conversation id's.
+			-sum
+				Produce a scoring summary report
+                                in a file called "example.hyp.sys".
+                                This file is identical to the summary
+			        file created by 'score(1)'.
+			-sm 2.0
+				Post-process the alignments allowing for
+			 	splits/merges above the threshold "2.0"
+			-wwl dev_test_weights.940302.wwl
+				Use this word weight file to compute
+				word weighted scores.  The output file,
+				"example.hyp.wwl_sys" will contain a report
+				similar to "example.hyp.sys" except all
+				percentages will be based on the weights.
+			example.hyp
+				Define the input hypothesis file.
+

@@ -1,0 +1,20 @@
+; File pcdtaba2.txt
+;
+; ATIS pcdtab using phone-to-phone distance table.
+;
+; NOTE: this next line, is  used to tell the software
+; to look for the pcode files in another directory:
+* pcode directory = 'INSTALL_DIR/lib/atis'
+;
+; ALSO NOTE: the names of the pcode files containing the pcodes are in
+; the "code" column in the table below; the other fields are not now
+; (9/14/92) being used by the software.
+;
+; ALSO NOTE: if "pcode1" is immediately above "pcode2" in this table,
+; "pcode2" will be taken as specifying the next lower pcode to "pcode1",
+; overriding any next lower pcode declaration that "pcode1" may contain.
+;
+; Simple universal phonetic/phonemic codes: 
+; code              type  max. N    order 
+ atis1w.pcd        word   7000     (hash)
+ phon1axp.pcd      phone    100      arb

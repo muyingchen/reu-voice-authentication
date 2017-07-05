@@ -1,0 +1,240 @@
+/**********************************************************************/
+/*                                                                    */
+/*             FILENAME:  score.h                                     */
+/*             BY:  Jonathan G. Fiscus                                */
+/*                  NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY    */
+/*                  SPEECH RECOGNITION GROUP                          */
+/*                                                                    */
+/*           DESC:  This is procedure scores an ALIGNMENT STRUCTURE   */
+/*                                                                    */
+/**********************************************************************/
+#define OVERALL_EXT		"sys"
+#define OVERALL_RAW_EXT		"sys_raw"
+#define OVERALL_DETAIL_EXT	"sys_dtl"
+#define SPEAKER_SUMMARY_EXT	"sum"
+#define SPEAKER_SENT_EXT	"snt"
+#define MAX_LEX_SUBSETS		20
+
+/* #define NEW_SM_METHOD */
+#define OLD_SM_METHOD
+ 
+typedef struct spkr_score_struct{
+    int number_ref;
+    int number_hyp;
+    int number_hyp_lex_subset[MAX_LEX_SUBSETS];
+    int number_correct;
+    int number_correct_lex_subset[MAX_LEX_SUBSETS];
+    int number_subs;
+    int number_subs_alpha_num;
+    int number_subs_mono;
+    int number_subs_lex_subset[MAX_LEX_SUBSETS];
+    int number_inserts;
+    int number_inserts_alpha_num;
+    int number_inserts_mono;
+    int number_inserts_lex_subset[MAX_LEX_SUBSETS];
+    int number_delete;
+    int number_delete_THE;
+    int number_delete_alpha_num;
+    int number_delete_mono;
+    int number_delete_lex_subset[MAX_LEX_SUBSETS];
+    int number_align_words;
+    int number_ref_mono_syl;
+    int number_accept_merge;
+    int number_merge;
+    int number_accept_split;
+    int number_split;
+    int number_in_sub_arr;
+    int number_sent;
+    int number_sent_errors;
+    int number_sent_sub;
+    int number_sent_sub_alpha;
+    int number_sent_sub_mono; 
+    int num_sent_sub_lex_subset[MAX_LEX_SUBSETS];
+    int number_sent_del;
+    int number_sent_del_THE;
+    int number_sent_del_THE_only;
+    int number_sent_del_alpha;
+    int number_sent_del_mono;
+    int num_sent_del_lex_subset[MAX_LEX_SUBSETS];
+    int number_sent_ins;
+    int number_sent_ins_alpha;
+    int number_sent_ins_mono;
+    int num_sent_ins_lex_subset[MAX_LEX_SUBSETS];
+    int number_sent_spl;
+    int number_sent_mrg;
+    PCIND_T **confusion_word_arr; /* [0] ref wrd  [1] hyp wrd for subs */
+    PCIND_T *confusion_count_arr;
+    int confusion_max_pairs;
+#ifdef NEW_SM_METHOD
+    int number_in_split_arr;
+    PCIND_T **split_word_arr; /* [0] ref wrd  [1] hyp wrd for subs */
+    PCIND_T *split_count_arr;
+    int split_max_pairs;
+    int number_in_merge_arr;
+    PCIND_T **merge_word_arr; /* [0] ref wrd  [1] hyp wrd for subs */
+    PCIND_T *merge_count_arr;
+    int merge_max_pairs;
+#endif
+    PCIND_T *inserted_word_arr;
+    PCIND_T *deleted_word_arr;
+    PCIND_T *misrecognized_word_arr;
+    PCIND_T *substituted_word_arr;
+} SPKR_SCORE;
+
+typedef struct sent_count_struct{
+    int sent_reference;
+    int sent_hypothesis;
+    int sent_hypothesis_lex_subset[MAX_LEX_SUBSETS];
+    int sent_correct;
+    int sent_correct_lex_subset[MAX_LEX_SUBSETS];
+    int sent_substitution;
+    int sent_substitution_alpha_num;
+    int sent_substitution_mono;
+    int sent_substitution_lex_subset[MAX_LEX_SUBSETS];
+    int sent_insertion;
+    int sent_insertion_alpha_num;
+    int sent_insertion_mono;
+    int sent_insertion_lex_subset[MAX_LEX_SUBSETS];
+    int sent_deletion;
+    int sent_deletion_THE;
+    int sent_deletion_alpha_num;
+    int sent_deletion_mono;
+    int sent_deletion_lex_subset[MAX_LEX_SUBSETS];
+    int sent_align_words;
+    int sent_ref_mono_syl;
+    int sent_accept_merge;
+    int sent_merge;
+    int sent_accept_split;
+    int sent_split;
+}SENT_COUNTS;
+
+typedef struct score_struct{
+    int number_of_speakers;
+    SPKR_SCORE **speaker_list;
+    SENT_COUNTS sent_counts;
+} SCORE;
+
+#define sp_n_spkr()		score->number_of_speakers
+#define sp_spkr_list()		score->speaker_list
+#define sp_spkr_n(_sp)		sp_spkr_list()[_sp]
+
+#define sp_n_ref(_sp)		sp_spkr_n(_sp)->number_ref
+#define sp_n_hyp(_sp)		sp_spkr_n(_sp)->number_hyp
+#define sp_n_hyp_lsub(_sp,_s)	sp_spkr_n(_sp)->number_hyp_lex_subset[_s]
+#define sp_n_corr(_sp)		sp_spkr_n(_sp)->number_correct
+#define sp_n_corr_lsub(_sp,_s)	sp_spkr_n(_sp)->number_correct_lex_subset[_s]
+#define sp_n_sub(_sp)		sp_spkr_n(_sp)->number_subs
+#define sp_n_sub_an(_sp)	sp_spkr_n(_sp)->number_subs_alpha_num
+#define sp_n_sub_mn(_sp)	sp_spkr_n(_sp)->number_subs_mono
+#define sp_n_sub_lsub(_sp,_s)	sp_spkr_n(_sp)->number_subs_lex_subset[_s]
+#define sp_n_ins(_sp)		sp_spkr_n(_sp)->number_inserts
+#define sp_n_ins_an(_sp)	sp_spkr_n(_sp)->number_inserts_alpha_num
+#define sp_n_ins_mn(_sp)	sp_spkr_n(_sp)->number_inserts_mono
+#define sp_n_ins_lsub(_sp,_s)	sp_spkr_n(_sp)->number_inserts_lex_subset[_s]
+#define sp_n_del(_sp)		sp_spkr_n(_sp)->number_delete
+#define sp_n_del_THE(_sp)	sp_spkr_n(_sp)->number_delete_THE
+#define sp_n_del_an(_sp)	sp_spkr_n(_sp)->number_delete_alpha_num
+#define sp_n_del_mn(_sp)	sp_spkr_n(_sp)->number_delete_mono
+#define sp_n_del_lsub(_sp,_s)	sp_spkr_n(_sp)->number_delete_lex_subset[_s]
+#define sp_n_ali_wrd(_sp)	sp_spkr_n(_sp)->number_align_words
+#define sp_n_ref_mon(_sp)	sp_spkr_n(_sp)->number_ref_mono_syl
+#define sp_n_acc_mrg(_sp)	sp_spkr_n(_sp)->number_accept_merge
+#define sp_n_mrg(_sp)		sp_spkr_n(_sp)->number_merge
+#define sp_n_acc_spl(_sp)	sp_spkr_n(_sp)->number_accept_split
+#define sp_n_spl(_sp)		sp_spkr_n(_sp)->number_split
+#define sp_n_st(_sp)		sp_spkr_n(_sp)->number_sent
+#define sp_n_st_er(_sp)		sp_spkr_n(_sp)->number_sent_errors
+#define sp_n_st_sub(_sp)	sp_spkr_n(_sp)->number_sent_sub
+#define sp_n_st_sub_an(_sp)	sp_spkr_n(_sp)->number_sent_sub_alpha
+#define sp_n_st_sub_mn(_sp)	sp_spkr_n(_sp)->number_sent_sub_mono
+#define sp_n_st_sub_lsub(_sp,_s)	sp_spkr_n(_sp)->num_sent_sub_lex_subset[_s]
+#define sp_n_st_del(_sp)	sp_spkr_n(_sp)->number_sent_del
+#define sp_n_st_del_THE(_sp) 	sp_spkr_n(_sp)->number_sent_del_THE
+#define sp_n_st_del_THE_o(_sp) 	sp_spkr_n(_sp)->number_sent_del_THE_only
+#define sp_n_st_del_an(_sp)	sp_spkr_n(_sp)->number_sent_del_alpha
+#define sp_n_st_del_mn(_sp)	sp_spkr_n(_sp)->number_sent_del_mono
+#define sp_n_st_del_lsub(_sp,_s)	sp_spkr_n(_sp)->num_sent_del_lex_subset[_s]
+#define sp_n_st_ins(_sp)	sp_spkr_n(_sp)->number_sent_ins
+#define sp_n_st_ins_an(_sp)	sp_spkr_n(_sp)->number_sent_ins_alpha
+#define sp_n_st_ins_mn(_sp)	sp_spkr_n(_sp)->number_sent_ins_mono
+#define sp_n_st_ins_lsub(_sp,_s)	sp_spkr_n(_sp)->num_sent_ins_lex_subset[_s]
+
+#define sp_n_st_spl(_sp)	sp_spkr_n(_sp)->number_sent_spl
+#define sp_n_st_mrg(_sp)	sp_spkr_n(_sp)->number_sent_mrg
+
+#define sp_n_conf_arr(_sp)	sp_spkr_n(_sp)->number_in_sub_arr
+#define sp_max_conf_pr(_sp)	sp_spkr_n(_sp)->confusion_max_pairs
+#define sp_conf_arr(_sp)	sp_spkr_n(_sp)->confusion_word_arr
+#define sp_conf_pr(_sp,_pr)	sp_conf_arr(_sp)[_pr]
+#define sp_conf_ref(_sp,_pr)	sp_conf_pr(_sp,_pr)[0]
+#define sp_conf_hyp(_sp,_pr)	sp_conf_pr(_sp,_pr)[1]
+#define sp_conf_cnt_arr(_sp)	sp_spkr_n(_sp)->confusion_count_arr
+#define sp_conf_cnt(_sp,_pr)	sp_conf_cnt_arr(_sp)[_pr]
+
+#ifdef NEW_SM_METHOD
+#define sp_n_split_arr(_sp)	sp_spkr_n(_sp)->number_in_split_arr
+#define sp_split_arr(_sp)	sp_spkr_n(_sp)->split_word_arr
+#define sp_max_split_pr(_sp)	sp_spkr_n(_sp)->split_max_pairs
+#define sp_split_cnt_arr(_sp)	sp_spkr_n(_sp)->split_count_arr
+#define sp_split_cnt(_sp,_pr)	sp_split_cnt_arr(_sp)[_pr]
+#define sp_n_merge_arr(_sp)	sp_spkr_n(_sp)->number_in_merge_arr
+#define sp_merge_arr(_sp)	sp_spkr_n(_sp)->merge_word_arr
+#define sp_max_merge_pr(_sp)	sp_spkr_n(_sp)->merge_max_pairs
+#define sp_merge_cnt_arr(_sp)	sp_spkr_n(_sp)->merge_count_arr
+#define sp_merge_cnt(_sp,_pr)	sp_merge_cnt_arr(_sp)[_pr]
+
+#define sp_split_pr(_sp,_pr)	sp_split_arr(_sp)[_pr]
+#define sp_split_ref(_sp,_pr)	sp_split_pr(_sp,_pr)[0]
+#define sp_split_hyp(_sp,_pr)	sp_split_pr(_sp,_pr)[1]
+
+#define sp_merge_pr(_sp,_pr)	sp_merge_arr(_sp)[_pr]
+#define sp_merge_ref(_sp,_pr)	sp_merge_pr(_sp,_pr)[0]
+#define sp_merge_hyp(_sp,_pr)	sp_merge_pr(_sp,_pr)[1]
+#endif
+
+#define sp_del_arr(_sp)		sp_spkr_n(_sp)->deleted_word_arr
+#define sp_del_wrd(_sp,_wd)	sp_del_arr(_sp)[_wd]
+
+#define sp_ins_arr(_sp)		sp_spkr_n(_sp)->inserted_word_arr
+#define sp_ins_wrd(_sp,_wd)	sp_ins_arr(_sp)[_wd]
+
+#define sp_mis_rec_arr(_sp)	sp_spkr_n(_sp)->misrecognized_word_arr
+#define sp_mis_rec_wrd(_sp,_wd)	sp_mis_rec_arr(_sp)[_wd]
+
+#define sp_sub_arr(_sp)		sp_spkr_n(_sp)->substituted_word_arr
+#define sp_sub_wrd(_sp,_wd)	sp_sub_arr(_sp)[_wd]
+
+#define st_counts()		score->sent_counts	
+#define st_ref()		st_counts().sent_reference
+#define st_hyp()		st_counts().sent_hypothesis
+#define st_hyp_lsub_arr()	st_counts().sent_hypothesis_lex_subset
+#define st_hyp_lsub(_s)		st_hyp_lsub_arr()[_s]
+#define st_corr()		st_counts().sent_correct
+#define st_corr_lsub_arr()	st_counts().sent_correct_lex_subset
+#define st_corr_lsub(_s)	st_corr_lsub_arr()[_s]
+#define st_ins()		st_counts().sent_insertion
+#define st_ins_an()		st_counts().sent_insertion_alpha_num
+#define st_ins_mn()		st_counts().sent_insertion_mono
+#define st_ins_lsub_arr()	st_counts().sent_insertion_lex_subset
+#define st_ins_lsub(_s)		st_ins_lsub_arr()[_s]
+#define st_sub()		st_counts().sent_substitution
+#define st_sub_an()		st_counts().sent_substitution_alpha_num
+#define st_sub_mn()		st_counts().sent_substitution_mono
+#define st_sub_lsub_arr()	st_counts().sent_substitution_lex_subset
+#define st_sub_lsub(_s)		st_sub_lsub_arr()[_s]
+#define st_del()		st_counts().sent_deletion
+#define st_del_THE()		st_counts().sent_deletion_THE
+#define st_del_an()		st_counts().sent_deletion_alpha_num
+#define st_del_mn()		st_counts().sent_deletion_mono
+#define st_del_lsub_arr()	st_counts().sent_deletion_lex_subset
+#define st_del_lsub(_s)		st_del_lsub_arr()[_s]
+#define st_ali_wrd()		st_counts().sent_align_words
+#define st_ref_mon()		st_counts().sent_ref_mono_syl
+#define st_acc_mrg()		st_counts().sent_accept_merge
+#define st_mrg()		st_counts().sent_merge
+#define st_acc_spl()		st_counts().sent_accept_split
+#define st_spl()		st_counts().sent_split
+
+
+
+

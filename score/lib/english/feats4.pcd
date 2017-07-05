@@ -1,0 +1,37 @@
+;
+; File feats4.pcd
+; 
+; Phonological distinctive features
+; The style of feature representation is privative -- that is,
+; a feature will be in the  representation of a phone iff the
+; phone is positively specified for that feature.  Feature
+; representations are string of feature names.
+;
+* NAME "feats4.pcd"
+* DESC "Distinctive Features"
+* DATE "7/7/93"
+* FORMAT "NIST1"
+* code elements are separated by " "
+* order: "arbitrary"
+* element type: "pfeat"
+;
+ nonsegmental
+ boundary
+ stressed
+ syllabic
+ consonantal
+ stop
+ sonorant
+ voiced
+ tense
+ high
+ low
+ back
+ rounded
+ continuent
+ strident
+ anterior
+ coronal
+ retroflex
+ lateral
+ nasal

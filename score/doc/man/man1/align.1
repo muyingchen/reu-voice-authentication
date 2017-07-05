@@ -1,0 +1,157 @@
+.TH ALIGN 1 "Release 3.1" "Scoring Pkg"
+.SH NAME
+align - align sentence output of a speech recognition system for scoring
+.SH SYNOPSIS
+.B align  -HYP fname -REF fname <DICT>
+<OPTIONS> -OUTFILE fname
+
+     DICT ==> -LEX fname | -CODESET fname 
+     OPTIONS ==> See Below
+
+.SH DESCRIPTION
+.PP
+Align takes a file containing hypothesis sentences from a speech
+recognition system "-HYP fname" and performs a string alignment using
+the reference transcriptions specified by "-REF fname".  Both the
+reference and hypothesis files MUST be formatted according the the
+specification below.  After all sentences for the system have been
+processed, the structure containing the aligned sentences is written
+to disk "-OUTFILE fname".
+
+The program uses the dictionary defined by <DICT>.  If the "-LEX
+fname" argument is used, the file is expected to be a file in the
+format specified by (pcode.doc).  If the "-CODESET fname" arguement is
+used, the file is expected to be a table of codesets as defined by
+(pcdtab.doc).
+
+.IP "\fBHypothesis and Reference file formats:\fP"
+The hypothesis and reference files are to contain a set word tokens
+for each utterance delimited by new-lines as follows:
+
+UTT_STRING ::= <UTT-STRING> (<UTTID>) <NEW_LINE>
+
+   where,
+      UTT-STRING ::= (utterance word string)
+      UTTID ::= (the corpus specific utterance id)
+
+The corpus specific utterance id (selected using the ID-DESCRIPTION
+options below) are formulated using the following guidelines:
+
+  CORPUS            HYP                 REF
+  ------     ------------------    ----------------
+   ATIS         <ATIS3_ID>          <ATIS3_ID>
+
+   N0TYPE        <UTT_ID>            <UTT_ID>
+
+   NO_ID         "nothing"           "nothing"
+
+   SPU_ID    <SPKR_ID>-<UTT_ID>   <SPKR_ID>-<UTT_ID>
+
+   TIMIT      "same as SPU_ID"     "same as SPU_ID"
+	
+   RM        <RM_SPKR>-<RM_UTT>       <RM_UTT>
+
+   WSJ           <CSR_ID>            <CSR_ID>
+
+   SWB           <SWB_ID>            <SWB_ID>
+
+     where SWB_ID :==
+	 <4_digit_conversation>_<Channel>_<4_digit_segment>
+.PP
+.SH OPTIONS
+.PP
+
+.IP "\fB-OUTFILE fname\fP"
+Write a binary file of alignments to the file "fname".  If this option is
+not specified, do not write the output file.
+.IP "\fB-CFG fname\fP"
+Read the file `fname' and interpret it as command line arguments.
+.IP "\fB-DESC string\fP"
+Give the system upto a 40 character string 
+describing key attributes of the system
+.IP "\fB-DUMP\fP"
+Print to stdout all of the changeable arguments from the command-line
+.IP "\fB-FRAG\fP"
+Perform the alignment, then forgive substitution errors involving fragments
+whose spelling is a super string of the hypothesized word.
+.IP "\fB-HOMO fname\fP"
+Change the default homophone list file-name 
+to `fname'
+.IP "\fB-LSUBS fname\fP"
+Change the default file for lexicon subsets to
+`fname'.  This arguement is for gathering stats
+on certain parts of the lexicon.
+.IP "\fB-NO_GR\fP"
+Align the sentences assuming that the system 
+did not use a grammar during computations
+   - This means Homophone substitutions are not counted as errors
+.IP "\fB-NAME string\fP"
+Give the system a unique four character name for
+identification throughout the scoring software
+.IP "\fB-ONE2ONE\fP"
+Define the relationship between the HYP and REF files.  The option
+tells the sentence loading procedure to load the hyp and ref sentence as
+pairs sequentially from each file, (i.e. The first line in the hyp file
+matches the first line in the ref file).
+.IP "\fB-ONE2MANY\fP"
+Define the relationship between the HYP and REF files.  The option
+tells the sentence loading procedure to first load the hyp file, then
+scan the ref file and load the required reference sentence ID's.
+.IP "\fB-PHONE\fP"
+Perform the alignment using a distance  information in the pcodeset.  This option only works when a CODESET is defined
+.IP "\fB-SHLEX\fP"
+Print to stdout the currently defined lexicon or dictionary
+.IP "\fB-SHLSUBS\fP"
+Print to stdout the currently defined lexicon subsets
+.IP "\fB-SHHOMO\fP"
+Print to stdout the current homophone file
+.IP "\fB-SILENCE\fP"
+Ignore all occurences of the words "SILENCE" and "-PAU-"
+.IP "\fB-SM\fP"
+Perform the alignment, then rescore the alignments merging or splitting 
+words if the split/merge figure of merit is greater than the number 
+defined by the option -SM_FOM.
+.IP "\fB-SM_FOM num
+Set the figure of merit threshhold to 'num'.  Default value is 2.0.
+.IP "\fB-TMK\fP"
+Perform the alignment using input files in the tmk(5) format.
+Distances for computing alignments are computed using time distances.
+.IP "\fB-CTM\fP"
+Perform the alignment using input files in the Conversation Time-Marked 
+file format, ctm(5).  The Conversations and channels are marked
+on each word, and the alignment program aligns them according to the
+algorithm specified in 'convscor.txt' in the 'doc' directory of the
+scoring package.
+.IP "\fB-POOCE\fP"
+When scoring conversations using the '-ctm' algorithm (see above), 
+this flag Permits Out-Of-Channel Errors (POOCE) which skips the part
+2.c of the algorithm defined in 'convscor.txt'.
+.IP "\fB-WWF fname . . . "
+After alignment, compute word weighted scores using the files Word
+Wieght List (WWL) files, "fname ...", and print two report.
+
+The first report, called <hypothesis_filename>.wwl_sys", shows error
+rates for each speaker for each weighting function as well as the
+system totals.  This report is similar the "-ovrall" report generated
+by the score(1) program.
+
+The second report, called <hypothesis_filename>.wwl_sys", summarizes
+the error rates over the entire system computed by weighting function.
+
+See wwl(5) for file format definitions and "wwscore.txt" for a
+description of the word weighting scoring algorithm.
+.IP "\fB-sum\fP"
+Instead of creating the voluminous output created by default, just
+create a scoring summary file called "<hypothesis_filename>.sys" in
+the same directory as the hypothesis file.  This option is much
+quicker than creating the output directory.
+.IP "\fB-rsum\fP"
+Like "-sum", create just a scoring summary file called,
+"<hypothesis_filename>.raw", that containsc word counts instead of
+percentages.
+.IP "\fBUtterance id types:  (see description above)\fP"
+- [ ATIS | RM | NO_ID | NTYPE | SPU_ID | TIMIT | WSJ | SWB ]
+.SH SEE ALSO
+codeset(5), lex(5), score(1), stats(1), tmk(5), ctm(5), wwl(5)
+.SH BUGS
+If you see `em, smash `em!

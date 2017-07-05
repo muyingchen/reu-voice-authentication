@@ -1,0 +1,58 @@
+#!/bin/sh
+INSTALL_DIR=$NIST_DIR
+
+files=""
+while [ "$1" != "" ] ; do
+    case $1 in 
+        -h) print_head="true" ;;
+        -t) print_table="true" ;;
+        *)  files="$files $1"
+    esac
+    shift
+done
+
+cleanup(){
+    sed -e 's/DOC[^:]*://' -e 's/\/\*//' -e 's/\*\///' -e 's/^  *//' \
+        -e 's/  *$//' -e 's/  */ /g' | \
+        sed 's/^\([^fF][^iI][^lL]\)/    \1/'
+}
+cleanup_indent(){
+    sed -e 's/\/\*//' -e 's/\*\///' -e 's/ *DOC-P: */    /' \
+                                    -e 's/ *DOC-PS: */        /' \
+                                    -e 's/  *$//'
+}
+
+center_report(){
+    col1=`grep -v \; $1 | awk -F: '{print length($1)}' | sort -nr | head -1`
+    col2=`grep -v \; $1 | awk -F: '{print length($2)}'	| sort -nr | head -1`
+    grep \; $1
+    grep -v \; $1 | sed -e 's/  *:/:/g' -e 's/:  */:/g' -e 's/:/-~/' | sed -e 's/:/-~/' | tr - '\011' | expand -`expr $col1 + 3`,`expr $col1 + 5 + $col2` | sed 's/ ~/| /g'
+}
+
+cleanup_table(){
+    echo "::"
+    sed -e 's/\/\*//' -e 's/\*\///' -e 's/^  *//' -e 's/  *$//' | \
+        awk -F: 'BEGIN{} $1 ~ /DOC-P/ {printf("%s:%s:","'$1'",$2); getline; printf("%s\n",$2);} END{}' | sort
+}
+
+if [ "$print_table" = "true" ] ; then
+     echo "File:Procedure:Description" > doc.foo
+fi
+
+for file in $files ; do
+   if [ "$print_head" = "true" ] ; then
+       egrep 'DOC:' $file | cleanup
+   elif [ "$print_table" = "true" ] ; then
+       egrep 'DOC-[^:]*:' $file | cleanup_table $file >> doc.foo
+   else
+       egrep 'DOC:' $file | cleanup
+       echo "Procedures:"
+       egrep 'DOC-[^:]*:' $file | cleanup_indent
+   fi
+done
+
+
+if [ "$print_table" = "true" ] ; then
+    center_report doc.foo
+    rm doc.foo
+fi

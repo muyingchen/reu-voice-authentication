@@ -1,0 +1,55 @@
+.TH SRO 5 "Release 3.0" "Scoring Pkg"
+.SH NAME
+sro - transcription conventions for .sro-like spontaneous speech
+recognition output.
+.SH DESCRIPTION
+Below is the rule set for ATIS .sro transcriptions.  There use will be
+for output of a spontaneous speech recognitionizer.  All rules need
+not be implemented, they are there for presented for completeness.
+
+The .sro conventions will be as follows:
+
+1: Letter and number sequences will be spelled out (e.g. "DFW"
+becomes "D F W" and "747" becomes "seven forty seven").
+
+2: Words hyphenated in a standard dictionary (e.g. one-way) will
+retain it's hyphen.
+
+3: Verbally deleted words will be enclosed in '<' and '>'.  Ex.
+<what> <is> <no> what does C U mean
+
+4: Non-speech events will be enclosed in '[' and ']'.  The current set
+of events is (but not limited to): [ah], [aside], [laughter], [cough],
+[er], [grunt], [mm], [paper_rustle], [throat_clear], [uh], [um],
+[unintelligible], [whisper]
+            Ex.   [uh] what [um] does C U mean
+
+5: Mispronounced words will be enclosed in '*' and '*'.
+            Ex.   what *does* C U mean
+
+6. False start words a marked by words with a '-' as the last character
+of the word.
+            Ex.  show me tr- transportation codes
+
+7: Long pauses will be shown by ' . ' a period with spaces on
+either side.  Each period represents about a 1 second pause.
+            Ex.   what . does . . C U mean
+
+8: These interpretation marks are allowed ':', ',', '!', '.'
+            ':'  implies a vowel elongation
+            ','  implies a phrase pause
+            '!'  implies an emphasized letter
+            '.'  marks a silence period
+
+9: Verbal edits will be marked by edit queues.  A marker of the form
+"(n)" where n is a number from 1 to 9 where mark the intended
+insertion point.  Later in the sentence, the verbally edited words
+will be marked in parenthesis in the form "(n word1 word2 ...)" where
+n is the same number in the marker.
+             Ex.  what does (1) flight one arrive (1 what date)
+
+10: Words are case-insensitive.
+
+.SH SEE ALSO
+
+

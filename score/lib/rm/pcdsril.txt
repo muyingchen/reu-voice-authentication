@@ -1,0 +1,1010 @@
+;
+; EXPERIMENTAL - DO NOT CITE WITHOUT THE AUTHORS' PERMISSIONS.
+;
+* NAME 'pcdsril.txt'
+* DESC 'DARPA RM dB Words, SRI most likely phones'
+* FORMAT 'NIST2'
+* code is compositional and separated by " ".
+* element type is "word"
+* order is "alphabetic".
+* type_case is "upper"
+* lower code is "pcdsrip2.txt"
+; This version is a "most likely phones" lexicon received from
+; Mike Cohen of SRI 1/31/90.  These pronunciations are based on
+; the most frequent forms observed in a training set from the
+; Resource Management database.  SRI does not claim that
+; these represent the most likely pronunciations in general.
+; Spellings have been converted to SNOR except lower-case.
+; Also, "-pau-" has been commented out to agree with other lexicons.
+; -pau-                             -
+A                ax
+A42128           q ey+1 f ao+1 r tcl t uw+1 w ah+1 n tcl t uw+1 ey+1 tcl
+AAW              q ey+1 q ey+1 dcl d ah+1 bcl b y uw
+ABERDEEN         q ae+1 bcl b axr dcl d iy+1 n
+ABOARD           ax bcl b ao+1 r dcl
+ABOVE            ax bcl b ah+1 v
+ADD              q ae+1 dcl
+ADDED            q ae+1 dx ax dcl
+ADDING           q ae+1 dx ih ng
+AFFECT           ax f eh+1 kcl
+AFTER            q ae+1 f tcl t axr
+AGAIN            ax gcl g eh+1 n
+AJAX             q ey+1 dcl jh ae kcl k s
+AJAX+S           q ey+1 dcl jh ae kcl k s ax z
+ALASKA           ax l ae+1 s kcl k ax
+ALERT            ax l er+1 tcl
+ALERTS           ax l er+1 tcl t s
+ALEXANDRIA       q ae+1 l ax kcl z ae+1 n d r iy ax
+ALL              q ao+1 l
+AN               ax n
+ANCHORAGE        q ae+1 ng kcl k axr dcl jh
+AND              q ae n
+ANY              eh+1 n iy
+ANYBODY          q eh+1 n iy bcl b ah+1 dx iy
+APALACHICOLA     q ae+1 pcl p ax l ae+1 tcl ch ax kcl k ow+1 l ax
+APALACHICOLA+S   q ae+1 pcl p ax l ae+1 tcl ch ax kcl k ow+1 l ax z
+APRIL            q ey+1 pcl p r el
+ARABIAN          ax r ey+1 bcl b iy ax n
+ARCTIC           q aa+1 r tcl t ax kcl k
+ARE              aa r
+AREA             q eh+1 r iy ax
+AREAS            q eh+1 r iy ax z
+AREN+T           aa axr n
+ARKANSAS         q aa+1 r kcl k ax n s ao
+ARKANSAS+S       q aa+1 r kcl k ax n s ao z
+AROUND           ax r aw+1 n
+ARRIVAL          ax r ay+1 v el
+ARRIVE           ax r ay+1 v
+ARRIVED          ax r ay+1 v dcl
+ARRIVING         ax r ay+1 v ih ng
+ARROW            q eh+1 r ow
+AS               ax z
+ASTORIA          ax s tcl t ao+1 r iy ax
+ASUW             q ey+1 eh+1 s y uw+1 dcl d ah+1 bcl b y uw
+ASW              q ey+1 eh+1 s dcl d ah+1 bcl b y uw
+AT               ae tcl
+ATLANTIC         ax dcl l ae+1 n ax kcl k
+AUGUST           q ao+1 gcl g ax s tcl
+AVAILABLE        ax v ey+1 l ax bcl b el
+AVERAGE          q ae+1 v axr dcl jh
+BAD              bcl b ae+1 dcl
+BADGER           bcl b ae+1 dcl jh axr
+BADGER+S         bcl b ae+1 dcl jh axr z
+BAINBRIDGE       bcl b ey+1 n bcl b r ih+1 dcl jh
+BAINBRIDGE+S     bcl b ey+1 n bcl b r ih+1 dcl jh ax z
+BANGKOK          bcl b ae+1 ng k aa kcl k
+BARGE            bcl b aa+1 r dcl jh
+BASS             bcl b ae+1 s
+BAY              bcl b ey+1
+BE               bcl b iy+1
+BEAM             bcl b iy+1 m
+BEAMS            bcl b iy+1 m z
+BEEN             bcl b ih+1 n
+BEFORE           bcl b ax f axr
+BELOW            bcl b ax l ow+1
+BERING           bcl b eh+1 r ih ng
+BETTER           bcl b eh+1 dx axr
+BETWEEN          bcl b ax tcl t w iy+1 n
+BIDDLE           bcl b ih+1 dx el
+BIDDLE+S         bcl b ih+1 dx el z
+BISMARK          bcl b ih+1 z m aa r kcl k
+BOMBAY           bcl b aa m bcl b ey+1
+BOTH             bcl b ow+1 th
+BOX              bcl b aa+1 kcl k s
+BRIGHT           bcl b r ay+1 tcl
+BRITISH          bcl b r ih+1 dx ax sh
+BROOKE           bcl b r uh+1 kcl k
+BROOKE+S         bcl b r uh+1 kcl k s
+BRUNSWICK        bcl b r ah+1 n z w ax kcl k
+BRUNSWICK+S      bcl b r ah+1 n z w ax kcl k s
+BUD-TEST         bcl b ah+1 dcl tcl t eh+1 s tcl
+BUMP             bcl b ah+1 m pcl p
+BY               bcl b ay
+C-CODE           s iy+1 kcl k ow+1 dcl
+C-CODES          s iy+1 kcl k ow+1 dcl z
+C-RATING         s iy+1 r ey+1 dx ih ng
+C-RATINGS        s iy+1 r ey+1 dx ih ng z
+C1               s iy+1 w ah+1 n
+C2               s iy+1 tcl t uw+1
+C3               s iy+1 th r iy+1
+C4               s iy+1 f ao+1 r
+C5               s iy+1 f ay+1 v
+CALEDONIA        kcl k ae+1 l ax dcl d ow+1 n iy ax
+CALIFORNIA       kcl k ae+1 l ax f ao+1 r n y ax
+CAMDEN           kcl k ae+1 m d ax n
+CAMDEN+S         kcl k ae+1 m d ax n z
+CAMPBELL         kcl k ae+1 m b el
+CAMPBELL+S       kcl k ae+1 m b el z
+CAN              kcl k ax n
+CANADA           kcl k ae+1 n ax dcl d ax
+CAPABILITIES     kcl k ey+1 pcl p ax bcl b ih+1 l ax dx iy z
+CAPABILITY       kcl k ey+1 pcl p ax bcl b ih+1 l ax dx iy
+CAPABLE          kcl k ey+1 pcl p ax bcl b el
+CAPACITIES       kcl k ax pcl p ae+1 s ax dx iy z
+CAPACITY         kcl k ax pcl p ae+1 s ax dx iy
+CARRIER          kcl k eh+1 r iy axr
+CARRIER+S        kcl k eh+1 r iy axr z
+CARRIERS         kcl k eh+1 r iy axr z
+CARRY            kcl k eh+1 r iy
+CASREP           kcl k ae+1 s r eh+1 pcl p
+CASREPED         kcl k ae+1 s r eh+1 pcl tcl t
+CASREPS          kcl k ae+1 s r eh+1 pcl p s
+CASUALTY         kcl k ae+1 zh uw ax l tcl t iy
+CAT-2            kcl k ae+1 tcl t uw+1
+CAT-3            kcl k ae+1 tcl t th r iy+1
+CAT-4            kcl k ae+1 tcl t f ao+1 r
+CATEGORIES       kcl k ae+1 dx ax gcl g ao r iy z
+CATEGORY         kcl k ae+1 dx ax gcl g ao r iy
+CENTER           s eh+1 n tcl t axr
+CENTERED         s eh+1 n tcl t axr dcl
+CENTERING        s eh+1 n axr ih ng
+CEP              s iy+1 iy+1 pcl p iy+1
+CHANGE           tcl ch ey+1 n jh
+CHANGED          tcl ch ey+1 n jh
+CHANGING         tcl ch ey+1 n jh ih ng
+CHANNEL          tcl ch ae+1 n el
+CHART            tcl ch aa+1 r tcl
+CHARTS           tcl ch aa+1 r tcl t s
+CHATTAHOOCHEE    tcl ch ae+1 dx ax hh uw+1 tcl ch iy
+CHATTAHOOCHEE+S  tcl ch ae+1 dx ax hh uw+1 tcl ch iy z
+CHESHIRE         tcl ch eh+1 sh axr
+CHINA            tcl ch ay+1 n ax
+CHOP             tcl ch aa+1 pcl p
+CHOPPED          tcl ch aa+1 pcl tcl t
+CHOPPING         tcl ch aa+1 pcl p ih ng
+CIRCLE           s er+1 kcl k el
+CITRUS           s ih+1 dx axr s
+CITRUS+S         s ih+1 dx axr s ax z
+CITY             s ih+1 dx iy
+CLEAR            kcl k l iy+1 r
+CLEARED          kcl k l iy+1 r dcl
+CLEARING         kcl k l iy+1 r ih ng
+CLEVELAND        kcl k l iy+1 v l ax n
+CLEVELAND+S      kcl k l iy+1 v l ax n z
+CLOSE            kcl k l ow+1 z
+CLOSER           kcl k l ow+1 s axr
+CLOSEST          kcl k l ow+1 s ax s tcl
+CODAG            kcl k ow+1 dcl d ae+1 gcl
+CODE             kcl k ow+1 dcl
+CODES            kcl k ow+1 dcl z
+COLOR            kcl k ah+1 l axr
+COMPARED         kcl k ax m pcl p eh+1 r dcl
+CONFIDENCE       kcl k aa+1 n f ax dcl d ax n s
+CONFIDENCE+S     kcl k aa+1 n f ax dcl d ax n tcl s ax z
+CONIFER          kcl k aa+1 n ax f axr
+CONIFER+S        kcl k aa+1 n ax f axr z
+CONQUEST         kcl k aa+1 ng kcl k w eh s tcl
+CONQUEST+S       kcl k aa+1 ng kcl k w eh s tcl
+CONSTANT         kcl k aa+1 n s tcl t ax n
+CONSTANT+S       kcl k aa+1 n s tcl t ax n s
+CONSTELLATION    kcl k aa+1 n s tcl t ax l ey+1 sh ax n
+CONSTELLATION+S  kcl k aa+1 n s tcl t ax l ey+1 sh en z
+CONVENTIONAL     kcl k ax n v eh+1 n sh ax n el
+COOK             kcl k uh+1 kcl k
+COPELAND         kcl k ow+1 pcl p l ax n
+COPELAND+S       kcl k ow+1 pcl p l ax n z
+CORAL            kcl k ao+1 r el
+COULD            kcl k uh dcl
+COULDN+T         kcl k uh+1 dx ax n
+COUNT            kcl k aw+1 n
+COUNTED          kcl k aw+1 n ax dcl
+COUNTING         kcl k aw+1 n eng
+CROVL            kcl k r ow+1 v el
+CROVLS           kcl k r ow+1 v el z
+CRUISER          kcl k r uw+1 z axr
+CRUISER+S        kcl k r uw+1 z axr z
+CRUISERS         kcl k r uw+1 z axr z
+CRUISERS+S       kcl k r uw+1 z axr z
+CRUISING         kcl k r uw+1 z ih ng
+CURRENT          kcl k er+1 ax n
+CURRENTLY        kcl k er+1 ax n tcl t l iy
+DALE             dcl d ey+1 l
+DALE+S           dcl d ey+1 l z
+DARWIN           dcl d aa+1 r w ax n
+DATA             dcl d ey+1 dx ax
+DATE             dcl d ey+1 tcl
+DATED            dcl d ey+1 dx ax dcl
+DATES            dcl d ey+1 tcl t s
+DAVIDSON         dcl d ey+1 v ax dcl d s ax n
+DAVIDSON+S       dcl d ey+1 v ax dcl d s en z
+DAY              dcl d ey+1
+DAYS             dcl d ey+1 z
+DDD992           dcl d iy+1 dcl d iy+1 dcl d iy+1 n ay+1 n n ay+1 n tcl t uw+1
+DECEMBER         dcl d ax s eh+1 m b axr
+DECREASE         dcl d iy+1 kcl k r iy s
+DECREASED        dcl d iy+1 kcl k r iy s tcl
+DECREASING       dcl d iy+1 kcl k r iy s ih ng
+DEFAULT          dcl d iy+1 f ao l
+DEFAULTS         dcl d iy+1 f el tcl t s
+DEFINE           dcl d ax f ay+1 n
+DEFINED          dcl d ax f ay+1 n
+DEFINING         dcl d ax f ay+1 n ih ng
+DEFINITION       dcl d eh+1 f ax n ih+1 sh ax n
+DEFINITIONS      dcl d eh+1 f ax n ih+1 sh en z
+DEGRADATION      dcl d eh+1 gcl g axr dcl d ey+1 sh ax n
+DEGRADATIONS     dcl d eh+1 gcl g axr dcl d ey+1 sh en z
+DEGRADE          dcl d ax gcl g r ey+1 dcl
+DEGRADED         dcl d ax gcl g r ey+1 dx ax dcl
+DEGRADING        dcl d ax gcl g r ey+1 dx ih ng
+DEGREES          dcl d ax gcl g r iy+1 z
+DELETE           dcl d ax l iy+1 tcl
+DELETED          dcl d ax l iy+1 dx ax dcl
+DELETING         dcl d ax l iy+1 dx ih ng
+DENVER           dcl d eh+1 n v axr
+DENVER+S         dcl d eh+1 n v axr z
+DEPLOYED         dcl d ax pcl p l oy+1 dcl
+DEPLOYMENT       dcl d ax pcl p l oy+1 m ax n
+DEPLOYMENTS      dcl d ax pcl p l oy+1 m ax n s
+DEPTH            d eh+1 pcl p th
+DEPTHS           dcl d eh+1 pcl s
+DESTINATION      dcl d eh+1 s tcl t ax n ey+1 sh ax n
+DESTINATIONS     dcl d eh+1 s tcl t ax n ey+1 sh en z
+DID              d ih+1 dcl
+DIDN+T           dcl d ih+1 dcl d ax n
+DIEGO-GARCIA     dcl d iy ey+1 gcl g ow gcl g axr s iy+1 ax
+DIESEL           dcl d iy+1 z el
+DIM              dcl d ih+1 m
+DISPLACEMENT     d ax s pcl p l ey+1 s m ax n
+DISPLACEMENTS    d ax s pcl p l ey+1 s m ax n s
+DISPLAY          d ax s pcl p l ey+1
+DISPLAYED        d ax s pcl p l ey+1 dcl
+DISPLAYING       d ax s pcl p l ey+1 ih ng
+DISTANCE         dcl d ih+1 s tcl t ax n s
+DIXON            dcl d ih+1 kcl k s ax n
+DIXON+S          dcl d ih+1 kcl k s en z
+DMDS             dcl d iy+1 eh+1 m dcl d iy+1 eh+1 s
+DO               d uw+1
+DOES             d ax z
+DOESN+T          dcl d ah+1 z ax n
+DON+T            dcl d ow+1 n
+DOWNES           dcl d aw+1 n z
+DOWNES+S         dcl d aw+1 n z
+DOWNGRADE        dcl d aw+1 n g r ey+1 dcl
+DOWNGRADED       dcl d aw+1 n g r ey+1 dx ax dcl
+DRAFT            dcl jh r ae+1 f tcl
+DRAFTS           dcl jh r ae+1 f tcl t s
+DRAW             dcl jh r ao+1
+DUBUQUE          d ax bcl b y uw+1 kcl k
+DUBUQUE+S        d ax bcl b y uw+1 kcl k s
+DUE              dcl d uw+1
+DURING           dcl d er+1 ih ng
+EACH             q iy+1 tcl ch
+EARLIER          q er+1 l iy axr
+EARLIEST         q er+1 l iy ax s tcl
+EARLY            q er+1 l iy
+EAST             iy+1 s tcl
+EASTERN          q iy+1 s tcl t axr n
+EASTPAC          q iy+1 s pcl p ae+1 kcl k
+EASTPAC+S        q iy+1 s pcl p ae+1 kcl k s
+ECG041           q iy+1 s iy+1 dcl jh iy+1 z iy+1 r ow f ao+1 r w ah+1 n
+ECHO             q eh+1 kcl k ow
+ECONOMIC         q eh+1 kcl k ax n aa+1 m ax kcl k
+EDIT             q eh+1 dx ax tcl
+EDITED           q eh+1 dx ax dx ax dcl
+EDITING          q eh+1 dx ax dx ih ng
+EIGHT            ey+1 tcl
+EIGHTEEN         q ey+1 tcl t iy+1 n
+EIGHTEENTH       q ey+1 tcl t iy+1 n th
+EIGHTH           q ey+1 tcl th
+EIGHTY           q ey+1 dx iy
+EISENHOWER       q ay+1 z ax n hh aw+1 axr
+EISENHOWER+S     q ay+1 z ax n hh aw+1 axr z
+ELEVEN           ax l eh+1 v ax n
+ELEVENTH         ax l eh+1 v ax n th
+ELIZABETH        ax l ih+1 z ax bcl b ax th
+EMPLOYED         ax m pcl p l oy+1 dcl
+END              q eh+1 n
+ENDING           q eh+1 n d ih ng
+ENGLAND          q ih+1 ng g l ax n
+ENGLAND+S        q ih+1 ng g l ax n z
+ENGLISH          q ih+1 ng g l ax sh
+ENOUGH           ax n ah+1 f
+ENROUTE          ax n r uw+1 tcl
+ENTERPRISE       q eh+1 n axr pcl p r ay+1 z
+ENTERPRISE+S     q eh+1 n axr pcl p r ay+1 z ax z
+EQUIPMENT        iy kcl k w ih+1 pcl m ax n
+EQUIPPED         iy kcl k w ih+1 pcl tcl t
+ESTEEM           ax s tcl t iy+1 m
+ESTEEM+S         ax s tcl t iy+1 m z
+ESTIMATED        q eh+1 s tcl t ax m ey+1 dx ax dcl
+ETA              q iy+1 tcl t iy+1 q ey+1
+ETR              q iy+1 tcl t iy+1 aa+1 r
+EVER             q eh+1 v axr
+EVERETT          q eh+1 v r ax tcl
+EXPECTED         ax kcl k s pcl p eh+1 kcl t ax dcl
+FANNING          f ae+1 n ih ng
+FANNING+S        f ae+1 n ih ng z
+FAR              f aa+1 r
+FARTHER          f aa+1 r dh axr
+FARTHEST         f aa+1 r dh ax s tcl
+FAST             f ae+1 s tcl
+FASTER           f ae+1 s tcl t axr
+FASTEST          f ae+1 s tcl t ax s tcl
+FEBRUARY         f eh+1 bcl b y uw eh+1 r iy
+FEET             f iy+1 tcl
+FFF088           q eh+1 f eh+1 f eh+1 f z iy+1 r ow ey+1 dcl d ey+1 tcl
+FIFTEEN          f ih+1 f tcl t iy+1 n
+FIFTEENTH        f ih+1 f tcl t iy+1 n th
+FIFTH            f ih+1 f th
+FIFTY            f ih+1 f tcl t iy
+FIGURE           f ih+1 gcl g y axr
+FIGURES          f ih+1 gcl g y axr z
+FIJI             f iy+1 dcl jh iy
+FIND             f ay+1 n
+FIREBUSH         f ay+1 axr bcl b uh+1 sh
+FIREBUSH+S       f ay+1 axr bcl b uh+1 sh ax z
+FIRST            f er+1 s tcl
+FIVE             f ay+1 v
+FIXED            f ih+1 kcl k s tcl
+FLASHER          f l ae+1 sh axr
+FLASHER+S        f l ae+1 sh axr z
+FLEET            f l iy+1 tcl
+FLEETS           f l iy+1 tcl t s
+FLINT            f l ih+1 n
+FLINT+S          f l ih+1 n s
+FOOTER           f uh+1 dx axr
+FOR              f axr
+FORMOSA          f axr m ow+1 s ax
+FORTY            f ao+1 r dx iy
+FOUR             f ao+1 r
+FOURTEEN         f ao+1 r tcl t iy+1 n
+FOURTEENTH       f ao+1 r tcl t iy+1 n th
+FOURTH           f ao+1 ax th
+FOX              f aa+1 kcl k s
+FOX+S            f aa+1 kcl k s ax z
+FREDERICK        f r eh+1 dcl jh r ax kcl k
+FREDERICK+S      f r eh+1 dcl d axr kcl k s
+FRENCH           f r eh+1 n tcl ch
+FRESNO           f r eh+1 z n ow
+FRESNO+S         f r eh+1 z n ow z
+FRIDAY           f r ay+1 dcl d ey
+FRIDAY+S         f r ay+1 dx iy z
+FRIGATE          f r ih+1 gcl g ax tcl
+FRIGATE+S        f r ih+1 gcl g ax tcl t s
+FRIGATES         f r ih+1 gcl g ax tcl t s
+FRIGATES+S       f r ih+1 gcl g ax tcl s
+FROM             f r ax m
+FUEL             f y uw+1 l
+FULL             f uh+1 l
+GALLONS          gcl g ae+1 l ax n z
+GALVESTON        gcl g ae+1 l v ax s tcl t ax n
+GAS              gcl g ae+1 s
+GET              g eh+1 tcl
+GIVE             g ih+1 v
+GLACIER          gcl g l ey+1 sh axr
+GLACIER+S        gcl g l ey+1 sh axr z
+GNOMONIC         n ax m aa+1 n ax kcl k
+GO               gcl g ow+1
+GOING            gcl g ow+1 ih ng
+GONE             gcl g aa+1 n
+GREAT            gcl g r ey+1 tcl
+GREATER          gcl g r ey+1 dx axr
+GREATEST         gcl g r ey+1 dx ax s tcl
+GREEN            gcl g r iy+1 n
+GRID             gcl g r ih+1 dcl
+GRIDLEY          gcl g r ih+1 dcl d l iy
+GRIDLEY+S        gcl g r ih+1 dcl l iy z
+GRILL            gcl g r ih+1 l
+GROSS            gcl g r ow+1 s
+GROUP            gcl g r uw+1 pcl p
+GROUPS           gcl g r uw+1 pcl p s
+GUARDFISH        gcl g aa+1 r dcl d f ih+1 sh
+GUARDFISH+S      gcl g aa+1 r dcl f ih+1 sh ax z
+GUITARRO         gcl g ih tcl t aa+1 r ow
+GUITARRO+S       gcl g ih tcl t aa+1 r ow z
+GULF             gcl g ah+1 l f
+HAD              hh ae dcl
+HALF             hh ae+1 f
+HARBOR           hh aa+1 r bcl b axr
+HARPOON          hh aa r pcl p uw+1 n
+HAS              hh ae z
+HASN+T           hh ae+1 z ax n
+HAVE             hh ae v
+HAVEN+T          hh ae v ax n
+HAWKBILL         hh ao+1 kcl b ih+1 l
+HAWKBILL+S       hh ao+1 kcl b ih+1 l z
+HE               hh iy+1
+HE+S             hv iy+1 z
+HECTOR           hh eh+1 kcl t axr
+HECTOR+S         hh eh+1 kcl t axr z
+HEPBURN          hh eh+1 bcl b axr n
+HEPBURN+S        hh eh+1 pcl b axr n z
+HER              hh axr
+HERS             hh er+1 z
+HFDF             q ey+1 tcl ch eh+1 f dcl d iy+1 eh+1 f
+HIGH             hh ay+1
+HIGHER           hh ay+1 axr
+HIGHEST          hh ay+1 ax s tcl
+HIM              hh ih m
+HIS              hh ih z
+HOME             hh ow+1 m
+HOMER            hh ow+1 m axr
+HONG-KONG        hh ao+1 ng kcl k ao+1 ng
+HONOLULU         hh aa+1 n ax l uw+1 l uw
+HOOKED           hh uh+1 kcl t
+HORNE            hh ao+1 r n
+HORNE+S          hh ao+1 r n z
+HOUR             q aw+1 axr
+HOURS            aw+1 axr z
+HOW              hh aw
+HUNDRED          hh ah+1 n d axr dx
+ICE-NINE         q ay+1 s n ay+1 n
+ID               q ay+1 dcl d iy+1
+IDENTIFICATION   ay dcl d eh+1 n ax f ax kcl k ey+1 sh ax n
+IDENTIFICATIONS  ay dcl d eh+1 n ax f ax kcl k ey+1 sh en z
+IF               ih f
+IN               ih n
+INCLUDE          ax ng kcl k l uw+1 dcl
+INCLUDED         ax ng kcl k l uw+1 dx ax dcl
+INCLUDING        ax ng kcl k l uw+1 dx ih ng
+INCREASE         q ih+1 ng kcl k r iy s
+INCREASED        q ih+1 ng kcl k r iy s tcl
+INCREASING       q ih+1 ng kcl k r iy s ih ng
+INDEPENDENCE     q ih+1 n d iy pcl p eh+1 n d ax n s
+INDEPENDENCE+S   q ih+1 n d iy pcl p eh+1 n d ax n tcl s ax z
+INDIAN           q ih+1 n d iy ax n
+INDONESIA        q ih+1 n d ow n ey+1 zh ax
+INFORMATION      q ih+1 n f ax m ey+1 sh ax n
+INSTALLED        ax n s tcl t aa+1 l dcl
+INSTEAD          ax n s tcl t eh+1 dcl
+INSUFFICIENT     q ih+1 n s ax f ih+1 sh ax n
+INVOLVED         ax n v aa+1 l v dcl
+INVOLVING        ax n v aa+1 l v ih ng
+IRONWOOD         q ay+1 axr n w uh+1 dcl
+IRONWOOD+S       q ay+1 axr n w uh+1 dcl z
+IS               ih z
+ISLANDS          q ay+1 l ax n z
+ISN+T            q ih+1 z ax n
+IT               ih tcl
+IT+S             ih tcl t s
+ITS              ih tcl t s
+JANUARY          dcl jh ae+1 n y uw axr iy
+JAPAN            dcl jh ax pcl p ae+1 n
+JARRETT          dcl jh eh+1 r ax tcl
+JARRETT+S        dcl jh eh+1 axr tcl t s
+JARVIS           dcl jh aa+1 r v ax s
+JARVIS+S         dcl jh aa+1 r v ax s ax z
+JASON            dcl jh ey+1 s ax n
+JASON+S          dcl jh ey+1 s en z
+JULY             dcl jh uw l ay+1
+JUNE             dcl jh uw+1 n
+JUPITER          dcl jh uw+1 pcl p ax dx axr
+JUPITER+S        dcl jh uw+1 pcl p ax dx axr z
+KENNEDY          kcl k eh+1 n ax dx iy
+KENNEDY+S        kcl k eh+1 n ax dx iy z
+KILOMETER        kcl k el aa+1 m ax dx axr
+KILOMETERS       kcl k el aa+1 m ax dx axr z
+KIRK             kcl k er+1 kcl k
+KIRK+S           kcl k er+1 kcl k s
+KISKA            kcl k ih+1 s kcl k ax
+KISKA+S          kcl k ih+1 s kcl k ax z
+KNOT             n aa+1 tcl
+KNOTS            n aa+1 tcl t s
+KODIAK           kcl k ow+1 dcl iy ae+1 kcl k
+KOREA            kcl k ao r iy+1 ax
+KOREAN           kcl k ao r iy+1 ax n
+LAMPS            l ae+1 m p s
+LANTFLT          l ae+1 n t f l iy+1 tcl
+LARGE            l aa+1 r dcl jh
+LARGER           l aa+1 r dcl jh axr
+LARGEST          l aa+1 r dcl jh ax s tcl
+LAST             l ae+1 s tcl
+LAT              l ae+1 tcl
+LAT-LON          l ae+1 tcl q l aa+1 n
+LAT-LONS         l ae+1 tcl q l aa+1 n z
+LATER            l ey+1 dx axr
+LATEST           l ey+1 dx ax s tcl
+LATITUDE         l ae+1 dx ax tcl t uw+1 dcl
+LATITUDES        l ae+1 dx ax tcl t uw+1 dcl z
+LATS             l ae+1 tcl t s
+LEAST            l iy+1 s tcl
+LEFT             l eh+1 f tcl
+LENGTH           l eh+1 ng th
+LENGTHS          l eh+1 ng th s
+LENINGRAD        l eh+1 n ax n g r ae+1 dcl
+LESS             l eh+1 s
+LETTER           l eh+1 dx axr
+LETTERS          l eh+1 dx axr z
+LEVEL            l eh+1 v el
+LEVELS           l eh+1 v el z
+LINK-11          l ih+1 ng kcl k ax l eh+1 v ax n
+LIST             l ih+1 s tcl
+LOCATED          l ow+1 kcl k ey dx ax dcl
+LOCATION         l ow kcl k ey+1 sh ax n
+LOCATIONS        l ow kcl k ey+1 sh en z
+LOCKWOOD         l aa+1 kcl k w uh+1 dcl
+LOCKWOOD+S       l aa+1 kcl k w uh+1 dcl z
+LON              l aa+1 n
+LONG             l ao+1 ng
+LONGER           l ao+1 ng g axr
+LONGEST          l ao+1 ng g ax s tcl
+LONGITUDE        l aa+1 n jh ax tcl t uw+1 dcl
+LONGITUDES       l aa+1 n jh ax tcl t uw+1 dcl z
+LONS             l aa+1 n z
+LOW              l ow+1
+LOWER            l ow+1 axr
+LOWEST           l ow+1 ax s tcl
+M-CODE           q eh+1 m kcl k ow+1 dcl
+M-CODES          q eh+1 m kcl k ow+1 dcl z
+M-RATING         q eh+1 m r ey+1 dx ih ng
+M-RATINGS        q eh+1 m r ey+1 dx ih ng z
+M1               q eh+1 m w ah+1 n
+M2               q eh+1 m tcl t uw+1
+M3               q eh+1 m th r iy+1
+M4               q eh+1 m f ao+1 r
+M5               q eh+1 m f ay+1 v
+MADAGASCAR       m ae+1 dcl d ax gcl g ae+1 s kcl k aa r
+MADE             m ey+1 dcl
+MAKE             m ey+1 kcl k
+MAKING           m ey+1 kcl k ih ng
+MANCHESTER       m ae+1 n tcl ch ax s tcl t axr
+MANHATTAN        m ae n hh ae+1 tcl t ax n
+MANHATTAN+S      m ae n hh ae+1 dx ax n z
+MANILA           m ax n ih+1 l ax
+MANY             m eh+1 n iy
+MARCH            m aa+1 r tcl ch
+MARS             m aa+1 r z
+MARS+S           m aa+1 r z
+MAX              m ae+1 kcl k s
+MAXIMUM          m ae+1 kcl k s em ax m
+MAY              m ey+1
+MCCLUSKY         m ax kcl k l ah+1 s kcl k iy
+MCCLUSKY+S       m ax kcl k l ah+1 s kcl k iy z
+ME               m iy+1
+MEASURE          m ey+1 zh axr
+MERCATOR         m axr kcl k ey+1 dx axr
+MERCURY          m er+1 kcl k y axr iy
+MERCURY+S        m er+1 kcl k y axr iy z
+METEOR           m iy+1 tcl t iy axr
+METEOR+S         m iy+1 tcl t iy axr z
+METERS           m iy+1 dx axr z
+METRIC           m eh+1 tcl ch r ax kcl k
+MEXICO           m eh+1 kcl k s ax kcl k ow
+MIAMI            m ay ae+1 m iy
+MIDGETT          m ih+1 dcl jh ax tcl
+MIDGETT+S        m ih+1 dcl jh ax tcl t s
+MIDPAC           m ih+1 dcl pcl p ae+1 kcl k
+MIDPAC+S         m ih+1 dcl pcl p ae+1 kcl k s
+MIDWAY           m ih+1 dcl d w ey+1
+MIDWAY+S         m ih+1 dcl d w ey+1 z
+MILE             m ay+1 el
+MILES            m ay+1 el z
+MIND             m ay+1 n
+MINUTES          m ih+1 n ax tcl t s
+MISHAWAKA        m ih+1 sh ax w aa+1 kcl k ax
+MISHAWAKA+S      m ih+1 sh ax w aa+1 kcl k ax z
+MISSION          m ih+1 sh ax n
+MISSIONS         m ih+1 sh en z
+MISSISSIPPI      m ih+1 s ax s ih+1 pcl p iy
+MISSISSIPPI+S    m ih+1 s ax s ih+1 pcl p iy z
+MIW              q eh+1 m ay+1 dcl d ah+1 bcl b y uw
+MOB              q eh+1 m ow+1 bcl b iy+1
+MONDAY           m ah+1 n d ey
+MONDAY+S         m ah+1 n d ey z
+MONGOLIA         m aa ng g ow+1 l iy ax
+MONTH            m ah+1 n th
+MONTH+S          m ah+1 n th s
+MONTHS           m ah+1 n th s
+MONTICELLO       m aa+1 n ax s eh+1 l ow
+MONTICELLO+S     m aa+1 n ax s eh+1 l ow z
+MORE             m ao+1 r
+MOST             m ow+1 s tcl
+MOZAMBIQUE       m ow+1 z ae m bcl b iy+1 kcl k
+MUCH             m ah tcl ch
+N92762           q eh+1 n n ay+1 n tcl t uw+1 s eh+1 v ax n s ih+1 kcl k s tcl t uw+1
+NAME             n ey+1 m
+NAMES            n ey+1 m z
+NAPLES           n ey+1 pcl p el z
+NASHUA           n ae+1 sh uw ax
+NASHUA+S         n ae sh uw ax z
+NEAR             n iy+1 r
+NEARER           n iy+1 r axr
+NEAREST          n iy+1 r ax s tcl
+NEVER            n eh+1 v axr
+NEW              n uw+1
+NEW-YORK         n uw+1 y ao+1 r kcl k
+NEW-ZEALAND      n uw+1 z iy+1 l ax n
+NEWCASTLE        n uw+1 kcl k ae+1 s el
+NEWER            n uw+1 axr
+NEWEST           n uw+1 ax s tcl
+NEXT             n eh+1 kcl k s tcl
+NINE             n ay+1 n
+NINETEEN         n ay+1 n tcl t iy+1 n
+NINETEENTH       n ay+1 n tcl t iy+1 n th
+NINETY           n ay+1 n iy
+NINTH            n ay+1 n th
+NO               n ow+1
+NOME             n ow+1 m
+NORTH            n ao+1 ax th
+NORTHERN         n ao+1 r dh axr n
+NOT              n aa+1 tcl
+NOVA             n ow+1 v ax
+NOVEMBER         n ow v eh+1 m b axr
+NOW              n aw+1
+NTDS             q eh+1 n tcl t iy+1 dcl d iy+1 eh+1 s
+NUCLEAR          n uw+1 kcl k l iy axr
+NUMBER           n ah+1 m b axr
+OAKLAND          ow+1 kcl k l ax n
+OCEAN            ow+1 sh ax n
+OCTOBER          aa kcl t ow+1 bcl b axr
+OF               ax v
+OFF              q ao+1 f
+OLD              ow+1 dx
+OLDER            ow+1 dcl d axr
+OLDEST           ow+1 l dcl d ax s tcl
+OLYMPIA          ow l ih+1 m pcl p iy ax
+ON               q aa n
+ONE              w ah+1 n
+ONLY             ow+1 n l iy
+OPEN             ow+1 pcl p ax n
+OR               ao r
+ORANGE           ao+1 axr n jh
+OSGP             q ow+1 eh+1 s dcl jh iy+1 pcl p iy+1
+OVERALL          q ow+1 v axr ao+1 l
+OVERLAY          q ow+1 v axr l ey+1
+OVERLAYS         q ow+1 v axr l ey+1 z
+PAC              pcl p ae+1 kcl k
+PACFLT           pcl p ae+1 kcl k f l iy+1 tcl
+PACIFIC          pcl p ax s ih+1 f ax kcl k
+PANAMA           pcl p ae+1 n ax m aa
+PARAMETER        pcl p axr ae+1 m ax dx axr
+PARAMETERS       pcl p axr ae+1 m ax dx axr z
+PEARL            pcl p er+1 l
+PEORIA           pcl p iy ao+1 r iy ax
+PEORIA+S         pcl p iy ao+1 r iy ax z
+PERCENT          pcl p axr s eh+1 n
+PERSIAN          pcl p er+1 zh ax n
+PERSONNEL        pcl p axr s ax n eh+1 l
+PHILIPPINE       f ih+1 l ax pcl p iy+1 n
+PHILIPPINES      f ih+1 l ax pcl p iy+1 n z
+PIGEON           pcl p ih+1 dcl jh ax n
+PIGEON+S         pcl p ih+1 dcl jh ax n z
+PLH003           pcl p iy+1 eh+1 l ey+1 tcl ch z iy+1 r ow z iy+1 r ow th r iy+1
+PLUCK            pcl p l ah+1 kcl k
+PLUCK+S          pcl p l ah+1 kcl k s
+PLUNGER          pcl p l ah+1 n jh axr
+PLUNGER+S        pcl p l ah+1 n jh axr z
+POLLACK          pcl p aa+1 l ax kcl k
+POLLACK+S        pcl p aa+1 l ax kcl k s
+POLYNESIA        pcl p aa+1 l ax n iy+1 zh ax
+PORT             pcl p ao+1 r tcl
+PORTS            pcl p ao+1 r tcl t s
+POSIT            pcl p aa+1 z ax tcl
+POSITION         pcl p ax z ih+1 sh ax n
+POSITIONS        pcl p ax z ih+1 sh en z
+POSITS           pcl p aa+1 z ax tcl t s
+POUGHKEEPSIE     pcl p uw kcl k ih+1 pcl p s iy
+POUGHKEEPSIE+S   pcl p uw kcl k ih+1 pcl p s iy z
+POWERED          pcl p aw+1 axr dcl
+PRAIRIE          pcl p r eh+1 r iy
+PRAIRIE+S        pcl p r eh+1 r iy z
+PRESENT          pcl p r eh+1 z ax n
+PREVIOUS         pcl p r iy+1 v iy ax s
+PROBLEM          pcl p r aa+1 bcl l ax m
+PROBLEMS         pcl p r aa+1 bcl l ax m z
+PROJECTION       pcl p axr dcl jh eh+1 kcl k sh ax n
+PROPELLED        pcl p axr pcl p eh+1 l dcl
+PROPULSION       pcl p axr pcl p ah+1 l sh ax n
+PUFFER           pcl p ah+1 f axr
+PUFFER+S         pcl p ah+1 f axr z
+PUGET-1          pcl p y uw+1 dcl jh ax tcl q w ah+1 n
+QUARTER          kcl k w ao+1 r dx axr
+QUARTERS         kcl k w ao+1 r dx axr s
+QUEENFISH        kcl k w iy+1 n f ih+1 sh
+QUEENFISH+S      kcl k w iy+1 n f ih+1 sh ax z
+RADAR            r ey+1 dx aa r
+RAMSEY           r ae+1 m z iy
+RAMSEY+S         r ae+1 m z iy z
+RANGER           r ey+1 n jh axr
+RANGER+S         r ey+1 n jh axr z
+RATED            r ey+1 dx ax dcl
+RATHBURNE        r ae+1 th bcl b axr n
+RATHBURNE+S      r ae+1 th bcl b axr n z
+RATING           r ey+1 dx ih ng
+RATINGS          r ey+1 dx ih ng z
+READINESS        r eh+1 dx iy n ax s
+REASON           r iy+1 z ax n
+REASONER         r iy+1 z ax n axr
+REASONER+S       r iy+1 z ax n axr z
+REASONS          r iy+1 z en z
+RECENT           r iy+1 s ax n
+RECLAIMER        r iy kcl k l ey+1 m axr
+RECLAIMER+S      r iy kcl k l ey+1 m axr z
+RED              r eh+1 dcl
+REDEFINE         r iy+1 dcl d iy f ay+1 n
+REDEFINED        r iy+1 dcl d iy f ay+1 n
+REDEFINING       r iy+1 dcl d iy f ay+1 n ih ng
+REDISPLAY        r iy+1 dcl d ax s pcl p l ey+1
+REDO             r iy+1 dcl d uw+1
+REDRAW           r iy+1 dcl jh r ao+1
+REEVES           r iy+1 v z
+REEVES+S         r iy+1 v z
+REMAINING        r iy m ey+1 n ih ng
+REMARK           r iy m aa+1 r kcl k
+REMARKS          r iy m aa+1 r kcl k s
+REPAIR           r iy pcl p eh+1 r
+REPAIRED         r iy pcl p eh+1 r dcl
+REPAIRING        r iy pcl p eh+1 r ih ng
+REPLACED         r iy pcl p l ey+1 s tcl
+REPORT           r iy pcl p ao+1 r tcl
+REPORTED         r iy pcl p ao+1 r dx ax dcl
+REPORTING        r iy pcl p ao+1 r dx ih ng
+REPORTS          r iy pcl p ao+1 r tcl t s
+RESET            r iy+1 s eh+1 tcl
+RESOLUTION       r eh+1 z ax l uw+1 sh ax n
+RESOLVED         r iy z ao+1 l v dcl
+RESOURCE         r iy+1 s ao r s
+RESOURCES        r iy+1 s ao r s ax z
+REVIEW           r iy v y uw+1
+ROSS             r ao+1
+SACRAMENTO       s ae+1 kcl k axr m eh+1 n t ow
+SACRAMENTO+S     s ae+1 kcl k axr m eh+1 n tcl t ow z
+SAIL             s ey+1 l
+SAME             s ey+1 m
+SAMPLE           s ae+1 m pcl p el
+SAMPLE+S         s ae+1 m pcl p el z
+SAN-DIEGO        s ae+1 n d iy ey+1 gcl g ow
+SAN-FRAN         s ae+1 n f r ae+1 n
+SASSAFRAS        s ae+1 s ax f r ae s
+SASSAFRAS+S      s ae+1 s ax f r ae s ax z
+SATURDAY         s ae+1 dx axr dcl d ey
+SATURDAY+S       s ae+1 dx axr dcl d ey z
+SAVE             s ey+1 v
+SCHENECTADY      s kcl k ax n eh+1 kcl t ax dx iy
+SCHENECTADY+S    s kcl k ax n eh+1 kcl t ax dx iy z
+SCREEN           s kcl k r iy+1 n
+SCREENS          s kcl k r iy+1 n z
+SEA              s iy+1
+SEAWOLF          s iy+1 w uh+1 l f
+SEAWOLF+S        s iy+1 w uh+1 l f s
+SECOND           s eh+1 kcl k ax n
+SECURITY         s ax kcl k y er+1 ax dx iy
+SENSOR           s eh+1 n s axr
+SENSORS          s eh+1 n s axr z
+SEPTEMBER        s ax pcl t eh+1 m b axr
+SET              s eh+1 tcl
+SETTING          s eh+1 dx ih ng
+SETTINGS         s eh+1 dx ih ng z
+SEVEN            s eh+1 v ax n
+SEVENTEEN        s eh+1 v ax n tcl t iy+1 n
+SEVENTEENTH      s eh+1 v ax n tcl t iy+1 n th
+SEVENTH          s eh+1 v ax n th
+SEVENTY          s eh+1 v ax n iy
+SHASTA           sh ae+1 s tcl t ax
+SHASTA+S         sh ae+1 s tcl t ax z
+SHE              sh iy+1
+SHE+S            sh iy+1 z
+SHERMAN          sh er+1 m ax n
+SHERMAN+S        sh er+1 m ax n z
+SHIP             sh ih+1 pcl p
+SHIPS            sh ih+1 pcl p s
+SHIPS+S          sh ih+1 pcl p s
+SHOW             sh ow+1
+SHOWING          sh ow+1 ih ng
+SHOWN            sh ow+1 n
+SIBERIAN         s ay bcl b iy+1 r iy ax n
+SIDNEY           s ih+1 dcl n iy
+SINCE            s ih+1 n s
+SINGAPORE        s ih+1 ng ax pcl p ao r
+SIX              s ih+1 kcl k s
+SIXTEEN          s ih+1 kcl k s tcl t iy+1 n
+SIXTEENTH        s ih+1 kcl k s tcl t iy+1 n th
+SIXTH            s ih+1 kcl k s th
+SIXTY            s ih+1 kcl k s tcl t iy
+SIZE             s ay+1 z
+SLOW             s l ow+1
+SLOWER           s l ow+1 axr
+SLOWEST          s l ow+1 ax s tcl
+SLQ-32           q eh+1 s eh+1 l kcl k y uw+1 th er+1 dx iy tcl t uw+1
+SMALL            s m ao+1 l
+SMALLER          s m ao+1 l axr
+SMALLEST         s m ao+1 l ax s tcl
+SOHO             s ow+1 hh ow
+SOLOMON          s ao+1 l ax m ax n
+SONAR            s ow+1 n aa r
+SOON             s uw+1 n
+SOONER           s uw+1 n axr
+SOUTH            s aw+1 th
+SOUTHERN         s ah+1 dh axr n
+SOVIET           s ow+1 v iy ax tcl
+SPEED            s pcl p iy+1 dcl
+SPEEDS           s pcl p iy+1 dcl z
+SPS-40           q eh+1 s pcl p iy+1 eh+1 s f ao+1 r dx iy
+SPS-48           q eh+1 s pcl p iy+1 eh+1 s f ao+1 r dx iy ey+1 tcl
+SQQ-23           q eh+1 s kcl k y uw+1 kcl k y uw+1 tcl t w eh+1 n iy th r iy+1
+START            s tcl t aa+1 r tcl
+STARTED          s tcl t aa+1 r dx ax dcl
+STARTING         s tcl t aa+1 r dx ih ng
+STATES           s tcl t ey+1 tcl t s
+STATION          s tcl t ey+1 sh ax n
+STATUS           s tcl t ey+1 dx ax s
+STEAM            s tcl t iy+1 m
+STEREOGRAPHIC    s tcl t eh+1 r iy ow gcl g r ae+1 f ax kcl k
+STERETT          s tcl t eh+1 r ax tcl
+STERETT+S        s tcl t eh+1 r ax tcl t s
+STRAIT           s tcl ch r ey+1 tcl
+SUB              s ah+1 bcl b
+SUB+S            s ah+1 bcl b z
+SUBIC            s uw+1 bcl b ax kcl k
+SUBMARINE        s ah+1 bcl m axr iy+1 n
+SUBMARINE+S      s ah+1 bcl m axr iy+1 n z
+SUBMARINES       s ah+1 bcl m axr iy+1 n z
+SUBS             s ah+1 bcl b z
+SUFFICIENT       s ax f ih+1 sh ax n
+SUMMARIZE        s ah+1 m axr ay+1 z
+SUNDAY           s ah+1 n d ey
+SUNDAY+S         s ah+1 n d ey z
+SUPPLIES         s ax pcl p l ay+1 z
+SUPPLY           s ax pcl p l ay+1
+SUPPOSED         s ax pcl p ow+1 z
+SURFACE          s er+1 f ax s
+SUSTAINED        s ax s tcl t ey+1 n
+SWITCH           s w ih+1 tcl ch
+SWITCHES         s w ih+1 tcl ch ax z
+SWORDFISH        s ao+1 r dcl d f ih+1 sh
+SWORDFISH+S      s ao+1 r dcl f ih+1 sh ax z
+SYSTEM           s ih+1 s tcl t ax m
+T-LAM            tcl t iy+1 l ae+1 m
+TACAN            tcl t ae+1 kcl k ae n
+TAIWAN           tcl t ay w aa+1 n
+TAKE             tcl t ey+1 kcl k
+TAKEN            tcl t ey+1 kcl k ax n
+TASM             tcl t ae+1 s ax m
+TEN              tcl t eh+1 n
+TENTH            tcl t eh+1 n th
+TEST             tcl t eh+1 s tcl
+TEXAS            tcl t eh+1 kcl k s ax s
+TEXAS+S          tcl t eh+1 kcl k s ax s ax z
+TFCC             tcl t iy+1 eh+1 f s iy+1 s iy+1
+THAILAND         tcl t ay+1 l ae n
+THAN             dh ae n
+THAT             dh ae tcl
+THE              dh ax
+THEIR            dh eh r
+THEM             dh eh m
+THERE            dh eh+1 r
+THESE            dh iy+1 z
+THEY             dh ey+1
+THIRD            th er+1 dcl
+THIRTEEN         th er+1 tcl t iy+1 n
+THIRTEENTH       th er+1 tcl t iy+1 n th
+THIRTIETH        th er+1 dx iy ax th
+THIRTY           th er+1 dx iy
+THIS             dh ih s
+THOSE            dh ow+1 z
+THOUSAND         th aw+1 z ax n
+THREAT           th r eh+1 tcl
+THREATS          th r eh+1 tcl t s
+THREE            th r iy+1
+THURSDAY         th er+1 z dcl d ey
+THURSDAY+S       th er+1 z dcl d ey z
+TICONDEROGA      tcl t ay kcl k aa+1 n d axr ow+1 gcl g ax
+TICONDEROGA+S    tcl t ay kcl k aa+1 n d axr ow+1 gcl g ax z
+TIME             tcl t ay+1 m
+TIMES            tcl t ay+1 m z
+TO               tcl t uw
+TODAY            tcl t ax dcl d ey+1
+TODAY+S          tcl t ax dcl d ey+1 z
+TOGGLE           tcl t aa+1 gcl g el
+TOGGLED          tcl t aa+1 gcl g el dcl
+TOGGLING         tcl t aa+1 gcl g el ih ng
+TOKYO            tcl t ow+1 kcl k iy ow
+TOMORROW         tcl t ax m ao+1 r ow
+TOMORROW+S       tcl t ax m ao+1 r ow z
+TONKIN           tcl t ao+1 ng kcl k ax n
+TONS             tcl t ah+1 n z
+TOTAL            tcl t ow+1 dx el
+TOWNSVILLE       tcl t aw+1 n z v el
+TRACK            tcl ch r ae+1 kcl k
+TRACKS           tcl ch r ae+1 kcl k s
+TRAINING         tcl ch r ey+1 n ih ng
+TRIPOLI          tcl ch r ih+1 pcl p ow l iy+1
+TRIPOLI+S        tcl ch r ih+1 pcl p ow l iy+1 z
+TRUE-VIEW        tcl ch r uw+1 v y uw+1
+TUESDAY          tcl t uw+1 z dcl d ey
+TUESDAY+S        tcl t uw+1 z dcl d ey z
+TURBINE          tcl t er+1 bcl b ax n
+TURN             tcl t er+1 n
+TURNED           tcl t er+1 n
+TURNING          tcl t er+1 n ih ng
+TUSCALOOSA       tcl t ah+1 s kcl k ax l uw+1 s ax
+TUSCALOOSA+S     tcl t ah+1 s kcl k ax l uw+1 s ax z
+TWELFTH          tcl t w eh+1 l f th
+TWELVE           tcl t w eh+1 l v
+TWENTIETH        tcl t w ah+1 n iy ax th
+TWENTY           tcl t w ah+1 n iy
+TWO              tcl t uw+1
+TYPE             tcl t ay+1 pcl p
+TYPES            tcl t ay+1 pcl p s
+UNION            y uw+1 n y ax n
+UNIT             y uw+1 n ax tcl
+UNITED           y uw n ay+1 dx ax dcl
+UNTIL            ax n tcl t ih+1 l
+UOM              y uw+1 ow+1 q eh+1 m
+UPDATE           ah+1 pcl d ey+1 tcl
+UPDATED          ah+1 pcl d ey+1 dx ax dcl
+UPDATES          ah+1 pcl d ey+1 tcl t s
+UPGRADE          ah+1 pcl g r ey+1 dcl
+UPGRADED         ah+1 pcl g r ey+1 dx ax dcl
+USA              y uw+1 eh+1 s q ey+1
+USE              y uw+1 z
+USING            y uw+1 z ih ng
+USN              y uw+1 eh+1 s eh+1 n
+VALUE            v ae+1 l y uw
+VALUES           v ae+1 l y uw z
+VANCOUVER        v ae ng kcl k uw+1 v axr
+VANCOUVER+S      v ae ng kcl k uw+1 v axr z
+VANDERGRIFT      v ae+1 n d axr gcl g r ih+1 f tcl
+VANDERGRIFT+S    v ae+1 n d axr gcl g r ih+1 f tcl t s
+VARIOUS          v eh+1 r iy ax s
+VESSEL           v eh+1 s el
+VESSELS          v eh+1 s el z
+VICTORIA         v ax kcl t ao+1 r iy ax
+VIRGINIA         v axr dcl jh ih+1 n y ax
+VIRGINIA+S       v axr dcl jh ih+1 n y ax z
+VISUAL           v ih+1 zh uw el
+WABASH           w aa+1 bcl b ae sh
+WABASH+S         w aa+1 bcl b ae sh ax z
+WADSWORTH        w aa+1 dcl z w axr th
+WADSWORTH+S      w aa+1 dcl z w axr th s
+WAS              w ah z
+WASN+T           w ah+1 z ax n
+WASP             w aa+1 s pcl p
+WASP+S           w aa+1 s pcl p s
+WE               w iy+1
+WEDNESDAY        w eh+1 n z dcl d ey
+WEDNESDAY+S      w eh+1 n z dcl d ey z
+WEEK             w iy+1 kcl k
+WEEK+S           w iy+1 kcl k s
+WEEKS            w iy+1 kcl k s
+WELLINGTON       w eh+1 l ax ng tcl t ax n
+WENT             w eh+1 n
+WERE             w axr
+WEREN+T          w axr n
+WEST             w eh+1 s tcl
+WESTERN          w eh+1 s tcl t axr n
+WESTPAC          w eh+1 s pcl p ae+1 kcl k
+WESTPAC+S        w eh+1 s pcl p ae+1 kcl k s
+WHAT             w ah+1 tcl
+WHAT+RE          w ah+1 dx axr
+WHAT+S           w ah+1 tcl t s
+WHEN             w eh+1 n
+WHEN+LL          w eh+1 n el
+WHEN+S           w eh+1 n z
+WHERE            w eh r
+WHERE+S          w eh+1 r z
+WHICH            w ih+1 tcl ch
+WHIPPLE          w ih+1 pcl p el
+WHIPPLE+S        w ih+1 pcl p el z
+WHO              hh uw+1
+WHO+S            hh uw+1 z
+WHOSE            hh uw+1 z
+WHY              w ay+1
+WHY+S            w ay+1 z
+WICHITA          w ih+1 tcl ch ax tcl t ao+1
+WICHITA+S        w ih+1 tcl ch ax tcl t ao+1 z
+WILL             w el
+WILLAMETTE       w ih+1 l ax m eh+1 tcl
+WILLAMETTE+S     w ih+1 l ax m eh+1 tcl t s
+WINAMAC          w ih+1 n ax m ae+1 kcl k
+WINAMAC+S        w ih+1 n ax m ae+1 kcl k s
+WINDOW           w ih+1 n d ow
+WINDOWS          w ih+1 n d ow z
+WITH             w ax th
+WITHIN           w ax th ih+1 n
+WITHOUT          w ax th aw+1 tcl
+WON+T            w ow+1 n
+WORSE            w er+1 s
+WORST            w er+1 s tcl
+WOULD            w uh dcl
+WOULDN+T         w uh+1 dcl d ax n
+YANKEE           y ae+1 ng kcl k iy+1
+YEAR             y iy+1 r
+YEARS            y iy+1 ax z
+YELLOW           y eh+1 l ow
+YESTERDAY        y eh+1 s tcl t axr dcl d ey
+YESTERDAY+S      y eh+1 s tcl t axr dx iy z
+YET              y eh+1 tcl
+YORKTOWN         y ao+1 r kcl t aw+1 n
+YORKTOWN+S       y ao+1 r kcl t aw+1 n z
+ZULU             z uw+1 l uw

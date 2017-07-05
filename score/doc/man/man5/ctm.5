@@ -1,0 +1,115 @@
+.TH ctm 5 "Release 3.5.7" "Scoring Pkg"
+.SH NAME
+ctm - Definition of time marked conversation scoring input
+.SH DESCRIPTION
+This describes the time marked conversation input files to be used for scoring
+speech recognizers via the NIST align() program.  Both the reference
+and hypothesis input files share this format. 
+
+The file format is a concatentation of time marks for each word in
+each side of a conversation.  Each word token must have a conversation
+id, channel identifier [A | B], start time, duration, and word text.
+Optionally a confidence score can be appended for each word.
+
+The file must be sorted by the first three columns: the first and the
+second in ascii order, and the third by a numeric order.  The UNIX
+sort command: "sort +0 -1 +1 -2 +2nb -3" will sort the words into
+appropriate order.
+
+Lines beginning with ';;' are considered comments and are ignored.
+Blank lines are also ignored.
+
+Included below is an example:
+
+.RS
+;;
+.RE
+.RS
+;;  Comments follow ';;'
+.RE
+.RS
+;;
+.RE
+.RS
+;;  The Blank lines are ignored
+.RE
+.RS
+
+;;
+.RE
+.RS
+7654 A 11.34 0.2  YES -6.763
+.RE
+.RS
+7654 A 12.00 0.34 YOU -12.384530
+.RE
+.RS
+7654 A 13.30 0.5  CAN 2.806418
+.RE
+.RS
+7654 A 17.50 0.2  AS 0.537922
+.RE
+.RS
+      :
+.RE
+.RS
+7654 B 1.34 0.2  I -6.763
+.RE
+.RS
+7654 B 2.00 0.34 CAN -12.384530
+.RE
+.RS
+7654 B 3.40 0.5  ADD 2.806418
+.RE
+.RS
+7654 B 7.00 0.2  AS 0.537922
+.RE
+.RS
+      :
+.RE
+
+
+For CTM reference files, a format extension exists to permit marking
+alternate transcripts.  The alternation uses the same file format as
+discribed above, except three word strings, "<ALT_BEGIN>", "<ALT>" and
+"<ALT_END>", are used to delimit the alternation.  Each tag is treated
+as a word, with a conversation id, channel and "*"'s for the begin
+and duration time.
+
+The alternation is begun using the word "<ALT_BEGIN>", and terminated
+using the word "<ALT_END>".  In between the start and end, are at
+least 2 alternative time-marked word sequences separated by the word
+"<ALT>".  Each word sequence can contain any number of words.  An
+empty alternative signifies a null word.
+
+Below is and example alternate reference transcript for the words
+"uh" and "um".
+
+
+.RS
+;;
+.RE
+.RS
+7654 A   *    *   <ALT_BEGIN>
+.RE
+.RS
+7654 A 12.00 0.34 UM
+.RE
+.RS
+7654 A   *    *   <ALT>
+.RE
+.RS
+7654 A 12.00 0.34 UH
+.RE
+.RS
+7654 A   *    *   <ALT_END>
+.RE
+.RS
+ 
+
+
+
+
+.SH SEE ALSO
+
+

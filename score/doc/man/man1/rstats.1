@@ -1,0 +1,19 @@
+.TH RSTATS 1 "Release 3.0" "Scoring Pkg"
+.SH NAME
+rstats - run the statistics program for the aligned files
+.SH SYNOPSIS
+rstats <-LP> <test-condition> sys1.ali sys2.ali . . . sysN.ali
+.SH DESCRIPTION
+Perform the most common statistical tests on the systems and print
+the results in the file "stats.out"
+
+-LP will format the output to a 132 column printout.
+
+The argument "test-condition" is optional, if given, it will be used
+as a sub title for the statistical analysis printouts.  An example,
+for a set of speaker independent systems that did not use a grammar
+could be: "SPEAKER INDEPENDENT, NO GRAMMAR".
+.SH SEE ALSO
+align(1)
+.SH BUGS
+If you see `em, smash `em!

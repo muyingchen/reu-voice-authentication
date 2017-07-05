@@ -1,0 +1,23 @@
+;;
+;;  spltmrg.txt
+;;
+;;  The following table consists primarily of contractions
+;;  that are to be found in the Resource Management Database SNOR Lexicon.
+;;  Reference is made to this table for each occurence of a split or merge,
+;;  and if occurence is found in this table, it is classified as an acceptable
+;;  split or merge.  (In practice, this does not occur frequently and it has
+;;  no effect on scoring results)
+;;
+;;  HISTORY
+;;     90/01/08  -  From old scoring package
+;;
+WHAT+S		WHAT		IS
+WHEN+S		WHEN		IS
+WHO+S		WHO		IS
+WHERE+S		WHERE		IS
+WHY+S		WHY		IS
+WHAT+RE		WHAT		ARE
+WHEN+LL		WHEN		WILL
+IT+S		IT		IS
+LANTFLT		ATLANTIC	FLEET
+PACFLT		PACIFIC		FLEET

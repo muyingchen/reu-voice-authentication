@@ -1,0 +1,17 @@
+.TH MKLEX 1 "Release 3.0" "Scoring Pkg"
+.SH NAME
+mklex - convert a list of sentences into an old style lexicon
+.SH SYNOPSIS
+mklex input output
+.SH DESCRIPTION
+.PP
+This program takes each line of tokens and makes them 
+one to a line, removes all the blank lines, sorts the list
+leaving only the unique words then converts all lower case
+words to upper case.  Input and output may either be from stdin or
+stdout, this is signified by a '-' be used as a filename.
+
+This program assumes there are no punctuation marks or sentence
+id's in the input token lists.
+
+.SH SEE ALSO

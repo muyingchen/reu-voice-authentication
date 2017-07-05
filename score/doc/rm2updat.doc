@@ -1,0 +1,27 @@
+         Instructions for Updating the NIST Scoring Software for RM2
+
+
+If you are not using the implementation of the NIST scoring software on the 
+RM1 "test disc" CD2-4.1, you must perform a complete installation of the
+software as specified in /score/readme.txt to score your DARPA June 1990 
+benchmark test results.  However, if you are using the CD2-4.1 version of the
+scoring software, you may simply replace the two RM1-specific driver tables
+with the corresponding RM2 driver tables on this disc.  When you replace the
+tables, be sure to save the original tables if you intend to continue scoring
+RM1 test results.  
+
+The following is an example of how you might perform the replacement while
+saving the original tables with a ".rm1" extension.  Note: "INSTALL_DIR" 
+refers to the directory you currently have the scoring software installed 
+under:
+
+
+% mv INSTALL_DIR/score/drivers/al_sents.snr \
+            INSTALL_DIR/score/drivers/al_sents.snr.rm1
+
+% cp [from CD3-1.1] /score/drivers/al_sents.snr INSTALL_DIR/score/drivers/
+
+% mv INSTALL_DIR/score/drivers/senttype.snr \
+            INSTALL_DIR/score/drivers/senttype.snr.rm1
+
+% cp [from CD3-1.1] /score/drivers/senttype.snr INSTALL_DIR/score/drivers/
