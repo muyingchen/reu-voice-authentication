@@ -98,7 +98,7 @@
 #define SIZEOF_SHORT 2
 
 /* "NIST sphere package support" */
-/* #undef SPHERE */
+#define SPHERE 1
 
 /* If using the C implementation of alloca, define if you know the
    direction of stack growth for your system; otherwise it will be
