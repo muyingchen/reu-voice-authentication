@@ -123,25 +123,6 @@ sig.o: sig.c spro.h system.h config.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_key_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
-  sphere//include/sp/sphere.h sphere//include/util/utillib.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/ctype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/runetype.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_wint_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/errno.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/errno.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/time.h \
-  sphere//include/util/chars.h sphere//include/util/memory.h \
-  sphere//include/util/mtrf.h sphere//include/util/macros.h \
-  sphere//include/util/min.h sphere//include/util/order.h \
-  sphere//include/util/cfg.h sphere//include/util/proto.h \
-  sphere//include/util/statdist.h sphere//include/util/diskarr.h \
-  sphere//include/util/err_util.h sphere//include/util/fob.h \
-  sphere//include/util/hist.h sphere//include/util/hsgetopt.h \
-  sphere//include/util/rpg.h sphere//include/sp/header.h \
-  sphere//include/sp/sysparam.h sphere//include/sp/spchksum.h \
-  sphere//include/sp/spfile.h sphere//include/sp/sysfunc.h \
-  sphere//include/sp/sp.h sphere//include/sp/shorten/shrt_sph.h \
-  sphere//include/sp/wavpack/wavpack.h sphere//include/sp/version.h \
   sptables.h
 
 spro.h:
@@ -397,69 +378,5 @@ config.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
-
-sphere//include/sp/sphere.h:
-
-sphere//include/util/utillib.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/ctype.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/runetype.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_wint_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/errno.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/errno.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/time.h:
-
-sphere//include/util/chars.h:
-
-sphere//include/util/memory.h:
-
-sphere//include/util/mtrf.h:
-
-sphere//include/util/macros.h:
-
-sphere//include/util/min.h:
-
-sphere//include/util/order.h:
-
-sphere//include/util/cfg.h:
-
-sphere//include/util/proto.h:
-
-sphere//include/util/statdist.h:
-
-sphere//include/util/diskarr.h:
-
-sphere//include/util/err_util.h:
-
-sphere//include/util/fob.h:
-
-sphere//include/util/hist.h:
-
-sphere//include/util/hsgetopt.h:
-
-sphere//include/util/rpg.h:
-
-sphere//include/sp/header.h:
-
-sphere//include/sp/sysparam.h:
-
-sphere//include/sp/spchksum.h:
-
-sphere//include/sp/spfile.h:
-
-sphere//include/sp/sysfunc.h:
-
-sphere//include/sp/sp.h:
-
-sphere//include/sp/shorten/shrt_sph.h:
-
-sphere//include/sp/wavpack/wavpack.h:
-
-sphere//include/sp/version.h:
 
 sptables.h:
