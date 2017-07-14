@@ -17,7 +17,7 @@ old_library='_sphinxbase.a'
 inherited_linker_flags=' '
 
 # Libraries that this one depends upon.
-dependency_libs=' /Users/muyingchen/Desktop/voice-authentication/sphinxbase-5prealpha/src/libsphinxbase/libsphinxbase.la -lpthread -lm -lblas -llapack'
+dependency_libs=' /Users/muyingchen/desktop/voice-authentication/sphinxbase-5prealpha/src/libsphinxbase/libsphinxbase.la -lpthread -lm -lblas -llapack'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

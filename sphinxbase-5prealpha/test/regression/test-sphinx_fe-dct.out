@@ -1,0 +1,131 @@
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-alpha			0.97		9.700000e-01
+-argfile				
+-blocksize		2048		2048
+-build_outdirs		yes		yes
+-c					
+-cep2spec		no		yes
+-di					
+-dither			no		no
+-do					
+-doublebw		no		no
+-ei					
+-eo					
+-example		no		no
+-frate			100		100
+-help			no		no
+-i					../../test/regression/chan3.mfc
+-input_endian		little		little
+-lifter			0		0
+-logspec		no		no
+-lowerf			133.33334	1.333333e+02
+-mach_endian		little		little
+-mswav			no		no
+-ncep			13		13
+-nchans			1		1
+-nfft			512		512
+-nfilt			40		36
+-nist			no		no
+-npart			0		0
+-nskip			0		0
+-o					test-sphinx_fe-dct.logspec.out
+-ofmt			sphinx		sphinx
+-part			0		0
+-raw			no		no
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-runlen			-1		-1
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-smoothspec		no		no
+-spec2cep		no		no
+-sph2pipe		no		no
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.855498e+03
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-whichchan		0		0
+-wlen			0.025625	2.562500e-02
+
+INFO: sphinx_fe.c(787): Converting ../../test/regression/chan3.mfc to test-sphinx_fe-dct.logspec.out
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-alpha			0.97		9.700000e-01
+-argfile				
+-blocksize		2048		2048
+-build_outdirs		yes		yes
+-c					
+-cep2spec		no		no
+-di					
+-dither			no		no
+-do					
+-doublebw		no		no
+-ei					
+-eo					
+-example		no		no
+-frate			100		100
+-help			no		no
+-i					test-sphinx_fe-dct.logspec.out
+-input_endian		little		little
+-lifter			0		0
+-logspec		no		no
+-lowerf			133.33334	1.333333e+02
+-mach_endian		little		little
+-mswav			no		no
+-ncep			13		13
+-nchans			1		1
+-nfft			512		512
+-nfilt			40		36
+-nist			no		no
+-npart			0		0
+-nskip			0		0
+-o					test-sphinx_fe-dct.mfc.out
+-ofmt			sphinx		sphinx
+-part			0		0
+-raw			no		no
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-runlen			-1		-1
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-smoothspec		no		no
+-spec2cep		no		yes
+-sph2pipe		no		no
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.855498e+03
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-whichchan		0		0
+-wlen			0.025625	2.562500e-02
+
+INFO: sphinx_fe.c(787): Converting test-sphinx_fe-dct.logspec.out to test-sphinx_fe-dct.mfc.out
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-b		0		0
+-d		10		13
+-describe	0		0
+-e		2147483647	2147483647
+-f				test-sphinx_fe-dct.mfc.out
+-header		0		0
+-i		13		13
+
+INFO: main_cepview.c(152): Displaying 13 out of 13 columns per frame
+INFO: main_cepview.c(153): Total 2178 frames
+

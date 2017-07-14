@@ -1,7 +1,7 @@
 # Utility functions and parameters for regression tests
 
 # Predefined directories you may need
-# Stupid broken RedHat autoconf doesn't do /Users/muyingchen/Desktop/voice-authentication/sphinxbase-5prealpha
+# Stupid broken RedHat autoconf doesn't do /Users/muyingchen/desktop/voice-authentication/sphinxbase-5prealpha
 builddir="../.."
 sourcedir="../.."
 tests=$sourcedir/test

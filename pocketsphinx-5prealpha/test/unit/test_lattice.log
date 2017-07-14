@@ -158,183 +158,180 @@ INFO: ngram_search_fwdtree.c(101): 791 unique initial diphones
 INFO: ngram_search_fwdtree.c(186): Creating search channels
 INFO: ngram_search_fwdtree.c(323): Max nonroot chan increased to 152609
 INFO: ngram_search_fwdtree.c(333): Created 723 root, 152481 non-root channels, 53 single-phone words
-INFO: cmn.c(133): CMN: 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 
-INFO: ngram_search_fwdtree.c(1550):     2539 words recognized (10/fr)
-INFO: ngram_search_fwdtree.c(1552):   670526 senones evaluated (2530/fr)
-INFO: ngram_search_fwdtree.c(1556):  1542093 channels searched (5819/fr), 149663 1st, 97450 last
-INFO: ngram_search_fwdtree.c(1559):     5691 words for which last channels evaluated (21/fr)
-INFO: ngram_search_fwdtree.c(1561):    56342 candidate words for entering last phone (212/fr)
-INFO: ngram_search_fwdtree.c(1564): fwdtree 1.37 CPU 0.517 xRT
-INFO: ngram_search_fwdtree.c(1567): fwdtree 2.42 wall 0.912 xRT
+INFO: cmn.c(133): CMN: 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 
+INFO: ngram_search_fwdtree.c(1550):     2528 words recognized (10/fr)
+INFO: ngram_search_fwdtree.c(1552):   663904 senones evaluated (2505/fr)
+INFO: ngram_search_fwdtree.c(1556):  1516507 channels searched (5722/fr), 149505 1st, 96342 last
+INFO: ngram_search_fwdtree.c(1559):     5650 words for which last channels evaluated (21/fr)
+INFO: ngram_search_fwdtree.c(1561):    55736 candidate words for entering last phone (210/fr)
+INFO: ngram_search_fwdtree.c(1564): fwdtree 0.85 CPU 0.322 xRT
+INFO: ngram_search_fwdtree.c(1567): fwdtree 0.87 wall 0.327 xRT
 INFO: ngram_search.c(1250): lattice start node <s>.0 end node </s>.212
 INFO: ngram_search.c(1276): Eliminated 2 nodes before end node
-INFO: ngram_search.c(1381): Lattice has 583 nodes, 1367 links
-INFO: ps_lattice.c(1380): Bestpath score: -7336
-INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:212:263) = -674072
-INFO: ps_lattice.c(1441): Joint P(O,S) = -689441 P(S|O) = -15369
-FWDFLAT: go forward ten meters (-7755)
-P(S|O) = -15369
-[SPEECH] [SPEECH] 209 -> (211,211) 0.041429
-[NOISE] [NOISE] 209 -> (211,211) 0.020508
-<sil> <sil> 209 -> (211,211) 0.100644
-<sil> <sil> 206 -> (208,208) 0.004516
-<sil> <sil> 203 -> (205,205) 0.000532
-so so 195 -> (205,215) 0.000386
-leaders leaders 155 -> (194,213) 0.017573
-majors majors 153 -> (194,213) 0.014031
-readers readers 155 -> (192,213) 0.015206
-meters meters 153 -> (173,221) 0.789917
-<sil> <sil> 152 -> (154,154) 0.000430
-<sil> <sil> 150 -> (152,152) 0.118974
-<sil> <sil> 147 -> (149,150) 0.019469
-<sil> <sil> 144 -> (146,146) 0.001050
-end end 131 -> (145,160) 0.000381
-and and 136 -> (145,161) 0.004997
-tend tend 117 -> (144,162) 0.000238
-can't can't 121 -> (144,148) 0.000130
-and and(2) 131 -> (144,162) 0.043956
-an an(2) 136 -> (142,160) 0.000136
-in in 135 -> (140,157) 0.000592
-can can 121 -> (137,164) 0.017835
-an an 131 -> (137,162) 0.015302
-ten ten 117 -> (136,164) 0.817648
-[SPEECH] [SPEECH] 133 -> (135,136) 0.004054
-[SPEECH] [SPEECH] 132 -> (134,134) 0.000317
-[SPEECH] [SPEECH] 130 -> (132,132) 0.000170
-[NOISE] [NOISE] 130 -> (132,132) 0.000131
-<sil> <sil> 129 -> (131,136) 0.010005
-<sil> <sil> 128 -> (130,130) 0.045422
-<sil> <sil> 126 -> (128,128) 0.000908
-to to 117 -> (122,141) 0.002491
-to to(3) 117 -> (122,143) 0.004897
-to to(2) 117 -> (122,146) 0.010236
-<sil> <sil> 119 -> (121,127) 0.004882
-[SPEECH] [SPEECH] 118 -> (120,120) 0.000521
-[NOISE] [NOISE] 118 -> (120,120) 0.000455
-<sil> <sil> 118 -> (120,120) 0.003184
-words words 94 -> (119,125) 0.000125
-<sil> <sil> 116 -> (118,118) 0.000644
-<sil> <sil> 115 -> (117,117) 0.000211
-forwards forwards 64 -> (117,129) 0.000505
-work work 94 -> (115,119) 0.001019
-word word 94 -> (112,133) 0.000988
-forward forward 64 -> (109,137) 0.844746
-a a 91 -> (93,93) 0.000140
-for for 64 -> (82,112) 0.001024
-so so 50 -> (59,67) 0.000577
-though though 46 -> (55,67) 0.000167
-go go 46 -> (52,69) 0.996008
-[SPEECH] [SPEECH] 43 -> (45,45) 0.031496
-[NOISE] [NOISE] 42 -> (44,46) 0.062931
-[NOISE] [NOISE] 40 -> (42,42) 0.002323
-[SPEECH] [SPEECH] 39 -> (41,41) 0.002003
-[NOISE] [NOISE] 39 -> (41,41) 0.003578
-[NOISE] [NOISE] 37 -> (39,39) 0.000158
-[NOISE] [NOISE] 36 -> (38,38) 0.000275
-[SPEECH] [SPEECH] 34 -> (36,39) 0.000172
-<sil> <sil> 25 -> (27,55) 0.597525
-[SPEECH] [SPEECH] 22 -> (24,24) 0.014854
-[NOISE] [NOISE] 22 -> (24,24) 0.010851
-oh oh 22 -> (24,24) 0.001556
-i i 22 -> (24,24) 0.009022
-a a 22 -> (24,24) 0.002515
-the the(2) 19 -> (24,26) 0.003386
-the the 19 -> (24,27) 0.010807
-to to(3) 19 -> (24,26) 0.001099
-it it 19 -> (24,24) 0.004236
-in in 19 -> (24,24) 0.001070
-do do 19 -> (24,25) 0.000550
-at at 19 -> (24,28) 0.000466
-to to(2) 19 -> (24,26) 0.000895
-<sil> <sil> 20 -> (22,26) 0.249160
-a a(2) 20 -> (22,25) 0.001151
+INFO: ngram_search.c(1381): Lattice has 575 nodes, 1392 links
+INFO: ps_lattice.c(1380): Bestpath score: -7317
+INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:212:263) = -672378
+INFO: ps_lattice.c(1441): Joint P(O,S) = -687596 P(S|O) = -15218
+FWDFLAT: go forward ten meters (-7728)
+P(S|O) = -15218
+[SPEECH] [SPEECH] 209 -> (211,211) 0.041132
+[NOISE] [NOISE] 209 -> (211,211) 0.020500
+<sil> <sil> 209 -> (211,211) 0.101290
+<sil> <sil> 206 -> (208,208) 0.004488
+<sil> <sil> 203 -> (205,205) 0.000536
+so so 195 -> (205,216) 0.000391
+leaders leaders 155 -> (194,213) 0.016074
+majors majors 153 -> (194,213) 0.012557
+readers readers 155 -> (192,213) 0.014153
+meters meters 153 -> (173,221) 0.793480
+<sil> <sil> 152 -> (154,154) 0.000392
+<sil> <sil> 150 -> (152,152) 0.110620
+<sil> <sil> 147 -> (149,149) 0.018053
+<sil> <sil> 144 -> (146,146) 0.000988
+and and 136 -> (146,161) 0.004677
+can't can't 121 -> (145,148) 0.000112
+end end 131 -> (145,160) 0.000366
+tend tend 117 -> (144,162) 0.000241
+and and(2) 131 -> (144,162) 0.040036
+an an(2) 136 -> (142,160) 0.000130
+in in 135 -> (140,156) 0.000532
+an an 131 -> (138,162) 0.014366
+can can 121 -> (137,164) 0.015389
+ten ten 117 -> (136,164) 0.831003
+[SPEECH] [SPEECH] 133 -> (135,136) 0.003921
+[SPEECH] [SPEECH] 132 -> (134,134) 0.000291
+[SPEECH] [SPEECH] 130 -> (132,132) 0.000162
+[NOISE] [NOISE] 130 -> (132,132) 0.000123
+<sil> <sil> 129 -> (131,136) 0.009269
+<sil> <sil> 128 -> (130,130) 0.040601
+<sil> <sil> 126 -> (128,128) 0.000819
+to to 117 -> (122,140) 0.002236
+to to(2) 117 -> (122,145) 0.009973
+to to(3) 117 -> (122,143) 0.004366
+<sil> <sil> 119 -> (121,127) 0.004372
+[SPEECH] [SPEECH] 118 -> (120,120) 0.000447
+[NOISE] [NOISE] 118 -> (120,120) 0.000390
+<sil> <sil> 118 -> (120,120) 0.002747
+words words 94 -> (119,125) 0.000108
+<sil> <sil> 116 -> (118,118) 0.000580
+<sil> <sil> 115 -> (117,117) 0.000184
+forwards forwards 64 -> (117,129) 0.000441
+work work 94 -> (115,119) 0.001027
+word word 94 -> (112,132) 0.000980
+forward forward 64 -> (109,137) 0.858630
+a a 91 -> (93,93) 0.000126
+for for 64 -> (82,112) 0.001032
+so so 50 -> (59,67) 0.000544
+though though 46 -> (55,67) 0.000156
+go go 46 -> (52,69) 0.995808
+[SPEECH] [SPEECH] 43 -> (45,45) 0.033124
+[NOISE] [NOISE] 42 -> (44,46) 0.064389
+[SPEECH] [SPEECH] 40 -> (42,42) 0.001064
+[NOISE] [NOISE] 40 -> (42,42) 0.002398
+[SPEECH] [SPEECH] 39 -> (41,41) 0.002080
+[NOISE] [NOISE] 39 -> (41,41) 0.003592
+[NOISE] [NOISE] 37 -> (39,39) 0.000165
+[NOISE] [NOISE] 36 -> (38,38) 0.000278
+[SPEECH] [SPEECH] 34 -> (36,39) 0.000173
+<sil> <sil> 25 -> (27,55) 0.594485
+[SPEECH] [SPEECH] 22 -> (24,24) 0.014665
+[NOISE] [NOISE] 22 -> (24,24) 0.010713
+oh oh 22 -> (24,24) 0.001547
+i i 22 -> (24,24) 0.008968
+a a 22 -> (24,24) 0.002466
+the the(2) 19 -> (24,25) 0.003408
+the the 19 -> (24,27) 0.010659
+to to(3) 19 -> (24,26) 0.001076
+it it 19 -> (24,24) 0.004264
+in in 19 -> (24,24) 0.001084
+do do 19 -> (24,25) 0.000543
+at at 19 -> (24,28) 0.000459
+to to(2) 19 -> (24,25) 0.000889
+<sil> <sil> 20 -> (22,26) 0.247818
+a a(2) 20 -> (22,25) 0.001175
 [SPEECH] [SPEECH] 19 -> (21,21) 0.000228
-[NOISE] [NOISE] 19 -> (21,21) 0.000282
-i i 19 -> (21,22) 0.000401
-[SPEECH] [SPEECH] 17 -> (19,19) 0.005324
-i i 17 -> (19,19) 0.001241
-[SPEECH] [SPEECH] 16 -> (18,18) 0.000285
-[NOISE] [NOISE] 16 -> (18,20) 0.010476
-[NOISE] [NOISE] 14 -> (16,16) 0.000366
+[NOISE] [NOISE] 19 -> (21,21) 0.000280
+i i 19 -> (21,22) 0.000396
+[SPEECH] [SPEECH] 17 -> (19,19) 0.005254
+[SPEECH] [SPEECH] 16 -> (18,18) 0.000279
+[NOISE] [NOISE] 16 -> (18,20) 0.010348
+[NOISE] [NOISE] 14 -> (16,16) 0.000358
 [NOISE] [NOISE] 13 -> (15,15) 0.000660
-[SPEECH] [SPEECH] 11 -> (13,16) 0.000710
-<sil> <sil> 8 -> (10,21) 0.077367
-[SPEECH] [SPEECH] 5 -> (7,7) 0.005291
-[NOISE] [NOISE] 5 -> (7,7) 0.004522
-<sil> <sil> 5 -> (7,8) 0.023120
-oh oh 5 -> (7,7) 0.000240
-<s> <s> 0 -> (2,55) 0.348777
+[SPEECH] [SPEECH] 11 -> (13,16) 0.000698
+<sil> <sil> 8 -> (10,21) 0.077181
+[SPEECH] [SPEECH] 5 -> (7,7) 0.005162
+[NOISE] [NOISE] 5 -> (7,7) 0.004412
+<sil> <sil> 5 -> (7,8) 0.022713
+oh oh 5 -> (7,7) 0.000235
+<s> <s> 0 -> (2,55) 0.349545
 FORWARD entries:
-go 46 -> 63 prob 0.996008 ascr -399360
-though 46 -> 63 prob 0.000167 ascr -832512
-so 50 -> 63 prob 0.000577 ascr -798720
+go 46 -> 63 prob 0.995808 ascr -404480
+though 46 -> 63 prob 0.000156 ascr -847872
+so 50 -> 63 prob 0.000544 ascr -817152
 FORWARD exits:
-64 -> 114 prob 0.000275 ascr -1248256
-64 -> 115 prob 0.000642 ascr -1192960
-64 -> 117 prob 0.002993 ascr -1249280
-64 -> 117 prob 0.000428 ascr -1380352
-64 -> 117 prob 0.000490 ascr -1380352
-64 -> 118 prob 0.004401 ascr -1288192
-64 -> 116 prob 0.023901 ascr -1136640
-64 -> 116 prob 0.012725 ascr -1136640
-64 -> 116 prob 0.005077 ascr -1136640
-64 -> 125 prob 0.000704 ascr -1734656
-64 -> 127 prob 0.035218 ascr -1828864
-64 -> 128 prob 0.006551 ascr -1879040
-64 -> 132 prob 0.000726 ascr -2316288
-64 -> 116 prob 0.844746 ascr -1136640
-64 -> 130 prob 0.000611 ascr -2217984
-64 -> 120 prob 0.017379 ascr -1264640
-64 -> 130 prob 0.0INFO: ps_lattice.c(219): Writing lattice file: goforward.lat
+64 -> 114 prob 0.000240 ascr -1242112
+64 -> 115 prob 0.000578 ascr -1186816
+64 -> 117 prob 0.002580 ascr -1245184
+64 -> 117 prob 0.000366 ascr -1376256
+64 -> 117 prob 0.000420 ascr -1376256
+64 -> 118 prob 0.003939 ascr -1283072
+64 -> 116 prob 0.011305 ascr -1130496
+64 -> 116 prob 0.022955 ascr -1130496
+64 -> 116 prob 0.004703 ascr -1130496
+64 -> 125 prob 0.000633 ascr -1729536
+64 -> 127 prob 0.031730 ascr -1821696
+64 -> 128 prob 0.005941 ascr -1870848
+64 -> 132 prob 0.000668 ascr -2307072
+64 -> 116 prob 0.858630 ascr -1130496
+64 -> 120 prob 0.014978 ascr -1259520
+64 -> 130 prob 0.000556 ascr -2207744
+64 -INFO: ps_lattice.c(219): Writing lattice file: goforward.lat
 INFO: ps_lattice.c(423): Reading DAG file: goforward.lat
 INFO: ps_lattice.c(1380): Bestpath score: -2147483648
 INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:212:263) = -536870912
 INFO: ps_lattice.c(1441): Joint P(O,S) = 0 P(S|O) = 536870912
-INFO: ngram_search_fwdtree.c(429): TOTAL fwdtree 1.37 CPU 0.519 xRT
-INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 2.42 wall 0.915 xRT
+INFO: ngram_search_fwdtree.c(429): TOTAL fwdtree 0.85 CPU 0.323 xRT
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 0.87 wall 0.328 xRT
 INFO: dict.c(320): Allocating 4096 * 32 bytes (128 KiB) for word entries
 INFO: ps_lattice.c(423): Reading DAG file: goforward.lat
 INFO: dict.c(320): Allocating 4096 * 32 bytes (128 KiB) for word entries
 INFO: ps_lattice.c(423): Reading DAG file: ../../test/data/unreachable.lat
-38133 ascr -2217984
-64 -> 120 prob 0.000102 ascr -1264640
-64 -> 116 prob 0.000289 ascr -1136640
-[SPEECH] [SPEECH] 209 -> (211,211) 0.041429
-[NOISE] [NOISE] 209 -> (211,211) 0.020508
-<sil> <sil> 209 -> (211,211) 0.100644
-leaders leaders 155 -> (194,213) 0.017573
-majors majors 153 -> (194,213) 0.014031
-readers readers 155 -> (192,213) 0.015206
-meters meters 153 -> (173,221) 0.789917
-<sil> <sil> 150 -> (152,152) 0.118974
-<sil> <sil> 147 -> (149,150) 0.019469
-and and(2) 131 -> (144,162) 0.043956
-can can 121 -> (137,164) 0.017835
-an an 131 -> (137,162) 0.015302
-ten ten 117 -> (136,164) 0.817648
-<sil> <sil> 128 -> (130,130) 0.045422
-to to(2) 117 -> (122,146) 0.010236
-forward forward 64 -> (109,137) 0.844746
-go go 46 -> (52,69) 0.996008
-[SPEECH] [SPEECH] 43 -> (45,45) 0.031496
-[NOISE] [NOISE] 42 -> (44,46) 0.062931
-<sil> <sil> 25 -> (27,55) 0.597525
-[SPEECH] [SPEECH] 22 -> (24,24) 0.014854
-[NOISE] [NOISE] 22 -> (24,24) 0.010851
-the the 19 -> (24,27) 0.010807
-<sil> <sil> 20 -> (22,26) 0.249160
-[NOISE] [NOISE] 16 -> (18,20) 0.010476
-<sil> <sil> 8 -> (10,21) 0.077367
-<sil> <sil> 5 -> (7,8) 0.023120
-<s> <s> 0 -> (2,55) 0.348777
+> 130 prob 0.034826 ascr -2207744
+64 -> 116 prob 0.000295 ascr -1130496
+[SPEECH] [SPEECH] 209 -> (211,211) 0.041132
+[NOISE] [NOISE] 209 -> (211,211) 0.020500
+<sil> <sil> 209 -> (211,211) 0.101290
+leaders leaders 155 -> (194,213) 0.016074
+majors majors 153 -> (194,213) 0.012557
+readers readers 155 -> (192,213) 0.014153
+meters meters 153 -> (173,221) 0.793480
+<sil> <sil> 150 -> (152,152) 0.110620
+<sil> <sil> 147 -> (149,149) 0.018053
+and and(2) 131 -> (144,162) 0.040036
+an an 131 -> (138,162) 0.014366
+can can 121 -> (137,164) 0.015389
+ten ten 117 -> (136,164) 0.831003
+<sil> <sil> 128 -> (130,130) 0.040601
+forward forward 64 -> (109,137) 0.858630
+go go 46 -> (52,69) 0.995808
+[SPEECH] [SPEECH] 43 -> (45,45) 0.033124
+[NOISE] [NOISE] 42 -> (44,46) 0.064389
+<sil> <sil> 25 -> (27,55) 0.594485
+[SPEECH] [SPEECH] 22 -> (24,24) 0.014665
+[NOISE] [NOISE] 22 -> (24,24) 0.010713
+the the 19 -> (24,27) 0.010659
+<sil> <sil> 20 -> (22,26) 0.247818
+[NOISE] [NOISE] 16 -> (18,20) 0.010348
+<sil> <sil> 8 -> (10,21) 0.077181
+<sil> <sil> 5 -> (7,8) 0.022713
+<s> <s> 0 -> (2,55) 0.349545
 FORWARD entries:
-go 46 -> 63 prob 0.996008 ascr -399360
+go 46 -> 63 prob 0.995808 ascr -404480
 FORWARD exits:
-64 -> 116 prob 0.023901 ascr -1136640
-64 -> 127 prob 0.035218 ascr -1828864
-64 -> 116 prob 0.844746 ascr -1136640
-64 -> 120 prob 0.017379 ascr -1264640
-64 -> 130 prob 0.038133 ascr -2217984
+64 -> 130 prob 0.034826 ascr -2207744
+64 -> 120 prob 0.014978 ascr -1259520
+64 -> 116 prob 0.858630 ascr -1130496
+64 -> 127 prob 0.031730 ascr -1821696
 P(S|O) = 536870912
 [SPEECH] [SPEECH] 209 -> (211,211) 1.000000
 [NOISE] [NOISE] 209 -> (211,211) 1.000000
@@ -345,14 +342,16 @@ readers readers 155 -> (192,213) 0.177479
 meters meters 153 -> (173,221) 0.153690
 and and(2) 131 -> (144,162) inf
 <sil> <sil> 128 -> (130,130) inf
-to to(2) 117 -> (122,146) inf
 forward forward 64 -> (109,137) inf
+[SPEECH] [SPEECH] 22 -> (24,24) inf
+[NOISE] [NOISE] 22 -> (24,24) inf
+the the 19 -> (24,27) inf
+[NOISE] [NOISE] 16 -> (18,20) inf
 <sil> <sil> 8 -> (10,21) inf
 FORWARD entries:
 FORWARD exits:
-64 -> 120 prob inf ascr -1294991360
-64 -> 127 prob inf ascr -1927005184
-64 -> 116 prob inf ascr -1163919360
+64 -> 127 prob inf ascr -1919665152
+64 -> 120 prob inf ascr -1289748480
 [SPEECH] [SPEECH] 209 -> (211,211) 1.000000
 [NOISE] [NOISE] 209 -> (211,211) 1.000000
 <sil> <sil> 209 -> (211,211) 1.000000
@@ -361,13 +360,12 @@ majors majors 153 -> (194,213) 1.000000
 readers readers 155 -> (192,213) 1.000000
 meters meters 153 -> (173,221) 1.000000
 <sil> <sil> 150 -> (152,152) 1.000000
-<sil> <sil> 147 -> (149,150) 1.000000
+<sil> <sil> 147 -> (149,149) 1.000000
 and and(2) 131 -> (144,162) 1.000000
+an an 131 -> (138,162) 1.000000
 can can 121 -> (137,164) 1.000000
-an an 131 -> (137,162) 1.000000
 ten ten 117 -> (136,164) 1.000000
 <sil> <sil> 128 -> (130,130) 1.000000
-to to(2) 117 -> (122,146) 1.000000
 forward forward 64 -> (109,137) 1.000000
 go go 46 -> (52,69) 1.000000
 [SPEECH] [SPEECH] 43 -> (45,45) 1.000000
@@ -382,11 +380,10 @@ the the 19 -> (24,27) 1.000000
 <sil> <sil> 5 -> (7,8) 1.000000
 <s> <s> 0 -> (2,55) 1.000000
 FORWARD entries:
-go 46 -> 63 prob 1.000000 ascr -408944640
+go 46 -> 63 prob 1.000000 ascr -414187520
 FORWARD exits:
-64 -> 130 prob 1.000000 ascr 2023751680
-64 -> 120 prob 1.000000 ascr -1294991360
-64 -> 116 prob 1.000000 ascr -1163919360
-64 -> 127 prob 1.000000 ascr -1872756736
-64 -> 116 prob 1.000000 ascr -1163919360
+64 -> 127 prob 1.000000 ascr -1865416704
+64 -> 116 prob 1.000000 ascr -1157627904
+64 -> 120 prob 1.000000 ascr -1289748480
+64 -> 130 prob 1.000000 ascr 2034237440
 Remaining 3 nodes 2 links

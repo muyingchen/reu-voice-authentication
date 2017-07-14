@@ -1,0 +1,492 @@
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from ../../test/data/tidigits/hmm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		63,-1,1
+-compallsen		no		no
+-debug					0
+-dict					../../test/data/tidigits/lm/tidigits.dic
+-dictcase		no		no
+-dither			no		yes
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	s2_4x
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					../../test/data/tidigits/lm/tidigits.fsg
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					../../test/data/tidigits/hmm
+-input_endian		little		little
+-jsgf					
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		0
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.000000e+00
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		20
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		yes
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		no
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	4.000000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		1.000000e-48
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.500000e-02
+
+INFO: fe_interface.c(324): Using -1 as the seed.
+INFO: feat.c(715): Initializing feature stream to type: 's2_4x', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: mdef.c(518): Reading model definition: ../../test/data/tidigits/hmm/mdef
+INFO: mdef.c(531): Found byte-order mark BMDF, assuming this is a binary mdef file
+INFO: bin_mdef.c(336): Reading binary model definition: ../../test/data/tidigits/hmm/mdef
+INFO: bin_mdef.c(516): 34 CI-phone, 396 CD-phone, 5 emitstate/phone, 170 CI-sen, 670 Sen, 222 Sen-Seq
+INFO: tmat.c(149): Reading HMM transition probability matrices: ../../test/data/tidigits/hmm/transition_matrices
+INFO: acmod.c(113): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: ../../test/data/tidigits/hmm/means
+INFO: ms_gauden.c(242): 1 codebook, 4 feature, size: 
+INFO: ms_gauden.c(244):  256x12
+INFO: ms_gauden.c(244):  256x24
+INFO: ms_gauden.c(244):  256x3
+INFO: ms_gauden.c(244):  256x12
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: ../../test/data/tidigits/hmm/variances
+INFO: ms_gauden.c(242): 1 codebook, 4 feature, size: 
+INFO: ms_gauden.c(244):  256x12
+INFO: ms_gauden.c(244):  256x24
+INFO: ms_gauden.c(244):  256x3
+INFO: ms_gauden.c(244):  256x12
+INFO: ms_gauden.c(304): 90 variance values floored
+INFO: ptm_mgau.c(808): Number of codebooks doesn't match number of ciphones, doesn't look like PTM: 1 != 34
+INFO: acmod.c(115): Attempting to use semi-continuous computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: ../../test/data/tidigits/hmm/means
+INFO: ms_gauden.c(242): 1 codebook, 4 feature, size: 
+INFO: ms_gauden.c(244):  256x12
+INFO: ms_gauden.c(244):  256x24
+INFO: ms_gauden.c(244):  256x3
+INFO: ms_gauden.c(244):  256x12
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: ../../test/data/tidigits/hmm/variances
+INFO: ms_gauden.c(242): 1 codebook, 4 feature, size: 
+INFO: ms_gauden.c(244):  256x12
+INFO: ms_gauden.c(244):  256x24
+INFO: ms_gauden.c(244):  256x3
+INFO: ms_gauden.c(244):  256x12
+INFO: ms_gauden.c(304): 90 variance values floored
+INFO: s2_semi_mgau.c(904): Loading senones from dump file ../../test/data/tidigits/hmm/sendump
+INFO: s2_semi_mgau.c(928): BEGIN FILE FORMAT DESCRIPTION
+INFO: s2_semi_mgau.c(1023): Using memory-mapped I/O for senones
+INFO: s2_semi_mgau.c(1297): Maximum top-N: 4 Top-N beams: 0 0 0 0
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 4107 * 32 bytes (128 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: ../../test/data/tidigits/lm/tidigits.dic
+INFO: dict.c(213): Dictionary size 11, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(336): 11 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 34^3 * 2 bytes (76 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 28016 bytes (27 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 28016 bytes (27 KiB) for single-phone word triphones
+INFO: fsg_model.c(700): FSG: 24 states, 11 unique words, 11 transitions (23 null)
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 143 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -1080; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 24 silence word transitions
+INFO: fsg_search.c(173): Added 0 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 1680 bytes (1 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 123 HMM nodes in lextree (101 leaves)
+INFO: fsg_lextree.c(259): Allocated 17712 bytes (17 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 14544 bytes (14 KiB) for lextree leafnodes
+INFO: batch.c(729): Decoding 'man.ah.111a'
+INFO: cmn.c(133): CMN: 23.95  2.75  1.66 -0.30 -1.40 -0.06  0.02 -0.69  0.07  0.04  0.18 -0.11 -0.25 
+INFO: fsg_search.c(859): 172 frames, 6206 HMMs (36/fr), 20255 senones (117/fr), 10810 history entries (62/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.011 xRT
+INFO: fsg_search.c(871): fsg 0.03 wall 0.019 xRT
+INFO: batch.c(761): man.ah.111a: 1.72 seconds speech, 0.02 seconds CPU, 0.03 seconds wall
+INFO: batch.c(763): man.ah.111a: 0.01 xRT (CPU), 0.02 xRT (elapsed)
+one one one (man.ah.111a -23836)
+man.ah.111a done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.1b'
+INFO: cmn.c(133): CMN: 15.22  0.64  1.66  0.15 -0.20 -0.47 -0.67  0.00  0.63  0.09 -0.06  0.06 -0.06 
+INFO: fsg_search.c(859): 122 frames, 4508 HMMs (36/fr), 14349 senones (117/fr), 8029 history entries (65/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.008 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.009 xRT
+INFO: batch.c(761): man.ah.1b: 1.22 seconds speech, 0.01 seconds CPU, 0.01 seconds wall
+INFO: batch.c(763): man.ah.1b: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+one (man.ah.1b -16020)
+man.ah.1b done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.2934za'
+INFO: cmn.c(133): CMN: 29.33  1.56  0.36  1.36 -0.54 -0.81 -1.32  0.19  0.06 -0.03 -0.16  0.10 -0.09 
+INFO: fsg_search.c(859): 229 frames, 7635 HMMs (33/fr), 24890 senones (108/fr), 16707 history entries (72/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.007 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.007 xRT
+INFO: batch.c(761): man.ah.2934za: 2.29 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): man.ah.2934za: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+two nine three four zero (man.ah.2934za -29903)
+man.ah.2934za done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.35oa'
+INFO: cmn.c(133): CMN: 26.20  0.98  0.53  0.48 -1.03 -0.44 -0.49  0.02 -0.02  0.37  0.04 -0.34  0.01 
+INFO: fsg_search.c(859): 161 frames, 5729 HMMs (35/fr), 17922 senones (111/fr), 8843 history entries (54/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.007 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.007 xRT
+INFO: batch.c(761): man.ah.35oa: 1.61 seconds speech, 0.01 seconds CPU, 0.01 seconds wall
+INFO: batch.c(763): man.ah.35oa: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+three five oh (man.ah.35oa -21384)
+man.ah.35oa done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.3oa'
+INFO: cmn.c(133): CMN: 23.06 -0.04  0.23  0.13 -0.84 -0.56 -0.94  0.39  0.25  0.41 -0.03 -0.14 -0.09 
+INFO: fsg_search.c(859): 119 frames, 4077 HMMs (34/fr), 12802 senones (107/fr), 4293 history entries (36/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.005 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.005 xRT
+INFO: batch.c(761): man.ah.3oa: 1.19 seconds speech, 0.01 seconds CPU, 0.01 seconds wall
+INFO: batch.c(763): man.ah.3oa: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+three oh (man.ah.3oa -15858)
+man.ah.3oa done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.4625a'
+INFO: cmn.c(133): CMN: 27.99 -2.12  0.20  0.56 -0.49 -0.43 -1.07  0.54  0.00  0.21 -0.06 -0.27  0.16 
+INFO: fsg_search.c(859): 212 frames, 6722 HMMs (31/fr), 20942 senones (98/fr), 12978 history entries (61/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.007 xRT
+INFO: batch.c(761): man.ah.4625a: 2.12 seconds speech, 0.01 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): man.ah.4625a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+four six two five (man.ah.4625a -27355)
+man.ah.4625a done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.588zza'
+INFO: cmn.c(133): CMN: 32.47  0.73  0.51  1.71 -0.86 -0.89 -1.82  0.20 -0.22  0.35 -0.20 -0.11 -0.11 
+INFO: fsg_search.c(859): 223 frames, 7441 HMMs (33/fr), 24001 senones (107/fr), 16362 history entries (73/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.007 xRT
+INFO: batch.c(761): man.ah.588zza: 2.23 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): man.ah.588zza: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+five eight eight zero zero (man.ah.588zza -28085)
+man.ah.588zza done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.63a'
+INFO: cmn.c(133): CMN: 21.91 -2.38  1.36  0.76  0.26 -1.14 -1.30  0.27 -0.09  0.06  0.06  0.06  0.09 
+INFO: fsg_search.c(859): 135 frames, 4615 HMMs (34/fr), 14572 senones (107/fr), 8601 history entries (63/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.007 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.007 xRT
+INFO: batch.c(761): man.ah.63a: 1.35 seconds speech, 0.01 seconds CPU, 0.01 seconds wall
+INFO: batch.c(763): man.ah.63a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+six three (man.ah.63a -19220)
+man.ah.63a done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.6o838a'
+INFO: cmn.c(133): CMN: 29.75 -2.20  1.26  1.62 -0.72 -1.34 -1.50  0.21 -0.47  0.38 -0.10 -0.02  0.12 
+INFO: fsg_search.c(859): 202 frames, 7217 HMMs (35/fr), 23613 senones (116/fr), 11644 history entries (57/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.007 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.007 xRT
+INFO: batch.c(761): man.ah.6o838a: 2.02 seconds speech, 0.01 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): man.ah.6o838a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+six oh one three eight (man.ah.6o838a -29624)
+man.ah.6o838a done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.75913a'
+INFO: cmn.c(133): CMN: 29.06  0.34  0.31  0.73  0.07 -1.16 -0.55 -0.33  0.08  0.27 -0.12 -0.43  0.09 
+INFO: fsg_search.c(859): 287 frames, 9366 HMMs (32/fr), 30483 senones (106/fr), 16799 history entries (58/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.008 xRT
+INFO: fsg_search.c(871): fsg 0.03 wall 0.010 xRT
+INFO: batch.c(761): man.ah.75913a: 2.87 seconds speech, 0.02 seconds CPU, 0.03 seconds wall
+INFO: batch.c(763): man.ah.75913a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+seven five nine one three (man.ah.75913a -37448)
+man.ah.75913a done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.844o1a'
+INFO: cmn.c(133): CMN: 29.33  1.81  0.88  0.07 -1.97 -0.73 -0.69  0.16 -0.39  0.36 -0.07  0.22 -0.36 
+INFO: fsg_search.c(859): 218 frames, 7007 HMMs (32/fr), 22494 senones (103/fr), 14076 history entries (64/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.008 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.010 xRT
+INFO: batch.c(761): man.ah.844o1a: 2.18 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): man.ah.844o1a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+eight four four oh one (man.ah.844o1a -29307)
+man.ah.844o1a done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.8b'
+INFO: cmn.c(133): CMN: 14.07 -2.18  2.05  1.34 -0.52 -1.22 -0.42  0.47  0.20  0.14  0.04  0.10 -0.08 
+INFO: fsg_search.c(859): 124 frames, 5132 HMMs (41/fr), 16211 senones (130/fr), 7226 history entries (58/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.014 xRT
+INFO: fsg_search.c(871): fsg 0.03 wall 0.020 xRT
+INFO: batch.c(761): man.ah.8b: 1.24 seconds speech, 0.02 seconds CPU, 0.03 seconds wall
+INFO: batch.c(763): man.ah.8b: 0.02 xRT (CPU), 0.02 xRT (elapsed)
+eight (man.ah.8b -18143)
+man.ah.8b done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.9b'
+INFO: cmn.c(133): CMN: 22.66  1.68  1.42  0.99  0.47 -0.64 -0.91  0.37  0.43  0.12 -0.25 -0.21  0.14 
+INFO: fsg_search.c(859): 103 frames, 3345 HMMs (32/fr), 10519 senones (102/fr), 6228 history entries (60/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.011 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.012 xRT
+INFO: batch.c(761): man.ah.9b: 1.03 seconds speech, 0.01 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): man.ah.9b: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+nine (man.ah.9b -14690)
+man.ah.9b done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.o789a'
+INFO: cmn.c(133): CMN: 31.21  0.33  0.41  0.98 -0.33 -0.94 -1.14 -0.01  0.49  0.13 -0.31 -0.33  0.00 
+INFO: fsg_search.c(859): 177 frames, 6649 HMMs (37/fr), 21127 senones (119/fr), 9732 history entries (54/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.008 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.010 xRT
+INFO: batch.c(761): man.ah.o789a: 1.77 seconds speech, 0.01 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): man.ah.o789a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+oh seven eight nine (man.ah.o789a -24922)
+man.ah.o789a done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.z4548a'
+INFO: cmn.c(133): CMN: 30.39  0.62 -0.15  0.89 -1.02 -0.56 -1.08  0.23 -0.07  0.30  0.01  0.11 -0.08 
+INFO: fsg_search.c(859): 253 frames, 7235 HMMs (28/fr), 23866 senones (94/fr), 15095 history entries (59/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.010 xRT
+INFO: fsg_search.c(871): fsg 0.03 wall 0.013 xRT
+INFO: batch.c(761): man.ah.z4548a: 2.53 seconds speech, 0.03 seconds CPU, 0.03 seconds wall
+INFO: batch.c(763): man.ah.z4548a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+zero four five four eight (man.ah.z4548a -32667)
+man.ah.z4548a done --------------------------------------
+INFO: batch.c(729): Decoding 'man.ah.zb'
+INFO: cmn.c(133): CMN: 17.84 -0.58  1.31  0.27 -0.11 -0.13 -0.97  0.23  0.43  0.09  0.09  0.01 -0.16 
+INFO: fsg_search.c(859): 137 frames, 5092 HMMs (37/fr), 16445 senones (120/fr), 9879 history entries (72/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.009 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.011 xRT
+INFO: batch.c(761): man.ah.zb: 1.37 seconds speech, 0.01 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): man.ah.zb: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+zero (man.ah.zb -16776)
+man.ah.zb done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.1b'
+INFO: cmn.c(133): CMN: 24.74 -1.17  0.20  1.11 -0.94 -0.62 -0.19 -0.92 -0.71 -1.08 -0.45 -0.32 -0.52 
+INFO: fsg_search.c(859): 138 frames, 5096 HMMs (36/fr), 16515 senones (119/fr), 7248 history entries (52/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.010 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.012 xRT
+INFO: batch.c(761): woman.ak.1b: 1.38 seconds speech, 0.01 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): woman.ak.1b: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+one (woman.ak.1b -17828)
+woman.ak.1b done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.276317oa'
+INFO: cmn.c(133): CMN: 39.03 -1.13  0.31  0.94 -1.60 -1.44 -0.20 -1.07 -0.14 -1.38 -0.21 -0.45 -0.76 
+INFO: fsg_search.c(859): 425 frames, 10729 HMMs (25/fr), 35795 senones (84/fr), 16880 history entries (39/fr)
+
+INFO: fsg_search.c(869): fsg 0.03 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.03 wall 0.006 xRT
+INFO: batch.c(761): woman.ak.276317oa: 4.25 seconds speech, 0.03 seconds CPU, 0.03 seconds wall
+INFO: batch.c(763): woman.ak.276317oa: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+two seven six three one seven oh (woman.ak.276317oa -48411)
+woman.ak.276317oa done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.334a'
+INFO: cmn.c(133): CMN: 32.85 -0.61 -0.09 -0.09 -1.55 -1.33 -0.54 -0.64 -0.70 -0.40 -0.77 -0.33 -0.49 
+INFO: fsg_search.c(859): 220 frames, 6652 HMMs (30/fr), 22427 senones (101/fr), 14335 history entries (65/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.007 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.007 xRT
+INFO: batch.c(761): woman.ak.334a: 2.20 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): woman.ak.334a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+three three four (woman.ak.334a -27875)
+woman.ak.334a done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.3z3z9a'
+INFO: cmn.c(133): CMN: 43.32 -0.86 -0.41  1.34 -2.57 -2.11 -0.49 -1.07 -0.94 -1.20 -0.66 -0.71 -0.98 
+INFO: fsg_search.c(859): 319 frames, 7701 HMMs (24/fr), 25517 senones (79/fr), 16956 history entries (53/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.006 xRT
+INFO: batch.c(761): woman.ak.3z3z9a: 3.19 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): woman.ak.3z3z9a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+three zero three zero nine (woman.ak.3z3z9a -36785)
+woman.ak.3z3z9a done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.48z66zza'
+INFO: cmn.c(133): CMN: 38.12 -1.55 -0.40  0.05 -2.43 -2.01  0.20 -0.90 -0.25 -0.88 -0.32 -0.47 -0.59 
+INFO: fsg_search.c(859): 423 frames, 10263 HMMs (24/fr), 35758 senones (84/fr), 21315 history entries (50/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.006 xRT
+INFO: batch.c(761): woman.ak.48z66zza: 4.23 seconds speech, 0.03 seconds CPU, 0.03 seconds wall
+INFO: batch.c(763): woman.ak.48z66zza: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+four eight zero six six zero zero (woman.ak.48z66zza -49491)
+woman.ak.48z66zza done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.532a'
+INFO: cmn.c(133): CMN: 28.31 -2.31  0.37  1.31 -0.97 -1.44 -0.64 -0.91  0.01 -0.59 -0.22 -0.04 -0.62 
+INFO: fsg_search.c(859): 221 frames, 7228 HMMs (32/fr), 23148 senones (104/fr), 15456 history entries (69/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.006 xRT
+INFO: batch.c(761): woman.ak.532a: 2.21 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): woman.ak.532a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+five three two (woman.ak.532a -28221)
+woman.ak.532a done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.5z874a'
+INFO: cmn.c(133): CMN: 39.19 -0.92 -1.45  0.16 -1.86 -1.30 -0.12 -0.72 -0.24 -0.96 -0.47 -0.47 -0.60 
+INFO: fsg_search.c(859): 345 frames, 9132 HMMs (26/fr), 30008 senones (86/fr), 18118 history entries (52/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.006 xRT
+INFO: batch.c(761): woman.ak.5z874a: 3.45 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): woman.ak.5z874a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+five zero eight seven four (woman.ak.5z874a -41182)
+woman.ak.5z874a done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.6728za'
+INFO: cmn.c(133): CMN: 35.21 -1.60  0.39  0.59 -1.62 -1.45 -0.01 -0.87 -0.11 -0.93 -0.25 -0.45 -0.54 
+INFO: fsg_search.c(859): 313 frames, 8699 HMMs (27/fr), 29374 senones (93/fr), 16356 history entries (52/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.006 xRT
+INFO: batch.c(761): woman.ak.6728za: 3.13 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): woman.ak.6728za: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+six seven two eight zero (woman.ak.6728za -38245)
+woman.ak.6728za done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.75a'
+INFO: cmn.c(133): CMN: 30.87 -2.55 -1.75  0.24 -0.30 -0.57 -0.32 -0.74  0.07 -1.01  0.03 -0.12 -0.42 
+INFO: fsg_search.c(859): 185 frames, 5934 HMMs (32/fr), 18980 senones (102/fr), 9035 history entries (48/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.007 xRT
+INFO: batch.c(761): woman.ak.75a: 1.85 seconds speech, 0.01 seconds CPU, 0.01 seconds wall
+INFO: batch.c(763): woman.ak.75a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+seven five (woman.ak.75a -22517)
+woman.ak.75a done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.84983a'
+INFO: cmn.c(133): CMN: 39.67 -0.79  0.30  0.03 -2.58 -1.11 -0.74 -1.23 -0.45 -0.85 -0.67 -0.37 -0.51 
+INFO: fsg_search.c(859): 338 frames, 8388 HMMs (24/fr), 27476 senones (81/fr), 18768 history entries (55/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.006 xRT
+INFO: batch.c(761): woman.ak.84983a: 3.38 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): woman.ak.84983a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+eight four nine eight three (woman.ak.84983a -39414)
+woman.ak.84983a done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.8a'
+INFO: cmn.c(133): CMN: 18.04 -3.83  1.94  0.20 -1.56 -0.29 -0.56 -0.39  0.10 -0.18  0.01  0.09 -0.06 
+INFO: fsg_search.c(859): 132 frames, 4557 HMMs (34/fr), 14665 senones (111/fr), 6048 history entries (45/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.007 xRT
+INFO: batch.c(761): woman.ak.8a: 1.32 seconds speech, 0.01 seconds CPU, 0.01 seconds wall
+INFO: batch.c(763): woman.ak.8a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+eight (woman.ak.8a -17320)
+woman.ak.8a done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.99731a'
+INFO: cmn.c(133): CMN: 32.06 -0.62 -0.53  1.71 -0.86 -0.54 -0.28 -0.60 -0.54 -0.83 -0.17 -0.35 -0.40 
+INFO: fsg_search.c(859): 293 frames, 7739 HMMs (26/fr), 25820 senones (88/fr), 13291 history entries (45/fr)
+
+INFO: fsg_search.c(869): fsg 0.02 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.02 wall 0.006 xRT
+INFO: batch.c(761): woman.ak.99731a: 2.93 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): woman.ak.99731a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+nine nine seven three one (woman.ak.99731a -34736)
+woman.ak.99731a done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.o69a'
+INFO: cmn.c(133): CMN: 32.55 -1.98 -0.98  1.02 -1.05 -1.08 -0.03 -0.64 -0.54 -0.94 -0.28 -0.21 -0.58 
+INFO: fsg_search.c(859): 244 frames, 7579 HMMs (31/fr), 24281 senones (99/fr), 10972 history entries (44/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.006 xRT
+INFO: batch.c(761): woman.ak.o69a: 2.44 seconds speech, 0.02 seconds CPU, 0.02 seconds wall
+INFO: batch.c(763): woman.ak.o69a: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+oh six nine (woman.ak.o69a -31297)
+woman.ak.o69a done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.ooa'
+INFO: cmn.c(133): CMN: 33.59 -0.06 -1.35 -0.31 -1.07 -1.30  0.19 -0.14  0.37 -1.31 -0.30  0.21 -0.95 
+INFO: fsg_search.c(859): 156 frames, 5432 HMMs (34/fr), 16280 senones (104/fr), 3747 history entries (24/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.005 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.005 xRT
+INFO: batch.c(761): woman.ak.ooa: 1.56 seconds speech, 0.01 seconds CPU, 0.01 seconds wall
+INFO: batch.c(763): woman.ak.ooa: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+oh oh (woman.ak.ooa -20626)
+woman.ak.ooa done --------------------------------------
+INFO: batch.c(729): Decoding 'woman.ak.za'
+INFO: cmn.c(133): CMN: 33.76 -0.95 -0.55  0.78 -1.32 -1.79  0.08 -0.89 -0.29 -1.23 -0.34 -0.42 -0.66 
+INFO: fsg_search.c(859): 135 frames, 3983 HMMs (29/fr), 12762 senones (94/fr), 8409 history entries (62/fr)
+
+INFO: fsg_search.c(869): fsg 0.01 CPU 0.006 xRT
+INFO: fsg_search.c(871): fsg 0.01 wall 0.007 xRT
+INFO: batch.c(761): woman.ak.za: 1.35 seconds speech, 0.01 seconds CPU, 0.01 seconds wall
+INFO: batch.c(763): woman.ak.za: 0.01 xRT (CPU), 0.01 xRT (elapsed)
+zero (woman.ak.za -17055)
+woman.ak.za done --------------------------------------
+INFO: batch.c(778): TOTAL 67.61 seconds speech, 0.52 seconds CPU, 0.58 seconds wall
+INFO: batch.c(780): AVERAGE 0.01 xRT (CPU), 0.01 xRT (elapsed)
+INFO: fsg_search.c(265): TOTAL fsg 0.47 CPU 0.007 xRT
+INFO: fsg_search.c(268): TOTAL fsg 0.53 wall 0.008 xRT

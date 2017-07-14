@@ -192,13 +192,13 @@ INFO: fsg_lextree.c(110): Allocated 430 bytes (0 KiB) for left and right context
 INFO: fsg_lextree.c(256): 92 HMM nodes in lextree (53 leaves)
 INFO: fsg_lextree.c(259): Allocated 13248 bytes (12 KiB) for all lextree nodes
 INFO: fsg_lextree.c(262): Allocated 7632 bytes (7 KiB) for lextree leafnodes
-INFO: cmn.c(133): CMN: 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 
-INFO: fsg_search.c(859): 264 frames, 2609 HMMs (9/fr), 9518 senones (36/fr), 614 history entries (2/fr)
+INFO: cmn.c(133): CMN: 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 
+INFO: fsg_search.c(859): 264 frames, 2589 HMMs (9/fr), 9477 senones (35/fr), 614 history entries (2/fr)
 
-INFO: fsg_search.c(869): fsg 0.06 CPU 0.023 xRT
-INFO: fsg_search.c(871): fsg 0.06 wall 0.023 xRT
-INFO: fsg_search.c(265): TOTAL fsg 0.06 CPU 0.023 xRT
-INFO: fsg_search.c(268): TOTAL fsg 0.06 wall 0.024 xRT
+INFO: fsg_search.c(869): fsg 0.05 CPU 0.019 xRT
+INFO: fsg_search.c(871): fsg 0.06 wall 0.021 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.05 CPU 0.019 xRT
+INFO: fsg_search.c(268): TOTAL fsg 0.06 wall 0.021 xRT
 INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from ../../model/en-us/en-us/feat.params
 Current configuration:
 [NAME]			[DEFLT]		[VALUE]
@@ -372,13 +372,13 @@ INFO: fsg_lextree.c(110): Allocated 430 bytes (0 KiB) for left and right context
 INFO: fsg_lextree.c(256): 29 HMM nodes in lextree (17 leaves)
 INFO: fsg_lextree.c(259): Allocated 4176 bytes (4 KiB) for all lextree nodes
 INFO: fsg_lextree.c(262): Allocated 2448 bytes (2 KiB) for lextree leafnodes
-INFO: cmn.c(133): CMN: 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 
-INFO: fsg_search.c(859): 264 frames, 1123 HMMs (4/fr), 6411 senones (24/fr), 296 history entries (1/fr)
+INFO: cmn.c(133): CMN: 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 
+INFO: fsg_search.c(859): 264 frames, 1123 HMMs (4/fr), 6413 senones (24/fr), 297 history entries (1/fr)
 
-INFO: fsg_search.c(869): fsg 0.06 CPU 0.022 xRT
-INFO: fsg_search.c(871): fsg 0.07 wall 0.026 xRT
-INFO: fsg_search.c(265): TOTAL fsg 0.06 CPU 0.022 xRT
-INFO: fsg_search.c(268): TOTAL fsg 0.07 wall 0.026 xRT
+INFO: fsg_search.c(869): fsg 0.04 CPU 0.015 xRT
+INFO: fsg_search.c(871): fsg 0.04 wall 0.016 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.04 CPU 0.015 xRT
+INFO: fsg_search.c(268): TOTAL fsg 0.04 wall 0.016 xRT
 INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from ../../model/en-us/en-us/feat.params
 Current configuration:
 [NAME]			[DEFLT]		[VALUE]
@@ -552,13 +552,13 @@ INFO: fsg_lextree.c(110): Allocated 430 bytes (0 KiB) for left and right context
 INFO: fsg_lextree.c(256): 92 HMM nodes in lextree (53 leaves)
 INFO: fsg_lextree.c(259): Allocated 13248 bytes (12 KiB) for all lextree nodes
 INFO: fsg_lextree.c(262): Allocated 7632 bytes (7 KiB) for lextree leafnodes
-INFO: cmn.c(133): CMN: 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 
-INFO: fsg_search.c(859): 264 frames, 2611 HMMs (9/fr), 9503 senones (35/fr), 615 history entries (2/fr)
+INFO: cmn.c(133): CMN: 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 
+INFO: fsg_search.c(859): 264 frames, 2591 HMMs (9/fr), 9464 senones (35/fr), 615 history entries (2/fr)
 
-INFO: fsg_search.c(869): fsg 0.06 CPU 0.023 xRT
-INFO: fsg_search.c(871): fsg 0.06 wall 0.024 xRT
-INFO: fsg_search.c(265): TOTAL fsg 0.06 CPU 0.023 xRT
-INFO: fsg_search.c(268): TOTAL fsg 0.06 wall 0.024 xRT
+INFO: fsg_search.c(869): fsg 0.04 CPU 0.017 xRT
+INFO: fsg_search.c(871): fsg 0.05 wall 0.017 xRT
+INFO: fsg_search.c(265): TOTAL fsg 0.04 CPU 0.017 xRT
+INFO: fsg_search.c(268): TOTAL fsg 0.05 wall 0.017 xRT
 INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from ../../model/en-us/en-us/feat.params
 Current configuration:
 [NAME]			[DEFLT]		[VALUE]
@@ -720,6 +720,6 @@ INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, p
 ERROR: "fsg_search.c", line 141: The word 'really_bad_word' is missing in the dictionary
 INFO: fsg_search.c(265): TOTAL fsg 0.00 CPU nan xRT
 INFO: fsg_search.c(268): TOTAL fsg 0.00 wall nan xRT
-go forward ten meters (-3031, 0)
-go forward ten meters (-2684, 0)
-go forward ten meters (-2927, 0)
+go forward ten meters (-3002, 0)
+go forward ten meters (-2669, 0)
+go forward ten meters (-2898, 0)

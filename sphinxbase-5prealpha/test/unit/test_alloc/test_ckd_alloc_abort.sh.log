@@ -1,4 +1,4 @@
 calloc(-1,-1) failed from test_ckd_alloc_abort.c(15)
-./test_ckd_alloc_abort.sh: line 10: 42285 Abort trap: 6           ./test_ckd_alloc_abort
+./test_ckd_alloc_abort.sh: line 10: 50009 Abort trap: 6           ./test_ckd_alloc_abort
 expected_failure PASSED
 All sub-tests passed

@@ -167,25 +167,25 @@ INFO: fsg_lextree.c(110): Allocated 602 bytes (0 KiB) for left and right context
 INFO: fsg_lextree.c(256): 96 HMM nodes in lextree (57 leaves)
 INFO: fsg_lextree.c(259): Allocated 13824 bytes (13 KiB) for all lextree nodes
 INFO: fsg_lextree.c(262): Allocated 8208 bytes (8 KiB) for lextree leafnodes
-INFO: cmn.c(133): CMN: 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 
-INFO: fsg_search.c(859): 264 frames, 2522 HMMs (9/fr), 9311 senones (35/fr), 722 history entries (2/fr)
+INFO: cmn.c(133): CMN: 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 
+INFO: fsg_search.c(859): 264 frames, 2489 HMMs (9/fr), 9276 senones (35/fr), 718 history entries (2/fr)
 
-INFO: fsg_search.c(869): fsg 0.06 CPU 0.022 xRT
-INFO: fsg_search.c(871): fsg 0.06 wall 0.024 xRT
-INFO: fsg_search.c(1252): Start node <sil>.0:2:51
-INFO: fsg_search.c(1291): End node <sil>.212:214:263 (-478)
+INFO: fsg_search.c(869): fsg 0.05 CPU 0.017 xRT
+INFO: fsg_search.c(871): fsg 0.05 wall 0.018 xRT
+INFO: fsg_search.c(1252): Start node <sil>.0:2:52
+INFO: fsg_search.c(1291): End node <sil>.212:214:263 (-477)
 INFO: fsg_search.c(1515): lattice start node <sil>.0 end node <sil>.212
 INFO: ps_lattice.c(219): Writing lattice file: test_fsg.lat
-INFO: ps_lattice.c(1380): Bestpath score: -2523
+INFO: ps_lattice.c(1380): Bestpath score: -2494
 INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(<sil>:212:263) = -536870912
-INFO: ps_lattice.c(1441): Joint P(O,S) = -38753280 P(S|O) = 498117632
-INFO: fsg_search.c(265): TOTAL fsg 0.06 CPU 0.022 xRT
-INFO: fsg_search.c(268): TOTAL fsg 0.06 wall 0.024 xRT
-go forward ten meters (-3058, 0)
-<sil> (0:45) P(w|o) = 1.000000 ascr = -328 lscr = -311 lback = 1
+INFO: ps_lattice.c(1441): Joint P(O,S) = -38307840 P(S|O) = 498563072
+INFO: fsg_search.c(265): TOTAL fsg 0.05 CPU 0.017 xRT
+INFO: fsg_search.c(268): TOTAL fsg 0.05 wall 0.018 xRT
+go forward ten meters (-3029, 0)
+<sil> (0:45) P(w|o) = 1.000000 ascr = -332 lscr = -311 lback = 1
 go (46:63) P(w|o) = 1.000000 ascr = -132 lscr = 0 lback = 1
-forward (64:120) P(w|o) = 1.000000 ascr = -492 lscr = -41 lback = 1
-ten (121:154) P(w|o) = 1.000000 ascr = -442 lscr = -135 lback = 1
-meters (155:211) P(w|o) = 1.000000 ascr = -679 lscr = -7 lback = 1
+forward (64:120) P(w|o) = 1.000000 ascr = -486 lscr = -41 lback = 1
+ten (121:154) P(w|o) = 1.000000 ascr = -424 lscr = -135 lback = 1
+meters (155:211) P(w|o) = 1.000000 ascr = -670 lscr = -7 lback = 1
 <sil> (212:263) P(w|o) = 1.000000 ascr = -180 lscr = -311 lback = 1
 BESTPATH: go forward ten meters

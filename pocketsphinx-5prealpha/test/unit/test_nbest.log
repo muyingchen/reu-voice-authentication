@@ -159,45 +159,45 @@ INFO: ngram_search_fwdtree.c(186): Creating search channels
 INFO: ngram_search_fwdtree.c(323): Max nonroot chan increased to 152609
 INFO: ngram_search_fwdtree.c(333): Created 723 root, 152481 non-root channels, 53 single-phone words
 INFO: ngram_search_fwdflat.c(157): fwdflat: min_ef_width = 4, max_sf_win = 25
-INFO: cmn.c(133): CMN: 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 
-INFO: ngram_search_fwdtree.c(1550):     2539 words recognized (10/fr)
-INFO: ngram_search_fwdtree.c(1552):   670526 senones evaluated (2530/fr)
-INFO: ngram_search_fwdtree.c(1556):  1542093 channels searched (5819/fr), 149663 1st, 97450 last
-INFO: ngram_search_fwdtree.c(1559):     5691 words for which last channels evaluated (21/fr)
-INFO: ngram_search_fwdtree.c(1561):    56342 candidate words for entering last phone (212/fr)
-INFO: ngram_search_fwdtree.c(1564): fwdtree 0.92 CPU 0.347 xRT
-INFO: ngram_search_fwdtree.c(1567): fwdtree 1.02 wall 0.386 xRT
-INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 119 words
-INFO: ngram_search_fwdflat.c(948):     2105 words recognized (8/fr)
-INFO: ngram_search_fwdflat.c(950):   102448 senones evaluated (387/fr)
-INFO: ngram_search_fwdflat.c(952):   157228 channels searched (593/fr)
-INFO: ngram_search_fwdflat.c(954):     9064 words searched (34/fr)
-INFO: ngram_search_fwdflat.c(957):     6477 word transitions (24/fr)
-INFO: ngram_search_fwdflat.c(960): fwdflat 0.11 CPU 0.040 xRT
-INFO: ngram_search_fwdflat.c(963): fwdflat 0.12 wall 0.045 xRT
+INFO: cmn.c(133): CMN: 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 
+INFO: ngram_search_fwdtree.c(1550):     2528 words recognized (10/fr)
+INFO: ngram_search_fwdtree.c(1552):   663904 senones evaluated (2505/fr)
+INFO: ngram_search_fwdtree.c(1556):  1516507 channels searched (5722/fr), 149505 1st, 96342 last
+INFO: ngram_search_fwdtree.c(1559):     5650 words for which last channels evaluated (21/fr)
+INFO: ngram_search_fwdtree.c(1561):    55736 candidate words for entering last phone (210/fr)
+INFO: ngram_search_fwdtree.c(1564): fwdtree 0.79 CPU 0.297 xRT
+INFO: ngram_search_fwdtree.c(1567): fwdtree 0.80 wall 0.302 xRT
+INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 115 words
+INFO: ngram_search_fwdflat.c(948):     2029 words recognized (8/fr)
+INFO: ngram_search_fwdflat.c(950):    98224 senones evaluated (371/fr)
+INFO: ngram_search_fwdflat.c(952):   151846 channels searched (573/fr)
+INFO: ngram_search_fwdflat.c(954):     8806 words searched (33/fr)
+INFO: ngram_search_fwdflat.c(957):     6277 word transitions (23/fr)
+INFO: ngram_search_fwdflat.c(960): fwdflat 0.10 CPU 0.037 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 0.10 wall 0.038 xRT
 INFO: ngram_search.c(1250): lattice start node <s>.0 end node </s>.212
 INFO: ngram_search.c(1276): Eliminated 2 nodes before end node
-INFO: ngram_search.c(1381): Lattice has 432 nodes, 771 links
-INFO: ps_lattice.c(1380): Bestpath score: -6902
-INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:212:263) = -478164
-INFO: ps_lattice.c(1441): Joint P(O,S) = -511657 P(S|O) = -33493
-INFO: ngram_search.c(872): bestpath 0.00 CPU 0.001 xRT
-INFO: ngram_search.c(875): bestpath 0.00 wall 0.001 xRT
-INFO: ngram_search_fwdtree.c(429): TOTAL fwdtree 0.92 CPU 0.349 xRT
-INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 1.02 wall 0.388 xRT
-INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 0.11 CPU 0.040 xRT
-INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 0.12 wall 0.045 xRT
-INFO: ngram_search.c(303): TOTAL bestpath 0.00 CPU 0.001 xRT
-INFO: ngram_search.c(306): TOTAL bestpath 0.00 wall 0.001 xRT
-BESTPATH: go forward ten meters (-7125)
-NBEST 1: go forward ten meters (-28062)
+INFO: ngram_search.c(1381): Lattice has 425 nodes, 750 links
+INFO: ps_lattice.c(1380): Bestpath score: -6871
+INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:212:263) = -477406
+INFO: ps_lattice.c(1441): Joint P(O,S) = -510121 P(S|O) = -32715
+INFO: ngram_search.c(872): bestpath 0.00 CPU 0.000 xRT
+INFO: ngram_search.c(875): bestpath 0.00 wall 0.000 xRT
+INFO: ngram_search_fwdtree.c(429): TOTAL fwdtree 0.79 CPU 0.298 xRT
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 0.80 wall 0.303 xRT
+INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 0.10 CPU 0.037 xRT
+INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 0.10 wall 0.038 xRT
+INFO: ngram_search.c(303): TOTAL bestpath 0.00 CPU 0.000 xRT
+INFO: ngram_search.c(306): TOTAL bestpath 0.00 wall 0.000 xRT
+BESTPATH: go forward ten meters (-7095)
+NBEST 1: go forward ten meters (-28031)
 <s> 0 45
 go 46 63
 forward 64 116
 ten 117 152
 meters 153 211
 </s> 212 263
-NBEST 2: go for word ten meters (-28596)
+NBEST 2: go for word ten meters (-28567)
 <s> 0 45
 go 46 63
 for 64 93
@@ -205,52 +205,52 @@ word 94 116
 ten 117 152
 meters 153 211
 </s> 212 263
-NBEST 3: go forward and majors (-28679)
-<s> 0 45
-go 46 63
-forward 64 131
-and(2) 132 154
-majors 155 211
-</s> 212 263
-NBEST 4: go forward and leaders (-28689)
+NBEST 3: go forward and majors (-28668)
 <s> 0 45
 go 46 63
 forward 64 131
 and(2) 132 153
-leaders 154 211
+majors 154 211
 </s> 212 263
-NBEST 5: go forward and meters (-28695)
+NBEST 4: go forward and meters (-28680)
 <s> 0 45
 go 46 63
 forward 64 131
 and(2) 132 152
 meters 153 211
 </s> 212 263
-NBEST 6: go forward ten leaders (-28696)
-<s> 0 45
-go 46 63
-forward 64 116
-ten 117 153
-leaders 154 211
-</s> 212 263
-NBEST 7: go forward and readers (-28697)
+NBEST 5: go forward and readers (-28684)
 <s> 0 45
 go 46 63
 forward 64 131
-and(2) 132 155
-readers 156 211
+and(2) 132 154
+readers 155 211
 </s> 212 263
-NBEST 8: go forward can meters (-28704)
+NBEST 6: go forward ten readers (-28685)
+<s> 0 45
+go 46 63
+forward 64 116
+ten 117 154
+readers 155 211
+</s> 212 263
+NBEST 7: go forward ten leaders (-28692)
+<s> 0 45
+go 46 63
+forward 64 116
+ten 117 154
+leaders 155 211
+</s> 212 263
+NBEST 8: go forward can meters (-28695)
 <s> 0 45
 go 46 63
 forward 64 120
 can 121 152
 meters 153 211
 </s> 212 263
-NBEST 9: go forward ten readers (-28729)
+NBEST 9: go forward and leaders (-28705)
 <s> 0 45
 go 46 63
-forward 64 116
-ten 117 155
-readers 156 211
+forward 64 131
+and(2) 132 154
+leaders 155 211
 </s> 212 263

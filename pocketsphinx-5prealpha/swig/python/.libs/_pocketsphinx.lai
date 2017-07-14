@@ -17,7 +17,7 @@ old_library='_pocketsphinx.a'
 inherited_linker_flags=' '
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/lib -L/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/src/libsphinxad -L/Users/muyingchen/Desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/src/libsphinxbase /usr/local/lib/libpocketsphinx.la /usr/local/lib/libsphinxbase.la -lpthread -lm -lblas -llapack'
+dependency_libs=' -L/Users/muyingchen/desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/lib -L/Users/muyingchen/desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/src/libsphinxad -L/Users/muyingchen/desktop/voice-authentication/pocketsphinx-5prealpha/../sphinxbase-5prealpha/src/libsphinxbase /usr/local/lib/libpocketsphinx.la /usr/local/lib/libsphinxbase.la -lpthread -lm -lblas -llapack'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

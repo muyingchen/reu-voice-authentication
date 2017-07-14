@@ -1,0 +1,62 @@
+WAVE2FEAT CTL/WAV/SPH TEST
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-alpha			0.97		9.700000e-01
+-argfile				
+-blocksize		2048		262500
+-build_outdirs		yes		yes
+-c					
+-cep2spec		no		no
+-di					
+-dither			no		no
+-do					
+-doublebw		no		no
+-ei					
+-eo					
+-example		no		no
+-frate			100		105
+-help			no		no
+-i					../../test/regression/chan3.2chan.wav
+-input_endian		little		little
+-lifter			0		0
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-mach_endian		little		little
+-mswav			no		no
+-ncep			13		13
+-nchans			1		2
+-nfft			512		512
+-nfilt			40		36
+-nist			no		no
+-npart			0		0
+-nskip			0		0
+-o					chan3.2chan.wav.mfc
+-ofmt			sphinx		sphinx
+-part			0		0
+-raw			no		no
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-runlen			-1		-1
+-samprate		16000		1.102500e+04
+-seed			-1		-1
+-smoothspec		no		no
+-spec2cep		no		no
+-sph2pipe		no		no
+-transform		legacy		legacy
+-unit_area		yes		yes
+-upperf			6855.4976	5.400000e+03
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-whichchan		0		0
+-wlen			0.025625	2.400000e-02
+
+INFO: sphinx_fe.c(787): Converting ../../test/regression/chan3.2chan.wav to chan3.2chan.wav.mfc
+WAVE2FEAT test PASSED
+All sub-tests passed

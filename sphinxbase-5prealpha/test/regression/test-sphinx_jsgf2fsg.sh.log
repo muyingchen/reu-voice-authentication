@@ -1,0 +1,7 @@
+JSGF2FSG TEST
+test.rightRecursion PASSED
+test.nestedRightRecursion PASSED
+test.kleene PASSED
+test.nulltest PASSED
+test.command PASSED
+All sub-tests passed

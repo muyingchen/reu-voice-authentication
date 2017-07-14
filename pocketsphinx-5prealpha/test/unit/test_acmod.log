@@ -24,10 +24,10 @@ INFO: ptm_mgau.c(838): Maximum top-N: 4
 INFO: cmn_live.c(55): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: cmn_live.c(66): Update to   < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: test_acmod.c(72): Incremental(2048):
-INFO: test_acmod.c(84): Frame 0 best senone 5 score 0
-INFO: test_acmod.c(84): Frame 1 best senone 5 score 0
-INFO: test_acmod.c(84): Frame 2 best senone 5 score 0
-INFO: test_acmod.c(84): Frame 3 best senone 5 score 0
+INFO: test_acmod.c(84): Frame 0 best senone 96 score 0
+INFO: test_acmod.c(84): Frame 1 best senone 96 score 0
+INFO: test_acmod.c(84): Frame 2 best senone 96 score 0
+INFO: test_acmod.c(84): Frame 3 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 4 best senone 3700 score 0
 INFO: test_acmod.c(84): Frame 5 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 6 best senone 3700 score 0
@@ -46,7 +46,7 @@ INFO: test_acmod.c(84): Frame 18 best senone 4502 score 0
 INFO: test_acmod.c(84): Frame 19 best senone 1302 score 0
 INFO: test_acmod.c(84): Frame 20 best senone 1348 score 0
 INFO: test_acmod.c(84): Frame 21 best senone 1354 score 0
-INFO: test_acmod.c(84): Frame 22 best senone 1354 score 0
+INFO: test_acmod.c(84): Frame 22 best senone 1362 score 0
 INFO: test_acmod.c(84): Frame 23 best senone 3470 score 0
 INFO: test_acmod.c(84): Frame 24 best senone 1173 score 0
 INFO: test_acmod.c(84): Frame 25 best senone 4315 score 0
@@ -67,7 +67,7 @@ INFO: test_acmod.c(84): Frame 39 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 40 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 41 best senone 1361 score 0
 INFO: test_acmod.c(84): Frame 42 best senone 96 score 0
-INFO: test_acmod.c(84): Frame 43 best senone 3700 score 0
+INFO: test_acmod.c(84): Frame 43 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 44 best senone 3700 score 0
 INFO: test_acmod.c(84): Frame 45 best senone 1082 score 0
 INFO: test_acmod.c(84): Frame 46 best senone 1416 score 0
@@ -95,7 +95,7 @@ INFO: test_acmod.c(84): Frame 67 best senone 2003 score 0
 INFO: test_acmod.c(84): Frame 68 best senone 2003 score 0
 INFO: test_acmod.c(84): Frame 69 best senone 1994 score 0
 INFO: test_acmod.c(84): Frame 70 best senone 2000 score 0
-INFO: test_acmod.c(84): Frame 71 best senone 1995 score 0
+INFO: test_acmod.c(84): Frame 71 best senone 2004 score 0
 INFO: test_acmod.c(84): Frame 72 best senone 1982 score 0
 INFO: test_acmod.c(84): Frame 73 best senone 4798 score 0
 INFO: test_acmod.c(84): Frame 74 best senone 4573 score 0
@@ -175,7 +175,7 @@ INFO: test_acmod.c(84): Frame 147 best senone 3524 score 0
 INFO: test_acmod.c(84): Frame 148 best senone 3524 score 0
 INFO: test_acmod.c(84): Frame 149 best senone 3524 score 0
 INFO: test_acmod.c(84): Frame 150 best senone 840 score 0
-INFO: test_acmod.c(84): Frame 151 best senone 875 score 0
+INFO: test_acmod.c(84): Frame 151 best senone 4882 score 0
 INFO: test_acmod.c(84): Frame 152 best senone 3527 score 0
 INFO: test_acmod.c(84): Frame 153 best senone 3527 score 0
 INFO: test_acmod.c(84): Frame 154 best senone 3181 score 0
@@ -204,7 +204,7 @@ INFO: test_acmod.c(84): Frame 176 best senone 1646 score 0
 INFO: test_acmod.c(84): Frame 177 best senone 2448 score 0
 INFO: test_acmod.c(84): Frame 178 best senone 1734 score 0
 INFO: test_acmod.c(84): Frame 179 best senone 2450 score 0
-INFO: test_acmod.c(84): Frame 180 best senone 3880 score 0
+INFO: test_acmod.c(84): Frame 180 best senone 3885 score 0
 INFO: test_acmod.c(84): Frame 181 best senone 3899 score 0
 INFO: test_acmod.c(84): Frame 182 best senone 3899 score 0
 INFO: test_acmod.c(84): Frame 183 best senone 1714 score 0
@@ -224,11 +224,11 @@ INFO: test_acmod.c(84): Frame 196 best senone 4126 score 0
 INFO: test_acmod.c(84): Frame 197 best senone 4101 score 0
 INFO: test_acmod.c(84): Frame 198 best senone 4099 score 0
 INFO: test_acmod.c(84): Frame 199 best senone 4079 score 0
-INFO: test_acmod.c(84): Frame 200 best senone 4084 score 0
+INFO: test_acmod.c(84): Frame 200 best senone 4079 score 0
 INFO: test_acmod.c(84): Frame 201 best senone 4098 score 0
 INFO: test_acmod.c(84): Frame 202 best senone 4125 score 0
 INFO: test_acmod.c(84): Frame 203 best senone 4126 score 0
-INFO: test_acmod.c(84): Frame 204 best senone 1155 score 0
+INFO: test_acmod.c(84): Frame 204 best senone 4142 score 0
 INFO: test_acmod.c(84): Frame 205 best senone 4146 score 0
 INFO: test_acmod.c(84): Frame 206 best senone 4149 score 0
 INFO: test_acmod.c(84): Frame 207 best senone 4146 score 0
@@ -240,7 +240,7 @@ INFO: test_acmod.c(84): Frame 212 best senone 1245 score 0
 INFO: test_acmod.c(84): Frame 213 best senone 4736 score 0
 INFO: test_acmod.c(84): Frame 214 best senone 4546 score 0
 INFO: test_acmod.c(84): Frame 215 best senone 3703 score 0
-INFO: test_acmod.c(84): Frame 216 best senone 3700 score 0
+INFO: test_acmod.c(84): Frame 216 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 217 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 218 best senone 3700 score 0
 INFO: test_acmod.c(84): Frame 219 best senone 3700 score 0
@@ -248,24 +248,24 @@ INFO: test_acmod.c(84): Frame 220 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 221 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 222 best senone 3700 score 0
 INFO: test_acmod.c(84): Frame 223 best senone 96 score 0
-INFO: test_acmod.c(84): Frame 224 best senone 96 score 0
+INFO: test_acmod.c(84): Frame 224 best senone 1408 score 0
 INFO: test_acmod.c(84): Frame 225 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 226 best senone 1401 score 0
-INFO: test_acmod.c(84): Frame 227 best senone 1401 score 0
-INFO: test_acmod.c(84): Frame 228 best senone 4565 score 0
+INFO: test_acmod.c(84): Frame 227 best senone 1402 score 0
+INFO: test_acmod.c(84): Frame 228 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 229 best senone 1080 score 0
 INFO: test_acmod.c(84): Frame 230 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 231 best senone 1080 score 0
 INFO: test_acmod.c(84): Frame 232 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 233 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 234 best senone 1401 score 0
-INFO: test_acmod.c(84): Frame 235 best senone 1080 score 0
+INFO: test_acmod.c(84): Frame 235 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 236 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 237 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 238 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 239 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 240 best senone 96 score 0
-INFO: test_acmod.c(84): Frame 241 best senone 1401 score 0
+INFO: test_acmod.c(84): Frame 241 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 242 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 243 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 244 best senone 1401 score 0
@@ -278,25 +278,25 @@ INFO: test_acmod.c(84): Frame 250 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 251 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 252 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 253 best senone 96 score 0
-INFO: test_acmod.c(84): Frame 254 best senone 1080 score 0
+INFO: test_acmod.c(84): Frame 254 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 255 best senone 96 score 0
 INFO: test_acmod.c(84): Frame 256 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 257 best senone 1401 score 0
 INFO: test_acmod.c(84): Frame 258 best senone 1080 score 0
 INFO: test_acmod.c(84): Frame 259 best senone 1079 score 0
-INFO: test_acmod.c(84): Frame 260 best senone 1401 score 0
+INFO: test_acmod.c(84): Frame 260 best senone 1080 score 0
 INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
-INFO: cmn_live.c(138): Update to   < 41.00 -5.29 -0.12  5.09  2.47 -4.07 -1.37 -1.78 -5.08 -2.06 -6.45 -1.42  1.16 >
+INFO: cmn_live.c(138): Update to   < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: test_acmod.c(113): Whole utterance:
-INFO: cmn_live.c(55): Update from < 41.00 -5.29 -0.12  5.09  2.47 -4.07 -1.37 -1.78 -5.08 -2.06 -6.45 -1.42  1.16 >
+INFO: cmn_live.c(55): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: cmn_live.c(66): Update to   < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
-INFO: cmn_live.c(138): Update to   < 41.81 -5.05  0.00  5.68  2.83 -4.34 -1.61 -2.04 -5.39 -1.83 -6.70 -1.56  0.95 >
-INFO: cmn_live.c(120): Update from < 41.81 -5.05  0.00  5.68  2.83 -4.34 -1.61 -2.04 -5.39 -1.83 -6.70 -1.56  0.95 >
-INFO: cmn_live.c(138): Update to   < 41.81 -5.05  0.00  5.68  2.83 -4.34 -1.61 -2.04 -5.39 -1.83 -6.70 -1.56  0.95 >
+INFO: cmn_live.c(138): Update to   < 41.81 -5.05 -0.00  5.68  2.84 -4.34 -1.61 -2.04 -5.38 -1.83 -6.70 -1.56  0.96 >
+INFO: cmn_live.c(120): Update from < 41.81 -5.05 -0.00  5.68  2.84 -4.34 -1.61 -2.04 -5.38 -1.83 -6.70 -1.56  0.96 >
+INFO: cmn_live.c(138): Update to   < 41.81 -5.05 -0.00  5.68  2.84 -4.34 -1.61 -2.04 -5.38 -1.83 -6.70 -1.56  0.96 >
 INFO: test_acmod.c(133): Frame 0 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 1 best senone 96 score 0
-INFO: test_acmod.c(133): Frame 2 best senone 96 score 0
+INFO: test_acmod.c(133): Frame 2 best senone 4303 score 0
 INFO: test_acmod.c(133): Frame 3 best senone 3468 score 0
 INFO: test_acmod.c(133): Frame 4 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 5 best senone 1401 score 0
@@ -308,7 +308,7 @@ INFO: test_acmod.c(133): Frame 10 best senone 2030 score 0
 INFO: test_acmod.c(133): Frame 11 best senone 2853 score 0
 INFO: test_acmod.c(133): Frame 12 best senone 2896 score 0
 INFO: test_acmod.c(133): Frame 13 best senone 411 score 0
-INFO: test_acmod.c(133): Frame 14 best senone 4586 score 0
+INFO: test_acmod.c(133): Frame 14 best senone 2078 score 0
 INFO: test_acmod.c(133): Frame 15 best senone 841 score 0
 INFO: test_acmod.c(133): Frame 16 best senone 3670 score 0
 INFO: test_acmod.c(133): Frame 17 best senone 3582 score 0
@@ -327,8 +327,8 @@ INFO: test_acmod.c(133): Frame 29 best senone 2003 score 0
 INFO: test_acmod.c(133): Frame 30 best senone 2003 score 0
 INFO: test_acmod.c(133): Frame 31 best senone 1994 score 0
 INFO: test_acmod.c(133): Frame 32 best senone 2000 score 0
-INFO: test_acmod.c(133): Frame 33 best senone 1995 score 0
-INFO: test_acmod.c(133): Frame 34 best senone 1997 score 0
+INFO: test_acmod.c(133): Frame 33 best senone 2004 score 0
+INFO: test_acmod.c(133): Frame 34 best senone 1982 score 0
 INFO: test_acmod.c(133): Frame 35 best senone 4798 score 0
 INFO: test_acmod.c(133): Frame 36 best senone 4573 score 0
 INFO: test_acmod.c(133): Frame 37 best senone 2010 score 0
@@ -407,7 +407,7 @@ INFO: test_acmod.c(133): Frame 109 best senone 3524 score 0
 INFO: test_acmod.c(133): Frame 110 best senone 3524 score 0
 INFO: test_acmod.c(133): Frame 111 best senone 3524 score 0
 INFO: test_acmod.c(133): Frame 112 best senone 840 score 0
-INFO: test_acmod.c(133): Frame 113 best senone 875 score 0
+INFO: test_acmod.c(133): Frame 113 best senone 4882 score 0
 INFO: test_acmod.c(133): Frame 114 best senone 3527 score 0
 INFO: test_acmod.c(133): Frame 115 best senone 3527 score 0
 INFO: test_acmod.c(133): Frame 116 best senone 3181 score 0
@@ -436,7 +436,7 @@ INFO: test_acmod.c(133): Frame 138 best senone 1646 score 0
 INFO: test_acmod.c(133): Frame 139 best senone 2448 score 0
 INFO: test_acmod.c(133): Frame 140 best senone 1734 score 0
 INFO: test_acmod.c(133): Frame 141 best senone 2450 score 0
-INFO: test_acmod.c(133): Frame 142 best senone 3880 score 0
+INFO: test_acmod.c(133): Frame 142 best senone 3885 score 0
 INFO: test_acmod.c(133): Frame 143 best senone 3899 score 0
 INFO: test_acmod.c(133): Frame 144 best senone 3899 score 0
 INFO: test_acmod.c(133): Frame 145 best senone 1714 score 0
@@ -456,11 +456,11 @@ INFO: test_acmod.c(133): Frame 158 best senone 4126 score 0
 INFO: test_acmod.c(133): Frame 159 best senone 4101 score 0
 INFO: test_acmod.c(133): Frame 160 best senone 4099 score 0
 INFO: test_acmod.c(133): Frame 161 best senone 4079 score 0
-INFO: test_acmod.c(133): Frame 162 best senone 4084 score 0
+INFO: test_acmod.c(133): Frame 162 best senone 4079 score 0
 INFO: test_acmod.c(133): Frame 163 best senone 4098 score 0
 INFO: test_acmod.c(133): Frame 164 best senone 4125 score 0
 INFO: test_acmod.c(133): Frame 165 best senone 4126 score 0
-INFO: test_acmod.c(133): Frame 166 best senone 1155 score 0
+INFO: test_acmod.c(133): Frame 166 best senone 4142 score 0
 INFO: test_acmod.c(133): Frame 167 best senone 4146 score 0
 INFO: test_acmod.c(133): Frame 168 best senone 4149 score 0
 INFO: test_acmod.c(133): Frame 169 best senone 4146 score 0
@@ -472,7 +472,7 @@ INFO: test_acmod.c(133): Frame 174 best senone 1245 score 0
 INFO: test_acmod.c(133): Frame 175 best senone 4736 score 0
 INFO: test_acmod.c(133): Frame 176 best senone 4546 score 0
 INFO: test_acmod.c(133): Frame 177 best senone 3703 score 0
-INFO: test_acmod.c(133): Frame 178 best senone 3700 score 0
+INFO: test_acmod.c(133): Frame 178 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 179 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 180 best senone 3700 score 0
 INFO: test_acmod.c(133): Frame 181 best senone 3700 score 0
@@ -480,24 +480,24 @@ INFO: test_acmod.c(133): Frame 182 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 183 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 184 best senone 3700 score 0
 INFO: test_acmod.c(133): Frame 185 best senone 96 score 0
-INFO: test_acmod.c(133): Frame 186 best senone 96 score 0
+INFO: test_acmod.c(133): Frame 186 best senone 1408 score 0
 INFO: test_acmod.c(133): Frame 187 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 188 best senone 1401 score 0
-INFO: test_acmod.c(133): Frame 189 best senone 1401 score 0
-INFO: test_acmod.c(133): Frame 190 best senone 4565 score 0
+INFO: test_acmod.c(133): Frame 189 best senone 1402 score 0
+INFO: test_acmod.c(133): Frame 190 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 191 best senone 1080 score 0
 INFO: test_acmod.c(133): Frame 192 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 193 best senone 1080 score 0
 INFO: test_acmod.c(133): Frame 194 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 195 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 196 best senone 1401 score 0
-INFO: test_acmod.c(133): Frame 197 best senone 1080 score 0
+INFO: test_acmod.c(133): Frame 197 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 198 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 199 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 200 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 201 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 202 best senone 96 score 0
-INFO: test_acmod.c(133): Frame 203 best senone 1401 score 0
+INFO: test_acmod.c(133): Frame 203 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 204 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 205 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 206 best senone 1401 score 0
@@ -510,22 +510,22 @@ INFO: test_acmod.c(133): Frame 212 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 213 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 214 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 215 best senone 96 score 0
-INFO: test_acmod.c(133): Frame 216 best senone 1080 score 0
+INFO: test_acmod.c(133): Frame 216 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 217 best senone 96 score 0
 INFO: test_acmod.c(133): Frame 218 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 219 best senone 1401 score 0
 INFO: test_acmod.c(133): Frame 220 best senone 1080 score 0
 INFO: test_acmod.c(133): Frame 221 best senone 1079 score 0
-INFO: test_acmod.c(133): Frame 222 best senone 1401 score 0
+INFO: test_acmod.c(133): Frame 222 best senone 1080 score 0
 INFO: test_acmod.c(133): Frame 223 best senone 1080 score 0
 INFO: test_acmod.c(133): Frame 224 best senone 5 score 0
 INFO: test_acmod.c(133): Frame 225 best senone 984 score 0
 INFO: test_acmod.c(153): Incremental(MFCC):
-INFO: cmn_live.c(55): Update from < 41.81 -5.05  0.00  5.68  2.83 -4.34 -1.61 -2.04 -5.39 -1.83 -6.70 -1.56  0.95 >
+INFO: cmn_live.c(55): Update from < 41.81 -5.05 -0.00  5.68  2.84 -4.34 -1.61 -2.04 -5.38 -1.83 -6.70 -1.56  0.96 >
 INFO: cmn_live.c(66): Update to   < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: test_acmod.c(167): Frame 0 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 1 best senone 96 score 0
-INFO: test_acmod.c(167): Frame 2 best senone 96 score 0
+INFO: test_acmod.c(167): Frame 2 best senone 4303 score 0
 INFO: test_acmod.c(167): Frame 3 best senone 3468 score 0
 INFO: test_acmod.c(167): Frame 4 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 5 best senone 1401 score 0
@@ -537,7 +537,7 @@ INFO: test_acmod.c(167): Frame 10 best senone 2030 score 0
 INFO: test_acmod.c(167): Frame 11 best senone 2853 score 0
 INFO: test_acmod.c(167): Frame 12 best senone 2896 score 0
 INFO: test_acmod.c(167): Frame 13 best senone 411 score 0
-INFO: test_acmod.c(167): Frame 14 best senone 4586 score 0
+INFO: test_acmod.c(167): Frame 14 best senone 2078 score 0
 INFO: test_acmod.c(167): Frame 15 best senone 841 score 0
 INFO: test_acmod.c(167): Frame 16 best senone 3670 score 0
 INFO: test_acmod.c(167): Frame 17 best senone 3582 score 0
@@ -556,8 +556,8 @@ INFO: test_acmod.c(167): Frame 29 best senone 2003 score 0
 INFO: test_acmod.c(167): Frame 30 best senone 2003 score 0
 INFO: test_acmod.c(167): Frame 31 best senone 1994 score 0
 INFO: test_acmod.c(167): Frame 32 best senone 2000 score 0
-INFO: test_acmod.c(167): Frame 33 best senone 1995 score 0
-INFO: test_acmod.c(167): Frame 34 best senone 1997 score 0
+INFO: test_acmod.c(167): Frame 33 best senone 2004 score 0
+INFO: test_acmod.c(167): Frame 34 best senone 1982 score 0
 INFO: test_acmod.c(167): Frame 35 best senone 4798 score 0
 INFO: test_acmod.c(167): Frame 36 best senone 4573 score 0
 INFO: test_acmod.c(167): Frame 37 best senone 2010 score 0
@@ -636,7 +636,7 @@ INFO: test_acmod.c(167): Frame 109 best senone 3524 score 0
 INFO: test_acmod.c(167): Frame 110 best senone 3524 score 0
 INFO: test_acmod.c(167): Frame 111 best senone 3524 score 0
 INFO: test_acmod.c(167): Frame 112 best senone 840 score 0
-INFO: test_acmod.c(167): Frame 113 best senone 875 score 0
+INFO: test_acmod.c(167): Frame 113 best senone 4882 score 0
 INFO: test_acmod.c(167): Frame 114 best senone 3527 score 0
 INFO: test_acmod.c(167): Frame 115 best senone 3527 score 0
 INFO: test_acmod.c(167): Frame 116 best senone 3181 score 0
@@ -665,7 +665,7 @@ INFO: test_acmod.c(167): Frame 138 best senone 1646 score 0
 INFO: test_acmod.c(167): Frame 139 best senone 2448 score 0
 INFO: test_acmod.c(167): Frame 140 best senone 1734 score 0
 INFO: test_acmod.c(167): Frame 141 best senone 2450 score 0
-INFO: test_acmod.c(167): Frame 142 best senone 3880 score 0
+INFO: test_acmod.c(167): Frame 142 best senone 3885 score 0
 INFO: test_acmod.c(167): Frame 143 best senone 3899 score 0
 INFO: test_acmod.c(167): Frame 144 best senone 3899 score 0
 INFO: test_acmod.c(167): Frame 145 best senone 1714 score 0
@@ -685,11 +685,11 @@ INFO: test_acmod.c(167): Frame 158 best senone 4126 score 0
 INFO: test_acmod.c(167): Frame 159 best senone 4101 score 0
 INFO: test_acmod.c(167): Frame 160 best senone 4099 score 0
 INFO: test_acmod.c(167): Frame 161 best senone 4079 score 0
-INFO: test_acmod.c(167): Frame 162 best senone 4084 score 0
+INFO: test_acmod.c(167): Frame 162 best senone 4079 score 0
 INFO: test_acmod.c(167): Frame 163 best senone 4098 score 0
 INFO: test_acmod.c(167): Frame 164 best senone 4125 score 0
 INFO: test_acmod.c(167): Frame 165 best senone 4126 score 0
-INFO: test_acmod.c(167): Frame 166 best senone 1155 score 0
+INFO: test_acmod.c(167): Frame 166 best senone 4142 score 0
 INFO: test_acmod.c(167): Frame 167 best senone 4146 score 0
 INFO: test_acmod.c(167): Frame 168 best senone 4149 score 0
 INFO: test_acmod.c(167): Frame 169 best senone 4146 score 0
@@ -701,7 +701,7 @@ INFO: test_acmod.c(167): Frame 174 best senone 1245 score 0
 INFO: test_acmod.c(167): Frame 175 best senone 4736 score 0
 INFO: test_acmod.c(167): Frame 176 best senone 4546 score 0
 INFO: test_acmod.c(167): Frame 177 best senone 3703 score 0
-INFO: test_acmod.c(167): Frame 178 best senone 3700 score 0
+INFO: test_acmod.c(167): Frame 178 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 179 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 180 best senone 3700 score 0
 INFO: test_acmod.c(167): Frame 181 best senone 3700 score 0
@@ -709,24 +709,24 @@ INFO: test_acmod.c(167): Frame 182 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 183 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 184 best senone 3700 score 0
 INFO: test_acmod.c(167): Frame 185 best senone 96 score 0
-INFO: test_acmod.c(167): Frame 186 best senone 96 score 0
+INFO: test_acmod.c(167): Frame 186 best senone 1408 score 0
 INFO: test_acmod.c(167): Frame 187 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 188 best senone 1401 score 0
-INFO: test_acmod.c(167): Frame 189 best senone 1401 score 0
-INFO: test_acmod.c(167): Frame 190 best senone 4565 score 0
+INFO: test_acmod.c(167): Frame 189 best senone 1402 score 0
+INFO: test_acmod.c(167): Frame 190 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 191 best senone 1080 score 0
 INFO: test_acmod.c(167): Frame 192 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 193 best senone 1080 score 0
 INFO: test_acmod.c(167): Frame 194 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 195 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 196 best senone 1401 score 0
-INFO: test_acmod.c(167): Frame 197 best senone 1080 score 0
+INFO: test_acmod.c(167): Frame 197 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 198 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 199 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 200 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 201 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 202 best senone 96 score 0
-INFO: test_acmod.c(167): Frame 203 best senone 1401 score 0
+INFO: test_acmod.c(167): Frame 203 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 204 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 205 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 206 best senone 1401 score 0
@@ -739,7 +739,7 @@ INFO: test_acmod.c(167): Frame 212 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 213 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 214 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 215 best senone 96 score 0
-INFO: test_acmod.c(167): Frame 216 best senone 1080 score 0
+INFO: test_acmod.c(167): Frame 216 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 217 best senone 96 score 0
 INFO: test_acmod.c(167): Frame 218 best senone 1401 score 0
 INFO: test_acmod.c(167): Frame 219 best senone 1401 score 0
@@ -747,24 +747,24 @@ INFO: test_acmod.c(167): Frame 220 best senone 1080 score 0
 INFO: test_acmod.c(167): Frame 221 best senone 1079 score 0
 INFO: test_acmod.c(167): Frame 222 best senone 1080 score 0
 INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
-INFO: cmn_live.c(138): Update to   < 41.81 -5.04  0.02  5.69  2.84 -4.34 -1.62 -2.04 -5.40 -1.82 -6.73 -1.59  0.95 >
-INFO: cmn_live.c(120): Update from < 41.81 -5.04  0.02  5.69  2.84 -4.34 -1.62 -2.04 -5.40 -1.82 -6.73 -1.59  0.95 >
-INFO: cmn_live.c(138): Update to   < 41.81 -5.04  0.02  5.69  2.84 -4.34 -1.62 -2.04 -5.40 -1.82 -6.73 -1.59  0.95 >
+INFO: cmn_live.c(138): Update to   < 41.81 -5.04  0.01  5.69  2.84 -4.34 -1.62 -2.04 -5.39 -1.82 -6.73 -1.59  0.96 >
+INFO: cmn_live.c(120): Update from < 41.81 -5.04  0.01  5.69  2.84 -4.34 -1.62 -2.04 -5.39 -1.82 -6.73 -1.59  0.96 >
+INFO: cmn_live.c(138): Update to   < 41.81 -5.04  0.01  5.69  2.84 -4.34 -1.62 -2.04 -5.39 -1.82 -6.73 -1.59  0.96 >
 INFO: test_acmod.c(186): Frame 223 best senone 96 score 0
 INFO: test_acmod.c(186): Frame 224 best senone 5 score 0
 INFO: test_acmod.c(186): Frame 225 best senone 96 score 0
 INFO: test_acmod.c(204): Whole utterance (MFCC):
-INFO: cmn_live.c(55): Update from < 41.81 -5.04  0.02  5.69  2.84 -4.34 -1.62 -2.04 -5.40 -1.82 -6.73 -1.59  0.95 >
+INFO: cmn_live.c(55): Update from < 41.81 -5.04  0.01  5.69  2.84 -4.34 -1.62 -2.04 -5.39 -1.82 -6.73 -1.59  0.96 >
 INFO: cmn_live.c(66): Update to   < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
-INFO: cmn_live.c(138): Update to   < 41.81 -5.04  0.01  5.68  2.84 -4.33 -1.62 -2.05 -5.40 -1.82 -6.73 -1.59  0.95 >
-INFO: cmn_live.c(120): Update from < 41.81 -5.04  0.01  5.68  2.84 -4.33 -1.62 -2.05 -5.40 -1.82 -6.73 -1.59  0.95 >
-INFO: cmn_live.c(138): Update to   < 41.81 -5.04  0.01  5.68  2.84 -4.33 -1.62 -2.05 -5.40 -1.82 -6.73 -1.59  0.95 >
+INFO: cmn_live.c(138): Update to   < 41.81 -5.04  0.01  5.68  2.84 -4.34 -1.62 -2.05 -5.39 -1.82 -6.73 -1.59  0.96 >
+INFO: cmn_live.c(120): Update from < 41.81 -5.04  0.01  5.68  2.84 -4.34 -1.62 -2.05 -5.39 -1.82 -6.73 -1.59  0.96 >
+INFO: cmn_live.c(138): Update to   < 41.81 -5.04  0.01  5.68  2.84 -4.34 -1.62 -2.05 -5.39 -1.82 -6.73 -1.59  0.96 >
 INFO: test_acmod.c(220): Frame 0 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 1 best senone 96 score 0
-INFO: test_acmod.c(220): Frame 2 best senone 4303 score 0
+INFO: test_acmod.c(220): Frame 2 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 3 best senone 3468 score 0
-INFO: test_acmod.c(220): Frame 4 best senone 1401 score 0
+INFO: test_acmod.c(220): Frame 4 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 5 best senone 1080 score 0
 INFO: test_acmod.c(220): Frame 6 best senone 3700 score 0
 INFO: test_acmod.c(220): Frame 7 best senone 1082 score 0
@@ -774,7 +774,7 @@ INFO: test_acmod.c(220): Frame 10 best senone 2030 score 0
 INFO: test_acmod.c(220): Frame 11 best senone 2853 score 0
 INFO: test_acmod.c(220): Frame 12 best senone 2896 score 0
 INFO: test_acmod.c(220): Frame 13 best senone 411 score 0
-INFO: test_acmod.c(220): Frame 14 best senone 4586 score 0
+INFO: test_acmod.c(220): Frame 14 best senone 2078 score 0
 INFO: test_acmod.c(220): Frame 15 best senone 841 score 0
 INFO: test_acmod.c(220): Frame 16 best senone 3670 score 0
 INFO: test_acmod.c(220): Frame 17 best senone 3582 score 0
@@ -793,8 +793,8 @@ INFO: test_acmod.c(220): Frame 29 best senone 2003 score 0
 INFO: test_acmod.c(220): Frame 30 best senone 2003 score 0
 INFO: test_acmod.c(220): Frame 31 best senone 1994 score 0
 INFO: test_acmod.c(220): Frame 32 best senone 2000 score 0
-INFO: test_acmod.c(220): Frame 33 best senone 1995 score 0
-INFO: test_acmod.c(220): Frame 34 best senone 1997 score 0
+INFO: test_acmod.c(220): Frame 33 best senone 2004 score 0
+INFO: test_acmod.c(220): Frame 34 best senone 1982 score 0
 INFO: test_acmod.c(220): Frame 35 best senone 4798 score 0
 INFO: test_acmod.c(220): Frame 36 best senone 4573 score 0
 INFO: test_acmod.c(220): Frame 37 best senone 2010 score 0
@@ -873,7 +873,7 @@ INFO: test_acmod.c(220): Frame 109 best senone 3524 score 0
 INFO: test_acmod.c(220): Frame 110 best senone 3524 score 0
 INFO: test_acmod.c(220): Frame 111 best senone 3524 score 0
 INFO: test_acmod.c(220): Frame 112 best senone 840 score 0
-INFO: test_acmod.c(220): Frame 113 best senone 875 score 0
+INFO: test_acmod.c(220): Frame 113 best senone 4882 score 0
 INFO: test_acmod.c(220): Frame 114 best senone 3527 score 0
 INFO: test_acmod.c(220): Frame 115 best senone 3527 score 0
 INFO: test_acmod.c(220): Frame 116 best senone 3181 score 0
@@ -902,7 +902,7 @@ INFO: test_acmod.c(220): Frame 138 best senone 1646 score 0
 INFO: test_acmod.c(220): Frame 139 best senone 2448 score 0
 INFO: test_acmod.c(220): Frame 140 best senone 1734 score 0
 INFO: test_acmod.c(220): Frame 141 best senone 2450 score 0
-INFO: test_acmod.c(220): Frame 142 best senone 3880 score 0
+INFO: test_acmod.c(220): Frame 142 best senone 3885 score 0
 INFO: test_acmod.c(220): Frame 143 best senone 3899 score 0
 INFO: test_acmod.c(220): Frame 144 best senone 3899 score 0
 INFO: test_acmod.c(220): Frame 145 best senone 1714 score 0
@@ -922,11 +922,11 @@ INFO: test_acmod.c(220): Frame 158 best senone 4126 score 0
 INFO: test_acmod.c(220): Frame 159 best senone 4101 score 0
 INFO: test_acmod.c(220): Frame 160 best senone 4099 score 0
 INFO: test_acmod.c(220): Frame 161 best senone 4079 score 0
-INFO: test_acmod.c(220): Frame 162 best senone 4084 score 0
+INFO: test_acmod.c(220): Frame 162 best senone 4079 score 0
 INFO: test_acmod.c(220): Frame 163 best senone 4098 score 0
 INFO: test_acmod.c(220): Frame 164 best senone 4125 score 0
 INFO: test_acmod.c(220): Frame 165 best senone 4126 score 0
-INFO: test_acmod.c(220): Frame 166 best senone 1155 score 0
+INFO: test_acmod.c(220): Frame 166 best senone 4142 score 0
 INFO: test_acmod.c(220): Frame 167 best senone 4146 score 0
 INFO: test_acmod.c(220): Frame 168 best senone 4149 score 0
 INFO: test_acmod.c(220): Frame 169 best senone 4146 score 0
@@ -938,7 +938,7 @@ INFO: test_acmod.c(220): Frame 174 best senone 1245 score 0
 INFO: test_acmod.c(220): Frame 175 best senone 4736 score 0
 INFO: test_acmod.c(220): Frame 176 best senone 4546 score 0
 INFO: test_acmod.c(220): Frame 177 best senone 3703 score 0
-INFO: test_acmod.c(220): Frame 178 best senone 3700 score 0
+INFO: test_acmod.c(220): Frame 178 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 179 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 180 best senone 3700 score 0
 INFO: test_acmod.c(220): Frame 181 best senone 3700 score 0
@@ -946,24 +946,24 @@ INFO: test_acmod.c(220): Frame 182 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 183 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 184 best senone 3700 score 0
 INFO: test_acmod.c(220): Frame 185 best senone 96 score 0
-INFO: test_acmod.c(220): Frame 186 best senone 96 score 0
+INFO: test_acmod.c(220): Frame 186 best senone 1408 score 0
 INFO: test_acmod.c(220): Frame 187 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 188 best senone 1401 score 0
-INFO: test_acmod.c(220): Frame 189 best senone 1401 score 0
-INFO: test_acmod.c(220): Frame 190 best senone 4565 score 0
+INFO: test_acmod.c(220): Frame 189 best senone 1402 score 0
+INFO: test_acmod.c(220): Frame 190 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 191 best senone 1080 score 0
 INFO: test_acmod.c(220): Frame 192 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 193 best senone 1080 score 0
 INFO: test_acmod.c(220): Frame 194 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 195 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 196 best senone 1401 score 0
-INFO: test_acmod.c(220): Frame 197 best senone 1080 score 0
+INFO: test_acmod.c(220): Frame 197 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 198 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 199 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 200 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 201 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 202 best senone 96 score 0
-INFO: test_acmod.c(220): Frame 203 best senone 1401 score 0
+INFO: test_acmod.c(220): Frame 203 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 204 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 205 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 206 best senone 1401 score 0
@@ -976,7 +976,7 @@ INFO: test_acmod.c(220): Frame 212 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 213 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 214 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 215 best senone 96 score 0
-INFO: test_acmod.c(220): Frame 216 best senone 1080 score 0
+INFO: test_acmod.c(220): Frame 216 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 217 best senone 96 score 0
 INFO: test_acmod.c(220): Frame 218 best senone 1401 score 0
 INFO: test_acmod.c(220): Frame 219 best senone 1401 score 0
@@ -989,9 +989,9 @@ INFO: test_acmod.c(220): Frame 225 best senone 96 score 0
 INFO: test_acmod.c(229): Rewound (MFCC):
 INFO: test_acmod.c(240): Frame 0 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 1 best senone 96 score 0
-INFO: test_acmod.c(240): Frame 2 best senone 4303 score 0
+INFO: test_acmod.c(240): Frame 2 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 3 best senone 3468 score 0
-INFO: test_acmod.c(240): Frame 4 best senone 1401 score 0
+INFO: test_acmod.c(240): Frame 4 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 5 best senone 1080 score 0
 INFO: test_acmod.c(240): Frame 6 best senone 3700 score 0
 INFO: test_acmod.c(240): Frame 7 best senone 1082 score 0
@@ -1001,7 +1001,7 @@ INFO: test_acmod.c(240): Frame 10 best senone 2030 score 0
 INFO: test_acmod.c(240): Frame 11 best senone 2853 score 0
 INFO: test_acmod.c(240): Frame 12 best senone 2896 score 0
 INFO: test_acmod.c(240): Frame 13 best senone 411 score 0
-INFO: test_acmod.c(240): Frame 14 best senone 4586 score 0
+INFO: test_acmod.c(240): Frame 14 best senone 2078 score 0
 INFO: test_acmod.c(240): Frame 15 best senone 841 score 0
 INFO: test_acmod.c(240): Frame 16 best senone 3670 score 0
 INFO: test_acmod.c(240): Frame 17 best senone 3582 score 0
@@ -1020,8 +1020,8 @@ INFO: test_acmod.c(240): Frame 29 best senone 2003 score 0
 INFO: test_acmod.c(240): Frame 30 best senone 2003 score 0
 INFO: test_acmod.c(240): Frame 31 best senone 1994 score 0
 INFO: test_acmod.c(240): Frame 32 best senone 2000 score 0
-INFO: test_acmod.c(240): Frame 33 best senone 1995 score 0
-INFO: test_acmod.c(240): Frame 34 best senone 1997 score 0
+INFO: test_acmod.c(240): Frame 33 best senone 2004 score 0
+INFO: test_acmod.c(240): Frame 34 best senone 1982 score 0
 INFO: test_acmod.c(240): Frame 35 best senone 4798 score 0
 INFO: test_acmod.c(240): Frame 36 best senone 4573 score 0
 INFO: test_acmod.c(240): Frame 37 best senone 2010 score 0
@@ -1100,7 +1100,7 @@ INFO: test_acmod.c(240): Frame 109 best senone 3524 score 0
 INFO: test_acmod.c(240): Frame 110 best senone 3524 score 0
 INFO: test_acmod.c(240): Frame 111 best senone 3524 score 0
 INFO: test_acmod.c(240): Frame 112 best senone 840 score 0
-INFO: test_acmod.c(240): Frame 113 best senone 875 score 0
+INFO: test_acmod.c(240): Frame 113 best senone 4882 score 0
 INFO: test_acmod.c(240): Frame 114 best senone 3527 score 0
 INFO: test_acmod.c(240): Frame 115 best senone 3527 score 0
 INFO: test_acmod.c(240): Frame 116 best senone 3181 score 0
@@ -1129,7 +1129,7 @@ INFO: test_acmod.c(240): Frame 138 best senone 1646 score 0
 INFO: test_acmod.c(240): Frame 139 best senone 2448 score 0
 INFO: test_acmod.c(240): Frame 140 best senone 1734 score 0
 INFO: test_acmod.c(240): Frame 141 best senone 2450 score 0
-INFO: test_acmod.c(240): Frame 142 best senone 3880 score 0
+INFO: test_acmod.c(240): Frame 142 best senone 3885 score 0
 INFO: test_acmod.c(240): Frame 143 best senone 3899 score 0
 INFO: test_acmod.c(240): Frame 144 best senone 3899 score 0
 INFO: test_acmod.c(240): Frame 145 best senone 1714 score 0
@@ -1149,11 +1149,11 @@ INFO: test_acmod.c(240): Frame 158 best senone 4126 score 0
 INFO: test_acmod.c(240): Frame 159 best senone 4101 score 0
 INFO: test_acmod.c(240): Frame 160 best senone 4099 score 0
 INFO: test_acmod.c(240): Frame 161 best senone 4079 score 0
-INFO: test_acmod.c(240): Frame 162 best senone 4084 score 0
+INFO: test_acmod.c(240): Frame 162 best senone 4079 score 0
 INFO: test_acmod.c(240): Frame 163 best senone 4098 score 0
 INFO: test_acmod.c(240): Frame 164 best senone 4125 score 0
 INFO: test_acmod.c(240): Frame 165 best senone 4126 score 0
-INFO: test_acmod.c(240): Frame 166 best senone 1155 score 0
+INFO: test_acmod.c(240): Frame 166 best senone 4142 score 0
 INFO: test_acmod.c(240): Frame 167 best senone 4146 score 0
 INFO: test_acmod.c(240): Frame 168 best senone 4149 score 0
 INFO: test_acmod.c(240): Frame 169 best senone 4146 score 0
@@ -1165,7 +1165,7 @@ INFO: test_acmod.c(240): Frame 174 best senone 1245 score 0
 INFO: test_acmod.c(240): Frame 175 best senone 4736 score 0
 INFO: test_acmod.c(240): Frame 176 best senone 4546 score 0
 INFO: test_acmod.c(240): Frame 177 best senone 3703 score 0
-INFO: test_acmod.c(240): Frame 178 best senone 3700 score 0
+INFO: test_acmod.c(240): Frame 178 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 179 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 180 best senone 3700 score 0
 INFO: test_acmod.c(240): Frame 181 best senone 3700 score 0
@@ -1173,24 +1173,24 @@ INFO: test_acmod.c(240): Frame 182 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 183 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 184 best senone 3700 score 0
 INFO: test_acmod.c(240): Frame 185 best senone 96 score 0
-INFO: test_acmod.c(240): Frame 186 best senone 96 score 0
+INFO: test_acmod.c(240): Frame 186 best senone 1408 score 0
 INFO: test_acmod.c(240): Frame 187 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 188 best senone 1401 score 0
-INFO: test_acmod.c(240): Frame 189 best senone 1401 score 0
-INFO: test_acmod.c(240): Frame 190 best senone 4565 score 0
+INFO: test_acmod.c(240): Frame 189 best senone 1402 score 0
+INFO: test_acmod.c(240): Frame 190 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 191 best senone 1080 score 0
 INFO: test_acmod.c(240): Frame 192 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 193 best senone 1080 score 0
 INFO: test_acmod.c(240): Frame 194 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 195 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 196 best senone 1401 score 0
-INFO: test_acmod.c(240): Frame 197 best senone 1080 score 0
+INFO: test_acmod.c(240): Frame 197 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 198 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 199 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 200 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 201 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 202 best senone 96 score 0
-INFO: test_acmod.c(240): Frame 203 best senone 1401 score 0
+INFO: test_acmod.c(240): Frame 203 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 204 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 205 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 206 best senone 1401 score 0
@@ -1203,7 +1203,7 @@ INFO: test_acmod.c(240): Frame 212 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 213 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 214 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 215 best senone 96 score 0
-INFO: test_acmod.c(240): Frame 216 best senone 1080 score 0
+INFO: test_acmod.c(240): Frame 216 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 217 best senone 96 score 0
 INFO: test_acmod.c(240): Frame 218 best senone 1401 score 0
 INFO: test_acmod.c(240): Frame 219 best senone 1401 score 0

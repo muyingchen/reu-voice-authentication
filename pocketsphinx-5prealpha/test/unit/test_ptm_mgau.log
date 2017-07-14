@@ -26,10 +26,10 @@ INFO: ptm_mgau.c(838): Maximum top-N: 4
 INFO: cmn_live.c(55): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 INFO: cmn_live.c(66): Update to   < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
 Incremental(2048):
-Frame 0 best senone 5 score 0
-Frame 1 best senone 5 score 0
-Frame 2 best senone 5 score 0
-Frame 3 best senone 5 score 0
+Frame 0 best senone 96 score 0
+Frame 1 best senone 96 score 0
+Frame 2 best senone 96 score 0
+Frame 3 best senone 96 score 0
 Frame 4 best senone 3700 score 0
 Frame 5 best senone 96 score 0
 Frame 6 best senone 3700 score 0
@@ -48,7 +48,7 @@ Frame 18 best senone 4502 score 0
 Frame 19 best senone 1302 score 0
 Frame 20 best senone 1348 score 0
 Frame 21 best senone 1354 score 0
-Frame 22 best senone 1354 score 0
+Frame 22 best senone 1362 score 0
 Frame 23 best senone 3470 score 0
 Frame 24 best senone 1173 score 0
 Frame 25 best senone 4315 score 0
@@ -69,7 +69,7 @@ Frame 39 best senone 96 score 0
 Frame 40 best senone 96 score 0
 Frame 41 best senone 1361 score 0
 Frame 42 best senone 96 score 0
-Frame 43 best senone 3700 score 0
+Frame 43 best senone 96 score 0
 Frame 44 best senone 3700 score 0
 Frame 45 best senone 1082 score 0
 Frame 46 best senone 1416 score 0
@@ -97,7 +97,7 @@ Frame 67 best senone 2003 score 0
 Frame 68 best senone 2003 score 0
 Frame 69 best senone 1994 score 0
 Frame 70 best senone 2000 score 0
-Frame 71 best senone 1995 score 0
+Frame 71 best senone 2004 score 0
 Frame 72 best senone 1982 score 0
 Frame 73 best senone 4798 score 0
 Frame 74 best senone 4573 score 0
@@ -177,7 +177,7 @@ Frame 147 best senone 3524 score 0
 Frame 148 best senone 3524 score 0
 Frame 149 best senone 3524 score 0
 Frame 150 best senone 840 score 0
-Frame 151 best senone 875 score 0
+Frame 151 best senone 4882 score 0
 Frame 152 best senone 3527 score 0
 Frame 153 best senone 3527 score 0
 Frame 154 best senone 3181 score 0
@@ -206,7 +206,7 @@ Frame 176 best senone 1646 score 0
 Frame 177 best senone 2448 score 0
 Frame 178 best senone 1734 score 0
 Frame 179 best senone 2450 score 0
-Frame 180 best senone 3880 score 0
+Frame 180 best senone 3885 score 0
 Frame 181 best senone 3899 score 0
 Frame 182 best senone 3899 score 0
 Frame 183 best senone 1714 score 0
@@ -226,11 +226,11 @@ Frame 196 best senone 4126 score 0
 Frame 197 best senone 4101 score 0
 Frame 198 best senone 4099 score 0
 Frame 199 best senone 4079 score 0
-Frame 200 best senone 4084 score 0
+Frame 200 best senone 4079 score 0
 Frame 201 best senone 4098 score 0
 Frame 202 best senone 4125 score 0
 Frame 203 best senone 4126 score 0
-Frame 204 best senone 1155 score 0
+Frame 204 best senone 4142 score 0
 Frame 205 best senone 4146 score 0
 Frame 206 best senone 4149 score 0
 Frame 207 best senone 4146 score 0
@@ -242,7 +242,7 @@ Frame 212 best senone 1245 score 0
 Frame 213 best senone 4736 score 0
 Frame 214 best senone 4546 score 0
 Frame 215 best senone 3703 score 0
-Frame 216 best senone 3700 score 0
+Frame 216 best senone 96 score 0
 Frame 217 best senone 96 score 0
 Frame 218 best senone 3700 score 0
 Frame 219 best senone 3700 score 0
@@ -250,26 +250,26 @@ Frame 220 best senone 96 score 0
 Frame 221 best senone 96 score 0
 Frame 222 best senone 3700 score 0
 Frame 223 best senone 96 score 0
-Frame 224 best senone 96 score 0
+Frame 224 best senone 1408 score 0
 Frame 225 best senone 96 score 0
 Frame 226 best senone 1401 score 0
-Frame 227 best senone 1401 score 0
-Frame 228 best senone 4565 score 0
+Frame 227 best senone 1402 score 0
+Frame 228 best senone 96 score 0
 Frame 229 best senone 1080 score 0
 Frame 230 best senone 1401 score 0
 Frame 231 best senone 1080 score 0
 Frame 232 best senone 1401 score 0
 Frame 233 best senone 1401 score 0
 Frame 234 best senone 1401 score 0
-Frame 235 best senone 1080 score 0
+Frame 235 best senone 1401 score 0
 Frame 236 best senone 1401 score 0
 Frame 237 best senone 1401 score 0
 Frame 238 best senone 1401 score 0
-Frame 2INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
-INFO: cmn_live.c(138): Update to   < 41.00 -5.29 -0.12  5.09  2.47 -4.07 -1.37 -1.78 -5.08 -2.06 -6.45 -1.42  1.16 >
-39 best senone 1401 score 0
+Frame INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
+INFO: cmn_live.c(138): Update to   < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
+239 best senone 1401 score 0
 Frame 240 best senone 96 score 0
-Frame 241 best senone 1401 score 0
+Frame 241 best senone 96 score 0
 Frame 242 best senone 1401 score 0
 Frame 243 best senone 1401 score 0
 Frame 244 best senone 1401 score 0
@@ -282,10 +282,10 @@ Frame 250 best senone 96 score 0
 Frame 251 best senone 1401 score 0
 Frame 252 best senone 1401 score 0
 Frame 253 best senone 96 score 0
-Frame 254 best senone 1080 score 0
+Frame 254 best senone 1401 score 0
 Frame 255 best senone 96 score 0
 Frame 256 best senone 1401 score 0
 Frame 257 best senone 1401 score 0
 Frame 258 best senone 1080 score 0
 Frame 259 best senone 1079 score 0
-Frame 260 best senone 1401 score 0
+Frame 260 best senone 1080 score 0

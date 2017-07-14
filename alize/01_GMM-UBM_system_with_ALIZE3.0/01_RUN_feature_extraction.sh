@@ -5,12 +5,12 @@
 #
 #	This script is distributed in the hope that it will useful but WITHOUT ANY WARRANTY.
 #
-#	This tutorial is designed to help getting an hand on the LIA_RAL toolkit  by introducting 
+#	This tutorial is designed to help getting an hand on the LIA_RAL toolkit  by introducting
 #	the main executables in context.
 #
 #	Executables used in this script are NOT part of the ALIZE toolkit.
 #	The author of this tutorial recommand the use of these tools as he is familiar with.
-#	However, acoustic feature extraction is not limited to Spro and HTK and 
+#	However, acoustic feature extraction is not limited to Spro and HTK and
 #	other tools can be used for this purpose.
 #
 #	by Anthony Larcher
@@ -24,15 +24,15 @@
 # Before running this script you should select a configuration  by setting the two following parameters.
 # FEATURE_TYPE design the program used to extract the acoustic features: Spro or HTK
 #
-# In case Spro is selected and that sfbcep is not compiled linked to the SPHERE library, SPHERE files need to be converted into 
+# In case Spro is selected and that sfbcep is not compiled linked to the SPHERE library, SPHERE files need to be converted into
 # raw PCM files by using the tools provided by the NIST and available at:
 #
 #	http://www.speech.cs.cmu.edu/comp.speech/Section1/AudioSoftware/nist.html
 #
 # In this case, set the parameter INPUT_FORMAT to PCM
-#  
+#
 FEATURE_TYPE="SPro"		# can be SPro or HTK
-INPUT_FORMAT="PCM"		# can be SPH or PCM
+INPUT_FORMAT="WAVE"		# can be SPH or PCM
 
 
 # If SPro has not been linked to the SPHERE library, convert first the SPHERE files into raw PCM files without header
@@ -62,6 +62,17 @@ if [ $INPUT_FORMAT = "PCM" ]; then
 
 fi
 
+if [ $INPUT_FORMAT = "WAVE" ]; then
+
+	# Extract MFCC features with SPro
+	for i in `cat data/data.lst`;do
+        	COMMAND_LINE="sfbcep -l 20 -d 10 -w Hamming -p 16 -e -D -k 0 -i 300 -u 3400 -F WAVE data/wave/$i.wav data/prm/$i.tmp.prm"
+                echo $COMMAND_LINE
+                $COMMAND_LINE
+   	done
+
+fi
+
 
 if [ $INPUT_FORMAT = "SPH" ]; then
 
@@ -76,11 +87,10 @@ if [ $INPUT_FORMAT = "SPH" ]; then
 		done
 
 	else	# Extract features using HTK
-	
+
 		# Extract a list of files
 		COMMAND_LINE="bin/HCopy -C cfg/hcopy_sph.cfg -T 1 -S data/data_htk.scp"
 		echo $COMMAND_LINE
 		$COMMAND_LINE
 	fi
 fi
-

@@ -2,7 +2,7 @@
 /* sphinx_config.h: Externally visible configuration parameters */
 
 /* Use fixed-point computation */
-#define FIXED_POINT 1
+/* #undef FIXED_POINT */
 
 /* Default radix point for fixed-point */
 /* #undef DEFAULT_RADIX */

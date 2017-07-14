@@ -188,29 +188,33 @@ INFO: ngram_search_fwdtree.c(323): Max nonroot chan increased to 297
 INFO: ngram_search_fwdtree.c(333): Created 63 root, 169 non-root channels, 6 single-phone words
 INFO: ngram_search_fwdflat.c(157): fwdflat: min_ef_width = 4, max_sf_win = 25
 INFO: cmn.c(133): CMN:  7.98 -0.39 -0.08  0.02 -0.04 -0.14 -0.12 -0.12 -0.17 -0.12 -0.15 -0.09 -0.06 
-INFO: ngram_search.c(459): Resized backpointer table to 10000 entries
-INFO: ngram_search.c(459): Resized backpointer table to 20000 entries
-INFO: ngram_search_fwdtree.c(1550):    12989 words recognized (49/fr)
-INFO: ngram_search_fwdtree.c(1552):    23262 senones evaluated (87/fr)
-INFO: ngram_search_fwdtree.c(1556):    62389 channels searched (234/fr), 14570 1st, 16222 last
-INFO: ngram_search_fwdtree.c(1559):    16222 words for which last channels evaluated (60/fr)
-INFO: ngram_search_fwdtree.c(1561):    16612 candidate words for entering last phone (62/fr)
-INFO: ngram_search_fwdtree.c(1564): fwdtree 0.04 CPU 0.016 xRT
-INFO: ngram_search_fwdtree.c(1567): fwdtree 0.04 wall 0.016 xRT
-INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 84 words
-INFO: ngram_search_fwdflat.c(948):     3759 words recognized (14/fr)
-INFO: ngram_search_fwdflat.c(950):    19587 senones evaluated (74/fr)
-INFO: ngram_search_fwdflat.c(952):    41668 channels searched (156/fr)
-INFO: ngram_search_fwdflat.c(954):    13042 words searched (49/fr)
-INFO: ngram_search_fwdflat.c(957):     8560 word transitions (32/fr)
-INFO: ngram_search_fwdflat.c(960): fwdflat 0.01 CPU 0.006 xRT
-INFO: ngram_search_fwdflat.c(963): fwdflat 0.02 wall 0.006 xRT
-INFO: ngram_search.c(1197): </s> not found in last frame, using </s>.261 instead
-ERROR: "ngram_search.c", line 1207: Failed to find DAG node corresponding to </s>
-INFO: ngram_search_fwdtree.c(429): TOTAL fwdtree 0.04 CPU 0.016 xRT
-INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 0.04 wall 0.016 xRT
-INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 0.01 CPU 0.006 xRT
-INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 0.02 wall 0.006 xRT
+INFO: ngram_search_fwdtree.c(1550):      358 words recognized (1/fr)
+INFO: ngram_search_fwdtree.c(1552):     6258 senones evaluated (24/fr)
+INFO: ngram_search_fwdtree.c(1556):     6126 channels searched (23/fr), 3889 1st, 720 last
+INFO: ngram_search_fwdtree.c(1559):      720 words for which last channels evaluated (2/fr)
+INFO: ngram_search_fwdtree.c(1561):       92 candidate words for entering last phone (0/fr)
+INFO: ngram_search_fwdtree.c(1564): fwdtree 0.01 CPU 0.004 xRT
+INFO: ngram_search_fwdtree.c(1567): fwdtree 0.01 wall 0.004 xRT
+INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 12 words
+INFO: ngram_search_fwdflat.c(948):      505 words recognized (2/fr)
+INFO: ngram_search_fwdflat.c(950):     4603 senones evaluated (17/fr)
+INFO: ngram_search_fwdflat.c(952):     3214 channels searched (12/fr)
+INFO: ngram_search_fwdflat.c(954):     2393 words searched (8/fr)
+INFO: ngram_search_fwdflat.c(957):      513 word transitions (1/fr)
+INFO: ngram_search_fwdflat.c(960): fwdflat 0.00 CPU 0.000 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 0.00 wall 0.000 xRT
+INFO: ngram_search.c(1250): lattice start node <s>.0 end node </s>.214
+INFO: ngram_search.c(1276): Eliminated 0 nodes before end node
+INFO: ngram_search.c(1381): Lattice has 19 nodes, 6 links
+INFO: ps_lattice.c(1380): Bestpath score: -7520
+INFO: ps_lattice.c(1384): Normalizer P(O) = alpha(</s>:214:264) = -477176
+INFO: ps_lattice.c(1441): Joint P(O,S) = -477275 P(S|O) = -99
+INFO: ngram_search.c(872): bestpath 0.00 CPU 0.000 xRT
+INFO: ngram_search.c(875): bestpath 0.00 wall 0.000 xRT
+INFO: ngram_search_fwdtree.c(429): TOTAL fwdtree 0.01 CPU 0.004 xRT
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 0.01 wall 0.004 xRT
+INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 0.00 CPU 0.000 xRT
+INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 0.00 wall 0.000 xRT
 INFO: ngram_search.c(303): TOTAL bestpath 0.00 CPU 0.000 xRT
 INFO: ngram_search.c(306): TOTAL bestpath 0.00 wall 0.000 xRT
-FWDFLAT: (null) (0)
+FWDFLAT: go to a (-7850)

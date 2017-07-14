@@ -1,0 +1,7 @@
+Test: test-tidigits-simple
+run PASSED
+INFO: batch.c(780): AVERAGE 0.01 xRT (CPU), 0.01 xRT (elapsed)
+Use of the encoding pragma is deprecated at ../../test/word_align.pl line 14.
+TOTAL Percent correct = 100.00% Error = 0.00% Accuracy = 100.00%
+match PASSED
+All sub-tests passed

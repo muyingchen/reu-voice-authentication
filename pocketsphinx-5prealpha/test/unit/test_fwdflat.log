@@ -155,48 +155,48 @@ INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word trip
 INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
 INFO: ngram_search_fwdflat.c(157): fwdflat: min_ef_width = 4, max_sf_win = 25
 INFO: ngram_search_fwdflat.c(85): Utterance vocabulary contains 79422 words
-INFO: cmn.c(133): CMN: 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 
-INFO: ngram_search_fwdflat.c(948):      967 words recognized (4/fr)
-INFO: ngram_search_fwdflat.c(950):   185266 senones evaluated (699/fr)
-INFO: ngram_search_fwdflat.c(952):   202463 channels searched (764/fr)
-INFO: ngram_search_fwdflat.c(954):   101452 words searched (382/fr)
+INFO: cmn.c(133): CMN: 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 
+INFO: ngram_search_fwdflat.c(948):      956 words recognized (4/fr)
+INFO: ngram_search_fwdflat.c(950):   182433 senones evaluated (688/fr)
+INFO: ngram_search_fwdflat.c(952):   198284 channels searched (748/fr)
+INFO: ngram_search_fwdflat.c(954):    99863 words searched (376/fr)
 INFO: ngram_search_fwdflat.c(957): 20967408 word transitions (79122/fr)
-INFO: ngram_search_fwdflat.c(960): fwdflat 6.47 CPU 2.442 xRT
-INFO: ngram_search_fwdflat.c(963): fwdflat 6.83 wall 2.577 xRT
-INFO: cmn_live.c(120): Update from < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
-INFO: cmn_live.c(138): Update to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
-INFO: ngram_search_fwdflat.c(948):      809 words recognized (4/fr)
-INFO: ngram_search_fwdflat.c(950):   152723 senones evaluated (682/fr)
-INFO: ngram_search_fwdflat.c(952):   162591 channels searched (725/fr)
-INFO: ngram_search_fwdflat.c(954):    73180 words searched (326/fr)
+INFO: ngram_search_fwdflat.c(960): fwdflat 6.40 CPU 2.415 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 6.71 wall 2.532 xRT
+INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
+INFO: cmn_live.c(138): Update to   < 43.59 -4.53  0.26  7.00  3.63 -4.94 -2.14 -2.62 -6.06 -1.34 -7.24 -1.88  0.48 >
+INFO: ngram_search_fwdflat.c(948):      797 words recognized (4/fr)
+INFO: ngram_search_fwdflat.c(950):   149622 senones evaluated (668/fr)
+INFO: ngram_search_fwdflat.c(952):   157906 channels searched (704/fr)
+INFO: ngram_search_fwdflat.c(954):    71349 words searched (318/fr)
 INFO: ngram_search_fwdflat.c(957): 17711106 word transitions (79067/fr)
-INFO: ngram_search_fwdflat.c(960): fwdflat 6.10 CPU 2.725 xRT
-INFO: ngram_search_fwdflat.c(963): fwdflat 7.05 wall 3.146 xRT
-INFO: cmn_live.c(120): Update from < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
-INFO: cmn_live.c(138): Update to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
-INFO: ngram_search_fwdflat.c(948):      752 words recognized (3/fr)
-INFO: ngram_search_fwdflat.c(950):   141212 senones evaluated (630/fr)
-INFO: ngram_search_fwdflat.c(952):   146183 channels searched (652/fr)
-INFO: ngram_search_fwdflat.c(954):    67867 words searched (302/fr)
+INFO: ngram_search_fwdflat.c(960): fwdflat 5.90 CPU 2.633 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 7.13 wall 3.182 xRT
+INFO: cmn_live.c(120): Update from < 43.59 -4.53  0.26  7.00  3.63 -4.94 -2.14 -2.62 -6.06 -1.34 -7.24 -1.88  0.48 >
+INFO: cmn_live.c(138): Update to   < 43.59 -4.53  0.26  7.00  3.63 -4.94 -2.14 -2.62 -6.06 -1.34 -7.24 -1.88  0.48 >
+INFO: ngram_search_fwdflat.c(948):      751 words recognized (3/fr)
+INFO: ngram_search_fwdflat.c(950):   140638 senones evaluated (628/fr)
+INFO: ngram_search_fwdflat.c(952):   145308 channels searched (648/fr)
+INFO: ngram_search_fwdflat.c(954):    67532 words searched (301/fr)
 INFO: ngram_search_fwdflat.c(957): 17711106 word transitions (79067/fr)
-INFO: ngram_search_fwdflat.c(960): fwdflat 4.84 CPU 2.162 xRT
-INFO: ngram_search_fwdflat.c(963): fwdflat 4.94 wall 2.205 xRT
-INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 17.42 CPU 2.453 xRT
-INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 18.81 wall 2.650 xRT
-FWDFLAT: go forward ten meters (-6714, 0)
-2.64 seconds speech, 6.47 seconds CPU, 6.83 seconds wall
-2.45 xRT (CPU), 2.59 xRT (elapsed)
-FWDFLAT: go forward ten meters (-6280, 0)
-2.23 seconds speech, 6.10 seconds CPU, 7.05 seconds wall
-2.74 xRT (CPU), 3.16 xRT (elapsed)
-FWDFLAT: go forward ten meters (-6112, 0)
+INFO: ngram_search_fwdflat.c(960): fwdflat 6.44 CPU 2.876 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 8.84 wall 3.945 xRT
+INFO: ngram_search_fwdflat.c(176): TOTAL fwdflat 18.74 CPU 2.639 xRT
+INFO: ngram_search_fwdflat.c(179): TOTAL fwdflat 22.67 wall 3.193 xRT
+FWDFLAT: go forward ten meters (-6691, 0)
+2.64 seconds speech, 6.40 seconds CPU, 6.71 seconds wall
+2.42 xRT (CPU), 2.54 xRT (elapsed)
+FWDFLAT: go forward ten meters (-6250, 0)
+2.23 seconds speech, 5.90 seconds CPU, 7.13 seconds wall
+2.64 xRT (CPU), 3.20 xRT (elapsed)
+FWDFLAT: go forward ten meters (-6113, 0)
 <s> (318:325) P(w|o) = 1.000000 ascr = -107 lscr = 0 lback = 0 post=0
-go (326:343) P(w|o) = 1.000000 ascr = -312 lscr = -445 lback = 2 post=0
-forward (344:396) P(w|o) = 1.000000 ascr = -911 lscr = -460 lback = 3 post=0
-ten (397:432) P(w|o) = 1.000000 ascr = -805 lscr = -505 lback = 2 post=0
-meters (433:491) P(w|o) = 1.000000 ascr = -1661 lscr = -517 lback = 2 post=0
-</s> (492:539) P(w|o) = 1.000000 ascr = -265 lscr = -124 lback = 2 post=0
-2.23 seconds speech, 4.84 seconds CPU, 4.94 seconds wall
-2.17 xRT (CPU), 2.22 xRT (elapsed)
-TOTAL: 7.10 seconds speech, 17.42 seconds CPU, 18.82 seconds wall
-TOTAL: 2.45 xRT (CPU), 2.65 xRT (elapsed)
+go (326:343) P(w|o) = 1.000000 ascr = -308 lscr = -445 lback = 2 post=0
+forward (344:396) P(w|o) = 1.000000 ascr = -910 lscr = -460 lback = 3 post=0
+ten (397:432) P(w|o) = 1.000000 ascr = -804 lscr = -505 lback = 2 post=0
+meters (433:491) P(w|o) = 1.000000 ascr = -1656 lscr = -517 lback = 2 post=0
+</s> (492:539) P(w|o) = 1.000000 ascr = -277 lscr = -124 lback = 2 post=0
+2.23 seconds speech, 6.44 seconds CPU, 8.84 seconds wall
+2.89 xRT (CPU), 3.96 xRT (elapsed)
+TOTAL: 7.10 seconds speech, 18.74 seconds CPU, 22.67 seconds wall
+TOTAL: 2.64 xRT (CPU), 3.19 xRT (elapsed)

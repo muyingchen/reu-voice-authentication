@@ -158,48 +158,48 @@ INFO: ngram_search_fwdtree.c(101): 791 unique initial diphones
 INFO: ngram_search_fwdtree.c(186): Creating search channels
 INFO: ngram_search_fwdtree.c(323): Max nonroot chan increased to 152609
 INFO: ngram_search_fwdtree.c(333): Created 723 root, 152481 non-root channels, 53 single-phone words
-INFO: cmn.c(133): CMN: 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 
-INFO: ngram_search_fwdtree.c(1550):     2539 words recognized (10/fr)
-INFO: ngram_search_fwdtree.c(1552):   670526 senones evaluated (2530/fr)
-INFO: ngram_search_fwdtree.c(1556):  1542093 channels searched (5819/fr), 149663 1st, 97450 last
-INFO: ngram_search_fwdtree.c(1559):     5691 words for which last channels evaluated (21/fr)
-INFO: ngram_search_fwdtree.c(1561):    56342 candidate words for entering last phone (212/fr)
-INFO: ngram_search_fwdtree.c(1564): fwdtree 0.77 CPU 0.290 xRT
-INFO: ngram_search_fwdtree.c(1567): fwdtree 0.78 wall 0.295 xRT
-INFO: cmn_live.c(120): Update from < 41.00 -5.30 -0.11  5.09  2.47 -4.07 -1.38 -1.79 -5.09 -2.07 -6.45 -1.43  1.15 >
-INFO: cmn_live.c(138): Update to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
-INFO: ngram_search_fwdtree.c(1550):     2212 words recognized (10/fr)
-INFO: ngram_search_fwdtree.c(1552):   540359 senones evaluated (2412/fr)
-INFO: ngram_search_fwdtree.c(1556):  1147100 channels searched (5120/fr), 120161 1st, 90175 last
-INFO: ngram_search_fwdtree.c(1559):     4916 words for which last channels evaluated (21/fr)
-INFO: ngram_search_fwdtree.c(1561):    41715 candidate words for entering last phone (186/fr)
-INFO: ngram_search_fwdtree.c(1564): fwdtree 0.62 CPU 0.277 xRT
-INFO: ngram_search_fwdtree.c(1567): fwdtree 0.65 wall 0.290 xRT
-INFO: cmn_live.c(120): Update from < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
-INFO: cmn_live.c(138): Update to   < 43.59 -4.53  0.28  7.00  3.61 -4.94 -2.15 -2.62 -6.08 -1.35 -7.25 -1.88  0.46 >
-INFO: ngram_search_fwdtree.c(1550):     2092 words recognized (9/fr)
-INFO: ngram_search_fwdtree.c(1552):   517589 senones evaluated (2311/fr)
-INFO: ngram_search_fwdtree.c(1556):  1051203 channels searched (4692/fr), 118801 1st, 85762 last
-INFO: ngram_search_fwdtree.c(1559):     4671 words for which last channels evaluated (20/fr)
-INFO: ngram_search_fwdtree.c(1561):    37402 candidate words for entering last phone (166/fr)
-INFO: ngram_search_fwdtree.c(1564): fwdtree 0.58 CPU 0.258 xRT
-INFO: ngram_search_fwdtree.c(1567): fwdtree 0.70 wall 0.313 xRT
-INFO: ngram_search_fwdtree.c(429): TOTAL fwdtree 1.97 CPU 0.277 xRT
-INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 2.13 wall 0.300 xRT
-FWDTREE: go forward ten meters (-7755, 0)
-2.64 seconds speech, 0.77 seconds CPU, 0.78 seconds wall
-0.29 xRT (CPU), 0.30 xRT (elapsed)
-FWDTREE: go forward ten meters (-7205, 0)
-2.23 seconds speech, 0.62 seconds CPU, 0.65 seconds wall
-0.28 xRT (CPU), 0.29 xRT (elapsed)
-FWDTREE: go forward ten meters (-7050, 0)
-<s> (318:325) P(w|o) = 1.000000 ascr = -123 lscr = 0 lback = 0 post=0
-go (326:343) P(w|o) = 1.000000 ascr = -413 lscr = -445 lback = 2 post=0
-forward (344:396) P(w|o) = 1.000000 ascr = -1120 lscr = -460 lback = 3 post=0
-ten (397:432) P(w|o) = 1.000000 ascr = -1073 lscr = -505 lback = 2 post=0
-meters (433:491) P(w|o) = 1.000000 ascr = -1906 lscr = -517 lback = 2 post=0
+INFO: cmn.c(133): CMN: 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 
+INFO: ngram_search_fwdtree.c(1550):     2528 words recognized (10/fr)
+INFO: ngram_search_fwdtree.c(1552):   663904 senones evaluated (2505/fr)
+INFO: ngram_search_fwdtree.c(1556):  1516507 channels searched (5722/fr), 149505 1st, 96342 last
+INFO: ngram_search_fwdtree.c(1559):     5650 words for which last channels evaluated (21/fr)
+INFO: ngram_search_fwdtree.c(1561):    55736 candidate words for entering last phone (210/fr)
+INFO: ngram_search_fwdtree.c(1564): fwdtree 0.98 CPU 0.371 xRT
+INFO: ngram_search_fwdtree.c(1567): fwdtree 1.22 wall 0.459 xRT
+INFO: cmn_live.c(120): Update from < 41.00 -5.29 -0.12  5.09  2.48 -4.07 -1.37 -1.78 -5.08 -2.05 -6.45 -1.42  1.17 >
+INFO: cmn_live.c(138): Update to   < 43.59 -4.53  0.26  7.00  3.63 -4.94 -2.14 -2.62 -6.06 -1.34 -7.24 -1.88  0.48 >
+INFO: ngram_search_fwdtree.c(1550):     2198 words recognized (10/fr)
+INFO: ngram_search_fwdtree.c(1552):   533945 senones evaluated (2384/fr)
+INFO: ngram_search_fwdtree.c(1556):  1121023 channels searched (5004/fr), 119921 1st, 89019 last
+INFO: ngram_search_fwdtree.c(1559):     4867 words for which last channels evaluated (21/fr)
+INFO: ngram_search_fwdtree.c(1561):    41130 candidate words for entering last phone (183/fr)
+INFO: ngram_search_fwdtree.c(1564): fwdtree 0.64 CPU 0.286 xRT
+INFO: ngram_search_fwdtree.c(1567): fwdtree 0.68 wall 0.305 xRT
+INFO: cmn_live.c(120): Update from < 43.59 -4.53  0.26  7.00  3.63 -4.94 -2.14 -2.62 -6.06 -1.34 -7.24 -1.88  0.48 >
+INFO: cmn_live.c(138): Update to   < 43.59 -4.53  0.26  7.00  3.63 -4.94 -2.14 -2.62 -6.06 -1.34 -7.24 -1.88  0.48 >
+INFO: ngram_search_fwdtree.c(1550):     2067 words recognized (9/fr)
+INFO: ngram_search_fwdtree.c(1552):   510459 senones evaluated (2279/fr)
+INFO: ngram_search_fwdtree.c(1556):  1034959 channels searched (4620/fr), 118573 1st, 85676 last
+INFO: ngram_search_fwdtree.c(1559):     4651 words for which last channels evaluated (20/fr)
+INFO: ngram_search_fwdtree.c(1561):    36970 candidate words for entering last phone (165/fr)
+INFO: ngram_search_fwdtree.c(1564): fwdtree 0.60 CPU 0.268 xRT
+INFO: ngram_search_fwdtree.c(1567): fwdtree 0.64 wall 0.284 xRT
+INFO: ngram_search_fwdtree.c(429): TOTAL fwdtree 2.22 CPU 0.313 xRT
+INFO: ngram_search_fwdtree.c(432): TOTAL fwdtree 2.53 wall 0.357 xRT
+FWDTREE: go forward ten meters (-7728, 0)
+2.64 seconds speech, 0.98 seconds CPU, 1.22 seconds wall
+0.37 xRT (CPU), 0.46 xRT (elapsed)
+FWDTREE: go forward ten meters (-7175, 0)
+2.23 seconds speech, 0.64 seconds CPU, 0.68 seconds wall
+0.29 xRT (CPU), 0.31 xRT (elapsed)
+FWDTREE: go forward ten meters (-7048, 0)
+<s> (318:325) P(w|o) = 1.000000 ascr = -125 lscr = 0 lback = 0 post=0
+go (326:343) P(w|o) = 1.000000 ascr = -417 lscr = -445 lback = 2 post=0
+forward (344:396) P(w|o) = 1.000000 ascr = -1119 lscr = -460 lback = 3 post=0
+ten (397:432) P(w|o) = 1.000000 ascr = -1074 lscr = -505 lback = 2 post=0
+meters (433:491) P(w|o) = 1.000000 ascr = -1898 lscr = -517 lback = 2 post=0
 </s> (492:539) P(w|o) = 1.000000 ascr = -364 lscr = -124 lback = 2 post=0
-2.23 seconds speech, 0.58 seconds CPU, 0.70 seconds wall
-0.26 xRT (CPU), 0.31 xRT (elapsed)
-TOTAL: 7.10 seconds speech, 1.97 seconds CPU, 2.13 seconds wall
-TOTAL: 0.28 xRT (CPU), 0.30 xRT (elapsed)
+2.23 seconds speech, 0.60 seconds CPU, 0.64 seconds wall
+0.27 xRT (CPU), 0.28 xRT (elapsed)
+TOTAL: 7.10 seconds speech, 2.22 seconds CPU, 2.53 seconds wall
+TOTAL: 0.31 xRT (CPU), 0.36 xRT (elapsed)

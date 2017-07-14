@@ -1,0 +1,230 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-compile	no	no
+-fsg			test.rightRecursion.out
+-fsm			
+-help		no	no
+-jsgf			../../test/regression/test.gram
+-symtab			
+-toprule		test.rightRecursion
+
+INFO: jsgf.c(799): Importing <polite.startPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(706): Defined rule: <polite.g00000>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.startPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00002>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.endPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00004>
+INFO: jsgf.c(706): Defined rule: <polite.g00005>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.allPolite>
+INFO: jsgf.c(846): Imported <test.startPolite>
+INFO: jsgf.c(799): Importing <polite.endPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(805): Already imported ../../test/regression/polite.gram
+INFO: jsgf.c(846): Imported <test.endPolite>
+INFO: jsgf.c(706): Defined rule: <test.g00009>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.rightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.action>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nestedRightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.Y>
+INFO: jsgf.c(706): Defined rule: <test.g00014>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.kleene>
+INFO: jsgf.c(706): Defined rule: <test.polite>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nulltest>
+INFO: jsgf.c(706): Defined rule: <test.g00018>
+INFO: jsgf.c(706): Defined rule: <test.g00019>
+INFO: jsgf.c(706): Defined rule: <test.ones>
+INFO: jsgf.c(706): Defined rule: <test.g00021>
+INFO: jsgf.c(706): Defined rule: <test.g00022>
+INFO: jsgf.c(706): Defined rule: <test.twos>
+INFO: jsgf.c(706): Defined rule: <test.g00024>
+INFO: jsgf.c(706): Defined rule: <test.g00025>
+INFO: jsgf.c(706): Defined rule: <test.threes>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.command>
+INFO: jsgf.c(706): Defined rule: <test.g00028>
+INFO: jsgf.c(706): Defined rule: <test.g00029>
+INFO: jsgf.c(706): Defined rule: <test.caction>
+INFO: jsgf.c(365): Right recursion <rightRecursion> 2 => 0
+INFO: fsg_model.c(843): Writing FSG file 'test.rightRecursion.out'
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-compile	no	no
+-fsg			test.nestedRightRecursion.out
+-fsm			
+-help		no	no
+-jsgf			../../test/regression/test.gram
+-symtab			
+-toprule		test.nestedRightRecursion
+
+INFO: jsgf.c(799): Importing <polite.startPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(706): Defined rule: <polite.g00000>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.startPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00002>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.endPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00004>
+INFO: jsgf.c(706): Defined rule: <polite.g00005>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.allPolite>
+INFO: jsgf.c(846): Imported <test.startPolite>
+INFO: jsgf.c(799): Importing <polite.endPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(805): Already imported ../../test/regression/polite.gram
+INFO: jsgf.c(846): Imported <test.endPolite>
+INFO: jsgf.c(706): Defined rule: <test.g00009>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.rightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.action>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nestedRightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.Y>
+INFO: jsgf.c(706): Defined rule: <test.g00014>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.kleene>
+INFO: jsgf.c(706): Defined rule: <test.polite>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nulltest>
+INFO: jsgf.c(706): Defined rule: <test.g00018>
+INFO: jsgf.c(706): Defined rule: <test.g00019>
+INFO: jsgf.c(706): Defined rule: <test.ones>
+INFO: jsgf.c(706): Defined rule: <test.g00021>
+INFO: jsgf.c(706): Defined rule: <test.g00022>
+INFO: jsgf.c(706): Defined rule: <test.twos>
+INFO: jsgf.c(706): Defined rule: <test.g00024>
+INFO: jsgf.c(706): Defined rule: <test.g00025>
+INFO: jsgf.c(706): Defined rule: <test.threes>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.command>
+INFO: jsgf.c(706): Defined rule: <test.g00028>
+INFO: jsgf.c(706): Defined rule: <test.g00029>
+INFO: jsgf.c(706): Defined rule: <test.caction>
+INFO: jsgf.c(365): Right recursion <nestedRightRecursion> 0 => 0
+INFO: fsg_model.c(843): Writing FSG file 'test.nestedRightRecursion.out'
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-compile	no	no
+-fsg			test.kleene.out
+-fsm			
+-help		no	no
+-jsgf			../../test/regression/test.gram
+-symtab			
+-toprule		test.kleene
+
+INFO: jsgf.c(799): Importing <polite.startPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(706): Defined rule: <polite.g00000>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.startPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00002>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.endPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00004>
+INFO: jsgf.c(706): Defined rule: <polite.g00005>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.allPolite>
+INFO: jsgf.c(846): Imported <test.startPolite>
+INFO: jsgf.c(799): Importing <polite.endPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(805): Already imported ../../test/regression/polite.gram
+INFO: jsgf.c(846): Imported <test.endPolite>
+INFO: jsgf.c(706): Defined rule: <test.g00009>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.rightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.action>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nestedRightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.Y>
+INFO: jsgf.c(706): Defined rule: <test.g00014>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.kleene>
+INFO: jsgf.c(706): Defined rule: <test.polite>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nulltest>
+INFO: jsgf.c(706): Defined rule: <test.g00018>
+INFO: jsgf.c(706): Defined rule: <test.g00019>
+INFO: jsgf.c(706): Defined rule: <test.ones>
+INFO: jsgf.c(706): Defined rule: <test.g00021>
+INFO: jsgf.c(706): Defined rule: <test.g00022>
+INFO: jsgf.c(706): Defined rule: <test.twos>
+INFO: jsgf.c(706): Defined rule: <test.g00024>
+INFO: jsgf.c(706): Defined rule: <test.g00025>
+INFO: jsgf.c(706): Defined rule: <test.threes>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.command>
+INFO: jsgf.c(706): Defined rule: <test.g00028>
+INFO: jsgf.c(706): Defined rule: <test.g00029>
+INFO: jsgf.c(706): Defined rule: <test.caction>
+INFO: jsgf.c(365): Right recursion <test.g00014> 4 => 0
+INFO: fsg_model.c(843): Writing FSG file 'test.kleene.out'
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-compile	no	no
+-fsg			test.nulltest.out
+-fsm			
+-help		no	no
+-jsgf			../../test/regression/test.gram
+-symtab			
+-toprule		test.nulltest
+
+INFO: jsgf.c(799): Importing <polite.startPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(706): Defined rule: <polite.g00000>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.startPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00002>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.endPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00004>
+INFO: jsgf.c(706): Defined rule: <polite.g00005>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.allPolite>
+INFO: jsgf.c(846): Imported <test.startPolite>
+INFO: jsgf.c(799): Importing <polite.endPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(805): Already imported ../../test/regression/polite.gram
+INFO: jsgf.c(846): Imported <test.endPolite>
+INFO: jsgf.c(706): Defined rule: <test.g00009>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.rightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.action>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nestedRightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.Y>
+INFO: jsgf.c(706): Defined rule: <test.g00014>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.kleene>
+INFO: jsgf.c(706): Defined rule: <test.polite>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nulltest>
+INFO: jsgf.c(706): Defined rule: <test.g00018>
+INFO: jsgf.c(706): Defined rule: <test.g00019>
+INFO: jsgf.c(706): Defined rule: <test.ones>
+INFO: jsgf.c(706): Defined rule: <test.g00021>
+INFO: jsgf.c(706): Defined rule: <test.g00022>
+INFO: jsgf.c(706): Defined rule: <test.twos>
+INFO: jsgf.c(706): Defined rule: <test.g00024>
+INFO: jsgf.c(706): Defined rule: <test.g00025>
+INFO: jsgf.c(706): Defined rule: <test.threes>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.command>
+INFO: jsgf.c(706): Defined rule: <test.g00028>
+INFO: jsgf.c(706): Defined rule: <test.g00029>
+INFO: jsgf.c(706): Defined rule: <test.caction>
+INFO: fsg_model.c(843): Writing FSG file 'test.nulltest.out'
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-compile	no	no
+-fsg			test.command.out
+-fsm			
+-help		no	no
+-jsgf			../../test/regression/test.gram
+-symtab			
+-toprule		test.command
+
+INFO: jsgf.c(799): Importing <polite.startPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(706): Defined rule: <polite.g00000>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.startPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00002>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.endPolite>
+INFO: jsgf.c(706): Defined rule: <polite.g00004>
+INFO: jsgf.c(706): Defined rule: <polite.g00005>
+INFO: jsgf.c(706): Defined rule: PUBLIC <polite.allPolite>
+INFO: jsgf.c(846): Imported <test.startPolite>
+INFO: jsgf.c(799): Importing <polite.endPolite> from ../../test/regression/polite.gram to test
+INFO: jsgf.c(805): Already imported ../../test/regression/polite.gram
+INFO: jsgf.c(846): Imported <test.endPolite>
+INFO: jsgf.c(706): Defined rule: <test.g00009>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.rightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.action>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nestedRightRecursion>
+INFO: jsgf.c(706): Defined rule: <test.Y>
+INFO: jsgf.c(706): Defined rule: <test.g00014>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.kleene>
+INFO: jsgf.c(706): Defined rule: <test.polite>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.nulltest>
+INFO: jsgf.c(706): Defined rule: <test.g00018>
+INFO: jsgf.c(706): Defined rule: <test.g00019>
+INFO: jsgf.c(706): Defined rule: <test.ones>
+INFO: jsgf.c(706): Defined rule: <test.g00021>
+INFO: jsgf.c(706): Defined rule: <test.g00022>
+INFO: jsgf.c(706): Defined rule: <test.twos>
+INFO: jsgf.c(706): Defined rule: <test.g00024>
+INFO: jsgf.c(706): Defined rule: <test.g00025>
+INFO: jsgf.c(706): Defined rule: <test.threes>
+INFO: jsgf.c(706): Defined rule: PUBLIC <test.command>
+INFO: jsgf.c(706): Defined rule: <test.g00028>
+INFO: jsgf.c(706): Defined rule: <test.g00029>
+INFO: jsgf.c(706): Defined rule: <test.caction>
+INFO: jsgf.c(365): Right recursion <test.g00029> 6 => 1
+INFO: jsgf.c(365): Right recursion <test.g00028> 7 => 1
+INFO: fsg_model.c(843): Writing FSG file 'test.command.out'

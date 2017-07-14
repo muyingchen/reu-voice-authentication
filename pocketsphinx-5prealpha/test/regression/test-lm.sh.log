@@ -1,0 +1,7 @@
+Test: test-lm
+run PASSED
+INFO: batch.c(780): AVERAGE 0.41 xRT (CPU), 0.42 xRT (elapsed)
+Use of the encoding pragma is deprecated at ../../test/word_align.pl line 14.
+TOTAL Percent correct = 76.06% Error = 28.17% Accuracy = 71.83%
+match PASSED
+All sub-tests passed
