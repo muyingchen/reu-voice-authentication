@@ -1,4 +1,5 @@
 .DS_Store
+**/.DS_Store
 .ipynb_checkpoints
 pocketsphinx-python/
 alize/01_GMM-UGM_system_with_ALIZE3.0/data
