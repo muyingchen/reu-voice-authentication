@@ -6,3 +6,4 @@ alize/01_GMM-UGM_system_with_ALIZE3.0/data
 alize/LIA_RAL/
 alize/alize-core/
 *.pyc
+client/config.py
