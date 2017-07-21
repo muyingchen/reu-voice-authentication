@@ -66,7 +66,7 @@ if [ $INPUT_FORMAT = "WAVE" ]; then
 
 	# Extract MFCC features with SPro
 	for i in `cat data/data.lst`;do
-        	COMMAND_LINE="sfbcep -l 20 -d 10 -w Hamming -p 16 -e -D -k 0 -i 300 -u 3400 -F WAVE data/wave/$i.wav data/prm/$i.tmp.prm"
+        	COMMAND_LINE="sfbcep -l 20 -d 10 -w Hamming -p 16 -e -D -k 0 -i 300 -u 3400 -F wave data/wave/$i.wav data/prm/$i.prm"
                 echo $COMMAND_LINE
                 $COMMAND_LINE
    	done

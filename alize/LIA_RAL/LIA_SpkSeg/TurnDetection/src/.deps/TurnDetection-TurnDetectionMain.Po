@@ -1,0 +1,1361 @@
+TurnDetection-TurnDetectionMain.o: TurnDetectionMain.cpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iostream \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iosfwd \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/cdefs.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_posix_availability.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/Availability.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/AvailabilityInternal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_null.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_size_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_mbstate_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ct_rune_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_rune_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_wchar_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/stdarg.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_va_list.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_off_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ssize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_clock_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_time_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_timespec.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_wint_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_wctype_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/runetype.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__locale \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstring \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_errno_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/strings.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdio \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwchar \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwctype \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cctype \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_wctrans_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/initializer_list \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstddef \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/type_traits \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/utility \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tuple \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/typeinfo \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/exception \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdint \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int8_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int16_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int32_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint8_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint16_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint32_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_intmax_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uintmax_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/new \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__undef___deallocate \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/limits \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__undef_min_max \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iterator \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_base \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_base_03 \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__debug \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/tuple \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stdexcept \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/mutex \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__mutex_base \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/chrono \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ctime \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ratio \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/climits \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/syslimits.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/system_error \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/errno.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/errno.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/pthread.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/pthread/pthread_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/pthread/sched.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_cond_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_key_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_once_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/pthread/qos.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/qos.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_mach_port_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_sigset_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/functional \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_03 \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/__wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/streambuf \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/locale \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdlib \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_pid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_id_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/appleapiopts.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/signal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/signal.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_mcontext.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_mcontext.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ucontext.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_uid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_timeval.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/endian.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/endian.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_endian.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/alloca.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int8_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int16_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int32_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_dev_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_mode_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/nl_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_blkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_blksize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_gid_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_in_addr_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_in_port_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ino_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ino64_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_key_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_nlink_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_suseconds_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_def.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_setsize.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_set.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_clr.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_zero.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_isset.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_copy.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_nl_item.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/bitset \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__bit_reference \
+  ../../../LIA_SpkTools/include/liatools.h ../../../include/Eigen/Dense \
+  ../../../include/Eigen/Core \
+  ../../../include/Eigen/src/Core/util/DisableStupidWarnings.h \
+  ../../../include/Eigen/src/Core/util/Macros.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/complex \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cmath \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/math.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/sstream \
+  ../../../include/Eigen/src/Core/util/MKL_support.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/emmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/xmmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/mmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/mm_malloc.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/f16cintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/pmmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/tmmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/smmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cassert \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/assert.h \
+  ../../../include/Eigen/src/Core/util/Constants.h \
+  ../../../include/Eigen/src/Core/util/ForwardDeclarations.h \
+  ../../../include/Eigen/src/Core/util/Meta.h \
+  ../../../include/Eigen/src/Core/util/XprHelper.h \
+  ../../../include/Eigen/src/Core/util/StaticAssert.h \
+  ../../../include/Eigen/src/Core/util/Memory.h \
+  ../../../include/Eigen/src/Core/NumTraits.h \
+  ../../../include/Eigen/src/Core/MathFunctions.h \
+  ../../../include/Eigen/src/Core/GenericPacketMath.h \
+  ../../../include/Eigen/src/Core/arch/SSE/PacketMath.h \
+  ../../../include/Eigen/src/Core/arch/SSE/MathFunctions.h \
+  ../../../include/Eigen/src/Core/arch/SSE/Complex.h \
+  ../../../include/Eigen/src/Core/arch/Default/Settings.h \
+  ../../../include/Eigen/src/Core/Functors.h \
+  ../../../include/Eigen/src/Core/DenseCoeffsBase.h \
+  ../../../include/Eigen/src/Core/DenseBase.h \
+  ../../../include/Eigen/src/Core/../plugins/BlockMethods.h \
+  ../../../include/Eigen/src/Core/MatrixBase.h \
+  ../../../include/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h \
+  ../../../include/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h \
+  ../../../include/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h \
+  ../../../include/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h \
+  ../../../include/Eigen/src/Core/EigenBase.h \
+  ../../../include/Eigen/src/Core/Assign.h \
+  ../../../include/Eigen/src/Core/util/BlasUtil.h \
+  ../../../include/Eigen/src/Core/DenseStorage.h \
+  ../../../include/Eigen/src/Core/NestByValue.h \
+  ../../../include/Eigen/src/Core/ForceAlignedAccess.h \
+  ../../../include/Eigen/src/Core/ReturnByValue.h \
+  ../../../include/Eigen/src/Core/NoAlias.h \
+  ../../../include/Eigen/src/Core/PlainObjectBase.h \
+  ../../../include/Eigen/src/Core/Matrix.h \
+  ../../../include/Eigen/src/Core/Array.h \
+  ../../../include/Eigen/src/Core/CwiseBinaryOp.h \
+  ../../../include/Eigen/src/Core/CwiseUnaryOp.h \
+  ../../../include/Eigen/src/Core/CwiseNullaryOp.h \
+  ../../../include/Eigen/src/Core/CwiseUnaryView.h \
+  ../../../include/Eigen/src/Core/SelfCwiseBinaryOp.h \
+  ../../../include/Eigen/src/Core/Dot.h \
+  ../../../include/Eigen/src/Core/StableNorm.h \
+  ../../../include/Eigen/src/Core/MapBase.h \
+  ../../../include/Eigen/src/Core/Stride.h \
+  ../../../include/Eigen/src/Core/Map.h \
+  ../../../include/Eigen/src/Core/Block.h \
+  ../../../include/Eigen/src/Core/VectorBlock.h \
+  ../../../include/Eigen/src/Core/Transpose.h \
+  ../../../include/Eigen/src/Core/DiagonalMatrix.h \
+  ../../../include/Eigen/src/Core/Diagonal.h \
+  ../../../include/Eigen/src/Core/DiagonalProduct.h \
+  ../../../include/Eigen/src/Core/PermutationMatrix.h \
+  ../../../include/Eigen/src/Core/Transpositions.h \
+  ../../../include/Eigen/src/Core/Redux.h \
+  ../../../include/Eigen/src/Core/Visitor.h \
+  ../../../include/Eigen/src/Core/Fuzzy.h \
+  ../../../include/Eigen/src/Core/IO.h \
+  ../../../include/Eigen/src/Core/Swap.h \
+  ../../../include/Eigen/src/Core/CommaInitializer.h \
+  ../../../include/Eigen/src/Core/Flagged.h \
+  ../../../include/Eigen/src/Core/ProductBase.h \
+  ../../../include/Eigen/src/Core/GeneralProduct.h \
+  ../../../include/Eigen/src/Core/TriangularMatrix.h \
+  ../../../include/Eigen/src/Core/SelfAdjointView.h \
+  ../../../include/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+  ../../../include/Eigen/src/Core/products/Parallelizer.h \
+  ../../../include/Eigen/src/Core/products/CoeffBasedProduct.h \
+  ../../../include/Eigen/src/Core/products/GeneralMatrixVector.h \
+  ../../../include/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+  ../../../include/Eigen/src/Core/SolveTriangular.h \
+  ../../../include/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+  ../../../include/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+  ../../../include/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+  ../../../include/Eigen/src/Core/products/SelfadjointProduct.h \
+  ../../../include/Eigen/src/Core/products/SelfadjointRank2Update.h \
+  ../../../include/Eigen/src/Core/products/TriangularMatrixVector.h \
+  ../../../include/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+  ../../../include/Eigen/src/Core/products/TriangularSolverMatrix.h \
+  ../../../include/Eigen/src/Core/products/TriangularSolverVector.h \
+  ../../../include/Eigen/src/Core/BandMatrix.h \
+  ../../../include/Eigen/src/Core/BooleanRedux.h \
+  ../../../include/Eigen/src/Core/Select.h \
+  ../../../include/Eigen/src/Core/VectorwiseOp.h \
+  ../../../include/Eigen/src/Core/Random.h \
+  ../../../include/Eigen/src/Core/Replicate.h \
+  ../../../include/Eigen/src/Core/Reverse.h \
+  ../../../include/Eigen/src/Core/ArrayBase.h \
+  ../../../include/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h \
+  ../../../include/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h \
+  ../../../include/Eigen/src/Core/ArrayWrapper.h \
+  ../../../include/Eigen/src/Core/GlobalFunctions.h \
+  ../../../include/Eigen/src/Core/util/ReenableStupidWarnings.h \
+  ../../../include/Eigen/LU ../../../include/Eigen/src/misc/Solve.h \
+  ../../../include/Eigen/src/misc/Kernel.h \
+  ../../../include/Eigen/src/misc/Image.h \
+  ../../../include/Eigen/src/LU/FullPivLU.h \
+  ../../../include/Eigen/src/LU/PartialPivLU.h \
+  ../../../include/Eigen/src/LU/Determinant.h \
+  ../../../include/Eigen/src/LU/Inverse.h \
+  ../../../include/Eigen/src/LU/arch/Inverse_SSE.h \
+  ../../../include/Eigen/Cholesky \
+  ../../../include/Eigen/src/Cholesky/LLT.h \
+  ../../../include/Eigen/src/Cholesky/LDLT.h ../../../include/Eigen/QR \
+  ../../../include/Eigen/Jacobi \
+  ../../../include/Eigen/src/Jacobi/Jacobi.h \
+  ../../../include/Eigen/Householder \
+  ../../../include/Eigen/src/Householder/Householder.h \
+  ../../../include/Eigen/src/Householder/HouseholderSequence.h \
+  ../../../include/Eigen/src/Householder/BlockHouseholder.h \
+  ../../../include/Eigen/src/QR/HouseholderQR.h \
+  ../../../include/Eigen/src/QR/FullPivHouseholderQR.h \
+  ../../../include/Eigen/src/QR/ColPivHouseholderQR.h \
+  ../../../include/Eigen/SVD ../../../include/Eigen/src/SVD/JacobiSVD.h \
+  ../../../include/Eigen/src/SVD/UpperBidiagonalization.h \
+  ../../../include/Eigen/Geometry \
+  ../../../include/Eigen/src/Geometry/OrthoMethods.h \
+  ../../../include/Eigen/src/Geometry/EulerAngles.h \
+  ../../../include/Eigen/src/Geometry/Homogeneous.h \
+  ../../../include/Eigen/src/Geometry/RotationBase.h \
+  ../../../include/Eigen/src/Geometry/Rotation2D.h \
+  ../../../include/Eigen/src/Geometry/Quaternion.h \
+  ../../../include/Eigen/src/Geometry/AngleAxis.h \
+  ../../../include/Eigen/src/Geometry/Transform.h \
+  ../../../include/Eigen/src/Geometry/Translation.h \
+  ../../../include/Eigen/src/Geometry/Scaling.h \
+  ../../../include/Eigen/src/Geometry/Hyperplane.h \
+  ../../../include/Eigen/src/Geometry/ParametrizedLine.h \
+  ../../../include/Eigen/src/Geometry/AlignedBox.h \
+  ../../../include/Eigen/src/Geometry/Umeyama.h \
+  ../../../include/Eigen/src/Geometry/arch/Geometry_SSE.h \
+  ../../../include/Eigen/Eigenvalues \
+  ../../../include/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  ../../../include/Eigen/src/Eigenvalues/RealSchur.h \
+  ../../../include/Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
+  ../../../include/Eigen/src/Eigenvalues/EigenSolver.h \
+  ../../../include/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+  ../../../include/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+  ../../../include/Eigen/src/Eigenvalues/ComplexSchur.h \
+  ../../../include/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+  ../../../include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  ../../../LIA_SpkTools/include/GeneralTools.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/alize.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/AutoDestructor.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Object.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Exception.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/alizeString.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/RealVector.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/memory.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/RefVector.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/DoubleSquareMatrix.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Feature.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Matrix.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/fstream \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Config.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFlags.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/XList.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/XLine.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/BoolMatrix.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ULongVector.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Label.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Histo.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/LabelSet.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/CmdLine.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Seg.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegAbstract.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegServer.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegCluster.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegServerFileWriter.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FileWriter.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegServerFileReaderRaw.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegServerFileReaderAbstract.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FileReader.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/DistribGD.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Distrib.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/DistribGF.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureGD.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Mixture.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/DistribRefVector.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureGF.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/LabelServer.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServer.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureDict.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureServer.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureInputStream.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureStat.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/StatServer.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/LKVector.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ViterbiAccum.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureGDStat.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureGFStat.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FrameAcc.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FrameAccGD.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FrameAccGF.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureMultipleFileReader.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderAbstract.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileList.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReader.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderRaw.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderSingle.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderSPro3.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderSPro4.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderHTK.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureInputStreamModifier.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReaderAmiral.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReaderAbstract.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReaderRaw.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReaderXml.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/XmlParser.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReader.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileWriter.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileWriter.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileReader.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileReaderAbstract.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileReaderXml.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileReaderRaw.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileWriter.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigFileReaderRaw.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigFileReaderAbstract.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigFileReaderXml.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigFileWriter.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/XListFileReader.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/LabelFileReader.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/AudioFrame.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/AudioFileReader.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/AudioInputStream.h \
+  /Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigChecker.h \
+  ../../../LIA_SpkTools/include/AccumulateStat.h \
+  ../../../LIA_SpkTools/include/AccumulateJFAStat.h \
+  ../../../LIA_SpkTools/include/AccumulateTVStat.h \
+  ../../../LIA_SpkTools/include/TrainTools.h \
+  ../../../LIA_SpkTools/include/SegTools.h \
+  ../../../LIA_SpkTools/include/Hmm.h \
+  ../../../LIA_SpkTools/include/ScoreWarp.h \
+  ../../../LIA_SpkTools/include/IOFormat.h \
+  ../../../LIA_SpkTools/include/SuperVectors.h \
+  ../../../LIA_SpkTools/include/FactorAnalysis.h \
+  ../../../LIA_SpkTools/include/TopGauss.h \
+  ../../../LIA_SpkTools/include/PldaTools.h ../include/TurnDetection.h \
+  ../../../LIA_SpkTools/include/Tools.h \
+  ../../../LIA_SpkTools/include/ClusteringCriterion.h
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iostream:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ios:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iosfwd:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/wchar.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/cdefs.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_symbol_aliasing.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_posix_availability.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/Availability.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/AvailabilityInternal.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_null.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_size_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_mbstate_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ct_rune_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_rune_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_wchar_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/stdarg.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_va_list.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/stdio.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_off_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ssize_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/time.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_clock_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_time_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_timespec.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_wctype.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_wint_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_wctype_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/ctype.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/runetype.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__locale:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstring:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_rsize_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_errno_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/strings.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdio:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwchar:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwctype:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cctype:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/wctype.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_wctrans_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/initializer_list:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstddef:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/stddef.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/type_traits:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/utility:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tuple:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/typeinfo:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/exception:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdint:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/stdint.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int8_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int16_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int32_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int64_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint8_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint16_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint32_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint64_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_intptr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_uintptr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_intmax_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uintmax_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/new:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__undef___deallocate:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/limits:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__undef_min_max:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iterator:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_base:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_base_03:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__debug:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/tuple:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stdexcept:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/mutex:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__mutex_base:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/chrono:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ctime:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ratio:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/climits:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/limits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/limits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/limits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/limits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_limits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/syslimits.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/system_error:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cerrno:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/errno.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/errno.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/pthread.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/pthread/pthread_impl.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/pthread/sched.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/pthread/qos.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/qos.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_mach_port_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_sigset_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/functional:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_03:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/locale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_locale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_xlocale.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_ctype.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/__wctype.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_stdio.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_string.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_time.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_wchar.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_wctype.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/streambuf:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/istream:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/locale:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdlib:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_pid_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_id_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/appleapiopts.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/signal.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/signal.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_mcontext.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_mcontext.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_sigaltstack.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ucontext.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_uid_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_timeval.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/endian.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/endian.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_endian.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libkern/_OSByteOrder.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libkern/i386/_OSByteOrder.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/alloca.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int8_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int16_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int32_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int64_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_dev_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_mode_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/xlocale/_stdlib.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/nl_types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/types.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_blkcnt_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_blksize_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_gid_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_in_addr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_in_port_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ino_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ino64_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_key_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_nlink_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_useconds_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_suseconds_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_def.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_setsize.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_set.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_clr.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_zero.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_isset.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fd_copy.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_nl_item.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/bitset:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__bit_reference:
+
+../../../LIA_SpkTools/include/liatools.h:
+
+../../../include/Eigen/Dense:
+
+../../../include/Eigen/Core:
+
+../../../include/Eigen/src/Core/util/DisableStupidWarnings.h:
+
+../../../include/Eigen/src/Core/util/Macros.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/complex:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cmath:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/math.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/sstream:
+
+../../../include/Eigen/src/Core/util/MKL_support.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/emmintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/xmmintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/mmintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/mm_malloc.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/f16cintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/pmmintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/tmmintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/smmintrin.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cassert:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/assert.h:
+
+../../../include/Eigen/src/Core/util/Constants.h:
+
+../../../include/Eigen/src/Core/util/ForwardDeclarations.h:
+
+../../../include/Eigen/src/Core/util/Meta.h:
+
+../../../include/Eigen/src/Core/util/XprHelper.h:
+
+../../../include/Eigen/src/Core/util/StaticAssert.h:
+
+../../../include/Eigen/src/Core/util/Memory.h:
+
+../../../include/Eigen/src/Core/NumTraits.h:
+
+../../../include/Eigen/src/Core/MathFunctions.h:
+
+../../../include/Eigen/src/Core/GenericPacketMath.h:
+
+../../../include/Eigen/src/Core/arch/SSE/PacketMath.h:
+
+../../../include/Eigen/src/Core/arch/SSE/MathFunctions.h:
+
+../../../include/Eigen/src/Core/arch/SSE/Complex.h:
+
+../../../include/Eigen/src/Core/arch/Default/Settings.h:
+
+../../../include/Eigen/src/Core/Functors.h:
+
+../../../include/Eigen/src/Core/DenseCoeffsBase.h:
+
+../../../include/Eigen/src/Core/DenseBase.h:
+
+../../../include/Eigen/src/Core/../plugins/BlockMethods.h:
+
+../../../include/Eigen/src/Core/MatrixBase.h:
+
+../../../include/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h:
+
+../../../include/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h:
+
+../../../include/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h:
+
+../../../include/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h:
+
+../../../include/Eigen/src/Core/EigenBase.h:
+
+../../../include/Eigen/src/Core/Assign.h:
+
+../../../include/Eigen/src/Core/util/BlasUtil.h:
+
+../../../include/Eigen/src/Core/DenseStorage.h:
+
+../../../include/Eigen/src/Core/NestByValue.h:
+
+../../../include/Eigen/src/Core/ForceAlignedAccess.h:
+
+../../../include/Eigen/src/Core/ReturnByValue.h:
+
+../../../include/Eigen/src/Core/NoAlias.h:
+
+../../../include/Eigen/src/Core/PlainObjectBase.h:
+
+../../../include/Eigen/src/Core/Matrix.h:
+
+../../../include/Eigen/src/Core/Array.h:
+
+../../../include/Eigen/src/Core/CwiseBinaryOp.h:
+
+../../../include/Eigen/src/Core/CwiseUnaryOp.h:
+
+../../../include/Eigen/src/Core/CwiseNullaryOp.h:
+
+../../../include/Eigen/src/Core/CwiseUnaryView.h:
+
+../../../include/Eigen/src/Core/SelfCwiseBinaryOp.h:
+
+../../../include/Eigen/src/Core/Dot.h:
+
+../../../include/Eigen/src/Core/StableNorm.h:
+
+../../../include/Eigen/src/Core/MapBase.h:
+
+../../../include/Eigen/src/Core/Stride.h:
+
+../../../include/Eigen/src/Core/Map.h:
+
+../../../include/Eigen/src/Core/Block.h:
+
+../../../include/Eigen/src/Core/VectorBlock.h:
+
+../../../include/Eigen/src/Core/Transpose.h:
+
+../../../include/Eigen/src/Core/DiagonalMatrix.h:
+
+../../../include/Eigen/src/Core/Diagonal.h:
+
+../../../include/Eigen/src/Core/DiagonalProduct.h:
+
+../../../include/Eigen/src/Core/PermutationMatrix.h:
+
+../../../include/Eigen/src/Core/Transpositions.h:
+
+../../../include/Eigen/src/Core/Redux.h:
+
+../../../include/Eigen/src/Core/Visitor.h:
+
+../../../include/Eigen/src/Core/Fuzzy.h:
+
+../../../include/Eigen/src/Core/IO.h:
+
+../../../include/Eigen/src/Core/Swap.h:
+
+../../../include/Eigen/src/Core/CommaInitializer.h:
+
+../../../include/Eigen/src/Core/Flagged.h:
+
+../../../include/Eigen/src/Core/ProductBase.h:
+
+../../../include/Eigen/src/Core/GeneralProduct.h:
+
+../../../include/Eigen/src/Core/TriangularMatrix.h:
+
+../../../include/Eigen/src/Core/SelfAdjointView.h:
+
+../../../include/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
+
+../../../include/Eigen/src/Core/products/Parallelizer.h:
+
+../../../include/Eigen/src/Core/products/CoeffBasedProduct.h:
+
+../../../include/Eigen/src/Core/products/GeneralMatrixVector.h:
+
+../../../include/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+
+../../../include/Eigen/src/Core/SolveTriangular.h:
+
+../../../include/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
+
+../../../include/Eigen/src/Core/products/SelfadjointMatrixVector.h:
+
+../../../include/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+
+../../../include/Eigen/src/Core/products/SelfadjointProduct.h:
+
+../../../include/Eigen/src/Core/products/SelfadjointRank2Update.h:
+
+../../../include/Eigen/src/Core/products/TriangularMatrixVector.h:
+
+../../../include/Eigen/src/Core/products/TriangularMatrixMatrix.h:
+
+../../../include/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
+../../../include/Eigen/src/Core/products/TriangularSolverVector.h:
+
+../../../include/Eigen/src/Core/BandMatrix.h:
+
+../../../include/Eigen/src/Core/BooleanRedux.h:
+
+../../../include/Eigen/src/Core/Select.h:
+
+../../../include/Eigen/src/Core/VectorwiseOp.h:
+
+../../../include/Eigen/src/Core/Random.h:
+
+../../../include/Eigen/src/Core/Replicate.h:
+
+../../../include/Eigen/src/Core/Reverse.h:
+
+../../../include/Eigen/src/Core/ArrayBase.h:
+
+../../../include/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h:
+
+../../../include/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h:
+
+../../../include/Eigen/src/Core/ArrayWrapper.h:
+
+../../../include/Eigen/src/Core/GlobalFunctions.h:
+
+../../../include/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
+../../../include/Eigen/LU:
+
+../../../include/Eigen/src/misc/Solve.h:
+
+../../../include/Eigen/src/misc/Kernel.h:
+
+../../../include/Eigen/src/misc/Image.h:
+
+../../../include/Eigen/src/LU/FullPivLU.h:
+
+../../../include/Eigen/src/LU/PartialPivLU.h:
+
+../../../include/Eigen/src/LU/Determinant.h:
+
+../../../include/Eigen/src/LU/Inverse.h:
+
+../../../include/Eigen/src/LU/arch/Inverse_SSE.h:
+
+../../../include/Eigen/Cholesky:
+
+../../../include/Eigen/src/Cholesky/LLT.h:
+
+../../../include/Eigen/src/Cholesky/LDLT.h:
+
+../../../include/Eigen/QR:
+
+../../../include/Eigen/Jacobi:
+
+../../../include/Eigen/src/Jacobi/Jacobi.h:
+
+../../../include/Eigen/Householder:
+
+../../../include/Eigen/src/Householder/Householder.h:
+
+../../../include/Eigen/src/Householder/HouseholderSequence.h:
+
+../../../include/Eigen/src/Householder/BlockHouseholder.h:
+
+../../../include/Eigen/src/QR/HouseholderQR.h:
+
+../../../include/Eigen/src/QR/FullPivHouseholderQR.h:
+
+../../../include/Eigen/src/QR/ColPivHouseholderQR.h:
+
+../../../include/Eigen/SVD:
+
+../../../include/Eigen/src/SVD/JacobiSVD.h:
+
+../../../include/Eigen/src/SVD/UpperBidiagonalization.h:
+
+../../../include/Eigen/Geometry:
+
+../../../include/Eigen/src/Geometry/OrthoMethods.h:
+
+../../../include/Eigen/src/Geometry/EulerAngles.h:
+
+../../../include/Eigen/src/Geometry/Homogeneous.h:
+
+../../../include/Eigen/src/Geometry/RotationBase.h:
+
+../../../include/Eigen/src/Geometry/Rotation2D.h:
+
+../../../include/Eigen/src/Geometry/Quaternion.h:
+
+../../../include/Eigen/src/Geometry/AngleAxis.h:
+
+../../../include/Eigen/src/Geometry/Transform.h:
+
+../../../include/Eigen/src/Geometry/Translation.h:
+
+../../../include/Eigen/src/Geometry/Scaling.h:
+
+../../../include/Eigen/src/Geometry/Hyperplane.h:
+
+../../../include/Eigen/src/Geometry/ParametrizedLine.h:
+
+../../../include/Eigen/src/Geometry/AlignedBox.h:
+
+../../../include/Eigen/src/Geometry/Umeyama.h:
+
+../../../include/Eigen/src/Geometry/arch/Geometry_SSE.h:
+
+../../../include/Eigen/Eigenvalues:
+
+../../../include/Eigen/src/Eigenvalues/Tridiagonalization.h:
+
+../../../include/Eigen/src/Eigenvalues/RealSchur.h:
+
+../../../include/Eigen/src/Eigenvalues/./HessenbergDecomposition.h:
+
+../../../include/Eigen/src/Eigenvalues/EigenSolver.h:
+
+../../../include/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
+
+../../../include/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
+
+../../../include/Eigen/src/Eigenvalues/ComplexSchur.h:
+
+../../../include/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
+
+../../../include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+../../../LIA_SpkTools/include/GeneralTools.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/alize.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/AutoDestructor.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Object.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Exception.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/alizeString.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/RealVector.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/memory.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/RefVector.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/DoubleSquareMatrix.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Feature.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Matrix.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/fstream:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Config.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFlags.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/XList.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/XLine.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/BoolMatrix.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ULongVector.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Label.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Histo.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/LabelSet.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/CmdLine.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Seg.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegAbstract.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegServer.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegCluster.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegServerFileWriter.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FileWriter.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegServerFileReaderRaw.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/SegServerFileReaderAbstract.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FileReader.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/DistribGD.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Distrib.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/DistribGF.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureGD.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/Mixture.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/DistribRefVector.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureGF.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/LabelServer.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServer.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureDict.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureServer.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureInputStream.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureStat.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/StatServer.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/LKVector.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ViterbiAccum.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureGDStat.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureGFStat.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FrameAcc.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FrameAccGD.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FrameAccGF.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureMultipleFileReader.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderAbstract.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileList.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReader.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderRaw.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderSingle.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderSPro3.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderSPro4.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileReaderHTK.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureInputStreamModifier.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReaderAmiral.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReaderAbstract.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReaderRaw.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReaderXml.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/XmlParser.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileReader.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureFileWriter.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileWriter.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileReader.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileReaderAbstract.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileReaderXml.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/MixtureServerFileReaderRaw.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/FeatureFileWriter.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigFileReaderRaw.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigFileReaderAbstract.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigFileReaderXml.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigFileWriter.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/XListFileReader.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/LabelFileReader.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/AudioFrame.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/AudioFileReader.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/AudioInputStream.h:
+
+/Users/muyingchen/desktop/voice-authentication/alize/LIA_RAL/../alize-core/include/ConfigChecker.h:
+
+../../../LIA_SpkTools/include/AccumulateStat.h:
+
+../../../LIA_SpkTools/include/AccumulateJFAStat.h:
+
+../../../LIA_SpkTools/include/AccumulateTVStat.h:
+
+../../../LIA_SpkTools/include/TrainTools.h:
+
+../../../LIA_SpkTools/include/SegTools.h:
+
+../../../LIA_SpkTools/include/Hmm.h:
+
+../../../LIA_SpkTools/include/ScoreWarp.h:
+
+../../../LIA_SpkTools/include/IOFormat.h:
+
+../../../LIA_SpkTools/include/SuperVectors.h:
+
+../../../LIA_SpkTools/include/FactorAnalysis.h:
+
+../../../LIA_SpkTools/include/TopGauss.h:
+
+../../../LIA_SpkTools/include/PldaTools.h:
+
+../include/TurnDetection.h:
+
+../../../LIA_SpkTools/include/Tools.h:
+
+../../../LIA_SpkTools/include/ClusteringCriterion.h:
