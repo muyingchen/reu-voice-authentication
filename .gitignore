@@ -7,3 +7,5 @@ alize/01_GMM-UGM_system_with_ALIZE3.0/data
 client/config.py
 client/data
 */__pycache__
+main/PlayAudio.py
+main/RecordAudio.py
