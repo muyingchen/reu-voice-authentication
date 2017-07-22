@@ -3,16 +3,13 @@ import wave
 import sys
 import os
 
-if len(sys.argv) < 2:
-    print("Please input a name for output audio")
-    sys.exit(-1)
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 RECORD_SECONDS = 5
-WAVE_OUTPUT_FILENAME = sys.argv[1] + ".wav"
+WAVE_OUTPUT_FILENAME = "output.wav"
 p = pyaudio.PyAudio()
 
 stream = p.open(format=FORMAT,

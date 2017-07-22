@@ -52,8 +52,8 @@ class SpeechToText:
     def write_text(self, text):
         with open('output.txt', 'w') as text_file:
             text_file.write(text + '\n')
-
-if __name__ == '__main__':
-    s = SpeechToText()
-    audio = open('data/wave/test10.wav', 'rb')
-    print(s.get_text())
+# 
+# if __name__ == '__main__':
+#     s = SpeechToText()
+#     audio = open('data/wave/test10.wav', 'rb')
+#     print(s.get_text())
