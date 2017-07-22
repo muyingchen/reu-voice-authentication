@@ -25,12 +25,12 @@ class SpeechToText:
             # print(json.dumps(self.speech_to_text.get_model('en-US_BroadbandModel'), indent=2))
 
             # get response in json string format
-            text_str = json.dumps(self.speech_to_text.recognize(
+            response = json.dumps(self.speech_to_text.recognize(
                       audio_file, content_type='audio/wav', timestamps=True,
                       word_confidence=True))
-            # get transcript from json string
-            text = self.get_transcript(json.loads(text_str))
-            # save the transcript
+            # extract the correct transcript from response json string
+            text = self.get_transcript(json.loads(response))
+            # save the transcript to a text file
             self.write_text(text)
             return text
         except WatsonException as err:
@@ -52,7 +52,7 @@ class SpeechToText:
     def write_text(self, text):
         with open('output.txt', 'w') as text_file:
             text_file.write(text + '\n')
-# 
+#
 # if __name__ == '__main__':
 #     s = SpeechToText()
 #     audio = open('data/wave/test10.wav', 'rb')
