@@ -18,8 +18,8 @@ class SpeechToText:
             password = self.config['password'],
             x_watson_learning_opt_out=False)
 
-    # get text result for a recognized speech
-    def get_text(self, audio_file=None):
+    # get transcript from an audio file using Watson
+    def get_transcript(self, audio_file=None):
         # if no audio file is passed to the function, use default audio
         if not audio_file:
             audio_file = open(join(dirname(abspath(__file__)), 'data/wave/test4.wav'), 'rb')
@@ -32,17 +32,18 @@ class SpeechToText:
                       audio_file, content_type='audio/wav', timestamps=True,
                       word_confidence=True))
             # extract the correct transcript from response json string
-            text = self.get_transcript(json.loads(response))
-            # save the transcript to a text file
-            self.write_text(text)
+            text = self.retrieve_transcript(json.loads(response))
             return text
         except WatsonException as err:
             print(err)
-            pass
+            return -1
 
     # retrieve transcript from the json object represented text
-    def get_transcript(self, text):
-        return text['results'][0]['alternatives'][0]['transcript']
+    def retrieve_transcript(self, text):
+        if text['results']:
+            return text['results'][0]['alternatives'][0]['transcript']
+        else:
+            return -1
 
     # return a list of language models that Watson speech-to-text engine support
     def get_language_model(self):
@@ -52,12 +53,8 @@ class SpeechToText:
             models.append(i['name'])
         return models
 
-    # write the recognized text into a txt file
-    def write_text(self, text):
-        with open('output.txt', 'w') as text_file:
-            text_file.write(text + '\n')
 #
 # if __name__ == '__main__':
 #     s = SpeechToText()
 #     audio = open('data/wave/test10.wav', 'rb')
-#     print(s.get_text())
+#     print(s.get_transcript())
