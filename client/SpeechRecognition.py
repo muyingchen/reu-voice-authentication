@@ -1,8 +1,8 @@
+from client.SpeechToText import SpeechToText
+from os.path import join, dirname, abspath
 import pyaudio
 import audioop
 import wave
-import os
-from SpeechToText import SpeechToText
 
 class SpeechRecognition:
     def __init__(self):
@@ -17,18 +17,18 @@ class SpeechRecognition:
     def save_transcript(self, transcript=None):
         # write the recognized text into a txt file
         if transcript != -1:
-            with open('transcript.txt', 'w') as text_file:
+            with open(join(dirname(abspath(__file__)), 'transcript.txt'), 'w') as text_file:
                 text_file.write(transcript + '\n')
 
     def save_audio(self, frames=None, p=None):
-        wf = wave.open(self.AUDIO_OUTPUT_FILENAME, 'wb')
+        wf = wave.open(join(dirname(abspath(__file__)), self.AUDIO_OUTPUT_FILENAME), 'wb')
         wf.setnchannels(self.CHANNELS)
         wf.setsampwidth(p.get_sample_size(self.FORMAT))
         wf.setframerate(self.RATE)
         wf.writeframes(b''.join(frames))
         wf.close()
 
-    def run(self):
+    def recognize(self):
         while True:
             p = pyaudio.PyAudio()
             stream = p.open(format=self.FORMAT,
@@ -36,7 +36,9 @@ class SpeechRecognition:
                             rate=self.RATE,
                             input=True,
                             frames_per_buffer=self.CHUNK)
-            print('* Please start speaking')
+
+            print('\n* Please start your command')
+
             try:
                 frames = []
                 for i in range(0, int(self.RATE / self.CHUNK * self.RECORD_SECONDS)):
@@ -48,15 +50,15 @@ class SpeechRecognition:
                 pass
             # save audio
             self.save_audio(frames, p)
-
-            # open the recorded audio
-            audio = open(self.AUDIO_OUTPUT_FILENAME, 'rb')
-
-            # get transcript from audio using SpeechToText
+            #open the recorded audio
+            audio = open(join(dirname(abspath(__file__)), self.AUDIO_OUTPUT_FILENAME), 'rb')
+            #get transcript from audio using SpeechToText
             print('* Processing the audio...')
             transcript = self.stt.get_transcript(audio)
             if transcript != -1:
-                print('You said: ' + transcript)
+                # print('You said: ' + transcript)
+                # save the transcript
+                self.save_transcript(transcript)
                 break
             else:
                 print('Sorry, I did not get that. Please try again')
@@ -64,12 +66,3 @@ class SpeechRecognition:
         stream.stop_stream()
         stream.close()
         p.terminate()
-        # remove the audio file
-        os.remove(self.AUDIO_OUTPUT_FILENAME)
-
-        # save the transcript
-        self.save_transcript(transcript)
-
-if __name__ == '__main__':
-    s = SpeechRecognition()
-    s.run()

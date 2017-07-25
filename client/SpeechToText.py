@@ -1,6 +1,6 @@
 from watson_developer_cloud import SpeechToTextV1, WatsonException
 from os.path import join, dirname, abspath
-import config
+from client import config 
 import json
 
 # Extract text from speech audio file using watson speech to text API
@@ -9,9 +9,9 @@ class SpeechToText:
         # load API key information from config
         self.config = config.speech_to_text_config ;
         if not self.config['username']:
-            raise ValueError('No IBM Watson credential username found.')
+            raise ValueError('No IBM Watson credential username found. Please check your config file.')
         elif not self.config['password']:
-            raise ValueError('No IBM Watson credential password found.')
+            raise ValueError('No IBM Watson credential password found. Please check your config file.')
         else:
             self.speech_to_text = SpeechToTextV1(
             username = self.config['username'],
@@ -24,9 +24,6 @@ class SpeechToText:
         if not audio_file:
             audio_file = open(join(dirname(abspath(__file__)), 'data/wave/test4.wav'), 'rb')
         try:
-            # print(json.dumps(self.speech_to_text.models(), indent=2))
-            # print(json.dumps(self.speech_to_text.get_model('en-US_BroadbandModel'), indent=2))
-
             # get response in json string format
             response = json.dumps(self.speech_to_text.recognize(
                       audio_file, content_type='audio/wav', timestamps=True,
@@ -52,9 +49,3 @@ class SpeechToText:
         for i in m['models']:
             models.append(i['name'])
         return models
-
-#
-# if __name__ == '__main__':
-#     s = SpeechToText()
-#     audio = open('data/wave/test10.wav', 'rb')
-#     print(s.get_transcript())
