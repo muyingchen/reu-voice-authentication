@@ -62,14 +62,14 @@ class VoiceVerification:
             print(self.phrase + '\n')
 
             # create 3 enrollment
-            while enrollment_count < 5:
+            while enrollment_count < 3:
                 self.record_enrollemnt()
                 audio_file_path = join(dirname(abspath(__file__)), self.ENROLLMENT_OUTPUT_FILE_FILENAME)
                 response = json.loads(self.myVoiceIt.createEnrollment(userId, pwd, audio_file_path, language))
                 if response['ResponseCode'] == 'SUC':
                     enrollment_count += 1
                     enrollment_remaining -= 1
-                    print('Enrollment status: success', '\nEnrollment count: ', enrollment_count,
+                    print('\nEnrollment status: success', '\nEnrollment count: ', enrollment_count,
                         '\nRemaining enrollment', enrollment_remaining)
                 else:
                     print('Enrollment status:', response['Result'], '\n Please try again. ')
@@ -120,7 +120,7 @@ class VoiceVerification:
         CHUNK = 1024
         FORMAT = pyaudio.paInt16
         CHANNELS = 1
-        RATE = 16000
+        RATE = 44100
         RECORD_SECONDS = 5
         p = pyaudio.PyAudio()
 
@@ -133,8 +133,11 @@ class VoiceVerification:
         print('* Recording enrollment...')
         frames = []
         for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
-            data = stream.read(CHUNK)
-            frames.append(data)
+            try:
+                data = stream.read(CHUNK)
+                frames.append(data)
+            except IOError:
+                pass
 
         stream.stop_stream()
         stream.close()

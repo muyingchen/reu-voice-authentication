@@ -10,7 +10,7 @@ class SpeechRecognition:
         self.CHUNK = 1024
         self.FORMAT = pyaudio.paInt16
         self.CHANNELS = 1
-        self.RATE = 16000
+        self.RATE = 44100
         self.RECORD_SECONDS = 5
         self.AUDIO_OUTPUT_FILENAME = 'output.wav'
 
@@ -42,8 +42,11 @@ class SpeechRecognition:
             try:
                 frames = []
                 for i in range(0, int(self.RATE / self.CHUNK * self.RECORD_SECONDS)):
-                    data = stream.read(self.CHUNK)
-                    frames.append(data)
+                    try:
+                        data = stream.read(self.CHUNK)
+                        frames.append(data)
+                    except IOError:
+                        pass
             # print("* Done listening ")
             except KeyboardInterrupt:
                 print('\n' + '* Done recording')
@@ -59,10 +62,12 @@ class SpeechRecognition:
                 # print('You said: ' + transcript)
                 # save the transcript
                 self.save_transcript(transcript)
+                stream.stop_stream()
+                stream.close()
+                p.terminate()
                 break
             else:
                 print('Sorry, I did not get that. Please try again')
-
-        stream.stop_stream()
-        stream.close()
-        p.terminate()
+                stream.stop_stream()
+                stream.close()
+                p.terminate()
