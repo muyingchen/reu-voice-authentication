@@ -23,13 +23,15 @@ Some useful links to configure your Raspberry Pi for this project (in case you r
 * [Setup USB microphone as default on the system](https://raspberrypi.stackexchange.com/questions/37177/best-way-to-setup-usb-mic-as-system-default-on-raspbian-jessie)
 * Python packages
 ⋅⋅* [Requests](http://docs.python-requests.org/en/master/user/install/#install)
-⋅⋅⋅
-```
+
+⋅⋅⋅```
 pip3 install requests
 ```
+
 ⋅⋅*[PyAudio](https://people.csail.mit.edu/hubert/pyaudio/)
-⋅⋅⋅
-```
+
+⋅⋅⋅```
 sudo apt-get install python-pyaudio python3-pyaudio
 pip3 install pyaudio
 ```
+
