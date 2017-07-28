@@ -29,5 +29,8 @@ Some useful links to configure your Raspberry Pi for this project (in case you r
   * [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/)
    ```
    sudo apt-get install python-pyaudio python3-pyaudio
-   pip install pyaudio
+   ```
+   and 
+   ```
+   pip3 install pyaudio
    ```
