@@ -19,8 +19,8 @@ The purpose of using speech recognition softwares in this project is to transcri
 
 ## Raspberry Pi Setup/Miscellaneous <a name="rp"></a>
 Some useful links to configure your Raspberry Pi for this project (in case you really it)
-* [General guide for Raspbeery Pi hardware & software setup]
-* [Install Raspbian Operating System on Raspberry Pi]
+* [General guide for Raspbeery Pi hardware & software setup](https://www.raspberrypi.org/help/)
+* Install Raspbian Operating System on Raspberry Pi
   * Option 1: Installing with [NOOBS](https://www.raspberrypi.org/documentation/installation/noobs.md) image (what I used)
   * Option 2: Installing with [Raspbian](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 * [Install Python packages](https://www.raspberrypi.org/documentation/linux/software/python.md)
