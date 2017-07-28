@@ -5,19 +5,19 @@ The goal of this project is to implement a [voice authentication(recognition)](h
 In Amazon Echo's case, it has to be initialized by connecting it to a user's account through its mobile app. However, anyone could use voice to command Alexa for this user's sensitive information such as calendar, contacts, etc. Therefore, in order to fix this problem, I am investigating potential solutions by implementing a voice authentication system on Raspberry Pi. Since it is difficult to manipulate the hardware side of Amazon Echo, I will emulate Alexa with a Raspbery Pi using the [Alexa Voice Service](https://developer.amazon.com/alexa-voice-service) that Amazon provides for developers.
 
 ## Table of Contents
-1. Speech Recognition
-2. Voice Authentication
-3. Alexa Voice Service
-4. Raspberry Pi Miscellaneous
+1. Speech Recognition(#sr)
+2. Voice Authentication(#va)
+3. Alexa Voice Service(#avs)
+4. Raspberry Pi Miscellaneous(#rp)
 
-## Speech Recognition
+## Speech Recognition <a name="sr"></a>
 The purpose of using speech recognition softwares in this project is to transcribe audio files to get
 
-## Voice Authentication
+## Voice Authentication <a name="va"></a>
 
-## Alexa Voice Service
+## Alexa Voice Service <a name="avs"></a>
 
-## Raspberry Pi Setup/Miscellaneuous
+## Raspberry Pi Setup/Miscellaneous <a name="rp"></a>
 Some useful links to configure your Raspberry Pi for this project (in case you really it)
 * [Install Python packages](https://www.raspberrypi.org/documentation/linux/software/python.md)
 * [Setup USB microphone as default on the system](https://raspberrypi.stackexchange.com/questions/37177/best-way-to-setup-usb-mic-as-system-default-on-raspbian-jessie)
