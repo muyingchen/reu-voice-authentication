@@ -21,7 +21,7 @@ Speech recognition engine or API used/experimented in this project:
 CMU Sphinx is an open source speech recognition toolkit click developed by Carnegie Mellon University. Click [here](https://github.com/muyingchen/reu-voice-authentication/tree/master/cmusphinx) for detailed information.
 
 ### IBM Watson Speech To Text API 
-This is the API that the project is currently using. See this [README.md](https://github.com/muyingchen/reu-voice-authentication/blob/master/client/README.md) for setup instructions. 
+This is the API that the project is **currently using**. See this [README.md](https://github.com/muyingchen/reu-voice-authentication/blob/master/client/README.md) for setup instructions. 
 
 ## Voice Authentication <a name="va"></a>
 This project is currently using [VoiceIt](https://siv.voiceprintportal.com/API) for voice verification (authentication). See this [README.md](https://github.com/muyingchen/reu-voice-authentication/blob/master/client/README.md) for setup instructions. 
