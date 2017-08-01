@@ -38,7 +38,7 @@ You can view its GitHub [here](https://github.com/ALIZE-Speaker-Recognition).
 Since this project did not end up using ALIZE for voice authentication purpose, please research on how to install and use ALIZE on Google.
 
 ### VoiceIt API
-This project is currently using [VoiceIt](https://siv.voiceprintportal.com/API) for voice verification verification (authentication). See this [README.md](https://github.com/muyingchen/reu-voice-authentication/blob/master/client/README.md) for setup instructions. 
+This project is currently using [VoiceIt](voiceit-tech.com) for voice verification verification (authentication). See this [README.md](https://github.com/muyingchen/reu-voice-authentication/blob/master/client/README.md) for setup instructions. 
 
 ## Alexa Voice Service <a name="avs"></a>
 See my partner Luke's [GitHub repo](https://github.com/LB316/Raspberry-Pi-Alexa) on how to add Alexa Voice Service on Raspberry Pi.
