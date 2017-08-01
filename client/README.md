@@ -30,4 +30,6 @@ Step 3: Log in to the service [console](https://siv.voiceprintportal.com/console
 Step 4: Create a user ID under the **User Details** inside the **User Management
 ** of the console with a password of your choice. Copy and paste them to `developerUserId` and `password` in `voiceit_config` in `config.py`
 
-Step 5: Go to **Voiceprint Phrases** of the console. Add a **phrase** that you want to use to verify your voice and press **Request New** to wait for approval. This project uses "Alexa tell Raspberry Pi to turn light on" for verification purpose. (Note: if you are using a different phrase, please copy and paste it to `self.phrase` inside `VoiceVerification.py`. Keep in mind that you and/or other speakers must say this registered phrase to enroll and test the voice.
+Step 5: Go to **Voiceprint Phrases** of the console. Add a **phrase** that you want to use to verify your voice and press **Request New** to wait for approval. 
+
+This project uses "Alexa tell Raspberry Pi to turn light on" for verification purpose. (Note: if you are using a different phrase, please copy and paste it to `self.phrase` inside `VoiceVerification.py`. Keep in mind that you and/or other speakers must say this registered phrase to enroll and test the voice.)
