@@ -24,7 +24,21 @@ CMU Sphinx is an open source speech recognition toolkit click developed by Carne
 This is the API that the project is **currently using**. See this [README.md](https://github.com/muyingchen/reu-voice-authentication/blob/master/client/README.md) for setup instructions. 
 
 ## Voice Authentication <a name="va"></a>
-This project is currently using [VoiceIt](https://siv.voiceprintportal.com/API) for voice verification (authentication). See this [README.md](https://github.com/muyingchen/reu-voice-authentication/blob/master/client/README.md) for setup instructions. 
+Voice authentication in this project is the process of verifying a user based on the characteristics of a given audio stream. 
+
+Voice Authentication engine or API used/experimented in this project:
+1. ALIZE 
+2. VoiceIt API
+
+### ALIZE
+[ALIZE](http://alize.univ-avignon.fr/) is an opensource platform for speaker recognition developed by LIA (Laboratoire Informatique d’Avignon, France) and done in collaboration with several academic and industrial partners. 
+
+You can view its GitHub [here](https://github.com/ALIZE-Speaker-Recognition). 
+
+Since this project did not end up using ALIZE for voice authentication purpose, please research on how to install and use ALIZE on Google.
+
+### VoiceIt API
+This project is currently using [VoiceIt](https://siv.voiceprintportal.com/API) for voice verification verification (authentication). See this [README.md](https://github.com/muyingchen/reu-voice-authentication/blob/master/client/README.md) for setup instructions. 
 
 ## Alexa Voice Service <a name="avs"></a>
 See my partner Luke's [GitHub repo](https://github.com/LB316/Raspberry-Pi-Alexa) on how to add Alexa Voice Service on Raspberry Pi.
